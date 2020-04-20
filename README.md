@@ -1,1 +1,1 @@
-# gc-proto-cra.github.io for covid 19
+# gc-proto-cra.github.io
