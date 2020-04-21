@@ -282,7 +282,9 @@ table th, table td {
 
 <div class="container">
   <h1 property="name" id="wb-cont" dir="ltr">Contact the Canada Revenue Agency</h1>
-  <section class="col-md-12 mrgn-bttm-lg">
+    
+    
+  <section class="col-md-12 mrgn-bttm-lg border-bottom">
     <div class="row">
       <h2 class="h3">Most requested</h2>
       <div class="wb-eqht row wb-init wb-eqht-inited" id="wb-auto-5">
@@ -323,12 +325,15 @@ table th, table td {
     </div>
     <!-- row --> 
   </section>
+    
+    
 </div>
+    
     
 <div class="container">
 <section class="col-md-12 mrgn-bttm-lg">
     <div class="row">
-    <h2>Answers to top questions </h2>
+    <h2 class="h3">Answers to top COVID-19 questions </h2>
     <details>
         
 	<summary>I wasn’t eligible for CERB before, am I now? <span class="badge pull-right mrgn-tp-sm" style="background: #2572b4;">CERB</span></summary>
@@ -490,7 +495,7 @@ table th, table td {
   </div>
 </div>
 <div class="container">
-  <h2>Assistance by telephone</h2>
+  <h2 class="h3">Assistance by telephone</h2>
   <h3 class="h4">Step 1. If you’re calling about your account, have the following information ready</h3>
   <div class="mrgn-tp-lg beforeCall" style="">
     <label class="container-checks">Social Insurance Number (or business number)
@@ -512,309 +517,317 @@ table th, table td {
   <h3 class="h4">Step 2. Find the number you need to call</h3>
   
   <!-- ind table -->
-  
-  <details>
-  <summary>Telephone numbers for personal taxes, benefits and trusts</summary>
-  <table class="wb-tables table table-striped small" data-wb-tables='{"ordering": false, "paging": false}'>
-    <thead>
-      <tr>
-<!-- Adjusting the column here in line because nothing else works. Try to find a fix for this since it's not consistent across browsers. 
-The datatable columns option doesnt seem to work at all and neither does setting col classes on the th. -->        
-        <th scope="col" class="col-sm-5 col-md-5">What do you want to call about?</th>
-        <th scope="col" class="col-sm-3 col-md-3">Number</th>
-        <th scope="col" class="col-sm-4 col-md-4">Hours of service<br><span style="font-weight: normal !important;">(local time unless noted)</span></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="d1">
-        <td data-label="What do you want to call about?" class="right-mobile"><ul>
-            <li id="tax-account-balance">Check tax account balance</li>
-          </ul></td>
-        <td data-label="Number"><strong>1-866-474-8272</strong><p class="small"><span class="glyphicon glyphicon-time"></span> No wait times</p></td>  
-        <td data-label="Hours"><p><label class="label label-success">Always open (automated line)</label></p>
-        </td>
-      </tr>
-      <tr class="d2">
-        <td data-label="What do you want to call about?" class="right-mobile"> Use the automated line to:
-          <ul id="benefits">
-            <li id="proof-income">Get Proof of Income (Option C print-out)</li>
-            <li id="remittance-voucher">Request remittance voucher</li>
-            <span id="contribution-room"></span>
-            <li id="tfsa-rrsp-other">Tax-free savings account (TFSA) contribution room</li>
-            <li>Unused RRSP contributions to claim</li>
-            <li>Registered retirement savings plan (RRSP) contributions this year</li>
-            <li>Estimated GST/HST credit payment amount, three weeks before next payment</li>
-            <li>Estimated Child Benefit payment amount, two weeks before next payment</li>
-            <li>Find out if you are eligible for the Canada child benefit (CCB), and the GST/HST credit, as well as the dates you can expect to receive them</li>
-          </ul></td>
-        <td data-label="Number"><strong>1-800-267-6999</strong><p class="small"><span class="glyphicon glyphicon-time"></span> No wait times</p></td>  
-        <td data-label="Hours"><p><label class="label label-success">Always open (automated line)</label></p>
-          </td>
-      </tr>
-      <tr class="d1">
-        <td data-label="What do you want to call about?" class="right-mobile"><ul>
-            <li>Check status of 2018 tax return</li>
-            <li>Estimated 2018 refund amount</li>
-            <li>When to expect your 2018 refund</li>
-          </ul></td>
-        <td data-label="Number"><strong>1-800-959-1956</strong>
-          <p class="small"><span class="glyphicon glyphicon-time"></span> No wait times</p>
-        </td>
-        <td data-label="Hours"><p>
-            <label class="label label-success">Always open (automated line)</label>
-          </p>
-          </td>
-      </tr>
-      <tr class="d2">
-        <td data-label="What do you want to call about?" class="right-mobile"><ul>
-            <li>Make a payment arrangement for personal income taxes through an automated service</li>
-          </ul></td>
-        <td data-label="Number"><strong>1-866-256-1147</strong></td>
-        <td data-label="Hours">
-          <div class="row">
-            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
-            <div class="col-sm-6"><span class="nowrap">7 am to 10 pm ET</span></div>
-          </div>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-          </td>
-      </tr>
-      <tr class="d2">
-      <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
-        <ul id="benefits-line">
-          <li>Canada child benefit (CCB), and related benefits</li>
-          <li>GST/HST credit</li>
-          <li>Get help with child disability benefit</li>
-          <li>Change marital status</li>
-        </ul></td>
-      <td data-label="Number"><strong>1-800-387-1193</strong><br />
-        <section id="zxcvb" class="small nowrap">
-          <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency/corporate/contact-information/wait-times.html#tele-table-ben-en"></span></section>
-          <section class="small" data-ajax-replace="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency/corporate/contact-information/wait-times.html#tele-p-en"></section>
-        <br />
-        Yukon, Northwest Territories and Nunavut: <br />
-        <strong>1-866-426-1527</strong>
-      </td>
-      <td data-label="Hours" >
-          <div class="row">
-            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
-            <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
-          </div>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-        </td>  
-    </tr>      
-      <tr class="d1">
-        <td data-label="What do you want to call about?" class="right-mobile"><ul>
-            <li id="issues-my-account">Help with online services such as My Account, NETFILE and Represent a Client or family member</li>
-            <li>Get a security code for My Account</li>
-            <li>Help if you are locked out of your online account</li>
-          </ul></td>
-        <td data-label="Number"><strong>1-800-959-8281</strong><br /><br />
-          Yukon, Northwest Territories and Nunavut: <br />
-          <strong>1-866-426-1527</strong><br />
-          <br />
-          Outside Canada and the US (operates in Eastern Time): <br />
-           <span class="nowrap"><strong>613-940-8495</strong></span></td>  
-        <td data-label="Hours">
-          <div class="row">
-            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
-            <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
-          </div>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-        </td>
-      </tr>
-      <tr class="d2">
-        <td data-label="What do you want to call about?" class="right-mobile"><ul>
-            <li>Set up direct deposit or change bank account information</li>
-          </ul>
-          <p>You will also need:</p>
-          <ul>
-            <li>Your three-digit bank (financial institution) number, five-digit transit number, and your account number</li>
-          </ul></td>
-        <td data-label="Number"><strong>1-800-959-8281</strong><br />
-          <section id="zxcvb" class="small nowrap">
-          <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency/corporate/contact-information/wait-times.html#tele-table-ind-en"></span></section>
-          <section class="small" data-ajax-replace="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency/corporate/contact-information/wait-times.html#tele-p-en"></section>
-          <br />
-          Yukon, Northwest Territories and Nunavut: <br />
-          <strong>1-866-426-1527</strong><br />
-          <br />
-          Outside Canada and the U.S. (operates in Eastern Time):
-          <span class="nowrap"><strong>613-940-8495</strong></span></td>
-        <td data-label="Hours">
-          <div class="row">
-            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
-            <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
-          </div>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-          </td>  
-      </tr>
-      <tr class="d1">
-        <td data-label="What do you want to call about?" class="right-mobile"><ul>
-            <li>Change address</li>
-            <li>Update name on file</li>
-            <li>Change marital status</li>
-          </ul></td>
-        <td data-label="Number"><strong>1-800-959-8281</strong><br />
-          <section id="zxcvb" class="small nowrap">
-          <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency/corporate/contact-information/wait-times.html#tele-table-ind-en"></span></section>
-          <section class="small" data-ajax-replace="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency/corporate/contact-information/wait-times.html#tele-p-en"></section>
-          <br />
-          Yukon, Northwest Territories and Nunavut: <br />
-          <strong>1-866-426-1527</strong><br />
-          <br />
-          Outside Canada and the U.S. (operates in Eastern Time):
-          <span class="nowrap"><strong>613-940-8495</strong></span></td>
-        <td data-label="Hours" >
-          <div class="row">
-            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
-            <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
-          </div>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-          </td>  
-      </tr>
-      <tr class="d2">
-        <td data-label="What do you want to call about?" class="right-mobile"><ul id="help-payment">
-            <li>Help making a payment</li>
-            <li id="business-instalments">Questions on instalments (paying taxes as you earn income)</li>
-            <li>Move a payment to a business account</li>
-          </ul></td>
-        <td data-label="Number"><strong>1-800-959-8281</strong><br />
-        <section id="zxcvb" class="small nowrap">
-        <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency/corporate/contact-information/wait-times.html#tele-table-ind-en"></span></section>
-        <section class="small" data-ajax-replace="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency/corporate/contact-information/wait-times.html#tele-p-en"></section>
-        <br />
-        Yukon, Northwest Territories and Nunavut:<br />
-        <strong>1-866-426-1527</strong><br />
-        <br />
-        Outside Canada and the U.S. (operates in Eastern Time):
-        <span class="nowrap"><strong>613-940-8495</strong></span></td>  
-        <td data-label="Hours" >
-          <div class="row">
-            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
-            <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
-          </div>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-      </details>
-      </td>
-    </tr>
-    <tr class="d1">
-      <td data-label="What do you want to call about?" class="right-mobile"><ul id="ite">
-          <li>Get copy of notice of assessment</li>
-          <li id="individuals-line">Questions about personal income tax file</li>
-          <li id="first-time-income-tax">Issues with filing for the first time</li>
-          <li id="get-form">Get a tax form or publication</li>
-          <li>How to report income on your personal income tax return</li>
-        </ul></td>
-      <td data-label="Number"><strong>1-800-959-8281</strong><br />
-        <section id="zxcvb" class="small nowrap">
-        <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency/corporate/contact-information/wait-times.html#tele-table-ind-en"></span></section>
-        <section class="small" data-ajax-replace="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency/corporate/contact-information/wait-times.html#tele-p-en"></section>
-        <br />
-        Yukon, Northwest Territories and Nunavut: <br />
-        <strong>1-866-426-1527</strong><br />
-        <br />
-        Outside Canada and the U.S. (operates in Eastern Time):
-        <span class="nowrap"><strong>613-940-8495</strong></span></td>
-      <td data-label="Hours" >
-          <div class="row">
-            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
-            <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
-          </div>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-        </details></td>  
-    </tr>
-    <tr class="d1">
-      <td data-label="What do you want to call about?" class="right-mobile"><ul>
-          <li id="trusts">Trusts</li>        
-          <li>Registered Retirement Savings plan (RRSP)</li>
-          <li id="home-buyers-plan">Home Buyers Plan (HBP)</li>
-        </ul></td>
-      <td data-label="Number"><strong>1-800-959-8281</strong><br /><br />
-        Yukon, Northwest Territories and Nunavut: <br />
-        <strong>1-866-426-1527</strong><br />
-        <br />
-        Outside Canada and the U.S. (operates in Eastern Time):
-        <span class="nowrap"><strong>613-940-8495</strong></span></td>
-      <td data-label="Hours" >
-          <div class="row">
-            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
-            <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
-          </div>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-        </details></td>  
-    </tr>    
-    <tr class="d1">
-      <td data-label="What do you want to call about?" class="right-mobile"><ul id="ontario">
-          <li>Ontario trillium benefit (OTB) payment—including Ontario sales tax credit (OSTC), Ontario energy and property tax credit (OEPTC), and Northern Ontario energy credit (NOEC)</li>
-          <li>Ontario senior homeowners' property tax grant (OSHPTG) payment</li>
-          <li>Ontario sales tax transition benefit (OSTTB)</li>
-        </ul></td>
-      <td data-label="Number"><strong>1-877-627-6645</strong>
-      <!--details class="right-mobile">
+
+<details>
+    <summary>Telephone numbers for personal taxes, benefits and trusts</summary>
+    <div id="tbl-personal_wrapper" class="dataTables_wrapper no-footer"><div class="top"><div id="tbl-personal_filter" class="dataTables_filter"><label>Filter items<input type="search" class="" placeholder="" aria-controls="tbl-personal"></label></div><div class="dataTables_info" id="tbl-personal_info" role="status" aria-live="polite">Showing 1 to 24 of 24 entries</div></div><table id="tbl-personal" class="wb-tables table table-striped small table-condensed wb-init wb-tables-inited dataTable no-footer" data-wb-tables="{&quot;ordering&quot;: false, &quot;paging&quot;: false}" aria-describedby="tbl-personal_info" role="grid">
+      <caption class="wb-inv">
+      table 1
+      </caption>
+      <thead>
+        <tr role="row">
+            <th scope="col" class="col-sm-5 col-md-5 sorting_disabled" rowspan="1" colspan="1" style="width: 41.6667px;">What do you want to call about?<span class="sorting-cnt"><span class="sorting-icons"></span></span></th>
+            
+            <th scope="col" class="col-sm-3 col-md-3 sorting_disabled" rowspan="1" colspan="1" style="width: 25px;">Phone number<span class="sorting-cnt"><span class="sorting-icons"></span></span></th>
+            
+            <th scope="col" class="col-sm-4 col-md-4 sorting_disabled" rowspan="1" colspan="1" style="width: 33.3333px;">Hours of service<br>
+            <span>(in local time unless noted)</span><span class="sorting-cnt"><span class="sorting-icons"></span></span></th>
+          </tr>
+      </thead>
+      <tbody>
+                
+		
+
+        
+      <tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Order 2019 tax packages (your SIN is needed to use this service)</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-855-330-3305</strong>
+            <p class="small"><span class="glyphicon glyphicon-time"></span> No wait times</p></td>
+          <td data-label="Hours"><p class="label label-success">Always open (automated line)</p></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li id="tax-account-balance">Check tax account balance</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-866-474-8272</strong>
+            <p class="small"><span class="glyphicon glyphicon-time"></span> No wait times</p></td>
+          <td data-label="Hours"><p class="label label-success">Always open (automated line)</p></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"> Use the automated line to:
+            <ul id="benefits">
+              <li id="proof-income">Get Proof of Income (Option C print-out)</li>
+              <li id="remittance-voucher">Request remittance voucher</li>
+              <li id="tfsa-rrsp-other">Tax-free savings account (TFSA) contribution room</li>
+              <li id="contribution-room">Unused RRSP contributions to claim</li>
+              <li>Registered retirement savings plan (RRSP) contributions this year</li>
+              <li>Estimated GST/HST credit payment amount, three weeks before next payment</li>
+              <li>Estimated Child Benefit payment amount, two weeks before next payment</li>
+              <li>Find out if you are eligible for the Canada child benefit (CCB), and the GST/HST credit, as well as the dates you can expect to receive them</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-267-6999</strong>
+            <p class="small"><span class="glyphicon glyphicon-time"></span> No wait times</p></td>
+          <td data-label="Hours"><p class="label label-success">Always open (automated line)</p></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Check status of 2018 tax return</li>
+              <li>Estimated 2018 refund amount</li>
+              <li>When to expect your 2018 refund</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-1956</strong>
+            <p class="small"><span class="glyphicon glyphicon-time"></span> No wait times</p></td>
+          <td data-label="Hours"><p class="label label-success">Always open (automated line)</p></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Make a payment arrangement for personal income taxes through an automated service</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-866-256-1147</strong></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">7 am to 10 pm <abbr title="Eastern time">ET</abbr></span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul id="benefits-line">
+              <li>Canada child benefit (CCB), and related benefits</li>
+              <li>GST/HST credit</li>
+              <li>Get help with child disability benefit</li>
+              <li>Change marital status</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-387-1193</strong><br>
+            <section id="zxcvba" class="small nowrap"> <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#benefit-en" class="wb-init wb-data-ajax-replace-inited" id="wb-auto-6"><span id="benefit-en"><strong>Wait time:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--</span></span></section>
+            <section class="small wb-init wb-data-ajax-replace-inited" data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#updateDate-en" id="wb-auto-7"><span id="updateDate-en"><strong>Updated:</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;N/A</span></section>
+            <br>
+            Yukon, Northwest Territories and Nunavut: <br>
+            <strong>1-866-426-1527</strong></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li id="issues-my-account">Help with online services such as My Account, NETFILE and Represent a Client or family member</li>
+              <li>Get a security code for My Account</li>
+              <li>Help if you are locked out of your online account</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-8281</strong><br>
+            <section id="zxcvba" class="small nowrap"> <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#individual-en" class="wb-init wb-data-ajax-replace-inited" id="wb-auto-8"><span id="individual-en"><strong>Wait time:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--</span></span></section>
+            <section class="small wb-init wb-data-ajax-replace-inited" data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#updateDate-en" id="wb-auto-9"><span id="updateDate-en"><strong>Updated:</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;N/A</span></section>
+            <br>
+            Yukon, Northwest Territories and Nunavut: <br>
+            <strong>1-866-426-1527</strong><br>
+            <br>
+            Outside Canada/U.S. call collect<sup id="fn1-0-rf"><a class="fn-lnk" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup><br>
+            <span class="nowrap"><strong>613-940-8495</strong></span></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 9 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul id="ite">
+              <li>Get copy of notice of assessment</li>
+              <li id="individuals-line">Questions about personal income tax file</li>
+              <li id="first-time-income-tax">Issues with filing for the first time</li>
+              <li id="get-form">Get a tax form or publication</li>
+              <li>How to report income on your personal income tax return</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-8281</strong><br>
+            <section id="zxcvbe" class="small nowrap"> <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#individual-en" class="wb-init wb-data-ajax-replace-inited" id="wb-auto-10"><span id="individual-en"><strong>Wait time:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--</span></span></section>
+            <section class="small wb-init wb-data-ajax-replace-inited" data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#updateDate-en" id="wb-auto-11"><span id="updateDate-en"><strong>Updated:</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;N/A</span></section>
+            <br>
+            Yukon, Northwest Territories and Nunavut: <br>
+            <strong>1-866-426-1527</strong><br>
+            <br>
+            Outside Canada/U.S. call collect<sup id="fn1-1-rf"><a class="fn-lnk" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup><br>
+            <span class="nowrap"><strong>613-940-8495</strong></span></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 9 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Set up direct deposit or change bank account information</li>
+            </ul>
+            <p>You will also need:</p>
+            <ul>
+              <li>Your three-digit bank (financial institution) number, five-digit transit number, and your account number</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-8281</strong><br>
+            <section id="zxcvbb" class="small nowrap"> <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#individual-en" class="wb-init wb-data-ajax-replace-inited" id="wb-auto-12"><span id="individual-en"><strong>Wait time:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--</span></span></section>
+            <section class="small wb-init wb-data-ajax-replace-inited" data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#updateDate-en" id="wb-auto-13"><span id="updateDate-en"><strong>Updated:</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;N/A</span></section>
+            <br>
+            Yukon, Northwest Territories and Nunavut: <br>
+            <strong>1-866-426-1527</strong><br>
+            <br>
+            Outside Canada/U.S. call collect<sup id="fn1-2-rf"><a class="fn-lnk" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup><br>
+            <span class="nowrap"><strong>613-940-8495</strong></span></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 9 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Change address</li>
+              <li>Update name on file</li>
+              <li>Change marital status</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-8281</strong><br>
+            <section id="zxcvbc" class="small nowrap"> <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#individual-en" class="wb-init wb-data-ajax-replace-inited" id="wb-auto-14"><span id="individual-en"><strong>Wait time:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--</span></span></section>
+            <section class="small wb-init wb-data-ajax-replace-inited" data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#updateDate-en" id="wb-auto-15"><span id="updateDate-en"><strong>Updated:</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;N/A</span></section>
+            <br>
+            Yukon, Northwest Territories and Nunavut: <br>
+            <strong>1-866-426-1527</strong><br>
+            <br>
+            Outside Canada/U.S. call collect<sup id="fn1-3-rf"><a class="fn-lnk" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup><br>
+            <span class="nowrap"><strong>613-940-8495</strong></span></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 9 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul id="help-payment">
+              <li>Help making a payment</li>
+              <li id="business-instalments">Questions on instalments (paying taxes as you earn income)</li>
+              <li>Move a payment to a business account</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-8281</strong><br>
+            <section id="zxcvbd" class="small nowrap"> <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#individual-en" class="wb-init wb-data-ajax-replace-inited" id="wb-auto-16"><span id="individual-en"><strong>Wait time:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--</span></span></section>
+            <section class="small wb-init wb-data-ajax-replace-inited" data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#updateDate-en" id="wb-auto-17"><span id="updateDate-en"><strong>Updated:</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;N/A</span></section>
+            <br>
+            Yukon, Northwest Territories and Nunavut:<br>
+            <strong>1-866-426-1527</strong><br>
+            <br>
+            Outside Canada/U.S. call collect<sup id="fn1-4-rf"><a class="fn-lnk" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup><br>
+            <span class="nowrap"><strong>613-940-8495</strong></span></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 9 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li id="trusts">Trusts</li>
+              <li>Registered Retirement Savings plan (RRSP)</li>
+              <li id="home-buyers-plan">Home Buyers Plan (HBP)</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-8281</strong><br>
+            <section id="zxcvbf" class="small nowrap"> <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#individual-en" class="wb-init wb-data-ajax-replace-inited" id="wb-auto-18"><span id="individual-en"><strong>Wait time:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--</span></span></section>
+            <section class="small wb-init wb-data-ajax-replace-inited" data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#updateDate-en" id="wb-auto-19"><span id="updateDate-en"><strong>Updated:</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;N/A</span></section>
+            <br>
+            Yukon, Northwest Territories and Nunavut: <br>
+            <strong>1-866-426-1527</strong><br>
+            <br>
+            Outside Canada/U.S. call collect<sup id="fn1-5-rf"><a class="fn-lnk" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup><br>
+            <span class="nowrap"><strong>613-940-8495</strong></span></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 9 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul id="ontario">
+              <li>Ontario trillium benefit (OTB) payment—including Ontario sales tax credit (OSTC), Ontario energy and property tax credit (OEPTC), and Northern Ontario energy credit (NOEC)</li>
+              <li>Ontario senior homeowners' property tax grant (OSHPTG) payment</li>
+              <li>Ontario sales tax transition benefit (OSTTB)</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-877-627-6645</strong> 
+            <!--details class="right-mobile">
           <summary>Wait times and holidays</summary>
           <div class="row">
             <table class="table small-tbl">
@@ -844,32 +857,28 @@ The datatable columns option doesnt seem to work at all and neither does setting
               </tbody>
             </table>
           </div>
-        </details-->
-      </td>
-      <td data-label="Hours">
-          <div class="row">
-            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
-            <div class="col-sm-6"><span class="nowrap">8:15 am to 5 pm ET</span></div>
-          </div>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-        </td>
-    </tr>
-    <tr class="d2">
-      <td data-label="What do you want to call about?" class="right-mobile"><ul id="alberta">
-          <li>Alberta family employment tax credit (AFETC)</li>
-          <li>Alberta child benefit (ACB)</li>
-          <li>Alberta climate leadership adjustment rebate (ACLAR)</li>
-        </ul></td>
-      <td data-label="Number"><strong>1-800-959-2809</strong>
-      <!--details class="right-mobile">
+        </details--></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">8:15 am to 5 pm <abbr title="Eastern time">ET</abbr></span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul id="alberta">
+              <li>Alberta family employment tax credit (AFETC)</li>
+              <li>Alberta child benefit (ACB)</li>
+              <li>Alberta climate leadership adjustment rebate (ACLAR)</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-2809</strong> 
+            <!--details class="right-mobile">
           <summary>Wait times and holidays</summary>
           <div class="row">
             <table class="table small-tbl">
@@ -899,136 +908,117 @@ The datatable columns option doesnt seem to work at all and neither does setting
               </tbody>
             </table>
           </div>
-        </details-->
-      </td>
-      <td data-label="Hours">
-          <div class="row">
-            <div class="col-sm-6">Mon to Fri</div>
-            <div class="col-sm-6">8:15 am to 5 pm MT</div>
-          </div>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-        </td>
-    </tr>
-    <tr class="d1">
-      <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
-        <ul id="discuss-payment">
-          <li>Discuss payment arrangements if you can't pay in time</li>
-        </ul></td>
-      <td data-label="Number"><strong>1-888-863-8657</strong>
-      <!--details class="right-mobile">
-          <summary>Wait times and holidays</summary>
-          <div class="row">
-            <table class="table small-tbl">
-              <thead>
-                <tr>
-                  <th class="wb-inv">Day</th>
-                  <th class="wb-inv">Wait times</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td data-label="Day">Mon and Tue</td>
-                  <td data-label="Wait times">Long wait times</td>
-                </tr>
-                <tr>
-                  <td data-label="Day">Wed</td>
-                  <td data-label="Wait times">Medium wait times</td>
-                </tr>
-                <tr>
-                  <td data-label="Day">Thu and Fri</td>
-                  <td data-label="Wait times">Short wait times</td>
-                </tr>
-                <tr>
-                  <td data-label="Day">Sat and Sun</td>
-                  <td data-label="Hours">Closed</td>
-                </tr>
-              </tbody>
-            </table>
-          </div></details-->
-      </td>
-      <td data-label="Hours" >
-          <div class="row">
-            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
-            <div class="col-sm-6"><span class="nowrap">7 am to 11 pm ET</span></div>
-          </div>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-        </td>
-    </tr>
-    <tr class="d2">
-      <td data-label="What do you want to call about?" class="right-mobile"><ul>
-          <li>Discuss how to repay overpaid child and family benefits</li>
-        </ul></td>
-      <td data-label="Number"><strong>1-888-863-8662</strong>
-<!--details class="right-mobile">
-          <summary>Wait times and holidays</summary>
-          <div class="row">
-            <table class="table small-tbl">
-              <thead>
-                <tr>
-                  <th class="wb-inv">Day</th>
-                  <th class="wb-inv">Wait times</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td data-label="Day">Mon and Tue</td>
-                  <td data-label="Wait times">Long wait times</td>
-                </tr>
-                <tr>
-                  <td data-label="Day">Wed</td>
-                  <td data-label="Wait times">Medium wait times</td>
-                </tr>
-                <tr>
-                  <td data-label="Day">Thu and Fri</td>
-                  <td data-label="Wait times">Short wait times</td>
-                </tr>
-                <tr>
-                  <td data-label="Day">Sat and Sun</td>
-                  <td data-label="Hours">Closed</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </details-->
-      </td>
-      <td data-label="Hours">
-          <div class="row">
-            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
-            <div class="col-sm-6"><span class="nowrap">7 am to 11 pm ET</span></div>
-          </div>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-      </td>
-    </tr>
-    <tr class="d1">
-      <td data-label="What do you want to call about?" class="right-mobile"><ul>
-          <li>Arrange payments for other debts and overpayments (CPP, EI, student loans)</li>
-        </ul></td>
-      <td data-label="Number"><strong>1-866-864-5823</strong>
-      <!--details class="right-mobile">
+        </details--></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-sm-6">Mon to Fri</div>
+              <div class="col-sm-6">9 am to 5 pm <abbr title="Mountain time">MT</abbr></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul id="discuss-payment">
+              <li>Discuss payment arrangements if you can't pay in time</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-888-863-8657</strong></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap"><!--7 am to 11 pm <abbr title="Eastern time">ET</abbr-->Temporarily closed</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Discuss how to repay overpaid child and family benefits</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-888-863-8662</strong></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap"><!--7 am to 11 pm <abbr title="Eastern time">ET</abbr-->Temporarily closed</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Arrange payments for CPP overpayments</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-866-864-5823</strong></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap"><!--8 am to 9 pm <abbr title="Eastern time">ET</abbr-->Temporarily closed</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Arrange payments for EI overpayments</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-866-864-5841</strong></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap"><!--8 am to 9 pm <abbr title="Eastern time">ET</abbr-->Temporarily closed</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Arrange payments for Canada student loans (CSL) overpayments</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-866-864-5825</strong></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap"><!--8 am to 9 pm <abbr title="Eastern time">ET</abbr-->Temporarily closed</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li id="phoenix-issues">Get help with a Phoenix related tax issue</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-888-556-5083</strong> 
+            <!--details class="right-mobile">
           <summary>Wait times and holidays</summary>
           <div class="row">
             <table class="table small-tbl">
@@ -1059,209 +1049,65 @@ The datatable columns option doesnt seem to work at all and neither does setting
             </table>
           </div>
 
-        </details-->
-      </td>
-      <td data-label="Hours">
-          <div class="row">
-            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
-            <div class="col-sm-6"><span class="nowrap">8 am to 9 pm ET</span></div>
-          </div>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-      </td>
-    </tr>
-    <tr class="d2">
-      <td data-label="What do you want to call about?" class="right-mobile"><ul>
-          <li id="phoenix-issues">Get help with a Phoenix related tax issue</li>
-        </ul></td>
-      <td data-label="Number"><strong>1-888-556-5083</strong>
-        <!--details class="right-mobile">
-          <summary>Wait times and holidays</summary>
-          <div class="row">
-            <table class="table small-tbl">
-              <thead>
-                <tr>
-                  <th class="wb-inv">Day</th>
-                  <th class="wb-inv">Wait times</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td data-label="Day">Mon and Tue</td>
-                  <td data-label="Wait times">Long wait times</td>
-                </tr>
-                <tr>
-                  <td data-label="Day">Wed</td>
-                  <td data-label="Wait times">Medium wait times</td>
-                </tr>
-                <tr>
-                  <td data-label="Day">Thu and Fri</td>
-                  <td data-label="Wait times">Short wait times</td>
-                </tr>
-                <tr>
-                  <td data-label="Day">Sat and Sun</td>
-                  <td data-label="Hours">Closed</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-        </details-->
-      </td>
-      <td data-label="Hours">
-          <div class="row">
-            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
-            <div class="col-sm-6"><span class="nowrap">9 am to 5 pm ET</span></div>
-          </div>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-      </td>
-    </tr>
-    <tr class="d1">
-      <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
-        <ul id="rrsp-other">
-          <li>Get help with registering a registered savings plan</li>
-          <li>Questions about registered savings plans</li>
-        </ul></td>
-      <td data-label="Number"><strong>1-800-267-3100</strong><br />
-        <br />
-        In Ottawa:<br />
-        <strong>613-954-0419</strong>
-        <!--details class="right-mobile">
-          <summary>Wait times and holidays</summary>
-          <div class="row">
-            <table class="table small-tbl">
-              <thead>
-                <tr>
-                  <th class="wb-inv">Day</th>
-                  <th class="wb-inv">Wait times</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td data-label="Day">Mon and Tue</td>
-                  <td data-label="Wait times">Long wait times</td>
-                </tr>
-                <tr>
-                  <td data-label="Day">Wed</td>
-                  <td data-label="Wait times">Medium wait times</td>
-                </tr>
-                <tr>
-                  <td data-label="Day">Thu and Fri</td>
-                  <td data-label="Wait times">Short wait times</td>
-                </tr>
-                <tr>
-                  <td data-label="Day">Sat and Sun</td>
-                  <td data-label="Hours">Closed</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-        </details-->
-      </td>
-      <td data-label="Hours">
-          <div class="row">
-            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
-            <div class="col-sm-6"><span class="nowrap">8 am to 5 pm ET</span></div>
-          </div>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
-            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
-          </div>
-      </td>  
-    </tr>
-    <tr class="d1">
-      <td data-label="What do you want to call about?" class="right-mobile"><ul>
-          <li id="partxiii">International and non resident PART XIII</li>
-        </ul></td>
-      <td data-label="Number"><strong>1-855-284-5946</strong><br />
-        <br />
-        Outside Canada and the U.S. (operates in Eastern Time)
-        <span class="nowrap"><strong>613-940-8499</strong></span></td>  
-      <td data-label="Hours"><mark>Hours vary</mark></td>
-    </tr>
-    <tr class="d2">
-      <td data-label="What do you want to call about?" class="right-mobile"><ul>
-          <li id="income-tax-rulings">Income Tax Rulings Directorate</li>
-        </ul></td>
-      <td data-label="Number"><strong>613-957-8953</strong></td>  
-      <td data-label="Hours"><mark>Hours vary</mark></td>
-    </tr>
-    <tr class="d1">
-      <td data-label="What do you want to call about?" class="right-mobile"><ul>
-          <li id="double-social-security">If you have an issue with social security payments being double payed because of working internationally</li>
-        </ul></td>
-      <td data-label="Number"><strong>1-877-598-2408</strong></td>
-      <td data-label="Hours"><mark>Hours vary</mark></td>
-    </tr>
-    <tr class="d2">
-      <td data-label="What do you want to call about?" class="right-mobile"><ul>
-          <li id="requirements-to-pay">Follow up on an Requirements To Pay (RTP) form you received</li>
-        </ul></td>
-      <td data-label="Number"><strong>1-800-675-6184</strong></td>
-      <td data-label="Hours"><mark>Hours vary</mark></td>
-    </tr>
-    <tr class="d1">
-      <td data-label="What do you want to call about?" class="right-mobile"><ul>
-          <li id="tax-court">Tax Court of Canada</li>
-        </ul></td>
-      <td data-label="Number"><strong>1-800-927-5499</strong></td>  
-      <td data-label="Hours"><mark>Hours vary</mark></td>
-    </tr>
-    <tr class="d2">
-      <td data-label="What do you want to call about?" class="right-mobile"><ul>
-          <li id="commissioner">Commissioner's Office</li>
-        </ul></td>
-      <td data-label="Number"><strong>613-957-3688</strong></td>  
-      <td data-label="Hours"><mark>Hours vary</mark></td>
-    </tr>
-    <tr class="d1">
-      <td data-label="What do you want to call about?" class="right-mobile"><ul>
-          <li>Retraite Quebec (child assistance in Quebec)</li>
-        </ul></td>
-      <td data-label="Number"><a href="https://www.retraitequebec.gouv.qc.ca/en/nous-joindre/Pages/telephone.aspx">Contact Retraite Québec</a></td>  
-      <td data-label="Hours"><mark>Hours vary</mark></td>
-    </tr>
-    <tr class="d2">
-      <td data-label="What do you want to call about?" class="right-mobile"><ul>
-          <li>Service Canada (about applications for EI, CPP or apprenticeship)</li>
-        </ul></td>
-      <td data-label="Number"><a href="/en/employment-social-development/corporate/contact.html">Contact Service Canada</a></td>
-      <td data-label="Hours"><mark>Hours vary</mark></td>
-    </tr>
-    <tr class="d1">
-      <td data-label="What do you want to call about?" class="right-mobile"><ul>
-          <li>Make an income tax objection or appeal</li>
-          <li>Check the status of an income tax objection</li>
-        </ul></td>
-      <td data-label="Number"><a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/complexity-level-processing-time.html">Numbers by specific objection/appeal</a></td>
-      <td data-label="Hours"><mark>Hours vary</mark></td>
-    </tr>
-      </tbody>
-    
-  </table>
+        </details--></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 5 pm <abbr title="Eastern time">ET</abbr></span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d2" role="row">
+          <td><ul>
+              <li>Counselling services for CRA employees and eligible family members</li>
+              <!--li>Employee Assistance Program</li-->
+            </ul></td>
+          <td><p><strong>1-833-EAP-PAE2</strong> (327-7232)</p>
+            <p>Teletypewriter (TTY) for the hearing impaired: <br><strong>1-833-EAP-7PAE</strong> (327-7723)</p></td>
+          <td><p class="label label-success">Always open </p></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li id="partxiii">International and non resident PART XIII</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-855-284-5946</strong><br>
+            <br>
+            Outside Canada/U.S. call <span class="nowrap">collect <sup id="fn1-6-rf"><a class="fn-lnk" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup></span><br><strong>613-940-8499</strong></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">7:30 am to 6 pm <abbr title="Eastern time">ET</abbr></span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li id="requirements-to-pay">Follow up on a Requirements To Pay (RTP) document</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-675-6184</strong></td>
+          <td data-label="Hours">Hours vary</td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Check the status of an income tax objection</li>
+            </ul></td>
+          <td data-label="Number"><a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/complexity-level-processing-time.html">Numbers by specific objection/appeal</a></td>
+          <td data-label="Hours">Hours vary</td>
+        </tr></tbody>
+    </table><div class="bottom"></div><div class="clear"></div></div>
   </details>
   
+
   <!-- business table -->
   
   <details>
@@ -1269,9 +1115,10 @@ The datatable columns option doesnt seem to work at all and neither does setting
     <table id="myTable3" class="wb-tables table table-striped small" data-wb-tables='{"ordering": false, "paging": false}'>
       <thead>
         <tr class="d2">
-          <th scope="col" class="col-sm-5 col-md-5">What do you want to call about?</th>
-          <th scope="col" class="col-sm-3 col-md-3">Number</th>
-          <th scope="col" class="col-sm-4 col-md-4">Hours of service</th>
+          <th scope="col" class="col-sm-5 col-md-5 sorting_disabled" rowspan="1" colspan="1" style="width: 41.6667px;">What do you want to call about?<span class="sorting-cnt"><span class="sorting-icons"></span></span></th>
+            <th scope="col" class="col-sm-3 col-md-3 sorting_disabled" rowspan="1" colspan="1" style="width: 25px;">Phone number<span class="sorting-cnt"><span class="sorting-icons"></span></span></th>
+            <th scope="col" class="col-sm-4 col-md-4 sorting_disabled" rowspan="1" colspan="1" style="width: 33.3333px;">Hours of service<br>
+            <span>(in local time unless noted)</span><span class="sorting-cnt"><span class="sorting-icons"></span></span></th>
         </tr>
       </thead>
       <tbody>
