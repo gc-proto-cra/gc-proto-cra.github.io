@@ -234,7 +234,37 @@ display: none;
 }
     
     
-    
+    .alert:before {
+ height: 34px;
+ content: "";
+ background-color: #fff;
+ width: 6px;
+ display: inline;
+ margin-top: -1px;
+ margin-left: -26px;
+ position: absolute;
+}
+.alert-success, .alert-info, .alert-warning, .alert-danger {
+ background: #fff !important;
+}
+.alert {
+ border-width: 1px 1px 1px 4px !important;
+ margin-left: 12px;
+ padding-left: 20px;
+ border-width: 0px 0px 0px 6px!important
+}
+.alert-success > :first-child::before, .alert-info > :first-child::before, .alert-warning > :first-child::before, .alert-danger > :first-child::before {
+ font-size: 26px;
+ margin-left: -1.48em;
+ padding: 2px;
+ line-height: 1.1em;
+}
+.alert > :first-child {
+ margin-left: 0em;
+}
+.alert >:first-child::before {
+ margin-right: 0.4em
+}
    
 
     
@@ -266,7 +296,7 @@ display: none;
 
 <h2 id="extend">Extended filing and payment deadlines</h2>
     
-<section class="alert-alt alert-info-alt mrgn-tp-lg">
+<section class="alert alert-warning mrgn-tp-lg">
   <p><strong>Note:</strong> some taxpayers may have received a Notice of Assessment that says the deadline for payment is April 30, 2020, which is incorrect.</p>
 </section>
     
