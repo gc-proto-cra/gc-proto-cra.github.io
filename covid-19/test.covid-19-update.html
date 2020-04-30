@@ -240,31 +240,165 @@ display: none;
     display: block;
 }
 
+    
 
+/* custom hr */
+    h3#hr::after {
+    content: "";
+    display: block;
+    width: 60px;
+    padding-bottom: 8px;
+    padding-top: 5px;
+    border-bottom: .25em solid #af3c43;
+}
+    
+      h3#hrgreen::after {
+    content: "";
+    display: block;
+    width: 60px;
+    padding-bottom: 8px;
+    padding-top: 5px;
+    border-bottom: .25em solid #819A32;
+}
+      h3#hrblue::after {
+    content: "";
+    display: block;
+    width: 60px;
+    padding-bottom: 8px;
+    padding-top: 5px;
+    border-bottom: .25em solid #2E5368;
+}
+    
+
+    
+/* metro nav */
+    
+.gc-navseq {
+    padding-left: 0.9em;
+}
+    
+.gc-navseq * {
+    font-weight: inherit!important;
+    line-height: inherit!important;
+}
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 11.5px;
+}
+    
+    .gc-navseq>li, ul.gc-navseq-fa>li {
+    padding-bottom: 20px;
+    list-style: none;
+    padding-left: 1.2em;
+    border-left: 5px solid #26374a;
+    position: relative;
+}
+    
+    ul.gc-navseq>li>:first-child::before {
+    height: 0.8em;
+    width: 0.8em;
+    margin-left: -2.05em;
+    content: "";
+}
+    
+    
+    .gc-navseq>li>:first-child::before, ul.gc-navseq-fa li span.fa-li {
+    border-radius: 50%;
+    border: 3px solid #26374a;
+    background-color: #fff;
+    float: left;
+    text-decoration: none;
+    box-sizing: content-box;
+    line-height: 1.3em;
+    text-align: center;
+    padding: 3px;
+    font-size: 1.0em;
+    /* transition: width 0.2s, height 0.2s, margin-top 0.2s, font-size 0.2s, margin-left 0.2s, line-height 0.2s; */
+}
+    
+    
 </style>
 
     
 
 	
 <div class="row">
-	<div class="col-md-8">
-	<div class="alert alert-info">
-      <p><!--<span class="fas fa-phone-square fa-3x text-info pull-right"></span>--><strong><span class="nowrap">COVID-19:</span> Important updates</strong></p>
-		<ul>
+	<div class="col-md-12">
+	
+        
+                  <!--<p><strong><span class="nowrap">COVID-19:</span> Important updates</strong></p>-->
+
+        <div class="row mrgn-tp-md">
+        <div class="col-md-4">
+            <h3 id="hr"><a href="/en/revenue-agency/services/benefits/apply-for-cerb-with-cra.html">Apply for CERB</a></h3>
+        <p>You can apply in CRA My Account or over the phone.</p>
+            </div>
+        <div class="col-md-4">
+            <h3 id="hrgreen"><a href="/en/revenue-agency/services/subsidy/emergency-wage-subsidy.html">Apply for CEWS</a></h3>
+        <p>Eligible employers can apply in<br>CRA My Business Account or<br>through a separate online<br> application form.</p>
+            </div>
+            
+            <div class="col-md-4">
+            <h3 id="hrblue"><a href="/en/revenue-agency/services/benefits/apply-for-cerb-with-cra.html">Need help? Call us.</a></h3>
+        <p>Call <strong>1-833-966-2099</strong> to speak to<br> an agent about CERB or CEWS.</p>
+            </div>
+        
+        </div>
+        
+		<!--<ul>
       <li><a href="/en/revenue-agency/services/benefits/apply-for-cerb-with-cra.html">Canada Emergency Response Benefit (CERB)</a>: You can apply in CRA My Account or over the phone.</li>
 		<li><a href="/en/revenue-agency/services/subsidy/emergency-wage-subsidy.html">Canada Emergency Wage Subsidy (CEWS)</a>: Starting April 27, 2020, eligible employers can apply in CRA My Business Account or through a separate online application form.</li>
 			<li>Call <strong>1-833-966-2099</strong> to speak to an agent about CERB or CEWS.</li>
-		</ul>
-    </div>
+		</ul>-->
         
-	<p>Updates on changes to the Canada Revenue Agency (CRA) services, due dates and programs affected by the pandemic.</p>
         
-<h2 class="wb-inv">Affected by COVID-19</h2><div class="row wb-eqht mrgn-tp-lg wb-init wb-eqht-inited" id="wb-auto-5">
+        
+        
+        <section>
+            
+                     <nav aria-label="Section menu">
+                        <h2>CRA and COVID-19 updates</h2>
+                        <!--<p>Updates on changes to the Canada Revenue Agency (CRA) services, due dates and programs affected by the pandemic.</p>-->
+
+                        <ul class="gc-navseq">
+                           <li><a href="who-apply.html">Income tax filing and payment dates<span class="wb-inv">: Canada Emergency Student Benefit (CESB)</span></a> <br>
+                            <p class="mrgn-bttm-0">Extended deadlines for individuals, corporations and trusts<br>
+                            </p>
+                           </li>
+						    <li><a href="how-much.html">How much you can get<span class="wb-inv">: Canada Emergency Student Benefit (CESB)</span></a><br>
+                              Determine how much you can get from the CESB
+                           </li>
+						    
+                           <li><a href="how-apply.html">How to apply<span class="wb-inv">: Canada Emergency Student Benefit (CESB)</span></a><br>
+                              When and how to apply for the CESB
+                           </li>
+						  
+                           <li><a href="keep-payment.html">Keep getting your payments<span class="wb-inv">: Canada Emergency Student Benefit (CESB)</span></a><br>
+                              Find out when the benefit is paid and how you can receive it
+                           </li>
+						   <li><a href="send-payment.html">Return or repay a payment<span class="wb-inv">: Canada Emergency Student Benefit (CESB)</span></a><br>
+                              Find out why and how to return or repay CESB
+                           </li>
+                           <li><a href="contact.html">Contact the CRA<span class="wb-inv">: Canada Emergency Student Benefit (CESB)</span></a><br>
+                              How to contact the CRA with your questions about CESB
+                           </li>
+                            <li><a href="/en/public-health/services/diseases/2019-novel-coronavirus-infection/subscription-form.html">Stay connected<span class="wb-inv">: Canada Emergency Student Benefit (CESB)</span></a> <br>
+                              <span class="label label-info">New</span> Sign up to get email updates on COVID-19 from the Government of Canada 
+                           </li>
+                           
+                        </ul>
+                     </nav>
+                  </section>
+        
+<!-- Covid Update panels -->        
+        
+<span class="wb-inv"><h2 class="wb-inv">Affected by COVID-19</h2><div class="row wb-eqht mrgn-tp-lg wb-init wb-eqht-inited" id="wb-auto-5">
       <div class="col-sm-6">
         <div class="panel panel-primary">
           <div class="panel-body eqht-trgt" style="vertical-align: top; min-height: 265px;">
             <h3 class="mrgn-tp-0"><a class="stretched-link" href="http://gc-proto-cra.github.io/covid-19/covid-19-filing-payment-dates.html">Income tax filing and payment dates</a> </h3>
-            <p class="mrgn-bttm-0">Extended due dates for individuals, corporations and trusts<br></p>
+            <p class="mrgn-bttm-0">Extended deadlines for individuals, corporations and trusts<br></p>
           </div>
         </div>
       </div>
@@ -272,10 +406,10 @@ display: none;
         <div class="panel panel-primary">
           <div class="panel-body eqht-trgt" style="vertical-align: top; min-height: 265px;">
             <h3 class="mrgn-tp-0"><a class="stretched-link" href="https://gc-proto-cra.github.io/covid-19/covid-19-benefits-credits-support-payments">Benefits, credits and financial support</a></h3>
-            <p class="mrgn-bttm-0">Canada Emergency Response Benefit (CERB), Canada Emergency Wage Subsidy (CEWS), changes to existing benefits and credits<br></p>
+            <p class="mrgn-bttm-0">Canada Emergency Response Benefit (CERB), Canada Emergency Wage Subsidy (CEWS), changes to existing benefits and credits <!--(CCB, GSTC, RRIF)--><br></p>
           </div>
         </div>
-      </div>
+      </div> 
       <div class="col-sm-6">
         <div class="panel panel-primary">
           <div class="panel-body eqht-trgt" style="vertical-align: top; min-height: 265px;">
@@ -348,23 +482,34 @@ span class="label label-info small pull-right mrgn-tp-md">New page - March 31</s
         </div>
       </div>-->
 
-    </div>
+    </div> </span>
+        
+        
     
-    <p><strong>Stay connected</strong></p>
+    <!--<h3>Stay connected</h3>
 <ul>
     <li><a href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/subscription-form.html">Sign up to get email updates on COVID-19 from the Government of Canada</a></li>
-        </ul>
-    
-	<p><strong>Additional updates on:</strong></p>
+        </ul>-->
+   
+        <hr> 
+        
+	<h3>Additional updates on:</h3>
 <ul>
 <li><a href="/en/public-health/services/diseases/coronavirus-disease-covid-19.html?utm_campaign=not-applicable&amp;utm_medium=vanity-url&amp;utm_source=canada-ca_coronavirus">Coronavirus disease <span class="nowrap">COVID-19</span></a> (Public Health Agency of Canada)</li>
 <li><a href="/en/services/benefits/ei.html">Employment Insurance (EI) benefits</a> (Service Canada)</li>
-<li><a href="https://www.canada.ca/en/revenue-agency/services/covid-19-employee-supplier/covid-19-employee-info.html">Information for CRA employees</a></li>
-<li><a href="https://www.canada.ca/en/revenue-agency/services/covid-19-employee-supplier/covid-19-supplier-info.html">Information for contracted resources and suppliers</a></li>
+        </ul>
+
+<h3>Information for:</h3>
+<ul>
+<li><a href="https://www.canada.ca/en/revenue-agency/services/covid-19-employee-supplier/covid-19-employee-info.html">CRA employees</a></li>
+<li><a href="https://www.canada.ca/en/revenue-agency/services/covid-19-employee-supplier/covid-19-supplier-info.html">CRA contracted resources and suppliers</a></li>
 </ul>
 </div>
 <div class="col-md-4">
     
+    
+    
+    <!--
     <div class="panel panel-default">
       <header class="panel-heading">
         <h2 class="panel-title"><span class="far fa-newspaper mrgn-rght-md"></span>Latest updates </h2>
@@ -377,11 +522,17 @@ span class="label label-info small pull-right mrgn-tp-md">New page - March 31</s
       <div class="panel-footer">
         <p class="mrgn-bttm-0"><a href="/en/revenue-agency/campaigns/covid-19-update/covid-19-news.html">All CRA <span class="nowrap">COVID-19</span> news</a></p>
       </div>
-    </div>
+    </div> -->
+    
+           
+
+
     
     <!--<a class="btn btn-call-to-action ip-btn" href="https://www.canada.ca/en/revenue-agency/campaigns/covid-19-update/covid-19-news.html"><span class="far fa-newspaper"></span> Latest CRA <span class="nowrap">COVID-19</span> news</a>-->
     
-    	<div class="wb-twitter"> <a class="twitter-timeline" href="https://twitter.com/CanRevAgency" data-tweet-limit="3">Tweets by @CanRevAgency</a> </div>
+    
+    <!-- TWITTER FEED -->
+    	<!--<div class="wb-twitter"> <a class="twitter-timeline" href="https://twitter.com/CanRevAgency" data-tweet-limit="3">Tweets by @CanRevAgency</a> </div>-->
 
 
 </div>
