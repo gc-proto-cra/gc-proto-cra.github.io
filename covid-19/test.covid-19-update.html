@@ -301,7 +301,57 @@ h1#wb-cont::after {
     margin-bottom: -5px;
     font-weight: 400;
 }
-    
+   
+        
+/* custom alert */
+.alert:before {
+ height: 34px;
+ content: "";
+ background-color: #fff;
+ width: 6px;
+ display: inline;
+ margin-top: -1px;
+ margin-left: -26px;
+ position: absolute;
+}
+.alert-success, .alert-info, .alert-warning, .alert-danger {
+ background: #fff !important;
+}
+.alert {
+ border-width: 1px 1px 1px 4px !important;
+ margin-left: 12px;
+ padding-left: 20px;
+ border-width: 0px 0px 0px 6px!important
+}
+.alert-success > :first-child::before, .alert-info > :first-child::before, .alert-warning > :first-child::before, .alert-danger > :first-child::before {
+ font-size: 26px;
+ margin-left: -1.48em;
+ padding: 2px;
+ line-height: 1.1em;
+}
+.alert > :first-child {
+ margin-left: 0em;
+}
+.alert >:first-child::before {
+ margin-right: 0.4em
+}
+        
+        .alert-info-alt {
+    border-left-color: #269abc;
+}
+	
+.alert-alt {
+    margin-left: 10px;
+    border-left: 9px solid #269abc;
+    padding-left: 15px;
+    background-clip: content-box;
+    margin-bottom: 23px;
+}
+        
+        .alert p {
+            margin-bottom: 10px;
+        }
+
    
 </style>
 </head>
@@ -435,7 +485,9 @@ h1#wb-cont::after {
 </section>
     
     
-    
+  <div class="alert alert-info" style="border-left: 6px solid #269abc;">
+<p>Call <Strong>1-833-966-2099</Strong> to speak to an agent about CERB or CEWS.</p>    
+</div>  
     
     
 <div class="row">
@@ -566,7 +618,7 @@ Income tax filing and payment dates</a></h3>
         </div>
             </div>
             
-      <div class="col-md-6">
+     <!-- <div class="col-md-6">
         <div id="cds" class="panel panel-default">
           <div class="panel-body eqht-trgt" style="vertical-align: top; min-height: 265px; padding: 50px;">
             <h3 class="mrgn-tp-0" id="hr">Need help with CERB or CEWS? </h3>
@@ -574,7 +626,7 @@ Income tax filing and payment dates</a></h3>
               
           </div>
         </div>
-            </div>
+            </div>-->
         </div>
         
         
