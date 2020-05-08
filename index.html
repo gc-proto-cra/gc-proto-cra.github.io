@@ -19,6 +19,12 @@
 {"@type":"WebSite","headline":"gc-proto.github.io","url":"http://test.canada.ca/","name":"gc-proto.github.io","description":"Root repo for gc-proto","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+      
+      
       <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -55,6 +61,11 @@
     border-bottom: 1px solid #eaecef;
 }
           
+          
+          i:hover {
+  color: blue;
+}
+          
       </style>
   </head>
   
@@ -85,13 +96,36 @@
     <li><a href="https://gc-proto-cra.github.io/covid-19/test/covid-19-benefits-credits-support-payments-1.html" target="_blank">Benefits, credits and financial support (v1)</a> <span class="badge badge-secondary">CESB</span></li>
     <li><a href="https://gc-proto-cra.github.io/covid-19/test/covid-19-benefits-credits-support-payments-2.html" target="_blank">Benefits, credits and financial support (v2)</a> <span class="badge badge-secondary">CERB vs CEWS</span></li>
     <li><a href="https://gc-proto-cra.github.io/covid-19/test/covid-19-contact-information.html" target="_blank">Contact the CRA</a> <span class="badge badge-secondary">Top questions</span></li>
-    <li><a href="https://gc-proto-cra.github.io/covid-19/test/covid-19-support-employers-cra.html" target="_blank">Support for employers</a></li>
+    <li><a href="https://gc-proto-cra.github.io/covid-19/test/covid-19-support-employers-cra.html" target="_blank">Support for employers</a> <br><span class="small text-secondary"><b>Designers:</b></span>
+        
+        <!--<i class="fa fa-user-circle"></i> 
+        <span class="badge" data-toggle="tooltip" data-placement="top" title="Contributor" style="background: grey; color: azure;"><i class="fas fa-user-astronaut"></i></span>  -->
+        <span data-toggle="tooltip" data-placement="top" title="Nneka"><i class="fas fa-user-astronaut"></i></span>
+    <span data-toggle="tooltip" data-placement="top" title="Andrew"><i class="fas fa-user-astronaut"></i></span>
+    <span data-toggle="tooltip" data-placement="top" title="AJ"><i class="fas fa-user-astronaut"></i></span></li>
+    
 
     <!--<li><a href="https://gc-proto-cra.github.io/covid-19/test.covid-19-filing-payment-dates.html" target="_blank">Income tax filing and payment deadlines</a> <span class="badge badge-primary">Test</span></li>-->
 </ul>
 
       
     </div>
+        
+        <script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+    
+    <script>
+$(document).ready(function(){
+    $(".tip-top").tooltip({placement : 'top'});
+    $(".tip-right").tooltip({placement : 'right'});
+    $(".tip-bottom").tooltip({placement : 'bottom'});
+    $(".tip-left").tooltip({ placement : 'left'});
+});
+</script>
+        
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
     
