@@ -39,7 +39,6 @@
 /* CSS Document */
 h1#wb-cont {
   border-bottom: none;
-  margin-top: .5em;
 }
 /* Remove text decoration for abbr tags (equations) */
 abbr.brdr-0 {
@@ -571,29 +570,6 @@ background-image:url(“none”) !important;
 
 }
 
-/*Stacked H1*/
-/*Also added margin-top: .5em; at line 42 to correct a bump in whitespace*/
-h1 span.stacked {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-left: -9999px;
-}
-
-h1 span.stacked span:nth-child(1) {
-    margin-top: -1.1em;
-}
-
-h1 span.stacked span:nth-child(1), h1 span.stacked span:nth-child(2) {
-    margin-left: 9999px;
-}
-
-h1 span.stacked span:nth-child(2) {
-    font-size: 26px;
-    color: #555;
-    font-weight: 500;
-    margin-bottom: 0.17em;
-}
-
 </style>
 
 </head>
@@ -695,9 +671,21 @@ h1 span.stacked span:nth-child(2) {
 <main property="mainContentOfPage" typeof="WebPageElement">
 
 <div class="container">
+<section class="gc-nav">
+<h1 property="name" id="wb-cont-nav">CRA and COVID-19</h1>
 
-<h1 property="name" id="wb-cont"><span class="stacked" role="text"><span>Changes to taxes and benefits</span>: <span>CRA and COVID-19</span></span></h1>
+<nav aria-label="Section menu">
+<h2 id="gc-navseq-header" class="mrgn-tp-0 hidden-xs hidden-sm"></h2>
+      
+<div class="hidden-sm hidden-xs" data-ajax-replace="/content/canadasite/en/revenue-agency/services/subsidy/emergency-wage-subsidy.html #related-menu>"> </div>
+</nav>
 
+</section>
+
+<section class="gc-nav-section experimental">
+<h1 property="name" id="wb-cont">Changes to taxes and benefits</h1>
+
+</section>    
 </div>
 
 <section class="most-requested mrgn-tp-sm brdr-0">
@@ -714,7 +702,7 @@ h1 span.stacked span:nth-child(2) {
 
 <section class="col-lg-4 col-sm-6 gc-drmt">
 <div style="border:solid 1px #cecece; background:#eee;padding:3px;">	
-<img src="https://gc-proto-cra.github.io/prototypes/653x194-CERB.jpg" class="img-responsive">
+<img src="https://fomag.github.io/covid19/campaigns/653x194-CERB.jpg" class="img-responsive">
 </div>
 <h3><a href="/en/revenue-agency/services/benefits/apply-for-cerb-with-cra.html">Canada Emergency Response Benefit (CERB)</a></h3>
 <p>You can apply in CRA My Account or over the phone.</p>
@@ -722,7 +710,7 @@ h1 span.stacked span:nth-child(2) {
 
 <section class="col-lg-4 col-sm-6 gc-drmt">
 <div style="border:solid 1px #cecece; background:#eee;padding:3px;">
-<img src="https://gc-proto-cra.github.io/prototypes/653x194-Gen-CEWS-CEBA.jpg" class="img-responsive">
+<img src="https://fomag.github.io/covid19/campaigns/653x194-Gen-CEWS-CEBA.jpg" class="img-responsive">
 </div>
 <h3><a href="/en/revenue-agency/services/subsidy/emergency-wage-subsidy.html">Canada Emergency Wage Subsidy (CEWS)</a></h3>
 <p>Starting April 27, 2020, eligible employers can apply in CRA My Business Account or through a separate online application form.</p>
@@ -730,7 +718,7 @@ h1 span.stacked span:nth-child(2) {
 
 <section class="col-lg-4 col-sm-6 gc-drmt">
 <div style="border:solid 1px #cecece; background:#eee;padding:3px;">	
-<img src="https://gc-proto-cra.github.io/prototypes/653x194-CESB.jpg" class="img-responsive">
+<img src="https://fomag.github.io/covid19/campaigns/653x194-CERB.jpg" class="img-responsive">
 </div>
 <h3><a href="/en/revenue-agency/corporate/contact-information/tax-services-offices-tax-centres.html">Canada Emergency Student Benefit (CESB)</a></h3>
 <p>This benefit is for students who do not qualify for the Canada Emergency Response Benefit (CERB) or Employment Insurance (EI).</p>
