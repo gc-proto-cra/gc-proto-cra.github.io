@@ -86,6 +86,10 @@
     background: #2572B4;
 }
 
+#lightblue.badge {
+  background: #d9edf7;
+}
+
 /*alert style start */
 .alert:before {
  height: 34px;
@@ -593,7 +597,7 @@ background-color: #26384a !important
     <tr>
       <th scope="row" class="brdr-rght col-xs-4 col-sm-5 col-md-4"><span class="hidden-xs fas fa-mail-bulk"></span> Filing date for current tax year</th>
       <td class="col-xs-8 col-sm-7 col-md-8"><p><strong>June&nbsp;15, 2020</strong> <span class="badge small">unchanged</span></p>
-        <p>The CRA is seeking T1 returns by June 15th for sole proprietors in order to ensure accurate federal and provincial benefits payments.</p></td>
+        <p>The CRA is seeking T1 returns by June 15, 2020 for sole proprietors in order to ensure accurate federal and provincial benefits payments.</p></td>
     </tr>
     <tr>
       <th scope="row" class="brdr-rght col-xs-4 col-sm-5 col-md-4"><span class="hidden-xs fas fa-money-check-alt"></span> Payment date for current tax year</th>
@@ -668,8 +672,9 @@ background-color: #26384a !important
       <th scope="row" class="brdr-rght col-xs-4 col-sm-5 col-md-4"><span class="hidden-xs fas fa-mail-bulk"></span> Filing date for 2019 tax year</th>
       <td class="col-xs-8 col-sm-7 col-md-8"><p><strong>June&nbsp;1,&nbsp;2020</strong> <span class="badge small" id="blue">Extended date</span> </p>
           <p>Applies to corporations that would otherwise have a filing due date after March 18 and before June&nbsp;1,&nbsp;2020.</p>
-          <p><strong>September&nbsp;1,&nbsp;2020</strong> <span class="badge small" id="blue">Extended date Further extended as of May 20, 2020</span></p>
-          <p>Applies to corporations that would otherwise have a filing deadline after May 31 and before September 1, 2020.</p>
+
+          <p><strong>September&nbsp;1,&nbsp;2020</strong> <span class="badge small" id="blue">Extended date</span> <span class="badge small" id="lightblue">Further extended as of May 20, 2020</span></p>
+          <p>Applies to corporations that would otherwise have a filing deadline in June, July, or August 2020.</p>
         </td>
     </tr>
     <tr>
@@ -694,7 +699,9 @@ background-color: #26384a !important
       <td class="col-xs-8 col-sm-7 col-md-8">
           <p><strong>May&nbsp;1, 2020</strong> <span class="badge small" id="blue">Extended date</span></p>
           <p>Applies to trusts with a tax year end date of December 31, 2019</p>
-		      <p><strong>September&nbsp;1, 2020</strong> <span class="badge small" id="blue">Extended date Further extended as of May 20, 2020</span></p>
+          <p><strong>June 1, 2020</strong> <span class="badge small" id="blue">Extended date</span></p>
+          <p>Applies to trusts that would otherwise have a filing due date in April or May 2020.</p>
+		      <p><strong>September&nbsp;1, 2020</strong> <span class="badge small" id="blue">Extended date</span> <span class="badge small" id="lightblue">Further extended as of May 20, 2020</span></p>
           <p>Applies to trusts that would otherwise have a filing due date after March 30, 2020 and before June 1, 2020.</p></td>
     </tr>
     <tr>
@@ -739,7 +746,7 @@ background-color: #26384a !important
   <tbody>
     <tr>
       <th scope="row" class="brdr-rght col-xs-4 col-sm-5 col-md-4"><span class="hidden-xs fas fa-mail-bulk"></span> Filing date for the 2019 NR4 information return</th>
-      <td class="col-xs-8 col-sm-7 col-md-8"><p><strong>September&nbsp;1, 2020</strong> <span class="badge small" id="blue">Extended date Further extended as of May 20, 2020</span></p></td>
+      <td class="col-xs-8 col-sm-7 col-md-8"><p><strong>September&nbsp;1, 2020</strong> <span class="badge small" id="blue">Extended date</span></p></td>
     </tr>
     <tr>
       <th scope="row" class="brdr-rght col-xs-4 col-sm-5 col-md-4"><span class="hidden-xs fas fa-money-check-alt"></span> Payment date</th>
@@ -785,11 +792,16 @@ background-color: #26384a !important
     </tr>
     <tr>
       <th scope="row" class="brdr-rght col-xs-4 col-sm-5 col-md-4"><span class="hidden-xs fas fa-mail-bulk"></span> Filing date for the 2019 NR4, Statement of Amounts Paid or Credited to Non-Residents of Canada information return</th>
-      <td class="col-xs-8 col-sm-7 col-md-8"><p><strong>September&nbsp;1, 2020</strong> <span class="badge small" id="blue">Extended date Further extended as of May 20, 2020</span></p></td>
+      <td class="col-xs-8 col-sm-7 col-md-8"><p><strong>September&nbsp;1, 2020</strong> <span class="badge small" id="blue">Extended date</span></p></td>
     </tr>
 	   <tr>
       <th scope="row" class="brdr-rght col-xs-4 col-sm-5 col-md-4"><span class="hidden-xs fas fa-mail-bulk"></span> Other information returns, elections, designations and information requests</th>
-      <td class="col-xs-8 col-sm-7 col-md-8"><p><strong>September&nbsp;1, 2020</strong> <span class="badge small" id="blue">Extended date Further extended as of May 20, 2020</span><br>Unless otherwise noted, applies to other information returns, elections, designations and information requests that are due after March&nbsp;18, 2020, and before June 2020.</p>
+      <td class="col-xs-8 col-sm-7 col-md-8">
+        <p><strong>June 1, 2020</strong> <span class="badge small" id="blue">Extended date</span></p>
+        <p>Unless otherwise noted, applies to other information returns, elections, designations and information requests that would have been due after March 18, 2020, and before June 2020.</p>
+
+        <p><strong>September&nbsp;1, 2020</strong> <span class="badge small" id="blue">Extended date</span> <span class="badge small" id="lightblue">Further extended as of May 20, 2020</span></p>
+        <p>Unless otherwise noted, applies to other information returns, elections, designations and information requests that are due.</p>
         <p>Penalties and interest will not be applied if information returns, elections, designations, and information requests are filed and payments are made by September 1, 2020.</p>
         <p>The waiver of penalties and interest for 2019 T1 individual returns and trust returns described above also applies to form T1135 and any elections, forms and schedules that must be filed with the return, provided that they are filed by September 1, 2020.</p>
         <p>For 2019 T2 corporate returns, the extension of the filing deadline applies for all purposes. In particular, the extension also applies to form T106, T1135, and any elections, forms and schedules that must be filed with the corporate return.</p></td>
@@ -804,7 +816,7 @@ background-color: #26384a !important
 	
 <h2 id="pen">Penalties and interest relief for extended deadlines</h2>
 
-	<p>Penalties and interest will not be charged if payments are made by the extended deadlines of September&nbsp;1, 2020. Penalties and interest relief will be considered on a case-by-case basis for income tax balances that are not listed above.</p>
+	<p>Penalties and interest will not be charged if payments are made by the extended deadlines of September&nbsp;1, 2020. This includes the late-filing penalty as long as the return is filed by September 1, 2020. Penalties and interest relief will be considered on a case-by-case basis for income tax balances that are not listed above.</p>
 	
 <h2 id="delays">Processing delays for T1 paper returns – file online instead</h2>
          <h3>Temporary measures for T1 paper returns and adjustment requests – file online instead</h3>
