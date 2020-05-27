@@ -623,13 +623,26 @@ h1 span.stacked span:nth-child(2) {
 
 <div class="container">
 
-<h1 property="name" id="wb-cont"><span class="stacked" role="text"><span>Changes to taxes and benefits</span>: <span>CRA and COVID-19</span></span></h1>
+<h1 property="name" id="wb-cont"><span class="stacked" role="text">
+  <!--span>Changes to taxes and benefits</span>: <span>CRA and COVID-19</span></span-->
+</h1>
 
 </div>
 
+<style>
+  input[type=button], input[type=reset], input[type=submit] {
+    height: 0;
+  }
+</style>  
+
 <section class="most-requested mrgn-tp-sm brdr-0">
 <div class="container">
+
 <p>Please click the Back button to return to the previous page.</p>  
+
+<form>
+  <input class="btn btn-call-to-action ip-btn" type="button" value="Go back!" onclick="history.back()">
+</form>
 
 <!--<a class="btn btn-call-to-action ip-btn" href="https://gc-proto-cra.github.io/prototypes/covid-19-update-mini-6-test.html">Please click here to return to the landing page</a>-->
     </div>
