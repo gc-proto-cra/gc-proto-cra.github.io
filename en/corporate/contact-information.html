@@ -1,0 +1,1998 @@
+﻿<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head>
+<base href="https://www.canada.ca/">
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+    wet-boew.github.io/etc/designs/canada/wet-boew/License-en.html / wet-boew.github.io/etc/designs/canada/wet-boew/Licence-fr.html -->
+<title>Contact the Canada Revenue Agency</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="description" content="File income tax, get the income tax and benefit package, and check the status of your tax refund. Tax slips, Personal income, Tax deductions, credits, and expenses, Tax refunds, Tax payments, Notices of assessment, Personal income tax rates, More personal income tax.">
+<meta name="robots" content="noindex, nofollow">
+<!--[if gte IE 9 | !IE ]><!-->
+<link href="/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+<script src="//assets.adobedtm.com/caacec67651710193d2331efef325107c23a0145/satelliteLib-78cf42deb149c9766cbaaa6151e252b9b67c0200.js"></script>
+<link rel="stylesheet" href="/etc/designs/canada/clientlib-all.min.css" type="text/css">
+<link rel="stylesheet" href="/etc/designs/canada/wet-boew/css/wet-boew.min.css"/>
+<link rel="stylesheet" href="/etc/designs/canada/wet-boew/css/theme.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+<style>
+/* style this like call-to-action button */
+.btn-default {
+  font-size: 1.1em;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  padding: .58em 1em;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* shared components */
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background-color: #eee;
+  border: 2px solid #333;
+}
+/* custom checkboxes */
+
+/* for checks, container */
+.container-checks {
+  display: block;
+  position: relative;
+  padding-left: 55px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* hide default checkbox */
+.container-checks input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* mouse-over, grey */
+.container-checks:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.container-checks input:checked ~ .checkmark {
+  background-color: #318000;
+}
+/* create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* show the checkmark when checked */
+.container-checks input:checked ~ .checkmark:after {
+  display: block;
+}
+/* style the checkmark/indicator */
+.container-checks .checkmark:after {
+  left: 14px;
+  top: 5px;
+  width: 10px;
+  height: 22px;
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* extend zebra strips to whole container */
+
+.edge-color {
+  background-color: #f0f0f0;
+  display: inline-block;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 15px;
+}
+
+/* extend zebra strips to whole container in a data table */
+
+.dataTables_wrapper {
+  margin-left: -22px;
+  margin-right: -22px;
+}
+
+.dataTables_filter {
+  margin-left: 8px;
+}
+
+/* this removes the white background in tables within a td but it only works without the wb-tables class */
+/* i inlined styled it for now, cause I can't figure out how to embed/cascade the css to make it stick */
+/* it has to be set at the tr level */
+
+.table .table {
+  background-color: transparent ! important;
+}
+
+.small-tbl tr {
+  background-color: transparent ! important;
+  margin-left: -10px;
+}
+
+table {
+  table-layout: fixed;
+}
+
+table th, table td {
+  overflow: hidden;
+}
+
+</style>
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+    <link href="/etc/designs/canada/wet-boew/assets/favicon.ico" rel="shortcut icon" />
+    
+    <link rel="stylesheet" href="/etc/designs/canada/wet-boew/css/ie8-theme.min.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/etc/designs/canada/wet-boew/js/ie8-wet-boew.min.js"></script>
+    <![endif]-->
+<!--[if lte IE 9]>
+    
+    <![endif]-->
+<noscript>
+<link rel="stylesheet" href="/etc/designs/canada/wet-boew/css/noscript.min.css" />
+</noscript>
+<!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
+<script>dataLayer1 = [];</script>
+<!-- End Google Tag Manager -->
+</head>
+
+<!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
+<noscript>
+<iframe title="Google Tag Manager" src="/www.googletagmanager.com/ns.html?id=GTM-TLGQ9K" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer1'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer1','GTM-TLGQ9K');</script>
+<!-- End Google Tag Manager -->
+<ul id="wb-tphp">
+  <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
+  <li class="wb-slc"><a class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+</ul>
+<header role="banner">
+  <div id="wb-bnr" class="container">
+    <section id="wb-lng" class="visible-md visible-lg text-right">
+      <h2 class="wb-inv">Language selection</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-inline margin-bottom-none">
+            <li><a lang="fr" href="content-fr.html">Français</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="row">
+      <div class="brand col-xs-8 col-sm-9 col-md-6"><a href="/en.html"><img src="/etc/designs/canada/wet-boew/assets/sig-blk-en.svg" alt=""><span class="wb-inv">Government of Canada /<span lang="fr">Gouvernement du Canada</span></span></a></div>
+      <section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
+        <h2>Search and menus</h2>
+        <ul class="list-inline text-right chvrn">
+          <li><a href="#mb-pnl" title="Search and menus" aria-controls="mb-pnl" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Search and menus</span></span></span></a></li>
+        </ul>
+        <div id="mb-pnl"></div>
+      </section>
+      <section id="wb-srch" class="col-xs-6 text-right visible-md visible-lg">
+        <h2>Search</h2>
+        <form action="/en/revenue-agency/search.html" method="get" name="cse-search-box" role="search" class="form-inline">
+          <div class="form-group">
+            <label for="wb-srch-q" class="wb-inv">Search website</label>
+            <input name="cdn" value="canada" type="hidden"/>
+            <input name="st" value="s" type="hidden"/>
+            <input name="num" value="10" type="hidden"/>
+            <input name="langs" value="en" type="hidden"/>
+            <input name="st1rt" value="1" type="hidden"/>
+            <input name="s5bm3ts21rch" value="x" type="hidden"/>
+            <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="27" maxlength="150" placeholder="Search CRA">
+            <datalist id="wb-srch-q-ac">
+              <!--[if lte IE 9]><select><![endif]-->
+              <!--[if lte IE 9]></select><![endif]-->
+            </datalist>
+          </div>
+          <div class="form-group submit">
+            <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+  <nav class="gcweb-v2 gcweb-menu" typeof="SiteNavigationElement">
+    <div class="container">
+      <h2 class="wb-inv">Menu</h2>
+      <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main</span>Menu<span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+      <ul role="menu" aria-orientation="vertical" data-ajax-replace="https://www.cra-arc.gc.ca/test/uxssa/pit/en/sitemenu-v2-en.html">
+        <li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/jobs.html">Jobs and the workplace</a></li>
+        <li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
+        <li role="none presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/">Travel and tourism</a></li>
+        <li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business.html">Business and industry</a></li>
+        <li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+        <li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/health.html">Health</a></li>
+        <li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.cra-arc.gc.ca/test/uxssa/pit/en/services/taxes.html">Taxes</a></li>
+        <li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
+        <li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
+        <li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
+        <li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
+        <li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
+        <li role="none presentation"><a role="menuitem" tabindex="-1" href="http://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
+        <li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/finance.html">Money and finances</a></li>
+        <li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/finance.html">Science and innovation</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav role="navigation" id="wb-bc" property="breadcrumb">
+    <h2>You are here:</h2>
+    <div class="container">
+      <ol class="breadcrumb">
+        <li>Home</li>
+        <li><!--<a href="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency.html">-->Canada Revenue Agency<!--</a>--></li>
+      </ol>
+    </div>
+  </nav>
+  <div data-ajax-replace="/bin/canada/alert/messages.en.html" class="original"></div>
+</header>
+
+<body vocab="http://schema.org/" typeof="WebPage">
+<main role="main" property="mainContentOfPage">
+
+<!-- NOTE: on a normal page the container class is set on the main tag. The edge class needs to be on it's own container to work correctly so each section needs it's own container class to keep the content properly aligned. -->
+    
+    <div class="container-fluid row-no-gutters bg-warning">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="mrgn-tp-0 mrgn-bttm-0">
+					<div class="row">
+						<div class="col-xs-3 col-sm-2 col-md-1 text-center">
+							<font class="fas-2x glyphicon glyphicon-warning-sign mrgn-tp-lg mrgn-bttm-lg" aria-hidden="true" color="#DF7200"></font>
+						</div>
+						<div class="col-xs-9 col-sm-10 col-md-11">
+							<h2 class="h5"><span class="nowrap">COVID-19:</span> Contacting the Canada Revenue Agency</h2>
+							<ul>
+							<li>Call <strong>1-833-966-2099</strong> to speak to an agent about the Canada Emergency Response Benefit (CERB), Canada Emergency Student Benefit (CESB), or Canada Emergency Wage Subsidy (CEWS).</li>
+				            <li>Some call centres may have reduced hours, longer wait times, or suspended services. Find more information on <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">call centre service changes</a> during the COVID-19 pandemic.</li>
+<li>If you have questions about Employment insurance (EI) or your My Service Canada Account, please contact <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Employment and Social Development Canada</a>.</li>
+								</ul>
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+  <h1 property="name" id="wb-cont" dir="ltr">Contact the Canada Revenue Agency</h1>
+    
+ 
+    
+  <section class="col-md-12 mrgn-bttm-lg border-bottom">
+    <div class="row">
+      <h2 class="h3">Most requested</h2>
+      <div class="wb-eqht row wb-init wb-eqht-inited" id="wb-auto-5">
+        <div class="col-md-4" style="vertical-align: top; min-height: 58px;">
+          <section>
+            <h3 class="h5"> <a href="https://gc-proto-cra.github.io/en/revenue-agency/services/benefits/apply-for-cerb-with-cra.html">Apply for the CERB</a> </h3>
+          </section>
+        </div>
+
+
+<div class="col-md-4" style="vertical-align: top; min-height: 58px;">
+          <section>
+            <h3 class="h5"> <a href="https://gc-proto-cra.github.io/en/revenue-agency/services/subsidy/emergency-wage-subsidy.html">Apply for the CEWS</a> </h3>
+          </section>
+		  </div>
+		<div class="col-md-4" style="vertical-align: top; min-height: 58px;">
+          <section>
+            <h3 class="h5"> <a href="https://gc-proto-cra.github.io/en/revenue-agency/services/benefits/emergency-student-benefit.html">Apply for the CESB</a> </h3>
+          </section>
+		  </div>
+        <div class="col-md-4" style="vertical-align: top; min-height: 58px;">
+          <section>
+            <h3 class="h5"> <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Issues with payments to the CRA</a> </h3>
+          </section>
+        </div>
+        <div class="col-md-4" style="vertical-align: top; min-height: 58px;">
+          <section>
+            <h3 class="h5"> <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Change address or details</a> </h3>
+          </section>
+        </div>
+        <div class="col-md-4" style="vertical-align: top; min-height: 58px;">
+          <section>
+            <h3 class="h5"> <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Direct deposit and banking</a> </h3>
+          </section>
+        </div>
+        <div class="col-md-4" style="vertical-align: top; min-height: 58px;">
+          
+            <section>
+            <h3 class="h5"> <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Get in-person tax help</a> </h3>
+          
+          </section>
+        </div>
+<div class="col-md-4" style="vertical-align: top; min-height: 58px;">
+          <section>
+            <h3 class="h5"> <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Report a scam</a> </h3>
+          </section>
+        </div>      </div>
+      <!-- wb-eq row --> 
+    </div>
+    <!-- row --> 
+  </section>
+    
+    
+</div>
+    
+    
+
+    
+<div class="edge-color">
+  <div class="container">
+    <div class="row">
+        <!--<h2 class="h3">Find a phone number</h2>
+        <p>Find the telephone number or answer you need.</p>
+        <a href="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency/corporate/find-contact.html" class="btn btn-call-to-action mrgn-bttm-md">Find a phone number</a> </div>-->
+      <div class="col-lg-6">
+        <h2 class="h3">Find a mailing address</h2>
+        <p>Find the mailing addresses for your region.</p>
+        <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html" class="btn btn-default mrgn-tp-md mrgn-bttm-md">Find an address</a> </div>
+    </div>
+  </div>
+</div>
+    
+<div class="container">
+<div class="row">
+<section class="col-md-12 mrgn-bttm-lg">
+<h2 class="h3">Contacts for personal taxes</h2>
+<div class="wb-eqht row">
+  <div class="col-md-4">
+    <section>
+      <h3 class="h5"> <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Issues with My Account</a> </h3>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section>
+      <h3 class="h5"> <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html" rel="external">Get a Notice of Assessment</a> </h3>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section>
+      <h3 class="h5"> <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html" rel="external">Get a GST/HST credit payment</a> </h3>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section>
+      <h3 class="h5"> <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Get a proof of income (option 'C')</a></h3>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section>
+      <h3 class="h5"> <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Check your tax refund status</a></h3>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section>
+      <h3 class="h5"> <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Canada child benefit payments</a></h3>
+    </section>
+  </div>
+</div>
+<!-- wb-eq row -->
+    </section>
+    </div>
+<!-- row -->
+     </div>
+    
+    
+    
+<div class="edge-color">
+  <div class="container">
+    <div class="row">
+      <section class="col-md-12 mrgn-bttm-lg">
+        <h2 class="h3">Contacts for business taxes</h2>
+        <div class="wb-eqht row">
+          <div class="col-md-4">
+            <section>
+              <h3 class="h5"> <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Issues with My Business Account</a> </h3>
+            </section>
+          </div>
+          <div class="col-md-4">
+            <section>
+              <h3 class="h5"> <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html" rel="external">Get an access code (business)</a> </h3>
+            </section>
+          </div>
+          <div class="col-md-4">
+            <section>
+              <h3 class="h5"> <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Charging GST/HST</a> </h3>
+            </section>
+          </div>
+          <div class="col-md-4">
+            <section>
+              <h3 class="h5"> <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">EFILE Helpdesk</a> </h3>
+            </section>
+          </div>
+          <div class="col-md-4">
+            <section>
+              <h3 class="h5"> <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Check my instalment balance</a> </h3>
+            </section>
+          </div>
+          <div class="col-md-4">
+            <section>
+              <h3 class="h5"> <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Get a business number (register)</a> </h3>
+            </section>
+          </div>
+        </div>
+        <!-- wb-eq row --> 
+        
+      </section>
+      <!-- col-md-12 --> 
+      
+    </div>
+    <!-- row --> 
+    
+  </div>
+</div>
+<div class="container">
+  <h2 class="h3">Assistance by telephone</h2>
+  <h3 class="h4">Step 1. If you’re calling about your account, have the following information ready</h3>
+  <div class="mrgn-tp-lg beforeCall" style="">
+    <label class="container-checks">Social Insurance Number (or business number)
+      <input class="btnCheck" type="checkbox">
+      <span class="checkmark"></span> </label>
+    <label class="container-checks">Full name and date of birth (or business name)
+      <input class="btnCheck" type="checkbox">
+      <span class="checkmark"></span> </label>
+    <label class="container-checks">Your complete address (or complete business address)
+      <input class="btnCheck" type="checkbox">
+      <span class="checkmark"></span> </label>
+    <label class="container-checks">Your personal (or business) account open or an assessed return, notice of assessment, reassessment, or other tax document
+      <input class="btnCheck" type="checkbox">
+      <span class="checkmark"></span> </label>
+    <p><span id="check-message">
+      <label class="label label-danger">You need all of the above to call about an account</label>
+      </span></p>
+  </div>
+  <h3 class="h4">Step 2. Find the number you need to call</h3>
+  
+  <!-- ind table -->
+
+<details>
+    <summary>Telephone numbers for personal taxes, benefits and trusts</summary>
+    <div id="tbl-personal_wrapper" class="dataTables_wrapper no-footer"><div class="top"><div id="tbl-personal_filter" class="dataTables_filter"><label>Filter items<input type="search" class="" placeholder="" aria-controls="tbl-personal"></label></div><div class="dataTables_info" id="tbl-personal_info" role="status" aria-live="polite">Showing 1 to 24 of 24 entries</div></div><table id="tbl-personal" class="wb-tables table table-striped small table-condensed wb-init wb-tables-inited dataTable no-footer" data-wb-tables="{&quot;ordering&quot;: false, &quot;paging&quot;: false}" aria-describedby="tbl-personal_info" role="grid">
+      <caption class="wb-inv">
+      table 1
+      </caption>
+      <thead>
+        <tr role="row">
+            <th scope="col" class="col-sm-5 col-md-5 sorting_disabled" rowspan="1" colspan="1" style="width: 41.6667px;">What do you want to call about?<span class="sorting-cnt"><span class="sorting-icons"></span></span></th>
+            
+            <th scope="col" class="col-sm-3 col-md-3 sorting_disabled" rowspan="1" colspan="1" style="width: 25px;">Phone number<span class="sorting-cnt"><span class="sorting-icons"></span></span></th>
+            
+            <th scope="col" class="col-sm-4 col-md-4 sorting_disabled" rowspan="1" colspan="1" style="width: 33.3333px;">Hours of service<br>
+            <span>(in local time unless noted)</span><span class="sorting-cnt"><span class="sorting-icons"></span></span></th>
+          </tr>
+      </thead>
+      <tbody>
+                
+		
+
+        
+      <tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Order 2019 tax packages (your SIN is needed to use this service)</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-855-330-3305</strong>
+            <p class="small"><span class="glyphicon glyphicon-time"></span> No wait times</p></td>
+          <td data-label="Hours"><p class="label label-success">Always open (automated line)</p></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li id="tax-account-balance">Check tax account balance</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-866-474-8272</strong>
+            <p class="small"><span class="glyphicon glyphicon-time"></span> No wait times</p></td>
+          <td data-label="Hours"><p class="label label-success">Always open (automated line)</p></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"> Use the automated line to:
+            <ul id="benefits">
+              <li id="proof-income">Get Proof of Income (Option C print-out)</li>
+              <li id="remittance-voucher">Request remittance voucher</li>
+              <li id="tfsa-rrsp-other">Tax-free savings account (TFSA) contribution room</li>
+              <li id="contribution-room">Unused RRSP contributions to claim</li>
+              <li>Registered retirement savings plan (RRSP) contributions this year</li>
+              <li>Estimated GST/HST credit payment amount, three weeks before next payment</li>
+              <li>Estimated Child Benefit payment amount, two weeks before next payment</li>
+              <li>Find out if you are eligible for the Canada child benefit (CCB), and the GST/HST credit, as well as the dates you can expect to receive them</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-267-6999</strong>
+            <p class="small"><span class="glyphicon glyphicon-time"></span> No wait times</p></td>
+          <td data-label="Hours"><p class="label label-success">Always open (automated line)</p></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Check status of 2018 tax return</li>
+              <li>Estimated 2018 refund amount</li>
+              <li>When to expect your 2018 refund</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-1956</strong>
+            <p class="small"><span class="glyphicon glyphicon-time"></span> No wait times</p></td>
+          <td data-label="Hours"><p class="label label-success">Always open (automated line)</p></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Make a payment arrangement for personal income taxes through an automated service</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-866-256-1147</strong></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">7 am to 10 pm <abbr title="Eastern time">ET</abbr></span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul id="benefits-line">
+              <li>Canada child benefit (CCB), and related benefits</li>
+              <li>GST/HST credit</li>
+              <li>Get help with child disability benefit</li>
+              <li>Change marital status</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-387-1193</strong><br>
+            <section id="zxcvba" class="small nowrap"> <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#benefit-en" class="wb-init wb-data-ajax-replace-inited" id="wb-auto-6"><span id="benefit-en"><strong>Wait time:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--</span></span></section>
+            <section class="small wb-init wb-data-ajax-replace-inited" data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#updateDate-en" id="wb-auto-7"><span id="updateDate-en"><strong>Updated:</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;N/A</span></section>
+            <br>
+            Yukon, Northwest Territories and Nunavut: <br>
+            <strong>1-866-426-1527</strong></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li id="issues-my-account">Help with online services such as My Account, NETFILE and Represent a Client or family member</li>
+              <li>Get a security code for My Account</li>
+              <li>Help if you are locked out of your online account</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-8281</strong><br>
+            <section id="zxcvba" class="small nowrap"> <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#individual-en" class="wb-init wb-data-ajax-replace-inited" id="wb-auto-8"><span id="individual-en"><strong>Wait time:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--</span></span></section>
+            <section class="small wb-init wb-data-ajax-replace-inited" data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#updateDate-en" id="wb-auto-9"><span id="updateDate-en"><strong>Updated:</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;N/A</span></section>
+            <br>
+            Yukon, Northwest Territories and Nunavut: <br>
+            <strong>1-866-426-1527</strong><br>
+            <br>
+            Outside Canada/U.S. call collect<sup id="fn1-0-rf"><a class="fn-lnk" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup><br>
+            <span class="nowrap"><strong>613-940-8495</strong></span></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 9 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul id="ite">
+              <li>Get copy of notice of assessment</li>
+              <li id="individuals-line">Questions about personal income tax file</li>
+              <li id="first-time-income-tax">Issues with filing for the first time</li>
+              <li id="get-form">Get a tax form or publication</li>
+              <li>How to report income on your personal income tax return</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-8281</strong><br>
+            <section id="zxcvbe" class="small nowrap"> <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#individual-en" class="wb-init wb-data-ajax-replace-inited" id="wb-auto-10"><span id="individual-en"><strong>Wait time:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--</span></span></section>
+            <section class="small wb-init wb-data-ajax-replace-inited" data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#updateDate-en" id="wb-auto-11"><span id="updateDate-en"><strong>Updated:</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;N/A</span></section>
+            <br>
+            Yukon, Northwest Territories and Nunavut: <br>
+            <strong>1-866-426-1527</strong><br>
+            <br>
+            Outside Canada/U.S. call collect<sup id="fn1-1-rf"><a class="fn-lnk" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup><br>
+            <span class="nowrap"><strong>613-940-8495</strong></span></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 9 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Set up direct deposit or change bank account information</li>
+            </ul>
+            <p>You will also need:</p>
+            <ul>
+              <li>Your three-digit bank (financial institution) number, five-digit transit number, and your account number</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-8281</strong><br>
+            <section id="zxcvbb" class="small nowrap"> <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#individual-en" class="wb-init wb-data-ajax-replace-inited" id="wb-auto-12"><span id="individual-en"><strong>Wait time:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--</span></span></section>
+            <section class="small wb-init wb-data-ajax-replace-inited" data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#updateDate-en" id="wb-auto-13"><span id="updateDate-en"><strong>Updated:</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;N/A</span></section>
+            <br>
+            Yukon, Northwest Territories and Nunavut: <br>
+            <strong>1-866-426-1527</strong><br>
+            <br>
+            Outside Canada/U.S. call collect<sup id="fn1-2-rf"><a class="fn-lnk" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup><br>
+            <span class="nowrap"><strong>613-940-8495</strong></span></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 9 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Change address</li>
+              <li>Update name on file</li>
+              <li>Change marital status</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-8281</strong><br>
+            <section id="zxcvbc" class="small nowrap"> <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#individual-en" class="wb-init wb-data-ajax-replace-inited" id="wb-auto-14"><span id="individual-en"><strong>Wait time:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--</span></span></section>
+            <section class="small wb-init wb-data-ajax-replace-inited" data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#updateDate-en" id="wb-auto-15"><span id="updateDate-en"><strong>Updated:</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;N/A</span></section>
+            <br>
+            Yukon, Northwest Territories and Nunavut: <br>
+            <strong>1-866-426-1527</strong><br>
+            <br>
+            Outside Canada/U.S. call collect<sup id="fn1-3-rf"><a class="fn-lnk" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup><br>
+            <span class="nowrap"><strong>613-940-8495</strong></span></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 9 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul id="help-payment">
+              <li>Help making a payment</li>
+              <li id="business-instalments">Questions on instalments (paying taxes as you earn income)</li>
+              <li>Move a payment to a business account</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-8281</strong><br>
+            <section id="zxcvbd" class="small nowrap"> <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#individual-en" class="wb-init wb-data-ajax-replace-inited" id="wb-auto-16"><span id="individual-en"><strong>Wait time:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--</span></span></section>
+            <section class="small wb-init wb-data-ajax-replace-inited" data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#updateDate-en" id="wb-auto-17"><span id="updateDate-en"><strong>Updated:</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;N/A</span></section>
+            <br>
+            Yukon, Northwest Territories and Nunavut:<br>
+            <strong>1-866-426-1527</strong><br>
+            <br>
+            Outside Canada/U.S. call collect<sup id="fn1-4-rf"><a class="fn-lnk" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup><br>
+            <span class="nowrap"><strong>613-940-8495</strong></span></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 9 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li id="trusts">Trusts</li>
+              <li>Registered Retirement Savings plan (RRSP)</li>
+              <li id="home-buyers-plan">Home Buyers Plan (HBP)</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-8281</strong><br>
+            <section id="zxcvbf" class="small nowrap"> <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#individual-en" class="wb-init wb-data-ajax-replace-inited" id="wb-auto-18"><span id="individual-en"><strong>Wait time:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--</span></span></section>
+            <section class="small wb-init wb-data-ajax-replace-inited" data-ajax-replace="/en/revenue-agency/corporate/contact-information/wait-times.html#updateDate-en" id="wb-auto-19"><span id="updateDate-en"><strong>Updated:</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;N/A</span></section>
+            <br>
+            Yukon, Northwest Territories and Nunavut: <br>
+            <strong>1-866-426-1527</strong><br>
+            <br>
+            Outside Canada/U.S. call collect<sup id="fn1-5-rf"><a class="fn-lnk" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup><br>
+            <span class="nowrap"><strong>613-940-8495</strong></span></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 9 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 5 pm</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul id="ontario">
+              <li>Ontario trillium benefit (OTB) payment—including Ontario sales tax credit (OSTC), Ontario energy and property tax credit (OEPTC), and Northern Ontario energy credit (NOEC)</li>
+              <li>Ontario senior homeowners' property tax grant (OSHPTG) payment</li>
+              <li>Ontario sales tax transition benefit (OSTTB)</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-877-627-6645</strong> 
+            <!--details class="right-mobile">
+          <summary>Wait times and holidays</summary>
+          <div class="row">
+            <table class="table small-tbl">
+              <thead>
+                <tr>
+                  <th class="wb-inv">Day</th>
+                  <th class="wb-inv">Wait times</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Day">Mon and Tue</td>
+                  <td data-label="Wait times">Long wait times</td>
+                </tr>
+                <tr>
+                  <td data-label="Day">Wed</td>
+                  <td data-label="Wait times">Medium wait times</td>
+                </tr>
+                <tr>
+                  <td data-label="Day">Thu and Fri</td>
+                  <td data-label="Wait times">Short wait times</td>
+                </tr>
+                <tr>
+                  <td data-label="Day">Sat and Sun</td>
+                  <td data-label="Hours">Closed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details--></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">8:15 am to 5 pm <abbr title="Eastern time">ET</abbr></span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul id="alberta">
+              <li>Alberta family employment tax credit (AFETC)</li>
+              <li>Alberta child benefit (ACB)</li>
+              <li>Alberta climate leadership adjustment rebate (ACLAR)</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-2809</strong> 
+            <!--details class="right-mobile">
+          <summary>Wait times and holidays</summary>
+          <div class="row">
+            <table class="table small-tbl">
+              <thead>
+                <tr>
+                  <th class="wb-inv">Day</th>
+                  <th class="wb-inv">Wait times</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Day">Mon and Tue</td>
+                  <td data-label="Wait times">Long wait times</td>
+                </tr>
+                <tr>
+                  <td data-label="Day">Wed</td>
+                  <td data-label="Wait times">Medium wait times</td>
+                </tr>
+                <tr>
+                  <td data-label="Day">Thu and Fri</td>
+                  <td data-label="Wait times">Short wait times</td>
+                </tr>
+                <tr>
+                  <td data-label="Day">Sat and Sun</td>
+                  <td data-label="Hours">Closed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details--></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-sm-6">Mon to Fri</div>
+              <div class="col-sm-6">9 am to 5 pm <abbr title="Mountain time">MT</abbr></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul id="discuss-payment">
+              <li>Discuss payment arrangements if you can't pay in time</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-888-863-8657</strong></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap"><!--7 am to 11 pm <abbr title="Eastern time">ET</abbr-->Temporarily closed</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Discuss how to repay overpaid child and family benefits</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-888-863-8662</strong></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap"><!--7 am to 11 pm <abbr title="Eastern time">ET</abbr-->Temporarily closed</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Arrange payments for CPP overpayments</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-866-864-5823</strong></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap"><!--8 am to 9 pm <abbr title="Eastern time">ET</abbr-->Temporarily closed</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Arrange payments for EI overpayments</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-866-864-5841</strong></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap"><!--8 am to 9 pm <abbr title="Eastern time">ET</abbr-->Temporarily closed</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Arrange payments for Canada student loans (CSL) overpayments</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-866-864-5825</strong></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap"><!--8 am to 9 pm <abbr title="Eastern time">ET</abbr-->Temporarily closed</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li id="phoenix-issues">Get help with a Phoenix related tax issue</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-888-556-5083</strong> 
+            <!--details class="right-mobile">
+          <summary>Wait times and holidays</summary>
+          <div class="row">
+            <table class="table small-tbl">
+              <thead>
+                <tr>
+                  <th class="wb-inv">Day</th>
+                  <th class="wb-inv">Wait times</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Day">Mon and Tue</td>
+                  <td data-label="Wait times">Long wait times</td>
+                </tr>
+                <tr>
+                  <td data-label="Day">Wed</td>
+                  <td data-label="Wait times">Medium wait times</td>
+                </tr>
+                <tr>
+                  <td data-label="Day">Thu and Fri</td>
+                  <td data-label="Wait times">Short wait times</td>
+                </tr>
+                <tr>
+                  <td data-label="Day">Sat and Sun</td>
+                  <td data-label="Hours">Closed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </details--></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">9 am to 5 pm <abbr title="Eastern time">ET</abbr></span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d2" role="row">
+          <td><ul>
+              <li>Counselling services for CRA employees and eligible family members</li>
+              <!--li>Employee Assistance Program</li-->
+            </ul></td>
+          <td><p><strong>1-833-EAP-PAE2</strong> (327-7232)</p>
+            <p>Teletypewriter (TTY) for the hearing impaired: <br><strong>1-833-EAP-7PAE</strong> (327-7723)</p></td>
+          <td><p class="label label-success">Always open </p></td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li id="partxiii">International and non resident PART XIII</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-855-284-5946</strong><br>
+            <br>
+            Outside Canada/U.S. call <span class="nowrap">collect <sup id="fn1-6-rf"><a class="fn-lnk" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup></span><br><strong>613-940-8499</strong></td>
+          <td data-label="Hours"><div class="row">
+              <div class="col-md-6"><span class="nowrap">Mon to Fri</span></div>
+              <div class="col-sm-6"><span class="nowrap">7:30 am to 6 pm <abbr title="Eastern time">ET</abbr></span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+              <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+            </div></td>
+        </tr><tr class="d2" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li id="requirements-to-pay">Follow up on a Requirements To Pay (RTP) document</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-675-6184</strong></td>
+          <td data-label="Hours">Hours vary</td>
+        </tr><tr class="d1" role="row">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Check the status of an income tax objection</li>
+            </ul></td>
+          <td data-label="Number"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Numbers by specific objection/appeal</a></td>
+          <td data-label="Hours">Hours vary</td>
+        </tr></tbody>
+    </table><div class="bottom"></div><div class="clear"></div></div>
+  </details>
+  
+
+  <!-- business table -->
+  
+  <details>
+    <summary>Telephone numbers for businesses</summary>
+    <table id="myTable3" class="wb-tables table table-striped small" data-wb-tables='{"ordering": false, "paging": false}'>
+      <thead>
+        <tr class="d2">
+          <th scope="col" class="col-sm-5 col-md-5 sorting_disabled" rowspan="1" colspan="1" style="width: 41.6667px;">What do you want to call about?<span class="sorting-cnt"><span class="sorting-icons"></span></span></th>
+            <th scope="col" class="col-sm-3 col-md-3 sorting_disabled" rowspan="1" colspan="1" style="width: 25px;">Phone number<span class="sorting-cnt"><span class="sorting-icons"></span></span></th>
+            <th scope="col" class="col-sm-4 col-md-4 sorting_disabled" rowspan="1" colspan="1" style="width: 33.3333px;">Hours of service<br>
+            <span>(in local time unless noted)</span><span class="sorting-cnt"><span class="sorting-icons"></span></span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="d1">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul>
+              <li id="business-technical">Help with My Business Account and Represent a Client</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-5525</strong><br />
+            <section id="wtbsnss" class="small nowrap">
+        <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency/corporate/contact-information/wait-times.html#tele-table-bus-en"></span></section>
+        <section class="small" data-ajax-replace="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency/corporate/contact-information/wait-times.html#tele-p-en"></section>
+            <br />
+            Yukon, Northwest Territories and Nunavut: <br />
+            <strong>1-866-841-1876</strong><br />
+            <br />
+            Outside Canada and the U.S. (operates in Eastern Time)
+            <span class="nowrap"><strong>613-940-8497</strong></span><br /></td>
+          <td data-label="Hours">
+          <div class="row">
+            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
+            <div class="col-sm-6"><span class="nowrap">9 am to 6 pm</span></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+          </div>
+          </td>  
+        </tr>
+        <tr class="d2">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Change information about your business</li>
+              <li>Change your business address</li>
+              <li>Update the name of your business</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-5525</strong><br />
+            <section id="wtbsnss" class="small nowrap">
+            <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency/corporate/contact-information/wait-times.html#tele-table-bus-en"></span></section>
+            <section class="small" data-ajax-replace="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency/corporate/contact-information/wait-times.html#tele-p-en"></section>
+            <br />
+            Yukon, Northwest Territories and Nunavut: <br />
+            <strong>1-866-841-1876</strong><br />
+            <br />
+            Outside Canada and the U.S. (operates in Eastern Time)
+            <span class="nowrap"><strong>613-940-8497</strong></span>
+          </td>
+          <td data-label="Hours">
+          <div class="row">
+            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
+            <div class="col-sm-6"><span class="nowrap">9 am to 6 pm</span></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+          </div>
+            </td>  
+        </tr>
+        <tr class="d1">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul id="get-help-payment">
+              <li>Get help with making a payment</li>
+              <li>Questions on instalments (paying taxes as you earn income)</li>
+              <li>Have a payment made in the wrong business account transferred to another account</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-5525</strong><br />
+            <section id="wtbsnss" class="small nowrap">
+            <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency/corporate/contact-information/wait-times.html#tele-table-bus-en"></span></section>
+            <section class="small" data-ajax-replace="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency/corporate/contact-information/wait-times.html#tele-p-en"></section>
+            <br />
+            Yukon, Northwest Territories and Nunavut: <br />
+            <strong>1-866-841-1876</strong><br />
+            <br />
+            Outside Canada and the U.S. (operates in Eastern Time)
+            <span class="nowrap"><strong>613-940-8497</strong></span></td>
+          <td data-label="Hours">
+            <div class="right-mobile">
+              <div class="row">
+                <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
+                <div class="col-sm-6"><span class="nowrap">9 am to 6 pm</span></div>
+              </div>
+              <div class="row">
+                <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+                <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+                <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+              </div>
+            </div>
+
+          </td>  
+        </tr>
+        <tr class="d2">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul id="business-line">
+              <li>Payroll deductions and accounts</li>
+              <li id="charge-gst">Charging GST/HST as a business (including rebates such as the new housing rebates)</li>
+              <li>Excise taxes, duties and other levies</li>
+              <li>Business tax for corporations, sole proprietorships, partnerships, non-resident corporations, and corporation accounts</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-5525</strong><br /><br />
+            Yukon, Northwest Territories and Nunavut: <br />
+            <strong>1-866-841-1876</strong><br />
+            <br />
+            Outside Canada and the U.S. (operates in Eastern Time)
+            <span class="nowrap"><strong>613-940-8497</strong></span><br />
+            <br />
+            For GST/HST Outside Canada and the U.S. (operates in Eastern Time)
+            <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">GST/HST numbers for non-residents</a></td>
+          <td data-label="Hours">
+            <div class="right-mobile">
+          <div class="row">
+            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
+            <div class="col-sm-6"><span class="nowrap">9 am to 6 pm ET</span></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+          </div>
+            </div>
+          </td>  
+        </tr>
+        <tr class="d2">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li id="get-business-number">Register for a business number and any program account such as the GST/HST</li>
+              <li id="corporate-forms">Get corporate income tax forms or publications</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-5525</strong><br />
+            <section id="wtbsnss" class="small nowrap">
+        <span class="glyphicon glyphicon-time"></span> <span data-ajax-replace="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency/corporate/contact-information/wait-times.html#tele-table-bus-en"></span></section>
+        <section class="small" data-ajax-replace="https://www.cra-arc.gc.ca/test/uxssa/pit/en/revenue-agency/corporate/contact-information/wait-times.html#tele-p-en"></section>
+            <br />
+            Yukon, Northwest Territories and Nunavut: <br />
+            <strong>1-866-841-1876</strong><br />
+            <br />
+            Outside Canada and the U.S. (operates in Eastern Time)
+            <span class="nowrap"><strong>613-940-8497</strong></span><br />
+            <br />
+            For GST/HST Outside Canada and the U.S. (operates in Eastern Time)
+            <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">GST/HST numbers for non-residents</a></td>
+          <td data-label="Hours">
+            <div class="right-mobile">
+          <div class="row">
+            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
+            <div class="col-sm-6"><span class="nowrap">9 am to 6 pm ET</span></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+          </div>
+            </div>
+          </td>  
+        </tr>        
+        <tr class="d1">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Get help with filing your T2 corporation income tax return electronically</li>
+              <li id="t2">Get help with the Corporation Internet Filing service</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-2803</strong><br />
+            <br />
+            Outside Canada and the U.S. (operates in Eastern Time)
+            <span class="nowrap"><strong>1-204-984-3594</strong></span></td>
+          <td data-label="Hours">
+          <div class="row">
+            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
+            <div class="col-sm-6"><span class="nowrap">9 am to 4 pm</span></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+          </div>
+          </td>
+        </tr>
+        <tr class="d2">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Discuss payment arrangements to repay a GST/HST debt (paying over several months)</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-877-477-5068</strong>
+          <!--details class="right-mobile">
+              <summary>Wait times and holidays</summary>
+              <div class="row">
+                <table class="table small-tbl">
+                  <thead>
+                    <tr>
+                      <th class="wb-inv">Day</th>
+                      <th class="wb-inv">Wait times</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Day">Mon and Tue</td>
+                      <td data-label="Wait times">Long wait times</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Day">Wed</td>
+                      <td data-label="Wait times">Medium wait times</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Day">Thu and Fri</td>
+                      <td data-label="Wait times">Short wait times</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Day">Sat and Sun</td>
+                      <td data-label="Hours">Closed</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details-->
+          </td>
+          <td data-label="Hours">
+            <div class="right-mobile">
+          <div class="row">
+            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
+            <div class="col-sm-6"><span class="nowrap">9 am to 9 pm ET</span></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+          </div>
+            </div>
+          
+          </td>
+        </tr>
+        <tr class="d1">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>Discuss payment arrangements to repay a payroll tax debt (paying over several months)</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-877-548-6016</strong>
+          <!--details class="right-mobile">
+              <summary>Wait times and holidays</summary>
+              <div class="row">
+                <table class="table small-tbl">
+                  <thead>
+                    <tr>
+                      <th class="wb-inv">Day</th>
+                      <th class="wb-inv">Wait times</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Day">Mon and Tue</td>
+                      <td data-label="Wait times">Long wait times</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Day">Wed</td>
+                      <td data-label="Wait times">Medium wait times</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Day">Thu and Fri</td>
+                      <td data-label="Wait times">Short wait times</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Day">Sat and Sun</td>
+                      <td data-label="Hours">Closed</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details-->
+          </td>
+          <td data-label="Hours">
+            <div class="right-mobile">
+          <div class="row">
+            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
+            <div class="col-sm-6"><span class="nowrap">8 am to 9 pm ET</span></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+          </div>
+            </div>
+          </td>
+        </tr>
+        <tr class="d2">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul>
+              <li>Discuss payment arrangements to repay a corporate income tax debt (paying over several months)</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-866-291-6346</strong>
+            <!--details class="right-mobile">
+              <summary>Wait times and holidays</summary>
+              <div class="row">
+                <table class="table small-tbl">
+                  <thead>
+                    <tr>
+                      <th class="wb-inv">Day</th>
+                      <th class="wb-inv">Wait times</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Day">Mon and Tue</td>
+                      <td data-label="Wait times">Long wait times</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Day">Wed</td>
+                      <td data-label="Wait times">Medium wait times</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Day">Thu and Fri</td>
+                      <td data-label="Wait times">Short wait times</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Day">Sat and Sun</td>
+                      <td data-label="Hours">Closed</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details-->
+          </td>
+          <td data-label="Hours">
+            <div class="right-mobile">
+          <div class="row">
+            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
+            <div class="col-sm-6"><span class="nowrap">9 am to 9 pm ET</span></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+          </div>
+            </div>
+
+          </td>
+        </tr>
+        <tr class="d1">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li id="gst-rulings">Ask for a ruling or interpretation on the GST/HST or one of the First Nations taxes</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-8287</strong><br />
+            <br />
+            In Quebec, call Revenu Québec at:<br />
+            <strong>1-800-567-4692</strong>
+            <!--details class="right-mobile">
+              <summary>Wait times and holidays</summary>
+              <div class="row">
+                <table class="table small-tbl">
+                  <thead>
+                    <tr>
+                      <th class="wb-inv">Day</th>
+                      <th class="wb-inv">Wait times</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Day">Mon and Tue</td>
+                      <td data-label="Wait times">Long wait times</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Day">Wed</td>
+                      <td data-label="Wait times">Medium wait times</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Day">Thu and Fri</td>
+                      <td data-label="Wait times">Short wait times</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Day">Sat and Sun</td>
+                      <td data-label="Hours">Closed</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details-->
+          </td>
+          <td data-label="Hours">
+            <div class="right-mobile">
+          <div class="row">
+            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
+            <div class="col-sm-6"><span class="nowrap">9 am to 9 pm ET</span></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+          </div>
+           <br>
+          <div class="row">
+            <div class="col-md-6"><span class="nowrap"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public holidays</a></span></div>
+            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+          </div>
+            </div>
+          </td>  
+        </tr>
+        <tr class="d2">
+          <td data-label="What do you want to call about?" class="right-mobile"><p>Help with:</p>
+            <ul>
+              <li>GST/HST NETFILE and TELEFILE</li>
+              <li>Filing information returns electronically (such as T3, T4 or T5 slips)</li>
+              <li>The Payroll Deductions Online Calculator</li>
+              <li>Locked out of business account</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-5525</strong><br />
+            Yukon, Northwest Territories and Nunavut: <br />
+            <strong>1-866-841-1876</strong><br />
+            <br />
+            Outside Canada and the U.S. (operates in Eastern Time)
+            <span class="nowrap"><strong>613-940-8497</strong></span><br />
+            <br />
+            For GST/HST Outside Canada and the U.S. (operates in Eastern Time)
+            <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">GST/HST numbers for non-residents</a><br />
+            <br /></td>
+          <td data-label="Hours">
+          <div class="row">
+            <div class="col-sm-6"><span class="nowrap">Mon to Fri</span></div>
+            <div class="col-sm-6"><span class="nowrap">9 am to 6 pm</span></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><span class="nowrap">Sat and Sun</span></div>
+            <div class="col-sm-6"><span class="nowrap">Closed</span></div>
+          </div>
+          <br>
+          <p>Closed on <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">public holidays</a></p>
+          </td>  
+        </tr>
+        <tr class="d1">
+          <td data-label="What do you want to call about?" class="right-mobile"><ul>
+              <li>For a ruling, interpretation or technical enquiry on excise duty</li>
+            </ul></td>
+          <td data-label="Number"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Excise duty numbers by region</a></td>
+          <td data-label="Hours"><mark>Hours vary</mark></td>
+        </tr>
+        <tr class="d2">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul>
+              <li>Questions about excise tax</li>
+              <li>Get help with rates for softwood lumber export charges</li>
+            </ul></td>
+          <td data-label="Number"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Excise contacts by type</a></td>
+          <td data-label="Hours"><mark>Hours vary</mark></td>
+        </tr>
+        <tr class="d1">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul>
+              <li>Questions about the Canadian film or video production tax credit</li>
+            </ul></td>
+          <td data-label="Number"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Tax credit guide and contacts</a></td>
+          <td data-label="Hours"><mark>Hours vary</mark></td>
+        </tr>
+        <tr class="d2">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul>
+              <li>Questions about Scientific Research and Experimental Development expenditure claims</li>
+            </ul></td>
+          <td data-label="Number"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">SR&ED contacts</a></td>
+          <td data-label="Hours"><mark>Hours vary</mark></td>
+        </tr>
+        <tr class="d1">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul>
+              <li id="efile">EFILE registration, renewal, account maintenance and/or view transmission history processes, </li>
+              <li>EFILE Suitability Screening and/or Monitoring programs, </li>
+              <li>EFILE web service questions regarding error messages for initial and/or amended T1 returns, and/or </li>
+              <li>Authentication problems related to EFILE numbers/passwords (for both T1 and T2 returns)</li>
+            </ul></td>
+          <td data-label="Number"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Contact the EFILE Helpdesk</a><br />
+            <br />
+            Or get help from a dedicated volunteer:<br />
+            <strong>1-866-398-3488</strong></td>
+          <td data-label="Hours"><mark>Hours vary</mark></td>  
+        </tr>
+        <tr class="d2">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul>
+              <li id="nil-payroll">Report a nil remittance for payroll</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-2256</strong></td>
+          <td data-label="Hours"><mark>Hours vary</mark></td>
+        </tr>
+        <tr class="d1">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul>
+              <li id="nil-non-resident">Report a nil remittance for non-resident withholding tax</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-866-971-4644</strong></td>
+          <td data-label="Hours"><mark>Hours vary</mark></td>
+        </tr>
+        <tr class="d2">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul>
+              <li id="gst-financial">For financial institutions to call about technical issues with the GST/HST</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-855-666-5166</strong></td>
+          <td data-label="Hours"><mark>Hours vary</mark></td>
+        </tr>
+        <tr class="d1">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul>
+              <li id="air-traveller">Get help with the Air Travellers' Security charge or refund</li>
+              <li>Questions about import and export duties or duty free shopping</li>
+              <li>Get help with broker, levy or insuree returns, or partnership information returns</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-877-432-5472</strong><br />
+            <br />
+            Outside Canada and the U.S. (operates in Eastern Time)
+            <span class="nowrap"><strong>902-432-5472</strong></span></td>
+          <td data-label="Hours"><mark>Hours vary</mark></td>  
+        </tr>
+        <tr class="d2">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul id="softwood-lumber">
+              <li>Check your softwood lumber export balance</li>
+              <li>Get help with softwood lumber export charge</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-935-0313</strong></td>
+          <td data-label="Hours"><mark>Hours vary</mark></td>
+        </tr>
+        <tr class="d1">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul>
+              <li id="flow-through-shares">Check the status of a Flow-through Shares (FTS) form</li>
+            </ul></td>
+          <td data-label="Number"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Contact FTSs</a></td>
+          <td data-label="Hours"><mark>Hours vary</mark></td>
+        </tr>
+        <tr class="d2">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul>
+              <li id="electronic-processing-unit">Electronic Processing Unit</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-665-5164</strong><br />
+            <br />
+            Outside Canada and the U.S. (operates in Eastern Time)
+            <span class="nowrap"><strong>613-940-8599</strong></span></td>
+          <td data-label="Hours"><mark>Hours vary</mark></td>  
+        </tr>
+        <tr class="d1">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul>
+              <li>File GST/HST over an automated telephone service</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-800-959-2038</strong></td>
+          <td data-label="Hours"><mark>Hours vary</mark></td>
+        </tr>
+        <tr class="d2">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul>
+              <li id="gst-post-assessing">Call when you received a letter for GST/HST post assessing</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-855-587-2133</strong></td>
+          <td data-label="Hours"><mark>Hours vary</mark></td>
+        </tr>
+        <tr class="d1">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul>
+              <li id="discounter-services">Advise discounter services of changes to your discounter information</li>
+            </ul></td>
+          <td data-label="Number"><strong>613-941-8864</strong></td>
+          <td data-label="Hours"><mark>Hours vary</mark></td>
+        </tr>
+        <tr class="d2">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul>
+              <li>Make an income tax objection or appeal</li>
+              <li>Make a GST/HST objection or appeal</li>
+              <li>Check the status of an income tax or GST/HST objections</li>
+            </ul></td>
+          <td data-label="Number"><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Numbers by specific objection/appeal</a></td>
+          <td data-label="Hours"><mark>Hours vary</mark></td>
+        </tr>
+        <tr class="d1">
+          <td data-label="What do you want to call about?" class="right-mobile"><div class="clearfix"></div>
+            <ul id="childrens-special-allowance">
+              <li>Help with the Children's Special Allowances</li>
+              <li>Register for Children's Special Allowances</li>
+            </ul></td>
+          <td data-label="Number"><strong>1-877-418-7714</strong><br />
+            <strong>1-833-378-8272</strong></td>
+          <td data-label="Hours"><mark>Hours vary</mark></td>  
+        </tr>
+      </tbody>
+    </table>
+  </details>
+  
+  <!-- table -->
+  
+  <details>
+    <summary>Telephone number for charities</summary>
+    <dl class="dl-horizontal brdr-0">
+      <dt>What you can call about</dt>
+      <dd>
+        <p id="charities">Call charities client service to:</p>
+        <ul>
+          <li>ask about a charity</li>
+          <li>get help with applying to become a charity</li>
+          <li>help with taxes and donation receipts for your charity</li>
+          <li>change your charity's name, purpose, activities or other details</li>
+          <li>report suspected non-compliance of a charity</li>
+        </ul>
+      </dd>
+      <dt>Telephone number</dt>
+      <dd><strong>1-800-267-2384</strong></dd>
+      <dt>Hours</dt>
+      <dd>
+        <div class="col-md-8 row">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="wb-inv">Day</th>
+                <th class="wb-inv">Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mon to Fri</td>
+                <td>9 am to 5 pm (local time)</td>
+              </tr>
+              <tr>
+                <td>Sat and Sun</td>
+                <td>Closed</td>
+              </tr>
+            </tbody>
+          </table>
+
+        <p>Closed on <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">public holidays</a>.</p>
+
+        </div>
+        <div class="clearfix"></div>
+        </dd>
+    </dl>
+  </details>
+
+<details>
+  <summary>Telephone number for TTY (Teletypewriter)</summary>
+  <p>Call this number if you have a hearing or speech impairment and use a TTY. If you use an operator-assisted relay service, call our regular telephone numbers on this page instead of the TTY number.</p>
+    <dl class="dl-horizontal brdr-0" id="tty">
+        <dt>Telephone number</dt>
+      <dd><strong>1-800-665-0354</strong></dd>
+      <dt>Hours</dt>
+      <dd>
+        <div class="col-md-8 row">
+          <table class="table">
+            <caption class="wb-inv">
+            table 3
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col" class="wb-inv">Day</th>
+                <th scope="col" class="wb-inv">Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mon to Fri</td>
+                <td>9 am to 9 pm (local time)</td>
+              </tr>
+              <tr>
+                <td>Sat</td>
+                <td>9 am to 5 pm (local time)</td>
+              </tr>
+			  <tr>
+                <td>Sun</td>
+                <td>Closed</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Closed on <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">public holidays</a>.</p>
+        </div>
+        <div class="clearfix"></div>
+      </dd>
+    </dl>
+  </details>
+
+  <h2 class="h3">Special circumstances</h2>
+  <ul>
+    <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Contacting us on someone else's behalf</a></li>
+    <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Protect yourself against fraud</a></li>
+    <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Media enquiries</a></li>
+    <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Make a voluntary disclosure</a></li>
+    <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Report leads on suspected tax cheating</a></li>
+    <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Service feedback, objections, appeals, disputes, and relief measures</a></li>
+  <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Find  out standard processing times</a></li>
+  </ul>
+
+<h2 class="h3">Privacy notice </h2>
+<details>
+  <summary>Privacy notice</summary>
+<p>The Canada Revenue Agency’s (CRA) call centres  record some calls. These call recordings are used to evaluate the quality and  accuracy of agents’ responses, identify call trends, and provide insight into  potential areas in which training would be beneficial. Recording begins from  the moment an agent answers the call and continues until the line is  disconnected, including any time spent on hold.</p>
+<p>If you do not wish for your  call to be recorded, please inform the agent at the beginning of the call.</p>
+<p>During your conversation with  an agent and when using the automated self-serve options, you may be asked to  provide personal information in order to validate your identity. The questions  asked are in place to ensure the safety and security of your account. Without  this verification step, the CRA is unable to access your account information or  make changes.</p>
+<p>Personal information is  collected pursuant to the Income Tax Act and Excise Tax Act. Personal  information is described in program-specific Personal Information Banks which  can be found on the CRA’s <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Info Source</a> page.</p>
+<p>Under the <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Privacy  Act</a> individuals have a right of protection,  access to, and correction or notation of their personal information.  Individuals also have a right to file a complaint with the Privacy Commissioner  of Canada regarding our handling of their information.</p>
+  </details>
+
+<aside class="wb-fnote wb-init wb-fnote-inited" role="note" id="wb-auto-32">
+    <h2 class="h3" id="fn">Footnotes</h2>
+    <dl>
+      <dt id="fn1-dt">Footnote 1</dt>
+      <dd id="fn1" tabindex="-1" aria-labelledby="fn1-dt">
+        <p>The CRA only accepts collect calls initiated by telephone operators. After your call is accepted by an automated response, you may hear a beep and experience a normal connection delay. Operates in Eastern Time.</p>
+        <p class="fn-rtn"><a href="#fn1-0-rf"><span class="wb-inv">Return to footnote </span>1<span class="wb-inv"> referrer</span></a></p>
+      </dd>
+    </dl>
+  </aside>
+
+<div class="pagedetails container">
+  <div class="row">
+    <div class="col-sm-6 col-md-5 col-lg-4">
+      <details class="brdr-0">
+        <summary class="btn btn-default text-center">Report a problem on this page</summary>
+        <div class="well row">
+          <div class="gc-rprt-prblm">
+            <div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
+              <form action="#">
+                <fieldset>
+                  <legend><span class="field-name">Please select all that apply: </span></legend>
+                  <div class="checkbox">
+                    <label for="problem1">
+                      <input type="checkbox" data-reveal="#broken" name="problem" value="Something is broken" id="problem1">
+                      Something is broken</label>
+                  </div>
+                  <div class="form-group hide" id="broken">
+                    <label for="problem1-detail">Provide more details (optional):</label>
+                    <input type="text" class="form-control full-width" id="problem1-detail">
+                  </div>
+                  <div class="checkbox">
+                    <label for="problem2">
+                      <input type="checkbox" data-reveal="#spelling" name="problem" value="It has spelling or grammar mistakes" id="problem2">
+                      The page has spelling or grammar mistakes</label>
+                  </div>
+                  <div class="form-group hide" id="spelling">
+                    <label for="problem2-detail">Provide more details (optional):</label>
+                    <input type="text" class="form-control full-width" id="problem2-detail">
+                  </div>
+                  <div class="checkbox">
+                    <label for="problem3">
+                      <input type="checkbox" data-reveal="#wrong" name="problem" value="The information is wrong" id="problem3">
+                      The information is wrong</label>
+                  </div>
+                  <div class="form-group hide" id="wrong">
+                    <label for="problem3-detail">Provide more details (optional):</label>
+                    <input type="text" class="form-control full-width" id="problem3-detail">
+                  </div>
+                  <div class="checkbox">
+                    <label for="problem4">
+                      <input type="checkbox" data-reveal="#outdated" name="problem" value="The information is outdated" id="problem4">
+                      The information is outdated</label>
+                  </div>
+                  <div class="form-group hide" id="outdated">
+                    <label for="problem4-detail">Provide more details (optional):</label>
+                    <input type="text" class="form-control full-width" id="problem4-detail">
+                  </div>
+                  <div class="checkbox">
+                    <label for="problem5">
+                      <input type="checkbox" data-reveal="#find" name="problem" value="I can’t find what I’m looking for" id="problem5">
+                      I can’t find what I’m looking for</label>
+                  </div>
+                  <div class="form-group hide" id="find">
+                    <label for="problem5-detail">Describe what you’re looking for (optional):</label>
+                    <input type="text" class="form-control full-width" id="problem5-detail">
+                  </div>
+                  <div class="checkbox">
+                    <label for="problem6">
+                      <input type="checkbox" data-reveal="#confusing" name="problem" value="It’s confusing" id="problem6">
+                      Other</label>
+                  </div>
+                  <div class="form-group hide" id="confusing">
+                    <label for="problem6-detail">Provide more details (optional):</label>
+                    <input type="text" class="form-control full-width" id="problem6-detail">
+                  </div>
+                </fieldset>
+                <button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Submit</button>
+              </form>
+            </div>
+            <div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+              <h3>Thank you for your help!</h3>
+              <p>You will not receive a reply. For enquiries, please <a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">contact us</a>.</p>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+    <div class="wb-share col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5" data-wb-share='{"lnkClass": "btn btn-default btn-block"}'></div>
+  </div>
+  <dl id="wb-dtmd">
+    <dt>Date modified:&#32;</dt>
+    <dd>
+      <time property="dateModified">2019-10-18</time>
+    </dd>
+  </dl>
+    </div></div>
+</main>
+<div class="global-footer">
+  <footer id="wb-info">
+    <div class="landscape">
+      <nav class="container wb-navcurr">
+        <h2 class="wb-inv">About government</h2>
+        <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+          <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Contact us</a></li>
+          <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Departments and agencies</a></li>
+          <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Public service and military</a></li>
+          <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">News</a></li>
+          <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Treaties, laws and regulations</a></li>
+          <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Government-wide reporting</a></li>
+          <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Prime Minister</a></li>
+          <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">About government</a></li>
+          <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Open government</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="brand">
+      <div class="container">
+        <div class="row">
+          <nav class="col-md-10 ftr-urlt-lnk">
+            <h2 class="wb-inv">About this site</h2>
+            <ul>
+              <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Social media</a></li>
+              <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Mobile applications</a></li>
+              <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">About Canada.ca</a></li>
+              <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Terms and conditions</a></li>
+              <li><a href="https://gc-proto-cra.github.io/prototypes/covid-19-test_blank.html">Privacy</a></li>
+            </ul>
+          </nav>
+          <div class="col-xs-6 visible-sm visible-xs tofpg"> <a href="#wb-cont">Top of page <span class="glyphicon glyphicon-chevron-up"></span></a> </div>
+          <div class="col-xs-6 col-md-2 text-right">
+            <object type="image/svg+xml" tabindex="-1" role="img" data="/etc/designs/canada/wet-boew/assets/wmms-blk.svg" aria-label="Symbol of the Government of Canada">
+            </object>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<script type="text/javascript" src="/etc/clientlibs/granite/jquery.min.js"></script> 
+<script type="text/javascript" src="/etc/clientlibs/granite/utils.min.js"></script> 
+<script type="text/javascript" src="/etc/designs/canada/clientlib-publish.min.js"></script> 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+<script src="/etc/designs/canada/wet-boew/js/wet-boew.min.js"></script> 
+<script src="/etc/designs/canada/wet-boew/js/theme.min.js"></script> 
+<script>
+$(".btnCheck").click(function(event) {
+    if ($('.beforeCall input[type="checkbox"]').not(':checked').length == 0) {
+        document.getElementById("check-message").innerHTML = '<label class="label label-success">You are ready to call</label>';
+    } else {
+        document.getElementById("check-message").innerHTML = '<label class="label label-danger">You need all of the above to call about an account</label>';
+
+    }
+});
+
+
+// need more calls when multi phone lines are on a single page
+
+$(".btnCheck2").click(function(event) {
+    if ($('.beforeCall2 input[type="checkbox"]').not(':checked').length == 0) {
+        document.getElementById("check-message2").innerHTML = '<label class="label label-success">You are ready to call</label>';
+    } else {
+        document.getElementById("check-message2").innerHTML = '<label class="label label-danger">You need all of the above to call about an account</label>';
+
+    }
+});
+
+$(".btnCheck3").click(function(event) {
+    if ($('.beforeCall3 input[type="checkbox"]').not(':checked').length == 0) {
+        document.getElementById("check-message3").innerHTML = '<label class="label label-success">You are ready to call</label>';
+    } else {
+        document.getElementById("check-message3").innerHTML = '<label class="label label-danger">You need all of the above to call about an account</label>';
+
+    }
+});
+
+
+$(".btnCheck4").click(function(event) {
+    if ($('.beforeCall4 input[type="checkbox"]').not(':checked').length == 0) {
+        document.getElementById("check-message4").innerHTML = '<label class="label label-success">You are ready to call</label>';
+    } else {
+        document.getElementById("check-message4").innerHTML = '<label class="label label-danger">You need all of the above to call about an account</label>';
+
+    }
+});
+
+$(".btnCheck5").click(function(event) {
+    if ($('.beforeCall5 input[type="checkbox"]').not(':checked').length == 0) {
+        document.getElementById("check-message5").innerHTML = '<label class="label label-success">You are ready to call</label>';
+    } else {
+        document.getElementById("check-message5").innerHTML = '<label class="label label-danger">You need all of the above to call about an account</label>';
+
+    }
+});
+
+</script>
+</body>
+</html>
