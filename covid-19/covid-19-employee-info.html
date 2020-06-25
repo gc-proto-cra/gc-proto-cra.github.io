@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/etc/designs/canada/wet-boew/License-en.html / wet-boew.github.io/etc/designs/canada/wet-boew/Licence-fr.html -->
-<title>Changes to taxes and benefits: CRA and COVID-19 - Canada.ca</title>
+<title>The way forward for CRA employees: CRA and COVID-19 - Canada.ca</title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
 <meta name="description" content="File income tax, get the income tax and benefit package, and check the status of your tax refund. Tax slips, Personal income, Tax deductions, credits, and expenses, Tax refunds, Tax payments, Notices of assessment, Personal income tax rates, More personal income tax.">
 <meta name="robots" content="noindex, nofollow">
@@ -129,8 +129,7 @@
 </header>
 <main role="main" property="mainContentOfPage" class="container">
 	
-<h1 property="name" id="wb-cont">Changes to taxes and benefits: CRA and COVID-19</h1>
-
+<h1 property="name" id="wb-cont" style="border-bottom: none;"><span class="stacked" role="text"><span>The way forward for CRA employees</span>: <span>CRA and COVID-19</span></span></h1>
 
 <style>
 
@@ -240,6 +239,42 @@ display: none;
     display: block;
 }
 
+/*Stacked H1*/
+/*Also added margin-top: .5em; at line 42 to correct a bump in whitespace*/
+h1 span.stacked {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: -9999px;
+}
+
+h1 span.stacked span:nth-child(1) {
+    margin-top: -1.1em;
+}
+
+h1 span.stacked span:nth-child(1), h1 span.stacked span:nth-child(2) {
+    margin-left: 9999px;
+}
+
+h1 span.stacked span:nth-child(2) {
+    font-size: 26px;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 0.17em;
+}
+
+.thin-border { 
+	border:solid 1px #cecece; 
+	background:#f5f5f5;
+	padding:3px;
+}
+    h1#wb-cont::after {
+    content: "";
+    display: block;
+    width: 70px;
+    padding-bottom: 8px;
+    border-bottom: .18em solid #af3c43;
+}
+
 
 </style>
 
@@ -249,11 +284,40 @@ display: none;
 <div class="row">
 	<div class="col-md-8">
     
-        <div class="col-xs-12"><img class="img-responsive full-width" alt="Banner: COVID-19 - The way forward" src="img/image.png"></div>
+        <div class="col-xs-12"><img class="img-responsive full-width" alt="Banner: COVID-19 - The way forward" src="https://gc-proto-cra.github.io/prototypes/653x194-Gen-CEWS-CEBA.jpg">
+        <div class="row">
+            <div class="pstn-bttm-sm col-xs-12">
+                <p class="well brdr-rds-0 well-sm mrgn-bttm-0 opct-90">Working together remotely and at worksites</p>
+            </div>
+            </div>
+        </div>
+        
+        
+<div class="clearfix"></div>
+        
+       
 	
         
-    <h2>test</h2>
-    
+<h2 class="h3">From business continuity to business resumption</h2>   
+        
+        <div class="wb-eqht row wb-init wb-eqht-inited gc-drmt" id="wb-auto-7">
+<section class="col-md-6" style="vertical-align: top; min-height: 155px;">
+<h3 class="mrgn-tp-md"><a href="/english/r2732472/hlthsftndwllnss/covid/sbr-e.html?utm_source=InfoZone&amp;utm_medium=Webpage&amp;utm_campaign=No_Signature_Corporate_item+HRB+Business_Resumption&amp;utm_content=2020-06-22_1176">Strategic business resumption </a></h3>
+<p>Initial steps and projected phases as the Agency moves towards full business resumption</p>
+</section>
+<section class="col-md-6" style="vertical-align: top; min-height: 155px;">
+<h3 class="mrgn-tp-md"><a href="/english/r2732472/hlthsftndwllnss/covid/rsmng_wrk-e.html?utm_source=InfoZone&amp;utm_medium=Webpage&amp;utm_campaign=No_Signature_Corporate_item+HRB+Business_Resumption&amp;utm_content=2020-06-22_1177">Resuming work</a></h3>
+<p>Information for employees who were entering code 699 in their time sheets, or were working in other areas of the Agency or Federal Government, and are resuming their regular work functions.</p>
+</section>
+<section class="col-md-6" style="vertical-align: top; min-height: 149px;">
+<h3><a href="/english/r2732472/hlthsftndwllnss/covid/wrkng_rmtl-e.html?utm_source=InfoZone&amp;utm_medium=Webpage&amp;utm_campaign=No_Signature_Corporate_item+HRB+Business_Resumption&amp;utm_content=2020-06-22_1178">Working remotely</a></h3>
+<p>Tools, resources, and information to help employees work at a distance and connect with their colleagues</p>
+</section>
+<section class="col-md-6" style="vertical-align: top; min-height: 149px;">
+<h3><a href="/english/r2732472/hlthsftndwllnss/covid/wrksts-e.html?utm_source=InfoZone&amp;utm_medium=Webpage&amp;utm_campaign=No_Signature_Corporate_item+HRB+Business_Resumption&amp;utm_content=2020-06-22_1179">Reporting to worksites</a></h3>
+<p>Worksite protocols, prevention, preparedness, Government of Canada and leased facilities, front-line service delivery, transportation</p>
+</section>
+</div>
         
 <h2 class="wb-inv">Affected by COVID-19</h2><div class="row wb-eqht mrgn-tp-lg wb-init wb-eqht-inited" id="wb-auto-5">
       <div class="col-sm-6">
@@ -346,22 +410,7 @@ span class="label label-info small pull-right mrgn-tp-md">New page - March 31</s
 
     </div>
     
-    <h3>Stay connected</h3>
-<ul>
-    <li><a href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/subscription-form.html">Sign up to get email updates on COVID-19 from the Government of Canada</a></li>
-        </ul>
     
-	<h3>Additional updates on:</h3>
-<ul>
-<li><a href="/en/public-health/services/diseases/coronavirus-disease-covid-19.html?utm_campaign=not-applicable&amp;utm_medium=vanity-url&amp;utm_source=canada-ca_coronavirus">Coronavirus disease <span class="nowrap">COVID-19</span></a> (Public Health Agency of Canada)</li>
-<li><a href="/en/services/benefits/ei.html">Employment Insurance (EI) benefits</a> (Service Canada)</li>
-        </ul>
-
-<h3>Information for:</h3>
-<ul>
-<li><a href="https://www.canada.ca/en/revenue-agency/services/covid-19-employee-supplier/covid-19-employee-info.html">CRA employees</a></li>
-<li><a href="https://www.canada.ca/en/revenue-agency/services/covid-19-employee-supplier/covid-19-supplier-info.html">CRA contracted resources and suppliers</a></li>
-</ul>
 </div>
 <div class="col-md-4">
     
@@ -376,8 +425,8 @@ span class="label label-info small pull-right mrgn-tp-md">New page - March 31</s
 	<li><a href="/english/frames/wnew/2020/2020-06-23_1-e.html?utm_source=Infozone&amp;utm_medium=Webpage&amp;utm_campaign=CO_DCO+HRB+Business_Resumption&amp;utm_content=2020-06-23_1236">Update: National Business Resumption Plan </a></li>
 	<li><a href="/english/frames/wnew/covid_19/spcfcqnswr_covid19-e.html?utm_source=COVID_InfoZone_Page&amp;utm_medium=Banner&amp;utm_campaign=No_Signature_Corporate_item+HRB+COVID19&amp;utm_content=yyyy-03-dd_1325">Update: Canada Revenue Agency-specific questions and answers related to <abbr title="Coronavirus disease">COVID-19</abbr> – <span class="nowrap">June 12, 2020</span></a></li>
 	<li><a href="/english/frames/wnew/covid_19/crcmsrs-e.html?utm_source=Infozone&amp;utm_medium=News_Item&amp;utm_campaign=No_Signature_Corporate_item+HRB+COVID19&amp;utm_content=2020-05-25_0872">Canada Revenue Agency <abbr title="Coronavirus disease">COVID-19</abbr> measures – As of June&nbsp;9, 2020 </a></li>
-	<!--<li><a href="/english/frames/wnew/covid_19/wfhccmmdtn-e.html?utm_source=COVID_InfoZone_Page&amp;utm_medium=News_Item&amp;utm_campaign=No_Signature_Corporate_item+HRB+COVID-19&amp;utm_content=2020-05-22_0856">Update: Working from home – Accommodation information – May 22, 2020</a></li>
-	<li><a href="/english/frames/wnew/2020/2020-04-03-e.html?utm_source=COVID_InfoZone_Page&amp;utm_medium=News_Item&amp;utm_campaign=No_Signature_Corporate_item+HRB+COVID19&amp;utm_content=2020-04-03_0051">Steps for addressing potential or confirmed cases of <abbr title="Coronavirus disease">COVID-19</abbr></a></li>
+	<li><a href="/english/frames/wnew/covid_19/wfhccmmdtn-e.html?utm_source=COVID_InfoZone_Page&amp;utm_medium=News_Item&amp;utm_campaign=No_Signature_Corporate_item+HRB+COVID-19&amp;utm_content=2020-05-22_0856">Update: Working from home – Accommodation information – May 22, 2020</a></li>
+	<!--<li><a href="/english/frames/wnew/2020/2020-04-03-e.html?utm_source=COVID_InfoZone_Page&amp;utm_medium=News_Item&amp;utm_campaign=No_Signature_Corporate_item+HRB+COVID19&amp;utm_content=2020-04-03_0051">Steps for addressing potential or confirmed cases of <abbr title="Coronavirus disease">COVID-19</abbr></a></li>
 	<li><a href="/english/frames/wnew/2020/2020-04-14_3-e.html?utm_source=COVID_InfoZone_Page&amp;utm_medium=News_Item&amp;utm_campaign=No_Signature_Corporate_item+HRB+COVID19&amp;utm_content=2020-04-14_0249">Entering <abbr title="Canada Revenue Agency">CRA</abbr> facilities to obtain work equipment for home offices</a></li>
 	<li><a href="/english/frames/wnew/2020/2020-03-26_3-e.html?utm_source=COVID_InfoZone_Page&amp;utm_medium=Webpage&amp;utm_campaign=AC+FAB+Security&amp;utm_content=2020-03-26_1181">Security best practices and working remotely – April 14, 2020</a></li>
 	<li><a href="/english/frames/wnew/2020/2020-03-27_4-e.html?utm_source=COVID_InfoZone_Page&amp;utm_medium=News_Item&amp;utm_campaign=AC+ITB+Network_Usage&amp;utm_content=2020-03-29_1252">Connecting to the CRA network from home</a></li>
@@ -385,15 +434,16 @@ span class="label label-info small pull-right mrgn-tp-md">New page - March 31</s
 </ul>
             </div>
 </div></div>
+        
+        
       <div class="panel-footer">
         <p class="mrgn-bttm-0 small"><a href="/en/revenue-agency/campaigns/covid-19-update/covid-19-news.html"><span class="far fa-newspaper mrgn-rght-md"></span>All announcments and messages</a></p>
       </div>
     </div>
     
-    <!--<a class="btn btn-call-to-action ip-btn" href="https://www.canada.ca/en/revenue-agency/campaigns/covid-19-update/covid-19-news.html"><span class="far fa-newspaper"></span> Latest CRA <span class="nowrap">COVID-19</span> news</a>-->
-    
-    	<div class="wb-twitter"> <a class="twitter-timeline" href="https://twitter.com/CanRevAgency" data-tweet-limit="3">Tweets by @CanRevAgency</a> </div>
 
+    
+    	
 
 </div>
 	
