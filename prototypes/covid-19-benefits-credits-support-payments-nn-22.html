@@ -639,6 +639,64 @@ h1 span.stacked span:nth-child(2) {
     font-weight: 500;
     margin-bottom: 0.17em;
 }
+    
+    /* custom alert */
+.alert:before {
+ height: 34px;
+ content: "";
+ background-color: #fff;
+ width: 6px;
+ display: inline;
+ margin-top: -1px;
+ margin-left: -26px;
+ position: absolute;
+}
+.alert-success, .alert-info, .alert-warning, .alert-danger {
+ background: #fff !important;
+}
+.alert {
+ border-width: 1px 1px 1px 4px !important;
+ margin-left: 12px;
+ padding-left: 20px;
+ border-width: 0px 0px 0px 6px!important
+}
+.alert-success > :first-child::before, .alert-info > :first-child::before, .alert-warning > :first-child::before, .alert-danger > :first-child::before {
+ font-size: 26px;
+ margin-left: -1.48em;
+ padding: 2px;
+ line-height: 1.1em;
+}
+.alert > :first-child {
+ margin-left: 0em;
+}
+.alert >:first-child::before {
+ margin-right: 0.4em
+}
+        
+        .alert-info-alt {
+    border-left-color: #269abc;
+}
+	
+.alert-alt {
+    margin-left: 10px;
+    border-left: 9px solid #269abc;
+    padding-left: 15px;
+    background-clip: content-box;
+    margin-bottom: 23px;
+}
+        
+     /*   .alert p {
+            margin-bottom: 10px;
+        } */
+
+        .edge-color {
+    background-color: #f0f0f0;
+    display: inline-block;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 15px;
+}
+   
 
 </style>
       <link href="/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon"/>
@@ -763,13 +821,18 @@ h1 span.stacked span:nth-child(2) {
 <section class="most-requested mrgn-tp-sm mrgn-bttm-md brdr-0">
 <div class="container experimental">
 
-
-<p>Benefit reviews are on hold until further notice. If you received a letter from CRA that includes a deadline to respond or asks for documents, you do not need to take any action right now. CRA will contact you again when the situation changes. Learn more about <a href="h/en/revenue-agency/services/child-family-benefits/validating-your-eligibility-benefits-credits.html">What to do if the CRA reviews your benefits</a>.</p>
-
-
+<!-- Alert -->
+    
+  <div class="alert alert-info provisional mrgn-tp-md mrgn-bttm-lg" style="border-left: 6px solid #269abc;">
+<h2 class="h3">Benefit reviews are on hold <!--until further notice--></h2>
+      <p>If you received a letter from CRA that includes a deadline to respond or asks for documents, you do not need to take any action right now. CRA will contact you again when the situation changes.</p>
+      <p><a href="h/en/revenue-agency/services/child-family-benefits/validating-your-eligibility-benefits-credits.html">What to do if the CRA reviews your benefits</a></p>
+    </div>
 
   <p>Financial support is available to Canadians during the COVID-19 pandemic, including new benefits and credits and changes to existing ones. You may be eligible for support via <a href="https://covid-benefits.alpha.canada.ca/en/start">other financial programs</a>. </p>
   <p class="mrgn-bttm-md">The CRA encourages Canadians to <a href="/en/revenue-agency/campaigns/taxes-get-ready.html">file their tax returns</a> by June &nbsp;1,&nbsp;2020 or as soon as possible in order to receive the right amount of benefits based on their 2019 tax return, and in order to ensure continuity of benefits beyond September&nbsp;2020. Allow up to 5 business days after the scheduled benefit or credit payment date before calling us.</p>
+    
+ 
 </div>  
 </section>
 
@@ -846,24 +909,31 @@ h1 span.stacked span:nth-child(2) {
 
     
     
+<!--<section class="col-lg-4 col-sm-6 gc-drmt">
+<h3 id="reviews"><a class="stretched-link" href="/en/revenue-agency/services/child-family-benefits/validating-your-eligibility-benefits-credits.html">Benefit reviews are on hold</a></h3>
+<p class="mrgn-bttm-0">Benefit reviews, by the CRA, are on hold, until further notice, if you received, a letter from CRA, that includes a deadline to respond <!--or asks for documents, you do not need to take any action right now. CRA will contact you again when the situation changes.</p>
+<p class="mrgn-bttm-0">If you are a benefit recipient whose payments have been stopped or adjusted after a review and you have sent in the requested documents, your account will be processed as a priority. Keep your documents in case they are chosen for review in the future.</p>
+</section>-->
+    
+    
 <section class="col-lg-4 col-sm-6 gc-drmt">
 <h3><a href="/en/revenue-agency/campaigns/covid-19-update/covid-19-ccb-payment-increase.html">Canada Child Benefit (CCB)</a></h3>
-<p>Eligible individuals who are presently receiving the Canada child benefit (CCB) will continue to receive these payments based on their 2018 tax return information in the event their required 2019 income tax return is not assessed by September&nbsp;2020. Canadians who normally receive the CCB got a one-time payment increase of an extra $300 for each child on May&nbsp;20,&nbsp;2020.</p>
+<p>Eligible individuals, who are presently receiving, the Canada child benefit (CCB), will continue to, receive these payments, based on their, 2018 tax return information <!--in the event their required 2019 income tax return is not assessed by September&nbsp;2020. Canadians who normally receive the CCB got a one-time payment increase of an extra $300 for each child on May&nbsp;20,&nbsp;2020.--></p>
 </section>
 
 <section class="col-lg-4 col-sm-6 gc-drmt">
 <h3><a href="/en/revenue-agency/services/tax/registered-plans-administrators/registered-retirement-savings-plans-registered-retirement-income-funds-rrsps-rrifs/economic-statement-measure-annuitants-rrsp-rrif.html">Registered Retirement Income Funds (RRIFs)</a></h3>
-<p class="mrgn-bttm-0">The minimum withdrawals requirement from RRIFs will be reduced by 25% for 2020, in recognition of volatile market conditions and their impact on many seniors' retirement savings.</p>
+<p class="mrgn-bttm-0">The minimum withdrawals, requirement from RRIFs, will be reduced by 25% for 2020, in recognition of, volatile market conditions, and their impact on, many seniors' retirement savings</p>
 </section>
 
 <section class="col-lg-4 col-sm-6 gc-drmt">
 <h3><a class="stretched-link" href="/en/revenue-agency/services/child-family-benefits/goods-services-tax-harmonized-sales-tax-gst-hst-credit.html">GST/HST credit</a></h3>
-<p class="mrgn-bttm-0">Eligible individuals who are presently receiving the GST/HST credit will continue to receive these payments based on their 2018 tax return information in the event their required 2019 income tax return is not assessed by September&nbsp;2020. The one-time supplementary GST/HST credit payment was issued on April&nbsp;9,&nbsp;2020.</p>
+<p class="mrgn-bttm-0">Eligible individuals, who are presently receiving, the GST/HST credit, will continue to, receive these payments, based on their 2018, tax return information <!--in the event their required 2019 income tax return is not assessed by September&nbsp;2020. The one-time supplementary GST/HST credit payment was issued on April&nbsp;9,&nbsp;2020.--></p>
 </section>
 
 <section class="col-lg-4 col-sm-6 gc-drmt">
 <h3><a class="stretched-link" href="/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/old-security-return-income-oasri.html">Old Age Security Return of Income (OASRI)</a></h3>
-<p class="mrgn-bttm-0">Old Age Security payments to non-resident seniors have been temporarily extended if their 2019 OASRI has not been assessed. To avoid an interruption in benefits, seniors are encouraged to submit their 2019 OASRI as soon as possible and no later than October&nbsp;1,&nbsp;2020.</p>
+<p class="mrgn-bttm-0">Old Age Security payments, to non-resident seniors, have been temporarily extended, if their 2019, OASRI, has not been assessed <!--To avoid an interruption in benefits, seniors are encouraged to submit their 2019 OASRI as soon as possible and no later than October&nbsp;1,&nbsp;2020.--></p>
 </section>
     
     
@@ -872,9 +942,10 @@ h1 span.stacked span:nth-child(2) {
     
     <section class="col-lg-4 col-sm-6 gc-drmt">
 <h3 id="reviews"><a class="stretched-link" href="/en/revenue-agency/corporate/security/protect-yourself-against-fraud.html">Protect yourself against fraud</a></h3>
-<p class="mrgn-bttm-0">Beware of fraudulent emails, texts, or calls claiming to be from the CRA about repaying your emergency relief benefits or requesting personal information.</p>
-<p>If you have concerns, contact the <!--<a href="https://antifraudcentre-centreantifraude.ca/report-signalez-eng.htm">-->Canadian Anti-fraud Centre at <span class="nowrap"><strong>1-888-495-8501</strong></span>.</p>
+<p class="mrgn-bttm-0">Beware of fraudulent emails, texts, or calls claiming to be, from the CRA, about repaying, your emergency relief, benefits or requesting personal information</p>
+<!--<p>If you have concerns, contact the Canadian Anti-fraud Centre at <span class="nowrap"><strong>1-888-495-8501</strong></span>.</p>-->
 </section>
+
 
     
     
@@ -915,27 +986,11 @@ h1 span.stacked span:nth-child(2) {
 <h3>Sign up for Direct Deposit</h3>
 <p class="mrgn-tp-md">For the quickest and most reliable way to get benefit and credit payments, sign up through My Account or through a financial institution including banks, credit unions and trust companies.</p>
 <a class="btn btn-call-to-action" href="/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html">Sign in to My Account</a>&nbsp; or your&nbsp;
-<a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html">Financial institution</a>
-</section>
-
-<section class="col-lg-4 col-sm-6 gc-drmt">
-
-     <div class="mrgn-bttm-md" style="vertical-align: top; min-height: 367px;">
-                <a class="stretched-link" href="#">
-                  <section class="well well-sm brdr-rds-0 hght-inhrt" style="background: #fff; border: none;">
-                    <img class="img-responsive full-width" style="border:solid 1px #eee" alt="#" src="https://www.canada.ca/content/dam/cra-arc/camp-promo/features/ft-200224-360x203.jpg">
-                    <h3 class="h5 mrgn-lft-sm">Protect yourself against fraud</h3></a>
-                    <p class="mrgn-lft-sm">Did you receive a suspicious call, text or email that claims to be from the CRA? Learn how to spot and avoid scams.</p>
-                  </section>
-                
-              </div>
+<!--<a class="btn btn-default btn-lg ip-btn" href="/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html">Financial institution</a>-->
     
-  <!--<h3>Sign up for Direct Deposit through your financial institution</h3>
-  <p>You can now sign up for direct deposit or change your account information through many financial institutions, including banks, credit unions and trust companies.</p>
-  <p><a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html">Sign up through your financial institution</a> </p>
-    <!--<a class="btn btn-default btn-lg" href="/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html">Sign up through your financial institution</a>-->
-    <!--<p><a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html">Sign up for Direct Deposit through your financial institution</a> </p>-->
+    <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html">Financial institution</a>
 </section>
+
 
 </div></div></div></section>
        
