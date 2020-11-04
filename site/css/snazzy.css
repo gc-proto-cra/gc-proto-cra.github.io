@@ -16,7 +16,7 @@
 }
 
 #snazzy a:link, a:visited {
-  color: #0b1945;
+  color: #0b1945 !important;
   font-weight: bold;
   text-decoration: none;
   font-size: 11pt;
@@ -69,11 +69,11 @@
 }
 
 .snazzy-bkgrnd {
-  background-color: #1c304a;
+  background-color: #1c304a !important;
 }
 
 .snazzy-bkgrnd2 {
-  background-color: #046b99;
+  background-color: #046b99 !important;
 }
 
 #snazzy .btn-primary {
