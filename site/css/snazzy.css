@@ -22,11 +22,14 @@
   font-size: 11pt;
 }
 
-#snazzy a:hover {
-  color: #5fc1f5
+#snazzy a:link:active, a:visited:active {
   font-weight: bold;
   text-decoration: none;
-  font-size: 11pt;	
+  font-size: 11pt;  
+  color: #0b1945;
+  outline: solid #5fc1f5;
+  outline-width: medium;
+  outline-offset: 10px;
 }
 
 #snazzy .list-inline>li {
@@ -34,14 +37,6 @@
   padding-right: 15px;
   padding-left: 10px;
   margin-top: 20px;
-}
-
-#snazzy a:link:active, a:visited:active {
-  border: 4px;
-  border-style: solid;
-  padding: 12px;
-  color: #0b1945;
-  border-color: #5fc1f5;
 }
 
 .snazzy-active {
