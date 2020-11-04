@@ -22,14 +22,11 @@
   font-size: 11pt;
 }
 
-#snazzy a:link:active, a:visited:active {
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 11pt;  
-  color: #0b1945;
-  outline: solid #5fc1f5;
+#snazzy a:focus {
+  outline: solid;
+  outline-color: #5fc1f5;
   outline-width: medium;
-  outline-offset: 8px;
+  outline-offset: 10px;
 }
 
 #snazzy .list-inline>li {
