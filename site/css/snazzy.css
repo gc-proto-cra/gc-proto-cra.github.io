@@ -25,7 +25,7 @@
 #snazzy a:focus {
   outline: solid;
   outline-color: #5fc1f5;
-  outline-width: medium;
+  outline-width: thick;
   outline-offset: 10px;
 }
 
