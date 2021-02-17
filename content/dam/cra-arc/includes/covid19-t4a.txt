@@ -1,0 +1,9 @@
+<section class="alert alert-info" id="t4a-eng">
+<h2 class="h5">COVID-19: T4A slip for 2020 tax year</h2>
+<p>If you received COVID-19 emergency or recovery benefits from the CRA in 2020, you will receive a T4A slip. You must report these amounts on your 2020 income tax and benefits return. For details: <a href="/content/canadasite/en/revenue-agency/campaigns/covid-19-update/covid-19-t4a.html">COVID-19 benefit amounts on your T4A slip</a></p>
+</section>
+
+<section class="alert alert-info" id="t4a-fra">
+<h2 class="h5">COVID-19 : feuillet T4A pour l’année d’imposition 2020</h2>
+<p>Si vous avez reçu de l’ARC des prestations d’urgence ou de relance économique liées à la COVID-19 en 2020, vous recevrez un feuillet T4A. Vous devez inscrire ces montants dans votre déclaration de revenus et de prestations de 2020. Pour en savoir plus : <a href="/content/canadasite/fr/agence-revenu/campagnes/mise-a-jour-covid-19/covid-19-t4a.html">Montants des prestations liées à la COVID-19 sur votre feuillet T4A</a></p>
+</section>
