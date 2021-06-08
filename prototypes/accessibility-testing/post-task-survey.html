@@ -19,6 +19,7 @@
     <!-- Write closure template -->
     <script type="text/javascript">
         document.write(wet.builder.refTop({}));
+
     </script>
     <style>
         /*Checkbox/Fieldflow radio input sizing,positioning*/
@@ -78,6 +79,7 @@
             font-size: 22px;
             margin-top: 0px;
         }
+
     </style>
 
 </head>
@@ -100,27 +102,27 @@
                 </li>
             </ol>-->
             <p>Please select one option from each of the following questions.</p>
-            
+
             <!-- question 1 -->
             <div class="wb-frmvld fieldflow-lg">
                 <form>
                     <div class="wb-fieldflow" data-wb-fieldflow='{
 							"renderas":"radio", 
-							"reset": { "action": "addClass", "source":".results", "class": "hidden"}, 
 							"noForm": true,					     
-							"noreqlabel": true
+							"noreqlabel": true,
+                            "isoptional": true
 						}'>
-                        
+
                         <!-- question 1 -->
                         <p>On a scale of 1 to 7, how difficult or easy did you find this task?</p>
                         <ul>
-                            <li data-wb-fieldflow='{"action": "removeClass", "source": "", "class": "hidden", "live":true}'>1. Very difficult</li>
-                            <li data-wb-fieldflow='{"action": "removeClass", "source": "", "class": "hidden", "live":true}'>2. Difficult</li>
-                            <li data-wb-fieldflow='{"action": "removeClass", "source": "", "class": "hidden", "live":true}'>3. Somewhat difficult</li>
-                            <li data-wb-fieldflow='{"action": "removeClass", "source": "", "class": "hidden", "live":true}'>4. Neutral</li>
-                            <li data-wb-fieldflow='{"action": "removeClass", "source": "", "class": "hidden", "live":true}'>5. Somewhat easy</li>
-                            <li data-wb-fieldflow='{"action": "removeClass", "source": "", "class": "hidden", "live":true}'>6. Easy</li>
-                            <li data-wb-fieldflow='{"action": "removeClass", "source": "", "class": "hidden", "live":true}'>7. Very easy</li>
+                            <li>1. Very difficult</li>
+                            <li>2. Difficult</li>
+                            <li>3. Somewhat difficult</li>
+                            <li>4. Neutral</li>
+                            <li>5. Somewhat easy</li>
+                            <li>6. Easy</li>
+                            <li>7. Very easy</li>
                         </ul>
                     </div>
                 </form>
@@ -134,11 +136,11 @@
 							"noForm": true,					     
 							"noreqlabel": true
 						}'>
-                        
+
                         <p>Could you complete this task?</p>
                         <ul>
-                            <li data-wb-fieldflow='{"action": "removeClass", "source": "", "class": "hidden", "live":true}'>Yes, I could complete this task</li>
-                            <li data-wb-fieldflow='{"action": "removeClass", "source": "", "class": "hidden", "live":true}'>No, I could not complete this task</li>
+                            <li>Yes, I could complete this task</li>
+                            <li>No, I could not complete this task</li>
                         </ul>
                     </div>
                 </form>
@@ -159,6 +161,7 @@
                 showFeedback: true,
                 showShare: true
             });
+
         </script>
     </main>
     <!--<div id="def-footer">
@@ -170,10 +173,14 @@
             showFooter: true,
             showFeatures: true
         });
+
     </script>
     <!-- Write closure template -->
     <script type="text/javascript">
         document.write(wet.builder.refFooter({}));
+
     </script>
     <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
-</body></html>
+</body>
+
+</html>
