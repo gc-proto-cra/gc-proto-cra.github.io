@@ -11,17 +11,19 @@
     <!-- Meta data-->
     <!-- Load closure template scripts -->
     <!--<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>-->
-      <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
     <link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css" />
 
+    <link href="../../css/provisional-radio-buttons.css" rel="stylesheet">
     <link href="../../css/custom.css" rel="stylesheet">
     <link href="../../css/steps.css" rel="stylesheet">
     <!-- Write closure template -->
     <script type="text/javascript">
         document.write(wet.builder.refTop({}));
+
     </script>
     <style>
         /*Checkbox/Fieldflow radio input sizing,positioning*/
@@ -81,6 +83,13 @@
             font-size: 22px;
             margin-top: 0px;
         }
+
+        /* to make list item full width */
+        .cnt-wdth-lmtd main li,
+        main .cnt-wdth-lmtd li {
+            max-width: 100ch;
+        }
+
     </style>
     <!--<script src="/tasks.js"></script>-->
 </head>
@@ -99,16 +108,35 @@
             <h2 class="h-2 wb-inv">5 tasks left</h2>
             <p class="mrgn-tp-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida sem ut augue convallis mollis at at ante. Curabitur congue felis at finibus mollis. Nunc porta, mauris a viverra aliquet, tortor orci posuere enim, vitae cursus mi dui nec risus. Donec scelerisque porta tellus varius vehicula.</p>
 
-            <!--<h3 class="h-3">Possible answers</h3>
-            <ol class="lst-lwr-alph">
-                <li>Answer a</li>
-                <li>Answer b</li>
-                <li>Answer c</li>
-                <li>Answer d</li>
-                <li>Answer e</li>
-            </ol>-->
+            <fieldset class="provisional gc-chckbxrdio mrgn-tp-lg">
+                <legend>Possible answers</legend>
+                <ul class="list-unstyled lst-spcd-2">
+                    <li class="radio">
+                        <input type="radio" name="animal" id="animal-1">
+                        <label for="animal-1">a. Tom will receive the payment</label>
+                    </li>
+                    <li class="radio">
+                        <input type="radio" name="animal" id="animal-2">
+                        <label for="animal-2">b. Madison will receive the payment</label>
+                    </li>
+                    <li class="radio">
+                        <input type="radio" name="animal" id="animal-3">
+                        <label for="animal-3">c. Each parent will receive 50% of the payment</label>
+                    </li>
+                    <li class="radio">
+                        <input type="radio" name="animal" id="animal-4">
+                        <label for="animal-4">d. Tom will receive 20% of the payment, Madison will receive 80% of the payment</label>
+                    </li>
+                    <li class="radio">
+                        <input type="radio" name="animal" id="animal-5">
+                        <label for="animal-5">e. I could not find the answer</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <div class="clearfix"></div>
 
-            <div class="wb-frmvld fieldflow-lg">
+
+            <!--<div class="wb-frmvld fieldflow-lg">
                 <form>
                     <div class="wb-fieldflow" data-wb-fieldflow='{
 							"renderas":"radio", 
@@ -116,7 +144,6 @@
 							"noreqlabel": true,
                             "isOptional": true
 						}'>
-                        <!-- question 1 -->
                         <p>Possible answers</p>
                         <ul>
                             <li>a. Tom will receive the payment</li>
@@ -127,11 +154,11 @@
                         </ul>
                     </div>
                 </form>
-            </div>
-            <div class="clearfix"></div>
+            </div>-->
+
 
             <div class="btn-container">
-                <a href="https://www.canada.ca/en/services/taxes.html" target="_blank" role="button" class="btn btn-primary btn-lg mrgn-tp-md" title="this link will open in a new tab"><span class="far fa-window-restore"></span> Start task</a> <a href="post-task-survey.html" role="button" class="btn btn-default btn-lg mrgn-lft-md mrgn-tp-md">Post-task survey</a>
+                <a href="https://www.canada.ca/en/services/taxes.html" target="_blank" role="button" class="btn btn-primary btn-lg mrgn-tp-md"><span class="far fa-window-restore"></span> Start task<span class="wb-inv">this button will open a page in a new tab</span></a> <a href="post-task-survey.html" role="button" class="btn btn-default btn-lg mrgn-lft-md mrgn-tp-md">Post-task survey</a>
             </div>
 
 
@@ -164,6 +191,7 @@
                 showFeedback: true,
                 showShare: true
             });
+
         </script>
     </main>
     <!--<div id="def-footer">
@@ -175,10 +203,14 @@
             showFooter: true,
             showFeatures: true
         });
+
     </script>
     <!-- Write closure template -->
     <script type="text/javascript">
         document.write(wet.builder.refFooter({}));
+
     </script>
     <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
-</body></html>
+</body>
+
+</html>

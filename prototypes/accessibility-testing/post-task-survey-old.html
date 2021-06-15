@@ -91,81 +91,78 @@
         <h1 property="name" id="wb-cont" class="mrgn-tp-xl">Post-task survey</h1>
 
         <section class="mrgn-bttm-xl">
+            <!--<ol>
+                <li class="mrgn-tp-md">On a scale of 1 to 7, how difficult or easy did you find this task?</li>
 
+                <li class="mrgn-tp-md">Could you complete this task?
+                    <ul class="lst-lwr-alph">
+                        <li>Yes</li>
+                        <li>No</li>
+                    </ul>
+                </li>
+            </ol>-->
             <p>Please select one option from each of the following questions.</p>
 
             <!-- question 1 -->
-            <fieldset class="provisional gc-chckbxrdio form-inline">
-                <legend>1. How difficult or easy did you find this task?</legend>
-                <div class="label-inline mrgn-tp-sm">
-                    <input id="inlineRadio1" type="radio" name="optradio">
-                    <label for="inlineRadio1">Very difficult</label>
-                </div>
-                <div class="label-inline mrgn-tp-sm">
-                    <input id="inlineRadio2" type="radio" name="optradio">
-                    <label for="inlineRadio2">Difficult</label>
-                </div>
-                <div class="label-inline mrgn-tp-sm">
-                    <input id="inlineRadio3" type="radio" name="optradio">
-                    <label for="inlineRadio3">Somewhat difficult</label>
-                </div>
-                <div class="label-inline mrgn-tp-sm">
-                    <input id="inlineRadio4" type="radio" name="optradio">
-                    <label for="inlineRadio4">Neutral</label>
-                </div>
-                <div class="label-inline mrgn-tp-sm">
-                    <input id="inlineRadio5" type="radio" name="optradio">
-                    <label for="inlineRadio5">Somewhat easy</label>
-                </div>
-                <div class="label-inline mrgn-tp-sm">
-                    <input id="inlineRadio6" type="radio" name="optradio">
-                    <label for="inlineRadio6">Easy</label>
-                </div>
-                <div class="label-inline mrgn-tp-sm">
-                    <input id="inlineRadio7" type="radio" name="optradio">
-                    <label for="inlineRadio7">Very easy</label>
-                </div>
-            </fieldset>
-            
-            
-            <!--<h3>1. On a scale of 1 to 7, how dificult or easy did you find this task?</h3>
-            <p><input name="html5shim-1" id="html5shim-1" type="range" min="1" max="7" step="1" title="Range: 0 to 100 in steps of 1" value="0" /></p>
-            <div class="row">
-                <div class="col-md-10">
-            <div class="col-md-2">
-                <p>1<br>Very difficult</p>
-            </div>
-             <div class="col-md-2">
-                <p>2</p>
-            </div>
-                 <div class="col-md-2">
-                <p>3</p>
-            </div>
-                <div class="col-md-2">
-                <p>4</p>
-            </div>
-                 <div class="col-md-2">
-                <p>7<br>Very easy</p>
-            </div>
-            </div>
-                </div>-->
+            <div class="wb-frmvld fieldflow-lg">
+                <form>
+                    <div class="wb-fieldflow" data-wb-fieldflow='{
+							"renderas":"radio", 
+							"noForm": true,					     
+							"noreqlabel": true,
+                            "isoptional": true
+						}'>
 
-
+                        <!-- question 1 -->
+                        <p>On a scale of 1 to 7, how difficult or easy did you find this task?</p>
+                        <ul>
+                            <li>1. Very difficult</li>
+                            <li>2. Difficult</li>
+                            <li>3. Somewhat difficult</li>
+                            <li>4. Neutral</li>
+                            <li>5. Somewhat easy</li>
+                            <li>6. Easy</li>
+                            <li>7. Very easy</li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
             <!-- question 2 -->
-            <fieldset class="provisional gc-chckbxrdio mrgn-tp-lg">
-                <legend>2. Could you complete this task?</legend>
-                <ul class="list-unstyled lst-spcd-2">
-                    <li class="radio">
-                        <input type="radio" name="animal" id="animal-1">
-                        <label for="animal-1">Yes, I could complete this task</label>
-                    </li>
-                    <li class="radio">
-                        <input type="radio" name="animal" id="animal-2">
-                        <label for="animal-2">No, I could not complete this task</label>
-                    </li>
-                </ul>
-            </fieldset>
+            <div class="wb-frmvld fieldflow-lg">
+                <form>
+                    <div class="wb-fieldflow" data-wb-fieldflow='{
+							"renderas":"radio", 
+							"reset": { "action": "addClass", "source":".results", "class": "hidden"}, 
+							"noForm": true,					     
+							"noreqlabel": true
+						}'>
+
+                        <p>Could you complete this task?</p>
+                        <ul>
+                            <li>Yes, I could complete this task</li>
+                            <li>No, I could not complete this task</li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
             <div class="clearfix"></div>
+
+            <fieldset class="provisional gc-chckbxrdio form-inline">
+                <legend>Choose an option</legend>
+                <div class="label-inline">
+                    <input id="inlineRadio1" type="radio" name="optradio">
+                    <label for="inlineRadio1">Option 1</label>
+                </div>
+                <div class="label-inline">
+                    <input id="inlineRadio2" type="radio" name="optradio">
+                    <label for="inlineRadio2">Option 2</label>
+                </div>
+                <div class="label-inline">
+                    <input id="inlineRadio3" type="radio" name="optradio">
+                    <label for="inlineRadio3">Option 3</label>
+                </div>
+            </fieldset>
+
 
             <a href="#" role="button" class="btn btn-primary btn-lg mrgn-tp-md">Continue to next task</a>
         </section>
