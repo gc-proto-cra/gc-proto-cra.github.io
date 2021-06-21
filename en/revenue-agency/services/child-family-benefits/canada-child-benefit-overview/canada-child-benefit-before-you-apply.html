@@ -441,6 +441,34 @@ aside.gc-nav h1 {
   border-radius: 0px;
   font-size: 14px !important;
 }
+	
+	
+.checkbox-lg>li {
+	margin-bottom: 20px;
+}
+.checkbox-lg>li .checkbox-block {
+	padding-left: 20px;
+}
+.checkbox-lg input[type=checkbox] {
+	/* Double-sized Checkboxes */
+	-ms-transform: scale(2); /* IE */
+	-moz-transform: scale(2); /* FF */
+	-webkit-transform: scale(2); /* Safari and Chrome */
+	-o-transform: scale(2); /* Opera */
+	transform: scale(2);
+	padding: 10px;
+	-webkit-background-color: #fff;
+}
+.checkbox-lg input[type=checkbox]:focus {
+	box-shadow: 0 0 2pt 1pt rgb(59, 153, 252);
+}
+.checkbox-lg label {
+	font-size: 1.2em;
+}
+	
+	
+	
+	
 </style>
 
 
@@ -582,12 +610,6 @@ aside.gc-nav h1 {
             <li class="checkbox ">
               <input type="checkbox" id="elibility3">
               <label for="elibility3">You are primarily responsible for the care and upbringing of the child</label>
-		    <p class="mrgn-lft-lg">The child lives:
-		    <ul>
-			  <li>in the same home with both parents</li>
-			    <li>about equally between both parents</li>
-			   <li>mostly with one parent, whether permanently or for a temporary period</li>
-		    </ul>
 		    <details class="mrgn-lft-md">
 				     <summary>See who is primarily responsible</summary>
 				      <p>The person who is primarily responsible for the care and upbringing of the child should apply for the CCB. That person is responsible for things such as:</p>
@@ -604,7 +626,18 @@ aside.gc-nav h1 {
 
 				     
 			     </details>
-            </li>
+
+		  
+		<p class="mrgn-lft-lg">The child lives with you:
+		    <ul>
+			    <li>in the same home with both parents</li>	
+			    <li>with time split about equally between both parents</li>
+			   <li>mostly with you for a period of time (may be temporary)</li>
+		    </ul>
+
+		  
+		  
+		  </li>
             <li class="checkbox ">
               <input type="checkbox" id="elibility4">
               <label for="elibility4">You are a resident of Canada for tax purposes</label>
