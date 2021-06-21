@@ -653,12 +653,12 @@ aside.gc-nav h1 {
 			     </details>
 
 		  
-		<p class="mrgn-lft-lg">The child lives with you:
+		   <label for="elibility3"> <p class="mrgn-lft-lg">The child lives with you:</p>
 		    <ul>
 			    <li>in the same home with both parents</li>	
 			    <li>with time split about equally between both parents</li>
 			   <li>mostly with you for a period of time (may be temporary)</li>
-		    </ul>
+			   </ul></label>
 
 		  
 		  
@@ -679,25 +679,27 @@ aside.gc-nav h1 {
               </ul>
             </li>
           </ul>
+	  <div class="alert alert-warning provisional" id="action-no-msg">
+                     <p>You need all of the above to be eligible for the CCB.</p>
+					  <h3>If you’re not eligible for CCB</h3>
+<p>You may be eligible for other <a href="/en/revenue-agency/services/child-family-benefits.html">child and family benefits</a>.</p>
+                  </div>
+                  <div class="alert alert-success hidden provisional" id="action-msg1">
+             <h3>You meet the criteria</h3> 
+<p>If you meet all the above criteria, you can <a href="/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-apply.html">apply</a> for the Canada child benefit.</p>
+			  <p>The CRA may need to validate your application by asking for additional information during the application process.</p>              </div>
+               </section>
+               <div class="clearfix"></div>
+	  
+	  
 
+	  <h3>Children's special allowances</h3>
           <p>You cannot get the Canada child benefit (CCB) for a foster child for any month in which Children's special allowances (CSA) are payable.</p>
           <p>You may get the CCB if you live with and care for a child under a kinship or close relationship program, as long as CSA are not payable for that child.</p>
 		  <p>For more information, see <a href="/en/revenue-agency/services/child-family-benefits/childrens-special-allowances-fact-sheet.html">Children's special allowances</a>.</p>
           
-          <h2 id="primary">Who is primarily responsible for the care of the child</h2>
-          <p>The person who is primarily responsible for the care and upbringing of the child should apply for the CCB. That person is responsible for things such as:</p>
-          <ul>
-          <li>supervising the child’s daily activities and needs</li>
-          <li>making sure the child’s medical needs are met</li>
-          <li>arranging for child care when necessary</li>
-          </ul>
 
-          <h3>When there is a female parent who lives with the child</h3>
-          <p>When both a female and male parent live in the same home as the child, the <strong>female parent</strong> is usually considered to be primarily responsible for the care and upbringing of the child. She should be the one applying for the CCB.</p>
-		  <p>However, if the <strong>male parent</strong> is primarily responsible, he should apply and attach a signed letter from the female parent stating that he is the parent who is primarily responsible for all the children in the home.</p>  
-<p>If the child lives with same-sex parents, only one parent should apply for all the children in the home.</p>            
-
-          <h2 id="shared">Custody arrangements and your benefits</h2>
+          <!--h2 id="shared">Custody arrangements and your benefits</h2>
           <p>If a child only lives with you part time, you need to determine if you are considered to have shared custody.</p>
 
           <h3 id="determinecustody">Determine if you have shared custody</h3>
@@ -747,7 +749,7 @@ aside.gc-nav h1 {
             </li>
           </ul>
           <p>If you start or end a shared custody situation, <a href="/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-after-you-apply.html#change">let the <abbr title="Canada Revenue Agency">CRA</abbr> know that your situation changed</a>.</p>
-</section>
+</section>-->
 
 <div class="pagedetails container">
     <div class="row">
@@ -957,7 +959,19 @@ aside.gc-nav h1 {
          <script type="text/javascript">_satellite.pageBottom();</script>
 
       
-      
+     <script>
+         $(".action-checkbox").change(function(){
+         if ($('.action-checkbox:checked').length == $('.action-checkbox').length) {
+         $("#action-msg1").removeClass("hidden").addClass("visible");
+         $("#action-no-msg").addClass("hidden").removeClass("visible");
+         }
+         if ($('.action-checkbox:checked').length !== $('.action-checkbox').length) {
+         $("#action-msg1").addClass("hidden").removeClass("visible");
+         $("#action-no-msg").removeClass("hidden").addClass("visible");
+         }
+         })
+         
+      </script>  
       
       
       
