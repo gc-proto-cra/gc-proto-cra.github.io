@@ -961,7 +961,10 @@ aside.gc-nav h1 {
       
      <script>
          $(".action-checkbox").change(function(){
-         if ($('.action-checkbox:checked').length == $('.action-checkbox').length) {
+		 console.log("doing something now");
+		 console.log($('.action-checkbox:checked').length);
+
+		 if ($('.action-checkbox:checked').length == $('.action-checkbox').length) {
          $("#action-msg1").removeClass("hidden").addClass("visible");
          $("#action-no-msg").addClass("hidden").removeClass("visible");
          }
