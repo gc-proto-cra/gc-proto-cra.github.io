@@ -1,0 +1,113 @@
+/*Checkbox/Fieldflow radio input sizing,positioning*/
+.checkbox-lg > li.checkbox {
+  margin-top: 0px;
+}
+.checkbox-lg > li {
+  margin-left: -40px;
+  padding-left: 40px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  padding-right: 15px;
+}
+.checkbox-zebra > li:nth-child(2n+1) {
+  background-color: #f5f5f5;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.checkbox-lg > li.checkbox input[type=checkbox], .fieldflow-lg .radio input[type=radio] {
+  margin-top: 12px;
+  transform: scale(2);
+}
+.checkbox-lg label, .fieldflow-lg, .fieldflow-lg label, .fieldflow-lg div, .fieldflow-lg select, .std-blt {
+  font-size: 20px;
+  line-height: 1.65em;
+}
+.std-blt {
+  list-style-type: disc;
+}
+.std-blt li label {
+  display: block;
+  padding-left: 0px;
+}
+.fieldflow-lg .radio label {
+  margin-left: 40px;
+}
+.fieldflow-lg .radio input[type=radio] {
+  margin-left: -40px;
+}
+.fieldflow-lg fieldset legend {
+  font-size: 22px;
+  margin-top: 0px;
+}
+/*fix fieldflow margin issue for radio buttons */
+/*legend.h5 {
+	margin-top: 0px
+}
+input[type='radio'] {
+	margin-top: 12px !important;
+}*/
+/*Hide arrows in Chrome/FF for number input*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+ -webkit-appearance: none;
+ margin: 0;
+}
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+output.wb-calc {
+display: inline;
+}
+	/*Validation invisible text appearance */
+.wb-frmvld #errors-default .wb-inv, .wb-frmvld .has-error .wb-inv {
+	clip: inherit;
+	height: inherit;
+	margin: inherit;
+	overflow: inherit;
+	position: inherit;
+	width: inherit;
+}
+.wb-frmvld .has-error .wb-inv {
+	color: #333;
+}
+:not(#wb-srch) main form,main .checkbox,main .checkbox-inline,main .radio,main .radio-inline,main form :not(.btn-call-to-action).btn,main form :not(.btn-primary).btn {
+    font-size: 20px !important;
+    line-height: 1.65em !important;
+}
+
+.checkbox-lg>li {
+	margin-bottom: 20px;
+}
+.checkbox-lg>li .checkbox-block {
+	padding-left: 20px;
+}
+.checkbox-lg input[type=checkbox] {
+	/* Double-sized Checkboxes */
+	-ms-transform: scale(2); /* IE */
+	-moz-transform: scale(2); /* FF */
+	-webkit-transform: scale(2); /* Safari and Chrome */
+	-o-transform: scale(2); /* Opera */
+	transform: scale(2);
+	padding: 10px;
+	-webkit-background-color: #fff;
+}
+.checkbox-lg input[type=checkbox]:focus {
+	box-shadow: 0 0 2pt 1pt rgb(59, 153, 252);
+}
+.checkbox-lg label {
+	font-size: 1.2em;
+}
+p {
+	transition: all 1s;
+}
+p.hidden-action {
+	transform: scaleX(0);
+	overflow: hidden;
+	float: left;
+}
+p.visible-action {
+	transform: scaleX(1);
+	float: left;
+}
