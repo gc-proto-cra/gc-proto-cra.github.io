@@ -106,18 +106,18 @@
 
         <section class="mrgn-bttm-xl">
             <!--<h2 class="h-2 wb-inv">5 tasks left</h2>-->
-            <p class="mrgn-tp-md">Jamil's daughter lives with her mother during the school year and with him during the summers. Is Jamil eligible to apply for any child and family benefits?</p>
+            <p class="mrgn-tp-md">Riccardo is a retired professor who has Type 1 diabetes. He takes insulin twice per day. This therapeutic care takes him an average of 12 hours per week to do. Riccardo also suffers from a severe vision impairment due to his diabetes, which caused him to lose most of his vision in one eye. Is Riccardo eligible to receive the Disability Tax Credit (DTC)?</p>
 
             <fieldset class="provisional gc-chckbxrdio mrgn-tp-lg">
                 <legend>Possible answers</legend>
                 <ul class="list-unstyled lst-spcd-2">
                     <li class="radio">
                         <input type="radio" name="answer" id="answer-1">
-                        <label for="answer-1">Yes, Jamil can apply for benefits for the time he has his daughter</label>
+                        <label for="answer-1">Yes, Riccardo is eligible to receive the DTC</label>
                     </li>
                     <li class="radio">
                         <input type="radio" name="answer" id="answer-2">
-                        <label for="answer-2">No, Jamil cannot apply for benefits</label>
+                        <label for="answer-2">No, Riccardo is not eligible to receive the DTC</label>
                     </li>
                     <li class="radio">
                         <input type="radio" name="answer" id="answer-3">
@@ -127,50 +127,10 @@
             </fieldset>
             <div class="clearfix"></div>
 
-
-            <!--<div class="wb-frmvld fieldflow-lg">
-                <form>
-                    <div class="wb-fieldflow" data-wb-fieldflow='{
-							"renderas":"radio", 
-							"noForm": true,					     
-							"noreqlabel": true,
-                            "isOptional": true
-						}'>
-                        <p>Possible answers</p>
-                        <ul>
-                            <li>a. Tom will receive the payment</li>
-                            <li>b. Madison will receive the payment</li>
-                            <li>c. Each parent will receive 50% of the payment</li>
-                            <li>d. Tom will receive 20% of the payment, Madison will receive 80% of the payment</li>
-                            <li>e. I could not find the answer</li>
-                        </ul>
-                    </div>
-                </form>
-            </div>-->
-
-
             <div class="btn-container">
-                <a href="https://www.canada.ca/en/services/taxes.html" target="_blank" role="button" class="btn btn-primary btn-lg mrgn-tp-md"><span class="far fa-window-restore"></span> Start task<span class="wb-inv">this button will open a page in a new tab</span></a> <a href="post-task-survey.html" role="button" class="btn btn-default btn-lg mrgn-lft-md mrgn-tp-md">Post-task survey</a>
+                <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit.html" target="_blank" role="button" class="btn btn-primary btn-lg mrgn-tp-md"><span class="far fa-window-restore"></span> Start task<span class="wb-inv">this button will open a page in a new tab</span></a> <a href="post-task-survey.html" role="button" class="btn btn-default btn-lg mrgn-lft-md mrgn-tp-md">Post-task survey</a>
             </div>
 
-
-            <!--<script>
-            // insert buttons from the current task 
-    
-                const currentTask = TASKS[0] // TODO
-    
-                const btnContainer = document.querySelector(".btn-container")
-    
-                const buttonsHTML = currentTask.buttonLinks.map(({title,href, target, classes, spanClasses})=>`
-                <a href="${href}" role="button" class="btn btn-lg mrgn-tp-md ${classes}" ${target ? `target="${target}" name="this link will open in a new tab"` : ""} ><span class="${spanClasses}"></span> ${title}</a>
-                `).join("")
-                
-                console.log("🚀 ~ file: task-page.html ~ line 59 ~ buttonsHTML", buttonsHTML)
-                
-                btnContainer.innerHTML = buttonsHTML
-                
-                
-            </script>-->
         </section>
 
         <div id="def-preFooter"></div>
