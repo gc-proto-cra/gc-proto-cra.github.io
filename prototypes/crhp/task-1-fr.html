@@ -105,7 +105,6 @@
         <h1 property="name" id="wb-cont" class="mrgn-tp-xl">Tâche 1</h1>
 
         <section class="mrgn-bttm-xl">
-            <div class="col-md-9">
             <!--<h2 class="h-2 wb-inv">5 tasks left</h2>-->
             <!--<h2 class="h3">Scénario</h2>
             <p class="mrgn-tp-md">Vous êtes propriétaire d’un petit restaurant avec deux employés actifs. Pour la période 17, votre entreprise a connu une baisse de revenus de 11 % par rapport à cette même période en 2019 (avant la COVID-19).</p>
@@ -117,29 +116,10 @@
             <div class="btn-container">
                 <a href="https://www.canada.ca/fr/agence-revenu/services/subvention/programme-embauche-relance.html" target="_blank" role="button" class="btn btn-primary btn-lg mrgn-tp-md">Commencer la tâche <span class="far fa-window-restore"></span><span class="wb-inv">Cette page s’ouvre sous un nouvel onglet</span></a> <a href="post-task-survey-fr.html" role="button" class="btn btn-default btn-lg mrgn-lft-md mrgn-tp-md">Sondage postérieur à la tâche</a>
             </div>
+            
+            <p class="mrgn-tp-lg"><a href="instructions-fr.html">Read the Instructions</a></p>
 
 
-            <!--<script>
-            // insert buttons from the current task 
-    
-                const currentTask = TASKS[0] // TODO
-    
-                const btnContainer = document.querySelector(".btn-container")
-    
-                const buttonsHTML = currentTask.buttonLinks.map(({title,href, target, classes, spanClasses})=>`
-                <a href="${href}" role="button" class="btn btn-lg mrgn-tp-md ${classes}" ${target ? `target="${target}" name="this link will open in a new tab"` : ""} ><span class="${spanClasses}"></span> ${title}</a>
-                `).join("")
-                
-                console.log("🚀 ~ file: task-page.html ~ line 59 ~ buttonsHTML", buttonsHTML)
-                
-                btnContainer.innerHTML = buttonsHTML
-                
-                
-            </script>-->
-                </div>
-            <div class="col-md-3">
-            <p class="mrgn-tp-md"><a href="instructions-fr.html">Go Back to Instructions</a></p>
-            </div>
         </section>
 
         <div id="def-preFooter"></div>
