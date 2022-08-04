@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>Task 1</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name=”robots” content=”noindex”>
+    <!-- Meta data -->
+    <!-- Meta data-->
+    <!-- Load closure template scripts -->
+    <!--<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>-->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
+    <link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css" />
+
+    <link href="../../css/provisional-radio-buttons.css" rel="stylesheet">
+    <link href="../../css/custom.css" rel="stylesheet">
+    <link href="../../css/steps.css" rel="stylesheet">
+    <!-- Write closure template -->
+    <script type="text/javascript">
+        document.write(wet.builder.refTop({}));
+
+    </script>
+    <style>
+        /*Checkbox/Fieldflow radio input sizing,positioning*/
+        .checkbox-lg>li.checkbox {
+            margin-top: 0px;
+        }
+
+        .checkbox-lg>li {
+            margin-left: -40px;
+            padding-left: 40px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+            padding-right: 15px;
+        }
+
+        .checkbox-zebra>li:nth-child(2n+1) {
+            background-color: #f5f5f5;
+            padding-top: 10px;
+            padding-bottom: 15px;
+        }
+
+        .checkbox-lg>li.checkbox input[type=checkbox],
+        .fieldflow-lg .radio input[type=radio] {
+            margin-top: 12px;
+            transform: scale(2);
+        }
+
+        .checkbox-lg label,
+        .fieldflow-lg,
+        .fieldflow-lg label,
+        .fieldflow-lg div,
+        .fieldflow-lg select,
+        .std-blt {
+            font-size: 20px;
+            line-height: 1.65em;
+        }
+
+        .std-blt {
+            list-style-type: disc;
+        }
+
+        .std-blt li label {
+            display: block;
+            padding-left: 0px;
+        }
+
+        .fieldflow-lg .radio label {
+            margin-left: 40px;
+        }
+
+        .fieldflow-lg .radio input[type=radio] {
+            margin-left: -40px;
+        }
+
+        .fieldflow-lg fieldset legend {
+            font-size: 22px;
+            margin-top: 0px;
+        }
+
+        /* to make list item full width */
+        .cnt-wdth-lmtd main li,
+        main .cnt-wdth-lmtd li {
+            max-width: 100ch;
+        }
+
+    </style>
+    <!--<script src="/tasks.js"></script>-->
+</head>
+
+<body vocab="http://schema.org/" typeof="WebPage" class="cnt-wdth-lmtd">
+    <div id="def-top">
+    </div>
+    <!--<script>
+        console.log("HEYHEYHEY")
+    </script>-->
+
+    <main role="main" property="mainContentOfPage" class="container mrgn-bttm-xl">
+        <h1 property="name" id="wb-cont" class="mrgn-tp-xl">Task 1</h1>
+
+        <section class="mrgn-bttm-xl">
+            <!--<h2 class="h-2 wb-inv">5 tasks left</h2>-->
+            <p class="mrgn-tp-md">Emma’s 16-year-old daughter Amanda was in a car accident in 2021. As a result, Amanda suffers nerve damage and often needs help to dress herself. She has also developed anxiety about traveling in vehicles, and often misses school and medical appointments. Emma would like to know if Amanda is eligible for the Disability Tax Credit (DTC) because she wants to claim the tax credit on her behalf.</p>
+
+            <fieldset class="provisional gc-chckbxrdio mrgn-tp-lg">
+                <legend>Possible answers</legend>
+                <ul class="list-unstyled lst-spcd-2">
+                    <li class="radio">
+                        <input type="radio" name="answer" id="answer-1">
+                        <label for="answer-1">Yes, Amanda is eligible</label>
+                    </li>
+                    <li class="radio">
+                        <input type="radio" name="answer" id="answer-2">
+                        <label for="answer-2">No, Amanda is not eligible</label>
+                    </li>
+                    <li class="radio">
+                        <input type="radio" name="answer" id="answer-3">
+                        <label for="answer-3">I could not find the answer</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <div class="clearfix"></div>
+
+
+            <div class="btn-container">
+                <a href="https://test.canada.ca/cra/dtc/validation/index-404.html" target="_blank" role="button" class="btn btn-primary btn-lg mrgn-tp-md"><span class="far fa-window-restore"></span> Start task<span class="wb-inv">this button will open a page in a new tab</span></a> <a href="post-task-survey.html" role="button" class="btn btn-default btn-lg mrgn-lft-md mrgn-tp-md">Post-task survey</a>
+            </div>
+
+
+            <!--<script>
+            // insert buttons from the current task 
+    
+                const currentTask = TASKS[0] // TODO
+    
+                const btnContainer = document.querySelector(".btn-container")
+    
+                const buttonsHTML = currentTask.buttonLinks.map(({title,href, target, classes, spanClasses})=>`
+                <a href="${href}" role="button" class="btn btn-lg mrgn-tp-md ${classes}" ${target ? `target="${target}" name="this link will open in a new tab"` : ""} ><span class="${spanClasses}"></span> ${title}</a>
+                `).join("")
+                
+                console.log("🚀 ~ file: task-page.html ~ line 59 ~ buttonsHTML", buttonsHTML)
+                
+                btnContainer.innerHTML = buttonsHTML
+                
+                
+            </script>-->
+        </section>
+
+        <div id="def-preFooter"></div>
+        <!-- Write closure template -->
+        <script type="text/javascript">
+            var defPreFooter = document.getElementById("def-preFooter");
+            defPreFooter.outerHTML = wet.builder.preFooter({
+                dateModified: "2020-05-05",
+                showPostContent: true,
+                showFeedback: true,
+                showShare: true
+            });
+
+        </script>
+    </main>
+    <!--<div id="def-footer">
+    </div>-->
+    <!-- Write closure template -->
+    <script type="text/javascript">
+        var defFooter = document.getElementById("def-footer");
+        defFooter.outerHTML = wet.builder.footer({
+            showFooter: true,
+            showFeatures: true
+        });
+
+    </script>
+    <!-- Write closure template -->
+    <script type="text/javascript">
+        document.write(wet.builder.refFooter({}));
+
+    </script>
+    <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
+</body>
+
+</html>
