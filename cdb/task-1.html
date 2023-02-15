@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-    <title>Task 4</title>
+    <title>Task 1</title>
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <meta name=”robots” content=”noindex”>
     <!-- Meta data -->
@@ -102,46 +102,63 @@
     </script>-->
 
     <main role="main" property="mainContentOfPage" class="container mrgn-bttm-xl">
-        <h1 property="name" id="wb-cont" class="mrgn-tp-xl">Task 4</h1>
+        <h1 property="name" id="wb-cont" class="mrgn-tp-xl">Task 1</h1>
 
         <section class="mrgn-bttm-xl">
             <!--<h2 class="h-2 wb-inv">5 tasks left</h2>-->
-            <p class="mrgn-tp-md">Bob and Flora are married with a 7 year old who lives with them full time. They are planning to take their child to the dentist in February, 2023. If the dental bill is $630, what amount will be covered by the Canada Dental Benefit?</p>
-            <p>Additional information</p>
-            <ul>
-                <li>Bob’s net income in 2021 was 40,000</li>
-                <li>Flora’s net income in 2021 was 47,500</li>
-                <li>Bob and Flora have always lived in Canada and are their child’s only parents</li>
-                <li>Flora Had 10,000 in RDSP income in 2021</li>
-                <li>Bob had no RDSP amounts and both had no UCCB amounts</li>
-            </ul>    
-            <!--fieldset class="provisional gc-chckbxrdio mrgn-tp-lg">
+            <p class="mrgn-tp-md">Hailey and Peta are married and have two kids. They are eligible for the dental benefit for both kids, but only Peta has an online account with CRA. Hailey gets Canada Child Benefit cheques for their kids in the mail. Who should apply for the Canada Dental Plan?</p>
+
+            
+            <fieldset class="provisional gc-chckbxrdio mrgn-tp-lg">
                 <legend>Possible answers</legend>
                 <ul class="list-unstyled lst-spcd-2">
                     <li class="radio">
                         <input type="radio" name="answer" id="answer-1">
-                        <label for="answer-1">Total income, taxable income, and total non-refundable tax credits</label>
+                        <label for="answer-1">Peta should apply because they have CRA My Account</label>
                     </li>
                     <li class="radio">
                         <input type="radio" name="answer" id="answer-2">
-                        <label for="answer-2">Each line of the tax form</label>
+                        <label for="answer-2">Hailey should apply because they get the CCB</label>
                     </li>
                     <li class="radio">
                         <input type="radio" name="answer" id="answer-3">
-                        <label for="answer-3">Date of birth and Social insurance number (SIN)</label>
+                        <label for="answer-3">Either Peta or Hailey can apply, but not both</label>
                     </li>
                     <li class="radio">
-                        <input type="radio" name="answer" id="answer-3">
-                        <label for="answer-4">I couldn’t find the answer</label>
+                        <input type="radio" name="answer" id="answer-4">
+                        <label for="answer-4">Both Peta and Hailey can apply</label>
                     </li>
+                    <li class="radio">
+                        <input type="radio" name="answer" id="answer-5">
+                        <label for="answer-5">I could not find this information</label>
+                    </li>                 
                 </ul>
-            </fieldset-->
+            </fieldset>
             <div class="clearfix"></div>
 
+
             <div class="btn-container">
-                <a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/dental-benefit/how-much.html" target="_blank" role="button" class="btn btn-primary btn-lg mrgn-tp-md"><span class="far fa-window-restore"></span> Start task<span class="wb-inv">this button will open a page in a new tab</span></a> <a href="post-task-survey.html" role="button" class="btn btn-default btn-lg mrgn-lft-md mrgn-tp-md">Post-task survey</a>
+                <a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/dental-benefit/how-apply.html" target="_blank" role="button" class="btn btn-primary btn-lg mrgn-tp-md"><span class="far fa-window-restore"></span> Start task<span class="wb-inv">this button will open a page in a new tab</span></a> <a href="post-task-survey.html" role="button" class="btn btn-default btn-lg mrgn-lft-md mrgn-tp-md">Post-task survey</a>
             </div>
 
+
+            <!--<script>
+            // insert buttons from the current task 
+    
+                const currentTask = TASKS[0] // TODO
+    
+                const btnContainer = document.querySelector(".btn-container")
+    
+                const buttonsHTML = currentTask.buttonLinks.map(({title,href, target, classes, spanClasses})=>`
+                <a href="${href}" role="button" class="btn btn-lg mrgn-tp-md ${classes}" ${target ? `target="${target}" name="this link will open in a new tab"` : ""} ><span class="${spanClasses}"></span> ${title}</a>
+                `).join("")
+                
+                console.log("🚀 ~ file: task-page.html ~ line 59 ~ buttonsHTML", buttonsHTML)
+                
+                btnContainer.innerHTML = buttonsHTML
+                
+                
+            </script>-->
         </section>
 
         <div id="def-preFooter"></div>
