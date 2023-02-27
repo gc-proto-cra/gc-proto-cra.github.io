@@ -165,59 +165,37 @@
 <p>To avoid delays, submit your SR&amp;ED claim at the same time as your income tax return. </p>
 <p>If you submit your claim at least <strong>90 days</strong> before the SR&amp;ED reporting deadline, it should give the CRA enough time to do an initial review. If any information is missing, we will have time to advise you to modify your claim before the deadline.</p>
 </details>
-<h3>Due dates</h3>
-<p>Your SR&amp;ED reporting deadline depends on when you must file your income tax return.</p>
-             
+			 
+<h3>SR&amp;ED reporting deadline </h3>
+<p>Your SR&amp;ED reporting deadline depends on your income tax filing due date. Your filing due date depends on what type of claimant you are (individual, corporation, or trust). </p>
+			 
 <dl class="dl-horizontal brdr-0">            
-<dt>    
-<p><strong>SR&amp;ED reporting deadline:</strong></p>
-</dt>
-<dd>    
-<p>The reporting deadline is <strong>12 months</strong> after your <strong>income tax filing due date</strong> for the year</p>
-</dd>
-<dt>    
-<p><strong>Income tax filing due dates:</strong></p>
-</dt>
-<dd><div>
-<p>The filing due date depends on the type of claimant (individual, corporation, trust)</p>
+  <dt class="mrgn-bttm-lg">    
+    <p><strong>Self-employed Individuals</strong></p>
+    </dt>
+  <dd>    
+	  <p>Your SR&amp;ED reporting deadline is 12&nbsp;months after your T1 Income Tax and Benefit Return is due.</p>
+	  <ul class="fa-ul">
+		  <li><span class="far fa-calendar-alt fa-li text-muted"></span> Your tax filing due date is: <strong>June&nbsp;15</strong> <br> 
+			  <span class="small">(after the tax year end)</span></li>
+	  <li><span class="far fa-calendar-alt fa-li text-muted"></span> Your SR&amp;ED reporting deadline is: <strong>12&nbsp;months later</strong><br>
+		  <span class="small">(June&nbsp;15 the following year)</span></li>
+	  </ul>
+    
+    <p class="mrgn-bttm-md">We recommend  you submit your SR&amp;ED claim early, when you file your income taxes.</p>
+	</dd>
+  <dt>    
+    <p><strong>Corporations</strong></p>
+    </dt>	
+<dd>
+    <p>Your SR&amp;ED  reporting deadline is <strong>12&nbsp;months</strong> after your T2 Corporation Income Tax Return is due.</p>
 	
-<p class="mrgn-tp-lg h4"><strong>Self-employed individuals</strong></p>
-<p><strong>T1 Income Tax and Benefit Return</strong> is due <strong>June 15</strong> after the tax year end</p>
-<details>
-<summary>Understand the reporting deadline for individuals</summary>
-<p>The tax year end for individuals is December 31 every year.</p>
-
-<p><strong>Since your...</strong></p>
-
-<ul class="fa-ul">
-    <li><span class="far fa-calendar-alt fa-li text-muted"></span> Tax year end is: <strong>December 31</strong></li>
-</ul>
-    
-<p><strong>And your...</strong></p>
-
-<ul class="fa-ul">
-    <li><span class="far fa-calendar-alt fa-li text-muted"></span> Tax filing due date is: <strong>June 15</strong><br>
-        <span class="small">(5.5 months after the tax year end)</span></li>
-</ul>
-    
-<p><strong>Then your...</strong></p>
-
-<ul class="fa-ul">
-    <li><span class="far fa-calendar-alt fa-li text-muted"></span> SR&amp;ED deadline is: <strong>June 15 the following year</strong><br>
-        <span class="small">(12 months after taxes are due)</span></li>
-</ul>
-    
-	<p>However, we recommend you <a href="#deadline">submit your SR&amp;ED claim early</a>, when you file your income taxes.</p>
-</details>    
-<p class="mrgn-tp-lg h4"><strong>Corporations</strong></p>
-<p><strong>T2 Corporation Income Tax  Return</strong> is due <strong>6 months</strong> after your tax year end </p>
-
 <div class="form-group">
-    <label for="taxyearend">Enter your tax year end<span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
-    <input class="form-control" type="date" id="enddate2" name="enddate2" min="2022-01-01" max="2022-12-31" value="">
+  <label for="taxyearend">Enter your tax year end to get your dates<span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
+  <input class="form-control" type="date" id="enddate2" name="enddate2" min="2022-01-01" max="2022-12-31" value="">
 </div>             
-<div>
-<button class="btn btn-primary btn-lg" type="button" id="calculate2" data-wb-doaction="[ 
+    <div>
+      <button class="btn btn-primary btn-lg mrgn-bttm-md" type="button" id="calculate2" data-wb-doaction="[ 
     { &quot;action&quot;: &quot;removeClass&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;source&quot;: &quot;#corps1&quot; },
     { &quot;action&quot;: &quot;loadJSON&quot;, &quot;source&quot;: &quot;#smallLoader2&quot;, &quot;url&quot;: &quot;doaction-dates-en.json&quot; },
     { &quot;action&quot;: &quot;withInput&quot;, &quot;srcInput&quot;: &quot;#enddate2&quot;, &quot;actions&quot;: [
@@ -238,34 +216,38 @@
             }                                                                                        
         ] }
     ]">Get my dates</button>
-</div>     
+      </div>     
     
-<div id="smallLoader2" data-wb-jsonmanager="{
+    <div id="smallLoader2" data-wb-jsonmanager="{
     &quot;url&quot;:&quot;empty.json&quot;,
     &quot;name&quot;: &quot;jsonsmall2&quot;,
     &quot;wait&quot;: true
     }"></div>
+    
+    <div id="corps1" class="hidden mrgn-tp-lg mrgn-bttm-md">
+      <p><strong>Your due dates</strong></p>    
+      <ul class="fa-ul">
+        <li><span class="far fa-calendar-alt fa-li text-muted"></span> Your tax filing due date is: <strong><span class="nowrap" data-json-replace="#[jsonsmall2]/date">Date not loaded yet</span></strong><br><span class="small">(6 months after your tax year end)</span></li>
+        </ul>
+      <ul class="fa-ul mrgn-bttm-md">
+        <li><span class="far fa-calendar-alt fa-li text-muted"></span> Your SR&amp;ED reporting deadline is: <strong><span class="nowrap" data-json-replace="#[jsonsmall2]/date2">Date not loaded yet</span></strong><br><span class="small">(12 months after your tax filing due date)</span></li>
+        </ul>    
+      <p>However, we recommend your <a href="#deadline">submit your SR&amp;ED claim early</a>, when you file your income taxes.</p>
+      </div>
+	</dd>	
 
-<div id="corps1" class="hidden mrgn-tp-lg">
-<p><strong>Your due dates</strong></p>    
-<ul class="fa-ul">
-    <li><span class="far fa-calendar-alt fa-li text-muted"></span> Your tax filing due date is: <strong><span data-json-replace="#[jsonsmall2]/date">Date not loaded yet</span></strong></li>
-</ul>
-<ul class="fa-ul mrgn-bttm-md">
-    <li><span class="far fa-calendar-alt fa-li text-muted"></span> Your SR&amp;ED reporting deadline is: <strong><span data-json-replace="#[jsonsmall2]/date2">Date not loaded yet</span></strong></li>
-</ul>    
-	<p>However, we recommend your <a href="#deadline">submit your SR&amp;ED claim early</a>, when you file your income taxes.</p>
-</div>
-<p class="mrgn-tp-lg h4"><strong>Trusts</strong></p>
-<p><strong>T3 Trust Income Tax and Information Return</strong> is due <strong>90 days</strong> after your tax year end </p>
+  <dt>    
+    <p><strong>Trusts</strong></p>
+    </dt>	
+<dd>	
 
-       
+    <p>Your SR&amp;ED reporting deadline is <strong>12&nbsp;months</strong> after your T3 Trust Income Tax and Information Return is due </p>
 <div class="form-group">
-	<label for="taxyearend">Enter your tax year end<span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
-	<input class="form-control" type="date" id="enddate1" name="enddate1" min="2022-01-01" max="2022-12-31" value="">
+  <label for="taxyearend">Enter your tax year end to get your dates <span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
+  <input class="form-control" type="date" id="enddate1" name="enddate1" min="2022-01-01" max="2022-12-31" value="">
 </div>             
-<div>
-<button class="btn btn-primary btn-lg" type="button" id="calculate1" data-wb-doaction="[ 
+    <div>
+      <button class="btn btn-primary btn-lg mrgn-bttm-md" type="button" id="calculate1" data-wb-doaction="[ 
     { &quot;action&quot;: &quot;removeClass&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;source&quot;: &quot;#trusts1&quot; },
     { &quot;action&quot;: &quot;loadJSON&quot;, &quot;source&quot;: &quot;#smallLoader&quot;, &quot;url&quot;: &quot;doaction-dates-en.json&quot; },
     { &quot;action&quot;: &quot;withInput&quot;, &quot;srcInput&quot;: &quot;#enddate1&quot;, &quot;actions&quot;: [
@@ -286,29 +268,29 @@
             }                                                                                        
         ] }
     ]">Get my dates</button>
-</div> 
-             
-<div id="smallLoader" data-wb-jsonmanager="{
+      </div> 
+    
+    <div id="smallLoader" data-wb-jsonmanager="{
     &quot;url&quot;:&quot;empty.json&quot;,
     &quot;name&quot;: &quot;jsonsmall&quot;,
     &quot;wait&quot;: true
     }"></div>
-
-<div id="trusts1" class="hidden mrgn-tp-lg">
-<p><strong>Your due dates</strong></p>     
-<ul class="fa-ul">
-    <li><span class="far fa-calendar-alt fa-li text-muted"></span> Your tax filing due date is: <strong><span data-json-replace="#[jsonsmall]/date">Date not loaded yet</span></strong></li>
-</ul>
-<ul class="fa-ul mrgn-bttm-md">
-    <li><span class="far fa-calendar-alt fa-li text-muted"></span> Your SR&amp;ED  reporting deadline is: <strong><span data-json-replace="#[jsonsmall]/date2">Date not loaded yet</span></strong></li>
-</ul>    
-	<p>However, we recommend  your <a href="#deadline">submit your SR&amp;ED claim early</a>, when you file your income taxes.</p>
-</div>
-</div>
-</dd>
+    
+	
+    <div id="trusts1" class="hidden mrgn-tp-lg mrgn-bttm-md">
+      <p><strong>Your due dates</strong></p>     
+      <ul class="fa-ul">
+        <li><span class="far fa-calendar-alt fa-li text-muted"></span> Your tax filing due date is: <strong><span class="nowrap" data-json-replace="#[jsonsmall]/date">Date not loaded yet</span></strong><br><span class="small">(90 days after your tax year end)</span></li>
+        </ul>
+      <ul class="fa-ul mrgn-bttm-md">
+        <li><span class="far fa-calendar-alt fa-li text-muted"></span> Your SR&amp;ED  reporting deadline is: <strong><span class="nowrap" data-json-replace="#[jsonsmall]/date2">Date not loaded yet</span></strong><br><span class="small">(12 months after your tax filing due date)</span></li>
+        </ul>    
+      <p>However, we recommend  your <a href="#deadline">submit your SR&amp;ED claim early</a>, when you file your income taxes.</p>
+      </div>
+    </dd>
 </dl>  
              
-<p>To learn more about filing due dates and SR&ED reporting deadlines, review <a href="/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/filing-requirements-policy.html#toc5">Section 5, Filing Requirements Policy</a>.</p>
+<p>To learn more about filing due dates and SR&amp;ED reporting deadlines, review <a href="/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/filing-requirements-policy.html#toc5">Section 5, Filing Requirements Policy</a>.</p>
 
 <h2 id="h3">Keep supporting records and information</h2>
 <p>Keeping proper  documentation will make it easier to prepare and support your claim.</p>
