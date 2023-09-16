@@ -1,1 +1,0 @@
-/* stub provided for backwards compatibility */
