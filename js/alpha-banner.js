@@ -1,4 +1,4 @@
 // if you want the banner off, just comment out the file
 
 var alphaBanner = document.getElementsByTagName('BODY')[0];
-alphaBanner.insertAdjacentHTML('afterbegin', '<section class="experimental alpha-top well well-sm" role="banner"><h2 class="wb-inv">This webpage is in alpha</h2><div class="container well-sm"><small><span class="alpha-label"><strong>Alpha</strong></span>&nbsp;&nbsp; This is an experimental version for the Canada Revenue Agency.</small></div></section >');
+alphaBanner.insertAdjacentHTML('afterbegin', '<section class="experimental alpha-top well well-sm mrgn-tp-0 mrgn-bttm-0" role="banner"><h2 class="wb-inv">This webpage is in alpha</h2><div class="container"><small><span class="alpha-label"><strong>Alpha</strong></span>&nbsp;&nbsp; This is an experimental version for the Canada Revenue Agency.</small></div></section >');
