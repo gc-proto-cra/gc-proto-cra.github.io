@@ -30,24 +30,24 @@
 <script type="text/javascript">
             var defTop = document.getElementById("def-top");
             defTop.outerHTML = wet.builder.top({
-            	lngLinks: [{
-            		lang: "fr",
-            		href: "",
-            		text: "Français"
-            	}],
-            	breadcrumbs: [{
-            		title: "Canada.ca",
-            		href: "/en.html"
-            		},{
-            	title: "Canada Revenue Agency ",
-                     		href: "/en/revenue-agency.html"
-            		},{
-            	title: "Forms and publications",
-                     		href: "/en/revenue-agency/services/forms-publications.html"
-            		}],
-            	search: true,
-            	siteMenu: true,
-            	showPreContent: true
+               lngLinks: [{
+                  lang: "fr",
+                  href: "",
+                  text: "Français"
+               }],
+               breadcrumbs: [{
+                  title: "Canada.ca",
+                  href: "/en.html"
+                  },{
+               title: "Canada Revenue Agency ",
+                           href: "/en/revenue-agency.html"
+                  },{
+               title: "Forms and publications",
+                           href: "/en/revenue-agency/services/forms-publications.html"
+                  }],
+               search: true,
+               siteMenu: true,
+               showPreContent: true
             });
          </script>
 <main role="main" property="mainContentOfPage" class="container-fluid">
@@ -83,15 +83,15 @@
             for(var i = 0; i < hTags.length; i++){
                 var tags = document.querySelectorAll(hTags[i].toLowerCase());
                 
-				if(typeof tags != 'undefined' && tags != null){
+            if(typeof tags != 'undefined' && tags != null){
                     for(var j = 0; j < tags.length; j++){
                        // mws-1900 - the heading from texts contains contains text without backslash before appostraphy, where as tags returned by query selector does not contain them
                         // hence removing backslash for creating equal comparison in order to add id reference
                         if(tags[j].textContent.trim() === hText[i].replace(/\\/g, '')) {
-							if(!tags[j].id) {
-								tags[j].setAttribute('id', 'toc'+i);
-								break;
-							}
+                     if(!tags[j].id) {
+                        tags[j].setAttribute('id', 'toc'+i);
+                        break;
+                     }
                         }
                     }
                 }
@@ -131,15 +131,14 @@
                     <div class="cnjnctn-col"> 
                         <details>
                             <summary>If you were a non-resident or a deemed resident of Canada</summary>
-                            <p>Use the&nbsp;<a href="/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/non-residents.html">Income tax package for non-residents and deemed residents of Canada</a>&nbsp;if you were a <strong>non-resident</strong> or&nbsp;<strong>deemed resident</strong> of Canada in 2022.</p>
+                            <ul>
+                                <li>Use the&nbsp;<a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/non-residents.html">Income tax package for non-residents and deemed residents of Canada</a>.</li>
+                                <li>And, if you were a <strong>non-resident</strong> of Canada throughout 2022 carrying on business in more than one province or territory or were receiving income from an office or employment that can reasonably be attributed to duties performed in more than one province or territory (or both) use <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2203.html">Form T2203, Provincial or territorial Taxes for Multiple Jurisdictions</a> to calculate your provincial and territorial taxes.</li>
+                            </ul>
                         </details>
                         <details>
                             <summary>If your business income was from outside the province or territory you reside in, from outside Canada, or from multiple provinces</summary>
-                            <p>Use <a href="/en/revenue-agency/services/forms-publications/forms/t2203.html" style="background-color: rgb(255, 255, 255);">Form T2203, Provincial and Territorial Taxes for Multiple Jurisdictions</a> to calculate your provincial and territorial taxes if one of the following situations applies to you:</p>
-                            <ul>
-                                <li>You resided in a province or territory on December 31, 2022 (or the date you left Canada if you emigrated in 2022) and all or part of your 2022 business income was earned and can be allocated to a permanent establishment outside that province or territory, or outside Canada</li>
-                                <li>You were a non-resident of Canada throughout 2022 carrying on business in more than one province or territory or were receiving income from an office or employment that can reasonably be attributed to duties performed in more than one province or territory (or both)</li>
-                            </ul>
+                            <p>If you resided in a province or territory on December 31, 2022 (or the date you left Canada if you emigrated in 2022) and all or part of your 2022 business income was earned and can be allocated to a permanent establishment outside that province or territory, or outside Canada, use <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2203.html">Form T2203, Provincial and Territorial Taxes for Multiple Jurisdictions</a>.</p>
                         </details>
                     </div>
                 </div>
@@ -190,7 +189,7 @@
                 <details>
                     <summary>You were a Quebec resident on December 31, 2022</summary>
                     <p>Use the <a href="/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/quebec.html">Quebec income tax package</a> to calculate your federal tax only.</p>
-                    <p>You will also need to file a <a href="/www.revenuquebec.ca/en/online-services/forms-and-publications/current-details/tp-1-v/">provincial income tax return for Quebec</a>.</p>
+                    <p>You will also need to file a <a href="https://www.revenuquebec.ca/en/online-services/forms-and-publications/current-details/tp-1-v/">provincial income tax return for Quebec</a>.</p>
                 </details>
             </li>
             <li>
@@ -293,9 +292,9 @@
                                     </div>
                                     <div class="col-xs-8 col-sm-5 text-right">
                                         <button type="submit" name="helpful" value="Yes" class="btn btn-primary" data-gc-analytics-wtph>Yes</button>
-                                        <button type="button" class="btn btn-primary mrgn-lft-sm nojs-hide" data-wb-doaction="[									{&quot;action&quot;:&quot;removeClass&quot;,&quot;source&quot;:&quot;.gc-pg-hlpfl-no&quot;,&quot;class&quot;:&quot;nojs-show&quot;},
-									{&quot;action&quot;:&quot;addClass&quot;,&quot;source&quot;:&quot;.gc-pg-hlpfl-btn&quot;,&quot;class&quot;:&quot;hide&quot;}
-								]" data-gc-analytics-wtph-no>No</button>
+                                        <button type="button" class="btn btn-primary mrgn-lft-sm nojs-hide" data-wb-doaction="[                          {&quot;action&quot;:&quot;removeClass&quot;,&quot;source&quot;:&quot;.gc-pg-hlpfl-no&quot;,&quot;class&quot;:&quot;nojs-show&quot;},
+                           {&quot;action&quot;:&quot;addClass&quot;,&quot;source&quot;:&quot;.gc-pg-hlpfl-btn&quot;,&quot;class&quot;:&quot;hide&quot;}
+                        ]" data-gc-analytics-wtph-no>No</button>
                                     </div>
                                 </div>
                             </div>
@@ -355,10 +354,10 @@
     <script type="text/javascript">
                var defPreFooter = document.getElementById("def-preFooter");
                defPreFooter.outerHTML = wet.builder.preFooter({
-               	dateModified: "September 2, 2021",
-               	showPostContent: true,
-               	showFeedback: true,
-               	showShare: true
+                  dateModified: "September 2, 2021",
+                  showPostContent: true,
+                  showFeedback: true,
+                  showShare: true
                });
             </script> 
 </main>
@@ -367,8 +366,8 @@
 <script type="text/javascript">
             var defFooter = document.getElementById("def-footer");
             defFooter.outerHTML = wet.builder.footer({
-            	showFooter: true,
-            	showFeatures: true
+               showFooter: true,
+               showFeatures: true
             });
          </script> 
 <!-- Write closure template --> 
