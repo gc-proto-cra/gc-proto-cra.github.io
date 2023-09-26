@@ -656,6 +656,16 @@
 </div>
 
            <div id="def-preFooter"> </div>
+<!-- Write closure template --> 
+<script type="text/javascript">
+               var defPreFooter = document.getElementById("def-preFooter");
+               defPreFooter.outerHTML = wet.builder.preFooter({
+                  dateModified: "September 2, 2021",
+                  showPostContent: true,
+                  showFeedback: true,
+                  showShare: true
+               });
+            </script>
 
          </main>
          <div id="def-footer"> </div>
