@@ -1,0 +1,257 @@
+@import url("./font-awesome-6.1.1/css/all.css");
+
+/**
+ * Override to help labels behave properly when a field has 
+ * multiple errors.
+ * This class will be re-evaluated with every upgrade to the WET version
+ */
+.label-error {
+    white-space:normal;
+    display: block;
+    text-align: left;
+    font-size: 100%;    
+}
+
+/**  
+ * Override to make the legend appear similar to input labels
+ * This class will need to be re-evaluated with every upgrade to the WET version
+ */
+legend {
+    font-weight: 700;
+    font-size: 100%;
+    padding-bottom: 4px;  /* This will ensure that the line is not over the error message box*/
+}
+
+/**
+ * Override so first checkbox or radio button does not overlap the legend
+ */
+fieldset div.checkbox:first-of-type, fieldset div.radio:first-of-type {
+    position: initial;  /* issue exists when position is relative */
+}    
+
+/** suppress expansion of URLs and abbreviations in printed view */
+@media print {
+    a[href]:after {
+        content: ""; 
+    }
+    abbr[title]:after {
+        content: ""; 
+    }
+    
+    /*
+     * Fix for the Canada.ca theme so that the side menu isn't printed
+     */
+    #wb-sec {
+        display: none !important; 
+    }
+}
+
+
+/**
+ * For a fieldset associated with a group of text input fields aligned horizontally 
+ * we want to get rid of the bottom border, so that the legend looks like a normal
+ * label.    
+ */
+fieldset[class~=no-border] {
+    border-top: 0;
+}
+
+/**
+ * The basic WET form-inline class is wrapped in a media query that prevents it
+ * from having any effect in widths below 768px.
+ * This form-inline-xs class is just a duplicate of form-inline without the 
+ * query wrapper.  Make sure you really do have enough horizontal space
+ * on extra-small screens if you're going to use it. 
+ */
+.form-inline-xs .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle; }
+.form-inline-xs .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle; }
+.form-inline-xs .form-control-static {
+    display: inline-block; }
+.form-inline-xs .input-group {
+    display: inline-table;
+    vertical-align: middle; }
+  .form-inline-xs .input-group .input-group-addon, .form-inline-xs .input-group .input-group-btn, .form-inline-xs .input-group .form-control {
+      width: auto; }
+.form-inline-xs .input-group > .form-control {
+    width: 100%; }
+.form-inline-xs .control-label {
+    margin-bottom: 0;
+    vertical-align: middle; }
+.form-inline-xs .radio, .form-inline-xs .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle; }
+  .form-inline-xs .radio label, .form-inline-xs .checkbox label {
+      padding-left: 0; }
+.form-inline-xs .radio input[type="radio"], .form-inline-xs .checkbox input[type="checkbox"] {
+    position: relative;
+    margin-left: 0; }
+.form-inline-xs .has-feedback .form-control-feedback {
+    top: 0; }
+ 
+
+/**
+ * For name/value pair layout, as per CRA usability guidelines.       
+ */
+.dl-horizontal-cra dt {
+    text-align: left;
+    font-weight: normal;
+    border: none;
+    padding: 0;
+}
+
+.dl-horizontal-cra dd {
+    font-weight: bold; 
+    border: none;
+    padding: 0;
+}
+
+#scrnid-cra dd, #scrnid-cra dt {
+    display: inline;
+    font-weight: 400;
+    margin-right: 0;  
+}
+
+@media screen and (max-width: 991px) {
+    header .brand object {
+        margin-top: 10px;
+    }
+}
+
+.wb-cra-steps {
+    visibility:hidden;
+    position:relative;    
+    margin-top:50px;
+    margin-right:75px;
+    margin-bottom:35px;
+    font-size:16px;
+    line-height:1.4375;
+    padding-bottom: 7.5%;
+}
+
+.wb-cra-steps .fa-stack {
+    width:2em;
+}
+@media (min-width: 992px) {
+    .wb-cra-steps, .wb-cra-steps progress {
+        width:66%; 
+        margin-left:15%;
+    }
+}   
+
+.wb-cra-steps progress {
+    width:100%;
+    margin-left: 50px;
+    padding-right: 25px;
+}
+
+.wb-cra-steps progress[value] {  
+    -webkit-appearance:none;
+    -moz-appearance:none;
+          appearance:none;
+    border:none;
+    border-radius:none; 
+    height: 8px;
+    color: #295376;
+    background-color:#D0D0D0;
+} 
+
+.wb-cra-steps progress::-moz-progress-bar { background: #295376; }
+.wb-cra-steps progress::-webkit-progress-value { background: #295376; }
+
+.wb-cra-steps .step {
+    position:absolute;    
+   
+}
+
+.wb-cra-steps .step-active, .wb-cra-steps .step-done {
+    color:#295376;
+}
+.wb-cra-steps .step-not-active {
+    color:#D0D0D0;
+}
+.wb-cra-steps .list-inline > li {
+    padding-left:0px;
+    padding-right:0px;
+}
+.wb-cra-steps li{
+    font-weight:bold;
+}
+.step-link, .step-link:visited{
+    color:#295376;
+}
+.step-link .step-text, .step-done .step-text, .step-not-active .step-text, .step-active .step-text{
+    display: block;
+    position: relative;
+    top: 110%;
+    font-size: 40%;
+    text-align: center;
+    line-height: 1;
+    width: 100%;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.step-not-active .step-background {
+    color:#D0D0D0;
+}
+
+.step-not-active .step-text, .step-not-active .step-content {
+    color:#606060;
+}
+
+.step{
+    position:absolute;
+    top:-20px;
+    right:-20px;
+}
+
+/**
+ * Fix for screen id and version, as per CDTS templates.
+ */
+
+#wb-dtmd dt, #wb-dtmd dd {
+    float: left
+}
+
+#wb-dtmd dt {
+    clear: both
+}
+
+#wb-dtmd dd {
+    margin-left: 5px
+}
+
+.pagedetails > #wb-dtmd {
+    margin-top: 0; 
+    padding-left: 15px;
+}
+
+.input-group-addon {
+    padding-top: 5px;
+    padding-bottom: 1px;
+}
+
+/**
+ * For transactional bar and breadcrumbs
+ */
+.transactBar {
+    border-top: 3px solid #38414d;
+    margin-top: 5px;
+}
+
+.transactBar ~ #wb-bc ol {
+    padding-left: 0px;
+    padding-right: 0px; 
+}
+
+.wb-cra-steps .step-text-content {
+    font-family: Lato, sans-serif;
+}
