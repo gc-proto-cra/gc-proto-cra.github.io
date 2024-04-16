@@ -138,26 +138,28 @@
         <div class="clearfix"></div>
         <div class="mrgn-lft-lg">
 
-        <p>Enter the phone number you were given to call back.<br>
-        <span class="small text-muted">(Requires at least 10 digits)</span></p>
+        <p>Enter the phone number you were given to call back.<!--br>
+        (e.g. 555-555-5555)--></p>
        
-<div action="" method="post">
+<div class="wb-frmvld" action="" method="post">
        <form class="form-inline" onsubmit="return false">
         <div class="form-group">
 
         <label for="input1" class="required wb-inv"><span class="field-name">Telephone number</span></label>
-        <input class="form-control mrgn-bttm-md" name="input1" id="input1" size="15" maxlength="15"  type="tel" autocomplete="tel" required="required" pattern="\d{1,}" onkeyup="this.value = this.value.replace(/[^0-9]/g, '')" />
+        <input class="form-control mrgn-bttm-md" id="input1" size="15" maxlength="15"  type="tel" autocomplete="tel" required="required" data-rule-phoneUS="true" data-msg="Enter the correct amount of digits in a phone number" />
         <button class="btn btn-primary mrgn-lft-sm mrgn-bttm-md" type="submit" id="button1">Verify number</button>
 
         </div>
         </form>
 </div>
 
-            
+
+               
 <!-- Telephone numbers for personal taxes, benefits and trusts -->
  
 <!-- success 1 --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn1">
+<div class="alert alert-success mrgn-tp-md hidden" id="phn1">
+<h3 class="h4">Identify protection services phone number</h3>
 <h4>This is a valid CRA phone number</h4>
 <p>1-833-995-2336</p>
 <dl class="dl-horizontal text-left">
@@ -172,192 +174,93 @@
 </dl>
 </div>  
 
-<!-- success 1x --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn1x">
-<h4>This is a valid CRA phone number</h4>
-<p>833-995-2336</p>
-<dl class="dl-horizontal text-left">
-<dt class="nowrap brdr-0" title="Monday to Friday">Mon to Fri</dt>
-<dd class="nowrap brdr-0">6:30&nbsp;am to 7&nbsp;pm ET </dd>
-<dt class="nowrap" title="Saturday">Sat</dt>
-<dd>Closed </dd>
-<dt class="nowrap" title="Sunday">Sun</dt>
-<dd class="nowrap">Closed</dd>
-<dt class="nowrap"><a href="/en/revenue-agency/services/tax/public-holidays.html">Public holidays</a></dt>
-<dd class="nowrap">Closed</dd>
-</dl>
-</div>  
-
 <!-- success 2 --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn2">
+<div class="alert alert-success mrgn-tp-md hidden" id="phn2">
 <h4>This is a valid CRA phone number</h4>
 <p>1-800-959-8281</p>
 <section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #prs-hrs-03">
 </div>  
 
-<!-- success 2x --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn2x">
-<h4>This is a valid CRA phone number</h4>
-<p>800-959-8281</p>
-<section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #prs-hrs-03">
-</div>  
-
 <!-- success 3 --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn3">
+<div class="alert alert-success mrgn-tp-md hidden" id="phn3">
 <h4>This is a valid CRA phone number</h4>
 <p>1-800-387-1193</p>
 <section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #prs-hrs-12">
 </div>  
 
-<!-- success 3x --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn3x">
-<h4>This is a valid CRA phone number</h4>
-<p>800-387-1193</p>
-<section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #prs-hrs-12">
-</div>  
-
 <!-- success 4 --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn4">
+<div class="alert alert-success mrgn-tp-md hidden" id="phn4">
 <h4>This is a valid CRA phone number</h4>
 <p>1-800-959-5525</p>
 <section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #bsn-hrs-02">
 </div>  
 
-<!-- success 4x --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn4x">
-<h4>This is a valid CRA phone number</h4>
-<p>800-959-5525</p>
-<section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #bsn-hrs-02">
-</div>  
-
 <!-- success 5 --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn5">
+<div class="alert alert-success mrgn-tp-md hidden" id="phn5">
 <h4>This is a valid CRA phone number</h4>
 <p>1-800-265-2577</p>
 <section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #bsn-hrs-31">
 </div>  
 
-<!-- success 5x --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn5x">
-<h4>This is a valid CRA phone number</h4>
-<p>800-265-2577</p>
-<section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #bsn-hrs-31">
-</div>  
-
 <!-- success 6 --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn6">
+<div class="alert alert-success mrgn-tp-md hidden" id="phn6">
 <h4>This is a valid CRA phone number</h4>
 <p>1-888-863-8657</p>
 <section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #prs-hrs-19">
 </div>  
 
-<!-- success 6x --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn6x">
-<h4>This is a valid CRA phone number</h4>
-<p>888-863-8657</p>
-<section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #prs-hrs-19">
-</div>  
-
 <!-- success 7 --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn7">
+<div class="alert alert-success mrgn-tp-md hidden" id="phn7">
 <h4>This is a valid CRA phone number</h4>
 <p>1-888-863-8662</p>
 <section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #prs-hrs-20">
-</div>
-
-<!-- success 7x --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn7x">
-<h4>This is a valid CRA phone number</h4>
-<p>888-863-8662</p>
-<section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #prs-hrs-20">
-</div>    
+</div>  
 
 <!-- success 8 --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn8">
+<div class="alert alert-success mrgn-tp-md hidden" id="phn8">
 <h4>This is a valid CRA phone number</h4>
 <p>1-866-864-5823</p>
 <section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #prs-hrs-21">
 </div>  
 
-<!-- success 8x --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn8x">
-<h4>This is a valid CRA phone number</h4>
-<p>866-864-5823</p>
-<section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #prs-hrs-21">
-</div>  
-
 <!-- success 9 --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn9">
+<div class="alert alert-success mrgn-tp-md hidden" id="phn9">
 <h4>This is a valid CRA phone number</h4>
 <p>1-866-864-5841</p>
 <section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #prs-hrs-22">
 </div>  
 
-<!-- success 9x --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn9x">
-<h4>This is a valid CRA phone number</h4>
-<p>866-864-5841</p>
-<section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #prs-hrs-22">
-</div>  
-
 <!-- success 10 --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn10">
+<div class="alert alert-success mrgn-tp-md hidden" id="phn10">
 <h4>This is a valid CRA phone number</h4>
 <p>1-866-864-5825</p>
 <section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #prs-hrs-23">
 </div>  
 
-<!-- success 10x --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn10x">
-<h4>This is a valid CRA phone number</h4>
-<p>866-864-5825</p>
-<section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #prs-hrs-23">
-</div>  
-
 <!-- success 11 --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn11">
+<div class="alert alert-success mrgn-tp-md hidden" id="phn11">
 <h4>This is a valid CRA phone number</h4>
 <p>1-866-291-6346</p>
 <section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #bsn-hrs-14">
 </div>  
 
-<!-- success 11x --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn11x">
-<h4>This is a valid CRA phone number</h4>
-<p>866-291-6346</p>
-<section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #bsn-hrs-14">
-</div>  
-
 <!-- success 12 --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn12">
+<div class="alert alert-success mrgn-tp-md hidden" id="phn12">
 <h4>This is a valid CRA phone number</h4>
 <p>1-877-477-5068</p>
 <section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #bsn-hrs-12">
 </div>  
 
-<!-- success 12x --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn12x">
-<h4>This is a valid CRA phone number</h4>
-<p>877-477-5068</p>
-<section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #bsn-hrs-12">
-</div>  
-
 <!-- success 13 --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn13">
+<div class="alert alert-success mrgn-tp-md hidden" id="phn13">
 <h4>This is a valid CRA phone number</h4>
 <p>1-877-548-6016</p>
 <section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #bsn-hrs-13">
 </div>  
 
-<!-- success 13x --> 
-<div class="alert alert-success mrgn-tp-md hidden phnlrt" id="phn13x">
-<h4>This is a valid CRA phone number</h4>
-<p>877-548-6016</p>
-<section class="mrgn-tp-md" data-ajax-after="https://test.canada.ca/cra-arc/cops/scams/contact.html #bsn-hrs-13">
-</div> 
 
 <!-- warning --> 
-<div class="alert alert-warning mrgn-tp-md hidden phnlrt" id="phnx">
+<div class="alert alert-warning mrgn-tp-md hidden" id="phnx">
 <h3 class="h4">This number may not be valid - call CRA to check it</h3>
 <p>This is not one of CRA's publicized phone numbers. This may be a CRA employee's direct internal phone number.</p>
 <p>To check if an employee has tried to contact you, call the CRA:</p>
@@ -367,142 +270,72 @@
   </ul>
 </div>
 
-<!-- danger --> 
-<div class="alert alert-danger mrgn-tp-md hidden phnlrt" id="phnxx">
+<!-- danger  
+<div class="alert alert-danger mrgn-tp-md" id="phn3" style="display:none;">
 <h3 class="h4"> &nbsp; </h3>
-<p>You need to enter at least 10 digits for the phone number.</p>
-</div> 
+<p>Please enter a valid phone number to verify.</p>
+</div> -->
 
 
 <script type="text/javascript">
-let phn1 = new Array("18339952336", "1-833-995-2336");
-let phn1x = new Array("8339952336", "833-995-2336");
-let phn2 = new Array("18009598281", "1-800-959-8281");
-let phn2x = new Array("8009598281", "800-959-8281");
-let phn3 = new Array("18003871193", "1-800-387-1193");
-let phn3x = new Array("8003871193", "800-387-1193");
-let phn4 = new Array("18009595525", "1-800-959-5525");
-let phn4x = new Array("8009595525", "800-959-5525");
-let phn5 = new Array("18002652577", "1-800-265-2577");
-let phn5x = new Array("8002652577", "800-265-2577");
-let phn6 = new Array("18888638657", "1-888-863-8657");
-let phn6x = new Array("8888638657", "888-863-8657");
-let phn7 = new Array("18888638662", "1-888-863-8662");
-let phn7x = new Array("8888638662", "888-863-8662");
-let phn8 = new Array("18668645823", "1-866-864-5823");
-let phn8x = new Array("8668645823", "866-864-5823");
-let phn9 = new Array("18668645841", "1-866-864-5841");
-let phn9x = new Array("8668645841", "866-864-5841");
-let phn10 = new Array("18668645825", "1-866-864-5825");
-let phn10x = new Array("8668645825", "866-864-5825");
-let phn11 = new Array("18662916346", "1-866-291-6346");
-let phn11x = new Array("8662916346", "866-291-6346");
-let phn12 = new Array("18774775068", "1-877-477-5068");
-let phn12x = new Array("8774775068", "877-477-5068");
-let phn13 = new Array("18775486016", "1-877-548-6016");
-let phn13x = new Array("8775486016", "877-548-6016");
+let phn1 = new Array("18339952336", "1-833-995-2336", "8339952336", "833-995-2336");
+let phn2 = new Array("18009598281", "1-800-959-8281", "8009598281", "800-959-8281");
+let phn3 = new Array("18003871193", "1-800-387-1193", "8003871193", "800-387-1193");
+let phn4 = new Array("18009595525", "1-800-959-5525", "8009595525", "800-959-5525");
+let phn5 = new Array("18002652577", "1-800-265-2577", "8002652577", "800-265-2577");
+let phn6 = new Array("18888638657", "1-888-863-8657", "8888638657", "888-863-8657");
+let phn7 = new Array("18888638662", "1-888-863-8662", "8888638662", "888-863-8662");
+let phn8 = new Array("18668645823", "1-866-864-5823", "8668645823", "866-864-5823");
+let phn9 = new Array("18668645841", "1-866-864-5841", "8668645841", "866-864-5841");
+let phn10 = new Array("18668645825", "1-866-864-5825", "8668645825", "866-864-5825");
+let phn11 = new Array("18662916346", "1-866-291-6346", "8662916346", "866-291-6346");
+let phn12 = new Array("18774775068", "1-877-477-5068", "8774775068", "877-477-5068");
+let phn13 = new Array("18775486016", "1-877-548-6016", "8775486016", "877-548-6016");
 let button1 = document.getElementById("button1");
 let input = document.getElementById("input1");
 
-button1.addEventListener("click", function() {
-    if( $("#input1").val().length < 10 ) {
-        $(".phnlrt").addClass("hidden");
-        $("#phnxx").removeClass("hidden");
-    } else if (phn1.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
+document.addEventListener("submit", function() {
+    if (phn1.includes(input.value)) {
         $("#phn1").removeClass("hidden");
+        $("#phn2, #phn3, #phn4, #phn5, #phn6, #phn7, #phn8, #phn9, #phn10, #phn11, #phn12, #phn13, #phnx").addClass("hidden");
     } else if (phn2.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
+        $("#phn1, #phn3, #phn4, #phn5, #phn6, #phn7, #phn8, #phn9, #phn10, #phn11, #phn12, #phn13, #phnx").addClass("hidden");
         $("#phn2").removeClass("hidden");
     } else if (phn3.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
+        $("#phn1, #phn2, #phn4, #phn5, #phn6, #phn7, #phn8, #phn9, #phn10, #phn11, #phn12, #phn13, #phnx").addClass("hidden");
         $("#phn3").removeClass("hidden");
     } else if (phn4.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
+        $("#phn1, #phn2, #phn3, #phn5, #phn6, #phn7, #phn8, #phn9, #phn10, #phn11, #phn12, #phn13, #phnx").addClass("hidden");
         $("#phn4").removeClass("hidden");
     } else if (phn5.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
+        $("#phn1, #phn2, #phn3, #phn4, #phn6, #phn7, #phn8, #phn9, #phn10, #phn11, #phn12, #phn13, #phnx").addClass("hidden");
         $("#phn5").removeClass("hidden");
     } else if (phn6.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
+        $("#phn1, #phn2, #phn3, #phn4, #phn5, #phn7, #phn8, #phn9, #phn10, #phn11, #phn12, #phn13, #phnx").addClass("hidden");
         $("#phn6").removeClass("hidden");
     } else if (phn7.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
+        $("#phn1, #phn2, #phn3, #phn4, #phn5, #phn6, #phn8, #phn9, #phn10, #phn11, #phn12, #phn13, #phnx").addClass("hidden");
         $("#phn7").removeClass("hidden");
     } else if (phn8.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
+        $("#phn1, #phn2, #phn3, #phn4, #phn5, #phn6, #phn7, #phn9, #phn10, #phn11, #phn12, #phn13, #phnx").addClass("hidden");
         $("#phn8").removeClass("hidden");
     } else if (phn9.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
+        $("#phn1, #phn2, #phn3, #phn4, #phn5, #phn6, #phn7, #phn8, #phn10, #phn11, #phn12, #phn13, #phnx").addClass("hidden");
         $("#phn9").removeClass("hidden");
     } else if (phn10.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
+        $("#phn1, #phn2, #phn3, #phn4, #phn5, #phn6, #phn7, #phn8, #phn9, #phn11, #phn12, #phn13, #phnx").addClass("hidden");
         $("#phn10").removeClass("hidden");
     } else if (phn11.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
-        $("#phn11").removeClass("hidden");
-    } else if (phn12.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
-        $("#phn12").removeClass("hidden");
-    } else if (phn13.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
-        $("#phn13").removeClass("hidden");                                      
-    } else if (phn1x.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
-        $("#phn1x").removeClass("hidden");
-    } else if (phn2x.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
-        $("#phn2x").removeClass("hidden");
-    } else if (phn3x.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
-        $("#phn3x").removeClass("hidden");
-    } else if (phn4x.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
-        $("#phn4x").removeClass("hidden");
-    } else if (phn5x.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
-        $("#phn5x").removeClass("hidden");
-    } else if (phn6x.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
-        $("#phn6x").removeClass("hidden");
-    } else if (phn7x.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
-        $("#phn7x").removeClass("hidden");
-    } else if (phn8x.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
-        $("#phn8x").removeClass("hidden");
-    } else if (phn9x.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
-        $("#phn9x").removeClass("hidden");
-    } else if (phn10x.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
-        $("#phn10x").removeClass("hidden");
-    } else if (phn11x.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
-        $("#phn11x").removeClass("hidden");
-    } else if (phn12x.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
-        $("#phn12x").removeClass("hidden");
-    } else if (phn13x.includes(input.value)) {
-        $(".phnlrt").addClass("hidden");
-        $("#phn13x").removeClass("hidden");                                      
+        $("#phn1, #phn2, #phn3, #phn4, #phn5, #phn6, #phn7, #phn8, #phn9, #phn10, #phn12, #phn13, #phnx").addClass("hidden");
+        $("#phn11").removeClass("hidden");                               
     } else {
-        $(".phnlrt").addClass("hidden");
+        $("#phn1, #phn2, #phn3, #phn4, #phn5, #phn6, #phn7, #phn8, #phn9, #phn10, #phn11, #phn12, #phn13").addClass("hidden");
         $("#phnx").removeClass("hidden");
-   }
+    }
 });
+
 </script>
 
-<!--script>
-$(document).ready(function() {
-       $("#input1").keyup(function() {
-            if ($("#input1").val().length < 10) {
-                $("#phn1, #phn2, #phn3, #phn4, #phn5, #phn6, #phn7, #phn8, #phn9, #phn10, #phn11, #phn12, #phn13").addClass("hidden");
-                $("#phnxx").removeClass("hidden");
-            }
-       });
-    });
-</script-->
 
 </div></div></div>
 
