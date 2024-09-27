@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-    <title>Demo 1</title>
+    <title>Demo 3</title>
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <meta name=”robots” content=”noindex”>
     <!-- Meta data -->
@@ -102,7 +102,7 @@
     </script>-->
 
     <main role="main" property="mainContentOfPage" class="container mrgn-bttm-xl">
-        <h1 property="name" id="wb-cont" class="mrgn-tp-xl">Demo 1</h1>
+        <h1 property="name" id="wb-cont" class="mrgn-tp-xl">Task 3</h1>
 
         <section class="mrgn-bttm-xl">
             <!--<h2 class="h-2 wb-inv">6 tasks left</h2>-->
@@ -133,27 +133,9 @@
 
 
             <div class="btn-container">
-                <a href="https://www.canada.ca/en/revenue-agency.html" target="_blank" role="button" class="btn btn-primary btn-lg mrgn-tp-md"><span class="far fa-window-restore"></span> Start task<span class="wb-inv">this button will open a page in a new tab</span></a> <a href="post-task-survey.html" role="button" class="btn btn-default btn-lg mrgn-lft-md mrgn-tp-md">Post-task survey</a>
+                <a href="https://cra-proto.github.io/cap/make-payment/a11y/payment-type-3.html" target="_blank" role="button" class="btn btn-primary btn-lg mrgn-tp-md"><span class="far fa-window-restore"></span> Start task<span class="wb-inv">this button will open a page in a new tab</span></a> <a href="post-task-survey.html" role="button" class="btn btn-default btn-lg mrgn-lft-md mrgn-tp-md">Post-task survey</a>
             </div>
 
-
-            <!--<script>
-            // insert buttons from the current task 
-    
-                const currentTask = TASKS[0] // TODO
-    
-                const btnContainer = document.querySelector(".btn-container")
-    
-                const buttonsHTML = currentTask.buttonLinks.map(({title,href, target, classes, spanClasses})=>`
-                <a href="${href}" role="button" class="btn btn-lg mrgn-tp-md ${classes}" ${target ? `target="${target}" name="this link will open in a new tab"` : ""} ><span class="${spanClasses}"></span> ${title}</a>
-                `).join("")
-                
-                console.log("🚀 ~ file: task-page.html ~ line 59 ~ buttonsHTML", buttonsHTML)
-                
-                btnContainer.innerHTML = buttonsHTML
-                
-                
-            </script>-->
         </section>
 
         <div id="def-preFooter"></div>

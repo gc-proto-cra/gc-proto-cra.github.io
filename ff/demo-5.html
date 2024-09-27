@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-    <title>Demo</title>
+    <title>Demo 5</title>
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <meta name=”robots” content=”noindex”>
     <!-- Meta data -->
@@ -102,42 +102,40 @@
     </script>-->
 
     <main role="main" property="mainContentOfPage" class="container mrgn-bttm-xl">
-        <h1 property="name" id="wb-cont" class="mrgn-tp-xl">Demos</h1>
+        <h1 property="name" id="wb-cont" class="mrgn-tp-xl">Task 5</h1>
 
         <section class="mrgn-bttm-xl">
-            <!--<h2 class="h-2 wb-inv">5 tasks left</h2>-->
-            <p class="mrgn-tp-md">Please select the demo that the moderator tells you to.</p>
+            <!--<h2 class="h-2 wb-inv">6 tasks left</h2>-->
+            <p class="mrgn-tp-md">You run a charity and want to re-register it and pay any fees required to the Canada Revenue Agency (CRA). Find out how you can make any required payments to the CRA. (For the first question, select “Other benefit, tax, fee or amount owing").</p>
             
-            <div class="row">
-             <div class="col-md-8" aria-label="List of 7 tasks">
-                 <a href="demo-1.html" role="button" class="btn btn-primary btn-lg mrgn-tp-md" aria-label="demo 1 of 7">Demo 1</a> 
-                 <a href="demo-2.html" role="button" class="btn btn-primary btn-lg mrgn-tp-md" aria-label="demo 2 of 7">Demo 2</a> 
-                 <a href="demo-3.html" role="button" class="btn btn-primary btn-lg mrgn-tp-md" aria-label="demo 3 of 7">Demo 3</a> 
-                 <a href="demo-4.html" role="button" class="btn btn-primary btn-lg mrgn-tp-md" aria-label="demo 4 of 7">Demo 4</a> 
-                 <a href="demo-5.html" role="button" class="btn btn-primary btn-lg mrgn-tp-md" aria-label="demo 5 of 7">Demo 5</a> 
-                 <a href="demo-6.html" role="button" class="btn btn-primary btn-lg mrgn-tp-md" aria-label="demo 6 of 7">Demo 6</a> 
-		 <a href="demo-7.html" role="button" class="btn btn-primary btn-lg mrgn-tp-md" aria-label="demo 7 of 7">Demo 7</a>
-                 <!--<a href="task-6.html" role="button" class="btn btn-primary btn-lg mrgn-tp-md">Task 6</a>-->
-                 </div>
-             </div>
+            <fieldset class="provisional gc-chckbxrdio mrgn-tp-lg">
+                <legend>Possible answers:</legend>
+                <ul class="list-unstyled lst-spcd-2">
+                    <li class="radio">
+                        <input type="radio" name="answer" id="answer-1">
+                        <label for="answer-1">Pay online</label>
+                    </li>
+                    <li class="radio">
+                        <input type="radio" name="answer" id="answer-2">
+                        <label for="answer-2">Pay by cheque through the mail</label>
+                    </li>
+                    <li class="radio">
+                        <input type="radio" name="answer" id="answer-3">
+                        <label for="answer-3">Pay at your financial institution with a bank teller</label>
+                    </li>
+                    <li class="radio">
+                        <input type="radio" name="answer" id="answer-4">
+                        <label for="answer-4">I could not find the answer</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <div class="clearfix"></div>
 
-            <!--<script>
-            // insert buttons from the current task 
-    
-                const currentTask = TASKS[0] // TODO
-    
-                const btnContainer = document.querySelector(".btn-container")
-    
-                const buttonsHTML = currentTask.buttonLinks.map(({title,href, target, classes, spanClasses})=>`
-                <a href="${href}" role="button" class="btn btn-lg mrgn-tp-md ${classes}" ${target ? `target="${target}" name="this link will open in a new tab"` : ""} ><span class="${spanClasses}"></span> ${title}</a>
-                `).join("")
-                
-                console.log("🚀 ~ file: task-page.html ~ line 59 ~ buttonsHTML", buttonsHTML)
-                
-                btnContainer.innerHTML = buttonsHTML
-                
-                
-            </script>-->
+
+            <div class="btn-container">
+                <a href="https://cra-proto.github.io/cap/make-payment/a11y/payment-type-5.html" target="_blank" role="button" class="btn btn-primary btn-lg mrgn-tp-md"><span class="far fa-window-restore"></span> Start task<span class="wb-inv">this button will open a page in a new tab</span></a> <a href="post-task-survey.html" role="button" class="btn btn-default btn-lg mrgn-lft-md mrgn-tp-md">Post-task survey</a>
+            </div>
+
         </section>
 
         <div id="def-preFooter"></div>
