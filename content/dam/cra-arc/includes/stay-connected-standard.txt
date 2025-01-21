@@ -1,0 +1,75 @@
+<div id="stay-connected-en">
+
+<h2>Stay connected</h2>
+<div class="section">
+
+<section class="gc-followus mrgn-bttm-md">
+        <h2>Follow us</h2>
+        <ul class="list-inline">
+            <li><a rel="external" class="facebook" href="/canrevagency/"><span class="wb-inv">Facebook</span></a></li>
+            <li><a rel="external" class="x-social" href="/CanRevAgency"><span class="wb-inv">X:</span></a></li>
+            <li><a rel="external" class="youtube" href="/canrevagency"><span class="wb-inv">YouTube</span></a></li>
+<li><a rel="external" class="instagram" href="/canrevagency"><span class="wb-inv">Instagram</span></a></li>
+            <li><a rel="external" class="linkedin" href="/company/cra-arc"><span class="wb-inv">LinkedIn</span></a></li>
+            <li><a rel="external" class="rss" href="/content/canadasite/en/revenue-agency/services/e-services/feeds.html"><span class="wb-inv">RSS Feed</span></a></li>
+            <li><a rel="external" class="email" href="/content/canadasite/en/revenue-agency/news/e-services/canada-revenue-electronic-mailing-lists.html"><span class="wb-inv">Email subscription</span></a></li>
+        </ul>
+ </section>
+<p><a href="/content/canadasite/en/revenue-agency/corporate/stay-connected-stay-informed.html">More information</a></p>
+</div></div>
+ 
+
+ 
+<div id="stay-connected-fr">
+ 
+<h2>Restez branchés</h2>
+<div class="section">
+
+<section class="gc-followus mrgn-bttm-md">
+ <h2>Suivez</h2>
+        <ul class="list-inline">
+            <li><a rel="external" class="facebook" href="/AgenceRevCan/"><span class="wb-inv">Facebook</span></a></li>
+            <li><a rel="external" class="x-social" href="/AgenceRevCan"><span class="wb-inv">X:</span></a></li>
+            <li><a rel="external" class="youtube" href="/agencerevcan"><span class="wb-inv">YouTube</span></a></li>
+            <li><a rel="external" class="instagram" href="https://www.instagram.com/agencerevcan/"><span class="wb-inv">Instagram</span></a></li>
+<li><a rel="external" class="linkedin" href="/company/cra-arc"><span class="wb-inv">LinkedIn</span></a></li>
+            <li><a rel="external" class="rss" href="/content/canadasite/fr/agence-revenu/services/services-electroniques/fils.html"><span class="wb-inv">Fils</span></a></li>
+            <li><a rel="external" class="email" href="/content/canadasite/fr/agence-revenu/nouvelles/services-electroniques/listes-envois-electroniques-agence-revenu-canada.html"><span class="wb-inv">Listes d'envois</span></a></li>
+        </ul>
+ </section>
+ 
+<p><a href="/content/canadasite/fr/agence-revenu/organisation/soyez-branche.html">Plus de renseignements</a></p>
+
+
+</div></div>
+
+<div id="social-media-strip-en">
+<div class="section">
+<section class="followus mrgn-bttm-md">
+   <h2>Follow us</h2>
+   <ul class="list-inline">
+    <li><a href="/canrevagency/" class="facebook"><span class="wb-inv">Facebook</span></a></li>
+    <li><a href="/CanRevAgency" rel="external" class="x-social"><span class="wb-inv">X:</span></a></li>
+    <li><a href="/user/CanRevAgency" class="youtube" rel="external"> <span class="wb-inv"> YouTube </span> </a> </li>
+    <li><a href="/company/cra-arc" class="linkedin" rel="external"><span class="wb-inv">LinkedIn</span></a></li>
+    <li><a rel="external" class="instagram" href="/canrevagency"><span class="wb-inv">Instagram</span></a></li>
+
+   </ul>
+  </section>
+</div></div>
+
+
+
+<div id="social-media-strip-fr">
+<div class="section">
+  <section class="followus mrgn-bttm-md">
+    <h2>Suivez</h2>
+    <ul class="list-inline">
+     <li> <a href="/AgenceRevCan/" class="facebook" rel="external"> <span class="wb-inv"> Twitter </span> </a> </li>
+     <li><a href="/AgenceRevCan" rel="external" class="x-social"><span class="wb-inv">X :</span></a></li>
+     <li> <a href="/user/AgenceRevCan" class="youtube" rel="external"> <span class="wb-inv"> YouTube </span> </a> </li>
+     <li><a href="/company/cra-arc" class="linkedin" rel="external"><span class="wb-inv">LinkedIn</span></a></li>
+     <li><a rel="external" class="instagram" href="https://www.instagram.com/agencerevcan/"><span class="wb-inv">Instagram</span></a></li>
+    </ul>
+   </section>
+</div></div>
