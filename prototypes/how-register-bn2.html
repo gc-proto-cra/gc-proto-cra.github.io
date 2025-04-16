@@ -82,32 +82,103 @@
           <div class="wb-frmvld fieldflow-lg gc-font-2019 hidden rpy-ff">
             <form>
               <div class="wb-fieldflow" data-wb-fieldflow="{&quot;noForm&quot;: true, &quot;isoptional&quot;: true, &quot;gcChckbxrdio&quot;:true, &quot;renderas&quot;:&quot;radio&quot;, &quot;reset&quot;: {&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;.alert1&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}, &quot;unhideelm&quot;: &quot;.rpy-ff&quot;, &quot;hideelm&quot;: &quot;#norun&quot;}">
-                <div class="wb-fieldflow-header">
-                 <p class="wb-fieldflow-label">Where is your business resident?</p>
-                </div>
-                <ul>
-                  <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answer1&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Outside of Canada (non-resident)
-            <div class="wb-fieldflow-sub" data-wb-fieldflow="{&quot;noForm&quot;: true, &quot;isoptional&quot;: true, &quot;gcChckbxrdio&quot;:true, &quot;renderas&quot;:&quot;radio&quot;, &quot;reset&quot;: {&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;.alert1&quot;, &quot;class&quot;: &quot;hidden&quot;}}">-->
-                     <div class="wb-fieldflow-header">
-                        <p class="wb-fieldflow-label">Do you also want to add one or more program accounts?</p>
-                      </div>
-<ul>
-                        <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answer2&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">No, I only want a business number</li>
-                        
-                        <li>Yes, I want to add a program account to my new business number
-
-              
-                    <div class="wb-fieldflow-sub" data-wb-fieldflow="{&quot;noForm&quot;: true, &quot;isoptional&quot;: true, &quot;gcChckbxrdio&quot;:true, &quot;renderas&quot;:&quot;checkbox&quot;, &quot;reset&quot;: {&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;.alert1&quot;, &quot;class&quot;: &quot;hidden&quot;}}">-->
-                     <div class="wb-fieldflow-header">
-                        <p class="wb-fieldflow-label">Select the additional program accounts you would like to add:</p>
-                      </div>
-                      <ul>
-                        <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerGST&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">GST/HST</li>
-                        <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerPayroll&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Payroll</li>
-                    <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerInformation&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Information returns</li>
-                  <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerUHT&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Underused Housing Tax</li>
-              </ul></div></div>
-          </li>
+                 <p>Where is your business resident?</p>
+                  <ul>
+<!-- NON-RESIDENT -->                        
+                  <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answer1&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Non-resident (Outside of Canada)
+                  <div class="wb-fieldflow-sub" data-wb-fieldflow="{&quot;noForm&quot;: true, &quot;isoptional&quot;: true, &quot;gcChckbxrdio&quot;:true, &quot;renderas&quot;:&quot;radio&quot;, &quot;reset&quot;: {&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;.alert1&quot;, &quot;class&quot;: &quot;hidden&quot;}}">-->
+                  <p class="wb-fieldflow-label">Are you a corporation?</p><!--Q1a-->
+                  <ul>
+                      <li>Yes
+                        <div class="wb-fieldflow-sub" data-wb-fieldflow="{&quot;noForm&quot;: true, &quot;isoptional&quot;: true, &quot;gcChckbxrdio&quot;:true, &quot;renderas&quot;:&quot;radio&quot;, &quot;reset&quot;: {&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;.alert1&quot;, &quot;class&quot;: &quot;hidden&quot;}}">-->
+                        <p>Do you need a BN?</p><!--Q2a-->
+                        <ul>
+                          <li>Yes
+                            <div class="wb-fieldflow-sub" data-wb-fieldflow="{&quot;noForm&quot;: true, &quot;isoptional&quot;: true, &quot;gcChckbxrdio&quot;:true, &quot;renderas&quot;:&quot;checkbox&quot;, &quot;reset&quot;: {&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;.alert1&quot;, &quot;class&quot;: &quot;hidden&quot;}}">-->
+                                        <p class="wb-fieldflow-label">Select the additional program accounts you would like to add:</p><!--Q4-->
+                                        <ul>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerNONRES,#answerBN,#answerRP,#answerP2,#answerA,#answerB,#answerC&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Payroll</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerNONRES,#answerBN,#answerRZ,#answerP2,#answerA,#answerB,#answerC&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Information returns</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerNONRES,#answerBN,#answerRC,#answerP2,#answerA,#answerB,#answerC&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Corporation</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerNONRES,#answerBN,#answerRR,#answerP2,#answerA,#answerB&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Charity</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerNONRES,#answerBN,#answerRU,#answerP2,#answerA,#answerC&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Underused Housing Tax</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerNONRES,#answerBN,#answerP2,#answerA,#answerB,#answerE&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Luxury tax</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerNONRES,#answerBN,#answerP2,#answerB,#answerE&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Fuel charge</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerNONRES,#answerBN,#answerP2,#answerF&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">GST/HST</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerNONRES,#answerBN,#answerP2,#answerF&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">GST/HST - Normal</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerNONRES,#answerBN,#answerP2,#answerB,#answerE&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">GST/HST - Simplified</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerNONRES,#answerBN,#answerP2,#answerB,#answerE&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Digital services tax</li>
+                                             
+                                        </ul>
+                                        </div>                            
+                          </li>
+                          <li>No
+                            <div class="wb-fieldflow-sub" data-wb-fieldflow="{&quot;noForm&quot;: true, &quot;isoptional&quot;: true, &quot;gcChckbxrdio&quot;:true, &quot;renderas&quot;:&quot;checkbox&quot;, &quot;reset&quot;: {&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;.alert1&quot;, &quot;class&quot;: &quot;hidden&quot;}}">-->
+                                        <p class="wb-fieldflow-label">Select the additional program accounts you would like to add:</p><!--Q4-->
+                                        <ul>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerRP,#answerP2,#answerA,#answerB,#answerC&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Payroll</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerRZ,#answerP2,#answerA,#answerB,#answerC&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Information returns</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerRC,#answerP2,#answerA,#answerB,#answerC&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Corporation</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerRR,#answerP2,#answerA,#answerB&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Charity</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerRU,#answerP2,#answerA,#answerC&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Underused Housing Tax</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerP2,#answerA,#answerB,#answerE&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Luxury tax</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerP2,#answerB,#answerE&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Fuel charge</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerP2,#answerF&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">GST/HST - Normal</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerP2,#answerB,#answerE&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">GST/HST - Simplified</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerP2,#answerB,#answerE&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Digital services tax</li>
+                                             
+                                        </ul>
+                                        </div> 
+                          </li>
+                        </ul>
+                        </div>
+                      </li>
+                      <li>No
+                        <div class="wb-fieldflow-sub" data-wb-fieldflow="{&quot;noForm&quot;: true, &quot;isoptional&quot;: true, &quot;gcChckbxrdio&quot;:true, &quot;renderas&quot;:&quot;radio&quot;, &quot;reset&quot;: {&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;.alert1&quot;, &quot;class&quot;: &quot;hidden&quot;}}">-->
+                        <p>Do you need a BN?</p>
+                        <ul>
+                          <li>Yes
+                            <div class="wb-fieldflow-sub" data-wb-fieldflow="{&quot;noForm&quot;: true, &quot;isoptional&quot;: true, &quot;gcChckbxrdio&quot;:true, &quot;renderas&quot;:&quot;checkbox&quot;, &quot;reset&quot;: {&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;.alert1&quot;, &quot;class&quot;: &quot;hidden&quot;}}">-->
+                                        <p class="wb-fieldflow-label">Select the additional program accounts you would like to add:</p><!--Q4-->
+                                        <ul>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerRP,#answerP2,#answerA,#answerB,#answerC&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Payroll</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerRZ,#answerP2,#answerA,#answerB,#answerC&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Information returns</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerRC,#answerP2,#answerA,#answerB,#answerC&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Corporation</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerRR,#answerP2,#answerA,#answerB&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Charity</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerRU,#answerP2,#answerA,#answerC&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Underused Housing Tax</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerP2,#answerA,#answerB,#answerE&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Luxury tax</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerP2,#answerB,#answerE&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Fuel charge</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerP2,#answerF&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">GST/HST - Normal</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerP2,#answerB,#answerE&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">GST/HST - Simplified</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerP2,#answerB,#answerE&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Digital services tax</li>
+                                             
+                                        </ul>
+                                        </div> 
+                          </li>
+                          <li>No
+                            <div class="wb-fieldflow-sub" data-wb-fieldflow="{&quot;noForm&quot;: true, &quot;isoptional&quot;: true, &quot;gcChckbxrdio&quot;:true, &quot;renderas&quot;:&quot;checkbox&quot;, &quot;reset&quot;: {&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;.alert1&quot;, &quot;class&quot;: &quot;hidden&quot;}}">-->
+                                        <p class="wb-fieldflow-label">Select the additional program accounts you would like to add:</p><!--Q4-->
+                                        <ul>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerRP,#answerP2,#answerA,#answerB,#answerC&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Payroll</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerRZ,#answerP2,#answerA,#answerB,#answerC&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Information returns</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerRC,#answerP2,#answerA,#answerB,#answerC&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Corporation</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerRR,#answerP2,#answerA,#answerB&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Charity</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerRU,#answerP2,#answerA,#answerC&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Underused Housing Tax</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerP2,#answerA,#answerB,#answerE&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Luxury tax</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerP2,#answerB,#answerE&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Fuel charge</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerP2,#answerF&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">GST/HST - Normal</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerP2,#answerB,#answerE&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">GST/HST - Simplified</li>
+                                            <li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answerRES,#answerBN,#answerP2,#answerB,#answerE&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Digital services tax</li>
+                                             
+                                        </ul>
+                                        </div> 
+                          </li>
+                        </ul>
+                        </div>
+                      </li>
+                  </ul>     
+                  </div>
+                  </li>
 
 <!-- RESIDENT -->          
                   <li>Resident (Inside Canada)
@@ -248,6 +319,12 @@
             <p>Content for Resident</p>
             </div>
 
+            <!--AnswerNONRES-->
+            <div id="answerNONRES" class="hidden alert1">
+            <h2>Part 1: Get ready to register</h2>
+            <p>Content for Non-Resident</p>
+            </div>
+
             <!--AnswerBN-->
             <div id="answerBN" class="hidden alert1">
             <h3 class="h4">BN - Business number</h3>
@@ -308,131 +385,164 @@
             <!--AnswerRTNR-->
             <div id="answerRTNR" class="hidden alert1">
             <h3 class="h4">RTNR - GST/HST for digital economy businesses</h3>
-Information you need for registrations:
-• Type of products or services the business collects GST/HST on and supplier type (if applicable)
-• Type of products or services the business provides in Canada
-• Description of the business operations in Canada
-• Products or services the business sells or provides in Canada that are exempt from GST/HST
-• Filing type (simplified or normal)
-• Canadian location where you store products (if applicable)
-• Information about the Canadian financial institution you use
-• Information about Canadian employees (if applicable)
-• Effective date of registraton
-• Business fiscal year end
-• Expected amount of world wide and Canadian sales for the next 12 months
-• Filing frequency
-
+            <p>Information You Need for Registrations</p>
+            <ul>
+                <li>Type of products or services the business collects GST/HST on and supplier type (if applicable)</li>
+                <li>Type of products or services the business provides in Canada</li>
+                <li>Description of the business operations in Canada</li>
+                <li>Products or services the business sells or provides in Canada that are exempt from GST/HST</li>
+                <li>Filing type (simplified or normal)</li>
+                <li>Canadian location where you store products (if applicable)</li>
+                <li>Information about the Canadian financial institution you use</li>
+                <li>Information about Canadian employees (if applicable)</li>
+                <li>Effective date of registration</li>
+                <li>Business fiscal year end</li>
+                <li>Expected amount of worldwide and Canadian sales for the next 12 months</li>
+                <li>Filing frequency</li>
+            </ul>
             </div> 
 
             <!--AnswerRP-->
             <div id="answerRP" class="hidden alert1">
             <h3 class="h4">RP - Payroll deductions program account</h3>
-            
-You must have all of the following on hand:
-• date employees receive their first wages
-• months covered for payroll of employees' wages
-• type of pay period (for example, weekly, quarterly)
-• number of employees
-• payroll service name (if any)
-• country of parent or affiliate, if you have a foreign owned corporation
-• name of franchisor (if any)
-         • country of franchise's head office
-You will also need all of the following if it differs from the basic business information above:
-• mailing address
-• physical address  
+            <p>You Must Have All of the Following On Hand:</p>
+            <ul>
+                <li>Date employees receive their first wages</li>
+                <li>Months covered for payroll of employees' wages</li>
+                <li>Type of pay period (for example, weekly, quarterly)</li>
+                <li>Number of employees</li>
+                <li>Payroll service name (if any)</li>
+                <li>Country of parent or affiliate, if you have a foreign owned corporation</li>
+                <li>Name of franchisor (if any)
+                  <ul>
+                    <li>Country of franchise's head office</li>
+                  </ul>
+                </li>
+            </ul>
+
+            <p>You Will Also Need All of the Following If It Differs from the Basic Business Information Above:</p>
+            <ul>
+                <li>Mailing address</li>
+                <li>Physical address</li>
+            </ul>
             </div> 
 
             <!--AnswerRPNR-->
             <div id="answerRPNR" class="hidden alert1">
             <h3 class="h4">RPNR - Non-res payroll</h3>
-            
-Information you need for registration:
-• Types of payments the business will be making
-• Frequency of payments
-• Expected number of employees
-• Date of first payment
-• Expected total of annual salaries for employes located in Canada
-• Duration of business activities
-• Subsidiary, affiliate or franchise information (if applicable)
+            <p>Information You Need for Registration:</p>
+            <ul>
+              <li>Types of payments the business will be making</li>
+              <li>Frequency of payments</li>
+              <li>Expected number of employees</li>
+              <li>Date of first payment</li>
+              <li>Expected total of annual salaries for employees located in Canada</li>
+              <li>Duration of business activities</li>
+              <li>Subsidiary, affiliate or franchise information (if applicable)</li>
+            </ul>
             </div> 
 
             <!--AnswerRZ-->
             <div id="answerRZ" class="hidden alert1">
             <h3 class="h4">RZ - Information returns program account</h3>
-            
-You must have all of the following on hand:
-• type of program account
-       • T5 group
-       • tax-free savings account (TFSA)
-       • T5018
-       • partnerships
-• effective date of registration
-You will also need all of the following if it differs from the basic business information above:
-• mailing address
-• physical address
+            <p>You Must Have All of the Following On Hand:</p>
+            <ul>
+                <li>Type of program account:
+                    <ul>
+                        <li>T5 group</li>
+                        <li>Tax-Free Savings Account (TFSA)</li>
+                        <li>T5018</li>
+                        <li>Partnerships</li>
+                    </ul>
+                </li>
+                <li>Effective date of registration</li>
+            </ul>
+
+            <p>You Will Also Need All of the Following If It Differs from the Basic Business Information Above:</p>
+            <ul>
+                <li>Mailing address</li>
+                <li>Physical address</li>
+            </ul>
             </div> 
 
             <!--AnswerRZNR-->
             <div id="answerRZNR" class="hidden alert1">
             <h3 class="h4">RZNR - Non-res info returns</h3>
-            
-Information you need for registration:
-• Will you be diling certain Special Elections or Special Returns
-• Accounts you would like to apply for
-• Effective date of registration
+            <p>Information You Need for Registration:</p>
+            <ul>
+                <li>Will you be filing certain Special Elections or Special Returns</li>
+                <li>Accounts you would like to apply for</li>
+                <li>Effective date of registration</li>
+            </ul>
             </div> 
 
             <!--AnswerRC-->
             <div id="answerRC" class="hidden alert1">
             <h3 class="h4">RC - Corporation income tax program account</h3>
-            
-You must have all of the following on hand:
-• corporation name
-• certificate number
-• date of incorporation
-• jurisdiction
-You will also need all of the following if it differs from the basic business information above:
-• mailing address
-• physical address
+            <p>You Must Have All of the Following On Hand:</p>
+            <ul>
+                <li>Corporation name</li>
+                <li>Certificate number</li>
+                <li>Date of incorporation</li>
+                <li>Jurisdiction</li>
+            </ul>
+
+            <p>You Will Also Need All of the Following If It Differs from the Basic Business Information Above:</p>
+            <ul>
+                <li>Mailing address</li>
+                <li>Physical address</li>
+            </ul>
             </div> 
 
             <!--AnswerRCNR-->
             <div id="answerRCNR" class="hidden alert1">
             <h3 class="h4">RCNR - Non-res corporation</h3>
-            RCNR - Non-res corporation
-Information you need for registration:
-• Type of incorporated business
-• Date and country of incorporation
-• Certificate number
-• Will you be filing certain Special Elections or Special Returns?
+            <p>Information You Need for Registration:</p>
+            <ul>
+                <li>Type of incorporated business</li>
+                <li>Date and country of incorporation</li>
+                <li>Certificate number</li>
+                <li>Will you be filing certain Special Elections or Special Returns?</li>
+            </ul>
             </div> 
 
             <!--AnswerRR-->
             <div id="answerRR" class="hidden alert1">
             <h3 class="h4">RR - Registered charity program account</h3>
-            
-You must have all of the following on hand:
-• type of program account
-       • charity
-      • Canadian amateur athletic association (CAAA)
-       • national arts service organization (NASO)
-You will also need all of the following if it differs from the basic business information above:
-• mailing address
-• physical address
-• books and records address
+            <p>You Must Have All of the Following On Hand:</p>
+            <ul>
+                <li>Type of program account:
+                    <ul>
+                        <li>Charity</li>
+                        <li>Canadian Amateur Athletic Association (CAAA)</li>
+                        <li>National Arts Service Organization (NASO)</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p>You Will Also Need All of the Following If It Differs from the Basic Business Information Above:</p>
+            <ul>
+                <li>Mailing address</li>
+                <li>Physical address</li>
+                <li>Books and records address</li>
+            </ul>
             </div> 
 
             <!--AnswerRU-->
             <div id="answerRU" class="hidden alert1">
             <h3 class="h4">RU - Underused housing tax program account</h3>
-            RU - Underused housing tax program account
-You will have to have the following on hand:
-• Type of account needed
-• Account effective date
-You will also need all of the following if it differs from the basic business information above:
-• mailing address
-• physical address
-• books and records address
+            <p>You Will Have to Have the Following On Hand:</p>
+            <ul>
+                <li>Type of account needed</li>
+                <li>Account effective date</li>
+            </ul>
+
+            <p>You Will Also Need All of the Following If It Differs from the Basic Business Information Above:</p>
+            <ul>
+                <li>Mailing address</li>
+                <li>Physical address</li>
+                <li>Books and records address</li>
+            </ul>
             </div> 
 
             <!--AnswerRUNR-->
