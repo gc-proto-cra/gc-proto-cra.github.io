@@ -1,21 +1,23 @@
 <div id="social-media-en" class="gc-followus gc-followus-horizontal">
 	<h2>On social media</h2>
 	<ul class="list-inline">
-		<li><a href="/canrevagency/" title="Facebook" rel="external" class="social-lnk facebook"><span class="wb-inv">Facebook</span></a></li>
-		<li><a href="/CanRevAgency" title="Twitter" rel="external" class="social-lnk twitter"><span class="wb-inv">Twitter</span></a></li>
-		<li><a href="/user/CanRevAgency" title="YouTube" rel="external" class="social-lnk youtube"><span class="wb-inv">YouTube</span></a></li>
-		<li><a href="/company/cra-arc" title="LinkedIn" rel="external" class="social-lnk linkedin"><span class="wb-inv">LinkedIn</span></a></li>
-		<li><a href="/canrevagency" title="Instagram" rel="external" class="social-lnk instagram"><span class="wb-inv">Instagram</span></a></li>
+		<li><a href="/canrevagency/" rel="external" class="social-lnk facebook"><span class="wb-inv">Facebook</span></a></li>
+		<li><a href="om/CanRevAgency" rel="external" class="x-social"><span class="wb-inv">X</span></a></li>
+		<li><a href="/user/CanRevAgency" rel="external" class="social-lnk youtube"><span class="wb-inv">YouTube</span></a></li>
+<li><a href="/canrevagency" rel="external" class="social-lnk instagram"><span class="wb-inv">Instagram</span></a></li>
+		<li><a href="/cra-arc" rel="external" class="social-lnk linkedin"><span class="wb-inv">LinkedIn</span></a></li>
+		
 	</ul>
 </div>
 
 <div id="social-media-fr" class="gc-followus gc-followus-horizontal">
 	<h2>Dans les médias sociaux</h2>
 	<ul class="list-inline">
-		<li><a href="/AgenceRevCan/" title="Facebook" rel="external" class="social-lnk facebook"><span lang="en" class="wb-inv">Facebook</span></a></li>
-		<li><a href="/AgenceRevCan" title="Twitter" rel="external" class="social-lnk twitter"><span lang="en" class="wb-inv">Twitter</span></a></li>
-		<li><a href="/user/AgenceRevCan" title="YouTube" rel="external" class="social-lnk youtube"><span lang="en" class="wb-inv">YouTube</span></a></li>
-		<li><a href="/company/cra-arc" title="LinkedIn" rel="external" class="social-lnk linkedin"><span lang="en" class="wb-inv">LinkedIn</span></a></li>
-		<li><a href="/agencerevcan" title="Instagram" rel="external" class="social-lnk instagram"><span lang="en" class="wb-inv">Instagram</span></a></li>
+		<li><a href="/AgenceRevCan/" rel="external" class="social-lnk facebook"><span lang="en" class="wb-inv">Facebook</span></a></li>
+		<li><a href="/CanRevAgency" rel="external" class="x-social"><span class="wb-inv">X</span></a></li>
+		<li><a href="/user/AgenceRevCan" rel="external" class="social-lnk youtube"><span lang="en" class="wb-inv">YouTube</span></a></li>
+<li><a href="/agencerevcan" title="Instagram" class="social-lnk instagram"><span lang="en" class="wb-inv">Instagram</span></a></li>
+		<li><a href="/company/cra-arc" rel="external" class="social-lnk linkedin"><span lang="en" class="wb-inv">LinkedIn</span></a></li>
+		
 	</ul>
 </div>
