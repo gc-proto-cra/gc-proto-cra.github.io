@@ -1,6 +1,6 @@
 <div id="social-media-en" class="gc-followus gc-followus-horizontal">
 	<h2>On social media</h2>
-	<ul>
+	<ul class="list-inline">
 		<li><a href="/canrevagency/" title="Facebook" rel="external" class="social-lnk facebook"><span class="wb-inv">Facebook</span></a></li>
 		<li><a href="/CanRevAgency" title="Twitter" rel="external" class="social-lnk twitter"><span class="wb-inv">Twitter</span></a></li>
 		<li><a href="/user/CanRevAgency" title="YouTube" rel="external" class="social-lnk youtube"><span class="wb-inv">YouTube</span></a></li>
@@ -11,7 +11,7 @@
 
 <div id="social-media-fr" class="gc-followus gc-followus-horizontal">
 	<h2>Dans les médias sociaux</h2>
-	<ul>
+	<ul class="list-inline">
 		<li><a href="/AgenceRevCan/" title="Facebook" rel="external" class="social-lnk facebook"><span lang="en" class="wb-inv">Facebook</span></a></li>
 		<li><a href="/AgenceRevCan" title="Twitter" rel="external" class="social-lnk twitter"><span lang="en" class="wb-inv">Twitter</span></a></li>
 		<li><a href="/user/AgenceRevCan" title="YouTube" rel="external" class="social-lnk youtube"><span lang="en" class="wb-inv">YouTube</span></a></li>
