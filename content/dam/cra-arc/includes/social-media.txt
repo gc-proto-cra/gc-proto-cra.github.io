@@ -1,4 +1,4 @@
-<div id="social-media-en" class="provisional followus followus-horizontal">
+<div id="social-media-en" class="gc-followus gc-followus-horizontal">
 	<h2>On social media</h2>
 	<ul>
 		<li><a href="/canrevagency/" title="Facebook" rel="external" class="social-lnk facebook"><span class="wb-inv">Facebook</span></a></li>
@@ -9,7 +9,7 @@
 	</ul>
 </div>
 
-<div id="social-media-fr" class="provisional followus followus-horizontal">
+<div id="social-media-fr" class="gc-followus gc-followus-horizontal">
 	<h2>Dans les médias sociaux</h2>
 	<ul>
 		<li><a href="/AgenceRevCan/" title="Facebook" rel="external" class="social-lnk facebook"><span lang="en" class="wb-inv">Facebook</span></a></li>
