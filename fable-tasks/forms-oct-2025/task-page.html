@@ -5,28 +5,15 @@
 	<head>
 		<meta charset="utf-8">
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-		<title>CDTS Sample - Custom Menu</title>
+		<title>Tasks - Forms accessibility</title>
 		<meta content="width=device-width,initial-scale=1" name="viewport">
 		<!-- Meta data -->
 		<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
 		<!-- Meta data-->
 		<!-- Load closure template scripts -->
-		<!--
-			Note: a relative path is being used in this sample. In order to incorporate the script tags in your code, use the following absolute path (depending on the choice of domain).
-			This path can be used for the following three file names: soyutils.js, wet-en.js, and wet-fr.js.
-
-			canada.ca: https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/[file name]
-			cdts.service.canada.ca: https://cdts.service.canada.ca/app/cls/WET/gcweb/v5_0_5/cdts/compiled/[file name]
-			templates.service.gc.ca: https://templates.service.gc.ca/app/cls/WET/gcweb/v5_0_5/cdts/compiled/[file name]
-
-			To point to the run version:
-
-			canada.ca: https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/[file name]
-			cdts.service.canada.ca: https://cdts.service.canada.ca/rn/cls/WET/gcweb/cdts/compiled/[file name]
-			templates.service.gc.ca: https://templates.service.gc.ca/rn/cls/WET/gcweb/cdts/compiled/[file name]
-		-->
-		<script src="https://cdts.service.canada.ca/app/cls/WET/gcweb/v5_0_5/cdts/compiled/soyutils.js"></script>
-		<script src="https://cdts.service.canada.ca/app/cls/WET/gcweb/v5_0_5/cdts/compiled/wet-en.js"></script>
+		
+ <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/soyutils.js"></script>
+         <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/wet-en.js"></script>
 		<noscript>
 			<!-- Write closure fall-back static file -->
 			<!-- refTop.html -->
@@ -34,8 +21,8 @@
 		<!-- Write closure template -->
 		<script>
 			document.write(wet.builder.refTop({
-				"cdnEnv": "esdcprod",
-				"isApplication": true
+				"cdnEnv": "prod",
+				"isApplication": false
 			}));
 		</script>
 	</head>
@@ -46,128 +33,33 @@
 		</div>
 		<!-- Write closure template -->
 		<script>
-			var defTop = document.getElementById("def-top");
-			defTop.outerHTML = wet.builder.appTop({
-                "appName": [{
-                    "text": "Application name",
-                    "href": "#"
-                }],
-				"lngLinks": [{
-					"lang": "fr",
-					"href": "custom-menu-fr.html",
-					"text": "Français"
-				}],
-				//"menuPath": "../ajax/appmenu-en.html",
-                "menuLinks":[
-                        {"text":"Overview", "href":"#"},
-                        {"text":"First Section", "href":"#"},
-                        {"href": "#",
-                        "text":"Second Section",
-                            "subLinks": [{
-                                "subhref": "#",
-                                "subtext": "Subsection 1"
-                            },
-                            {
-                                "subhref": "#",
-                                "subtext": "Subsection 2"
-                            },
-                            {
-                                "subhref": "#",
-                                "subtext": "Subsection 3"
-                            },
-                            {
-                                "subhref": "#",
-                                "subtext": "Subsection 4"
-                            },
-                            {
-                                "subhref": "#",
-                                "subtext": "Second section - More",
-                                "acronym": "Description of abbreviation"
-                            }],
-                        }],
-				"cdnEnv": "esdcprod"
+		var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.top({
+               "cdnEnv": "prod",
+                "lngLinks": false,
+                 "search": false,
+               "siteMenu": false,
+         "showPreContent": false,
+                "breadcrumbs": false
 			});
 		</script>
+        
+        
 		<main property="mainContentOfPage" typeof="WebPageElement" class="container">
-			<h1 property="name" id="wb-cont">Custom Menu</h1>
-			<p>This sample page demonstrates how a custom menu can be displayed on your page.</p>
-			<h2>Implementation</h2>
-			<p>There are two methods by which a custom menu can be displayed.</p>
-            <p><b>First method</b></p>
-            <ul>
-                <li>Create a custom menu in a separate html file and the provide URL through the <code>menuPath</code> parameter in the <code>appTop</code> section of your page. </li>
-                <li>The equivalent html of the menu on this page can be found <a href="../ajax/appmenu-en.html">here</a>.</li>
-            </ul>
-                <pre>
-defTop.outerHTML = wet.builder.appTop({
-...
-    "menuPath": "../ajax/appmenu-en.html"
-...
-});
-                </pre>
-            <p><b>Second method</b></p>
-            <p>The second method is creating the menu in the <code>appTop</code> section of your page. There are a few configuration options:</p>
-            <ul>
-                <li><code class="wb-prettify">"menuLinks"</code>: used to create a top navigation. You can provide the title and URL through the <code>text</code> and <code>href</code> parameters respectively. You can specify the description for an abbreviation through the <code>acronym</code> parameter.</li>
-                <pre>
-defTop.outerHTML = wet.builder.appTop({
-...
-    "menuLinks": [{
-        "text": "First Section",
-        "href": "#",
-        "acronym": "Description of abbreviation"
-    }]
-...
-});
-                </pre>
-                <li><code class="wb-prettify">"subLinks"</code>: used to create the sub-menu items. These are displayed when the user hovers over the top navigation. You can provide the title and URL through the <code>subtext</code> and <code>subhref</code> parameters respectively. You can specify the description for an abbreviation through the <code>acronym</code> parameter.</li>
-                <pre>
-"subLinks": [{
-    "subtext": "Subsection 1",
-    "subhref": "#",
-    "acronym": "Description of abbreviation"
-}]
-                </pre>
-            </ul>
-            <p><b>Note:</b> Menu items with sub links do not have a link so that consistent behaviour is found when accessing a site through mobile or navigating a site using a keyboard. For example, on a touch screen, tapping a menu item should open the panel with the sub-links and not navigate elsewhere.</p>
-            <pre>
-defTop.outerHTML = wet.builder.appTop({
-...
-    "menuLinks":[
-        {
-            "text":"Overview"
-        },
-        {
-            "text":"First Section"
-        },
-        {
-            "href": "#",
-            "text":"Second Section",
-            "subLinks": [{
-                "subhref": "#",
-                "subtext": "Subsection 1"
-            },
-            {
-                "subhref": "#",
-                "subtext": "Subsection 2"
-            },
-            {
-                "subhref": "#",
-                "subtext": "Subsection 3"
-            },
-            {
-                "subhref": "#",
-                "subtext": "Subsection 4"
-            },
-            {
-                "subhref": "#",
-                "subtext": "Second section - More",
-                "acronym": "Description of abbreviation"
-            }],
-        }]
-...
-});
-            </pre>
+			<h1 property="name" id="wb-cont">Tasks</h1>
+			 <section class="mrgn-bttm-xl">
+            <!--<h2 class="h-2 wb-inv">5 tasks left</h2>-->
+            <p class="mrgn-tp-md">Please select the task that the moderator tells you to.</p>
+            
+                 
+        <ul class="list-inline">
+            <li><a href="task-1.html" class="btn btn-primary btn-lg mrgn-tp-md" aria-label="task 1 of 4">Task 1</a></li>
+            <li><a href="task-2.html" class="btn btn-primary btn-lg mrgn-tp-md" aria-label="task 2 of 4">Task 2</a></li> 
+            <li><a href="task-3.html" class="btn btn-primary btn-lg mrgn-tp-md" aria-label="task 3 of 4">Task 3</a></li> 
+            <li><a href="task-4.html" class="btn btn-primary btn-lg mrgn-tp-md" aria-label="task 4 of 4">Task 4</a></li> 
+                 </ul>
+           
+        </section>
 			<div id="def-preFooter">
 				<!-- Write closure fall-back static file -->
 				<!-- preFooter-en.html -->
@@ -176,8 +68,8 @@ defTop.outerHTML = wet.builder.appTop({
 			<script>
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-					"dateModified": "2021-05-25",
-					"cdnEnv": "esdcprod"
+					"dateModified": "2025-10-31",
+					"cdnEnv": "prod"
 				});
 			</script>
 		</main>
@@ -189,14 +81,20 @@ defTop.outerHTML = wet.builder.appTop({
 		<script>
 			var defFooter = document.getElementById("def-footer");
 			defFooter.outerHTML = wet.builder.appFooter({
-				"cdnEnv": "esdcprod"
+				"cdnEnv": "prod",
+                                   "termsLink": [{
+	"href": ""
+}], "privacyLink": [{
+	"href": ""
+}]
 			});
 		</script>
 		<!-- Write closure template -->
 		<script>
 			document.write(wet.builder.refFooter({
-				"cdnEnv": "esdcprod",
-				"isApplication": true
+				"cdnEnv": "prod",
+
+            
 			}));
 		</script>
 	</body>
