@@ -1,18 +1,32 @@
 
 <!DOCTYPE html>
-<html class="no-js" lang="en" dir="ltr">
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-		<title>Tasks - Forms accessibility - Canada Revenue Agency</title>
+		<title>CDTS Sample - Custom Menu</title>
 		<meta content="width=device-width,initial-scale=1" name="viewport">
 		<!-- Meta data -->
-		<meta name="description" content="">
+		<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
 		<!-- Meta data-->
 		<!-- Load closure template scripts -->
+		<!--
+			Note: a relative path is being used in this sample. In order to incorporate the script tags in your code, use the following absolute path (depending on the choice of domain).
+			This path can be used for the following three file names: soyutils.js, wet-en.js, and wet-fr.js.
 
+			canada.ca: https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/[file name]
+			cdts.service.canada.ca: https://cdts.service.canada.ca/app/cls/WET/gcweb/v5_0_5/cdts/compiled/[file name]
+			templates.service.gc.ca: https://templates.service.gc.ca/app/cls/WET/gcweb/v5_0_5/cdts/compiled/[file name]
+
+			To point to the run version:
+
+			canada.ca: https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/[file name]
+			cdts.service.canada.ca: https://cdts.service.canada.ca/rn/cls/WET/gcweb/cdts/compiled/[file name]
+			templates.service.gc.ca: https://templates.service.gc.ca/rn/cls/WET/gcweb/cdts/compiled/[file name]
+		-->
 		<script src="https://cdts.service.canada.ca/app/cls/WET/gcweb/v5_0_5/cdts/compiled/soyutils.js"></script>
-		<script src=".https://cdts.service.canada.ca/app/cls/WET/gcweb/v5_0_5/cdts/compiled/wet-en.js"></script>
+		<script src="https://cdts.service.canada.ca/app/cls/WET/gcweb/v5_0_5/cdts/compiled/wet-en.js"></script>
 		<noscript>
 			<!-- Write closure fall-back static file -->
 			<!-- refTop.html -->
@@ -34,8 +48,15 @@
 		<script>
 			var defTop = document.getElementById("def-top");
 			defTop.outerHTML = wet.builder.appTop({
-                "appName": false,
-				"lngLinks": false,
+                "appName": [{
+                    "text": "Application name",
+                    "href": "#"
+                }],
+				"lngLinks": [{
+					"lang": "fr",
+					"href": "custom-menu-fr.html",
+					"text": "Français"
+				}],
 				//"menuPath": "../ajax/appmenu-en.html",
                 "menuLinks":[
                         {"text":"Overview", "href":"#"},
