@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+		<title>Task 2 - Demo</title>
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<!-- Meta data -->
+		<meta name="description" content="">
+		  <meta name="robots" content="noindex, nofollow">
+		<!-- Meta data-->
+		<!-- Load closure template scripts -->
+		
+ <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/soyutils.js"></script>
+         <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/wet-en.js"></script>
+		<noscript>
+			<!-- Write closure fall-back static file -->
+			<!-- refTop.html -->
+		</noscript>
+		<!-- Write closure template -->
+		<script>
+			document.write(wet.builder.refTop({
+				"cdnEnv": "prod",
+				"isApplication": false
+			}));
+		</script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous"/>
+	</head>
+	<body vocab="https://schema.org/" typeof="WebPage">
+		<div id="def-top">
+			<!-- Write closure fall-back static file -->
+			<!-- top-en.html -->
+		</div>
+		<!-- Write closure template -->
+		<script>
+		var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.top({
+               "cdnEnv": "prod",
+                "lngLinks": false,
+                 "search": false,
+               "siteMenu": false,
+         "showPreContent": false,
+                "breadcrumbs": false
+			});
+		</script>
+        
+        
+		<main property="mainContentOfPage" typeof="WebPageElement" class="container">
+			<h1 property="name" id="wb-cont">Eligibility Demo 2</h1>
+			 <section class="mrgn-bttm-xl">
+            <p class="mrgn-tp-md">Introduction</p>
+  <fieldset class="gc-chckbxrdio"  id="checklist">
+    <legend>You must meet all 3 criteria below<br>
+    <small class="text-muted">Check the boxes that apply</small></legend>
+    <div class="checkbox mrgn-bttm-lg">
+      <input type="checkbox" class="checkbox-ec" id="eg4" onclick="if (window._resultShowTimer) {
+        clearTimeout(window._resultShowTimer);
+    };
+        const total = $('input.checkbox-ec').length;
+    const checked = $('input.checkbox-ec:checked').length;
+ if (checked === 0) {
+      target = '#result-3';
+        $('#result-1, #result-2').addClass('hidden');
+         $('#answers').attr('aria-busy', false);        
+    } else if (checked === total) {
+        target = '#result-1';
+        $('#result-2, #result-3').addClass('hidden');
+        $('#answers').attr('aria-busy', false);         
+    } else {
+        target = '#result-2';
+        $('#result-1, #result-3').addClass('hidden');
+         $('#answers').attr('aria-busy', true);
+    };  window._resultShowTimer = setTimeout(function () {
+        $(target).removeClass('hidden');
+    }, 1);">
+      <label for="eg4">This is the only MHRTC claim for the <strong>qualifying individual</strong> (senior <span class="nowrap">65 years</span> of age or older, or adult who is eligible for the DTC)</label>
+      <div class="gc-font-2019 mrgn-tp-md mrgn-lft-xl">
+        <p><strong>Only</strong> one renovation can be claimed for a qualifying individual during their lifetime</p>
+      </div>
+    </div>
+    <div class="checkbox mrgn-bttm-lg">
+      <input type="checkbox" class="checkbox-ec" id="eg5" onclick="if (window._resultShowTimer) {
+        clearTimeout(window._resultShowTimer);
+    };
+        const total = $('input.checkbox-ec').length;
+    const checked = $('input.checkbox-ec:checked').length;
+ if (checked === 0) {
+      target = '#result-3';
+        $('#result-1, #result-2').addClass('hidden');
+         $('#answers').attr('aria-busy', false);        
+    } else if (checked === total) {
+        target = '#result-1';
+        $('#result-2, #result-3').addClass('hidden');
+        $('#answers').attr('aria-busy', false);         
+    } else {
+        target = '#result-2';
+        $('#result-1, #result-3').addClass('hidden');
+         $('#answers').attr('aria-busy', true);
+    };  window._resultShowTimer = setTimeout(function () {
+        $(target).removeClass('hidden');
+    }, 1);">
+      <label for="eg5">Any person claiming the credit must be an <strong>eligible individual</strong></label>
+      <div class="gc-font-2019 mrgn-tp-md mrgn-lft-xl">
+        <p>An eligible individual is a resident of Canada from <span class="nowrap">January 1</span> to <span class="nowrap">December 31</span> of the year they are making the claim who <strong>either</strong>:</p>
+        <div class="cnjnctn-type-or cnjnctn-md">
+          <div class="cnjnctn-col"><strong>Ordinarily</strong> <strong>resides</strong>, or intends to ordinarily reside, in the eligible dwelling within <span class="nowrap">12 months</span> of the end of the renovation period of a qualifying renovation and <span class="nowrap">is one of</span> the following:
+            <ul>
+              <li>A qualifying individual</li>
+              <li>The cohabitating spouse or common-law partner of a qualifying individual (at any time in the tax year that you are making the claim for)</li>
+              <li>A qualifying relation of a qualifying individual</li>
+            </ul>
+          </div>
+          <div class="cnjnctn-col-40"><strong>Owns</strong> the eligible dwelling (or is the beneficiary of a trust that owns the eligible dwelling) <strong>and</strong> is a qualifying relation of a qualifying individual</div>
+        </div>
+        <details class="mrgn-tp-md">
+          <summary>Who a qualifying relation is</summary>
+          <p>A <strong>qualifying relation</strong> is <strong>both</strong>:</p>
+          <ul class="fa-ul">
+            <li><span class="fas fa-check text-success fa-li"></span><span class="nowrap">18 years</span> of age or older at the end of the tax year that the credit is being claimed for</li>
+            <li><span class="fas fa-check text-success fa-li"></span>A parent, grandparent, child, grandchild, brother, sister, aunt, uncle, niece or nephew of the qualifying individual (or the qualifying individual’s cohabiting spouse or <span class="nowrap">common-law</span> partner) at any time in the renovation period tax year</li>
+          </ul>
+        </details>
+        <p>If you are sharing renovation costs with another individual, see&nbsp;<a href="#h-3">Sharing renovation costs</a>.</p>
+      </div>
+    </div>
+    <div class="checkbox mrgn-bttm-lg">
+      <input type="checkbox" class="checkbox-ec" id="eg6" onclick="if (window._resultShowTimer) {
+        clearTimeout(window._resultShowTimer);
+    };
+        const total = $('input.checkbox-ec').length;
+    const checked = $('input.checkbox-ec:checked').length;
+ if (checked === 0) {
+      target = '#result-3';
+        $('#result-1, #result-2').addClass('hidden');
+         $('#answers').attr('aria-busy', false);        
+    } else if (checked === total) {
+        target = '#result-1';
+        $('#result-2, #result-3').addClass('hidden');
+        $('#answers').attr('aria-busy', false);         
+    } else {
+        target = '#result-2';
+        $('#result-1, #result-3').addClass('hidden');
+         $('#answers').attr('aria-busy', true);
+    };  window._resultShowTimer = setTimeout(function () {
+        $(target).removeClass('hidden');
+    }, 1);">
+      <label for="eg6">The renovated dwelling (eligible dwelling) is <strong>all</strong> of the following:</label>
+      <div class="gc-font-2019 mrgn-tp-md mrgn-lft-xl">
+        <ul class="fa-ul">
+          <li><span class="fas fa-check text-success fa-li"></span>Located in Canada</li>
+          <li><span class="fas fa-check text-success fa-li"></span>Owned (jointly or not) by the qualifying individual or a qualifying relation of that individual (or a trust if the qualifying individual or qualifying relation is a beneficiary of the trust) at any time during the renovation period tax year</li>
+          <li><span class="fas fa-check text-success fa-li"></span>Ordinarily inhabited (or is reasonably expected to be ordinarily inhabited) by <strong>both</strong> the qualifying individual and a qualifying relation of that individual within <span class="nowrap">12 months</span> after the end of the renovation period</li>
+        </ul>
+        <details class="mrgn-tp-md">
+          <summary>Building a separate structure as the secondary unit</summary>
+          <p>The secondary unit does <strong>not</strong> need to be physically part of an existing structure as long as it is on the same land as the eligible dwelling.</p>
+          <p>Usually, the amount of land that can be considered part of the eligible dwelling is limited to half a hectare (<span class="nowrap">1.24 acres</span>). However, if it can be shown that more land is needed to use and enjoy the home, then more than half a hectare can be considered as part of the eligible dwelling.</p>
+        </details>
+      </div>
+    </div>
+  </fieldset>
+  <div id="answers" aria-busy="true" aria-live="polite" class="mrgn-lft-md mrgn-tp-lg">
+    <div id="result-1" class="alert alert-success hidden">
+      <h3 class="h4">You may claim this tax credit</h3>
+      <p>You have met the criteria to claim the MHRTC.</p>
+    </div>
+    <div id="result-3" class="alert alert-info">
+      <h3 class="h4">You need all of the above to be eligible</h3>
+      <p>To be eligible to claim the MHRTC, you must meet <strong>all</strong> of the criteria above.</p>
+    </div>
+  </div>
+  <div id="result-2" class="alert alert-warning hidden">
+    <h3 class="h4">You need all of the above to be eligible</h3>
+    <p>To be eligible to claim the MHRTC, you must meet all of the criteria above.</p>
+  </div>
+  </div>
+                 
+<hr class="brdr-tp mrgn-tp-xl">
+   <p>Once complete, please close tab or window and return to task instructions.</p>      
+        </section>
+			<div id="def-preFooter">
+				<!-- Write closure fall-back static file -->
+				<!-- preFooter-en.html -->
+			</div>
+			<!-- Write closure template -->
+			<script>
+				var defPreFooter = document.getElementById("def-preFooter");
+				defPreFooter.outerHTML = wet.builder.preFooter({
+					"cdnEnv": "prod"
+				});
+			</script>
+		</main>
+		<div id="def-footer">
+			<!-- Write closure fall-back static file -->
+			<!-- footer-en.html -->
+		</div>
+		<!-- Write closure template -->
+		<script>
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.appFooter({
+				"cdnEnv": "prod",
+                                     "termsLink": [{
+	"href": ""
+}], "privacyLink": [{
+	"href": ""
+}]
+			});
+		</script>
+		<!-- Write closure template -->
+		<script>
+			document.write(wet.builder.refFooter({
+				"cdnEnv": "prod",
+
+            
+			}));
+		</script>
+	</body>
+</html>
