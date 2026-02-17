@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+		<title>Task 4 - Demo</title>
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<!-- Meta data -->
+		<meta name="description" content="">
+		  <meta name="robots" content="noindex, nofollow">
+		<!-- Meta data-->
+		<!-- Load closure template scripts -->
+		
+ <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/soyutils.js"></script>
+         <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/wet-en.js"></script>
+		<noscript>
+			<!-- Write closure fall-back static file -->
+			<!-- refTop.html -->
+		</noscript>
+		<!-- Write closure template -->
+		<script>
+			document.write(wet.builder.refTop({
+				"cdnEnv": "prod",
+				"isApplication": false
+			}));
+		</script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous"/>
+	</head>
+	<body vocab="https://schema.org/" typeof="WebPage">
+		<div id="def-top">
+			<!-- Write closure fall-back static file -->
+			<!-- top-en.html -->
+		</div>
+		<!-- Write closure template -->
+		<script>
+		var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.top({
+               "cdnEnv": "prod",
+                "lngLinks": false,
+                 "search": false,
+               "siteMenu": false,
+         "showPreContent": false,
+                "breadcrumbs": false
+			});
+		</script>
+        
+        
+		<main property="mainContentOfPage" typeof="WebPageElement" class="container">
+			<h1 property="name" id="wb-cont">Eligibility Demo 4</h1>
+			 <section class="mrgn-bttm-xl">
+            <p class="mrgn-tp-md">Introduction</p>
+<fieldset class="gc-chckbxrdio-2"  id="checklist">
+    <legend>You must meet the following  2 criteria below<br>
+    <small class="text-muted">Check the boxes that apply</small></legend>
+    <ul class="checkbox-zebra gc-chckbxrdio-2 lst-spcd-2 list-unstyled mrgn-lft-lg">
+      <li class="checkbox">
+        <label for="eg1" tabindex="0">You are a resident of Canada for tax purposes during <strong>both</strong> periods:</label>
+        <div tabindex="0">
+          <ul class="mrgn-lft-xl mrgn-rght-md mrgn-tp-sm gc-font-2019">
+            <li>In the month before the CRA makes a payment</li>
+            <li>At the start of the month when a payment is made</li>
+          </ul>
+          <details class="mrgn-lft-xl mrgn-rght-md mrgn-tp-sm gc-font-2019">
+            <summary>Who is considered a resident of Canada</summary>
+            <p>You are considered to be a resident if you normally live in Canada and have established significant residential ties, for example if you have:</p>
+            <ul>
+              <li>A home in Canada</li>
+              <li>A spouse or common-law partner in Canada</li>
+              <li>Dependants in Canada</li>
+            </ul>
+            <p>If you are unsure about your residency status, refer to: <a href="/en/revenue-agency/services/tax/international-non-residents/information-been-moved/determining-your-residency-status.html">Determining your residency status</a>.</p>
+          </details>
+        </div>
+        <input type="checkbox" id="eg1" name="action-checkbox" class="checkbox-ec" onclick="if (window._resultShowTimer) {
+        clearTimeout(window._resultShowTimer);
+    };
+        const total = $('input.checkbox-ec').length;
+    const checked = $('input.checkbox-ec:checked').length;
+ if (checked === 0) {
+      target = '#result-3';
+        $('#result-1, #result-2').addClass('hidden');
+         $('#answers').attr('aria-busy', false);        
+    } else if (checked === total) {
+        target = '#result-1';
+        $('#result-2, #result-3').addClass('hidden');
+        $('#answers').attr('aria-busy', false);         
+    } else {
+        target = '#result-2';
+        $('#result-1, #result-3').addClass('hidden');
+         $('#answers').attr('aria-busy', true);
+    };  window._resultShowTimer = setTimeout(function () {
+        $(target).removeClass('hidden');
+    }, 1);" >
+      </li>
+      <li class="checkbox">
+        <label for="eg3" tabindex="0">You are either:</label>
+        <div tabindex="0">
+          <ul class="cnjnctn-type-or cnjnctn-md gc-font-2019">
+            <li class="cnjnctn-col-50">
+              <p>At least 19&nbsp;years old</p>
+              <details class="gc-font-2019">
+                <summary>If you are turning 19 during the year</summary>
+                <p>If you have filed your tax return and meet all other eligibility criteria, the CRA will issue your first payment on the next payment date that comes after your 19th birthday.</p>
+              </details>
+            </li>
+            <li class="cnjnctn-col">
+              <p>Under 19 years old and meet at least <strong>one</strong> of the following conditions:</p>
+              <ul>
+                <li>You have (or had) a spouse or common-law-partner</li>
+                <li>You are (or were) a parent and live (or lived) with your child</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <input type="checkbox" id="eg3" name="action-checkbox" class="checkbox-ec" onclick="if (window._resultShowTimer) {
+        clearTimeout(window._resultShowTimer);
+    };
+        const total = $('input.checkbox-ec').length;
+    const checked = $('input.checkbox-ec:checked').length;
+ if (checked === 0) {
+      target = '#result-3';
+        $('#result-1, #result-2').addClass('hidden');
+         $('#answers').attr('aria-busy', false);        
+    } else if (checked === total) {
+        target = '#result-1';
+        $('#result-2, #result-3').addClass('hidden');
+        $('#answers').attr('aria-busy', false);         
+    } else {
+        target = '#result-2';
+        $('#result-1, #result-3').addClass('hidden');
+         $('#answers').attr('aria-busy', true);
+    };  window._resultShowTimer = setTimeout(function () {
+        $(target).removeClass('hidden');
+    }, 1);">
+      </li>
+    </ul>
+  </fieldset>
+  <div aria-busy="true" aria-live="polite" class="mrgn-lft-xl mrgn-tp-lg" id="answers">
+    <div class="alert alert-success  hidden" id="result-1">
+      <p class="text-muted">Based on your selections above:</p>
+      <h3 class="mrgn-tp-sm h4">You may be eligible for the credit</h3>
+      <div>
+        <p>You meet the criteria for the GST/HST credit, however you must also check if you are entitled to receive the credit based on your adjusted family net income level.</p>
+      </div>
+      <p>You may need to provide additional details to the CRA to confirm your eligibility.</p>
+    </div>
+    <div class="alert alert-info " id="result-3">
+      <h3 class="h4">You need all of the above to be eligible</h3>
+      <p>To be eligible for the GST/HST credit, you must meet all of the above criteria.</p>
+    </div>
+  </div>
+  <div class="mrgn-lft-xl mrgn-tp-lg">
+    <div class="alert alert-warning  hidden" id="result-2">
+      <p class="text-muted">Based on your selections above:</p>
+      <h3 class="mrgn-tp-sm h4">You may not meet all of the criteria</h3>
+      <p>To be eligible for the GST/HST credit, you must meet all of the above criteria.</p>
+    </div>
+  </div>
+                 
+<hr class="brdr-tp mrgn-tp-xl">
+   <p>Once complete, please close tab or window and return to task instructions.</p>      
+        </section>
+			<div id="def-preFooter">
+				<!-- Write closure fall-back static file -->
+				<!-- preFooter-en.html -->
+			</div>
+			<!-- Write closure template -->
+			<script>
+				var defPreFooter = document.getElementById("def-preFooter");
+				defPreFooter.outerHTML = wet.builder.preFooter({
+					"cdnEnv": "prod"
+				});
+			</script>
+		</main>
+		<div id="def-footer">
+			<!-- Write closure fall-back static file -->
+			<!-- footer-en.html -->
+		</div>
+		<!-- Write closure template -->
+		<script>
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.appFooter({
+				"cdnEnv": "prod",
+                                     "termsLink": [{
+	"href": ""
+}], "privacyLink": [{
+	"href": ""
+}]
+			});
+		</script>
+		<!-- Write closure template -->
+		<script>
+			document.write(wet.builder.refFooter({
+				"cdnEnv": "prod",
+
+            
+			}));
+		</script>
+	</body>
+</html>
