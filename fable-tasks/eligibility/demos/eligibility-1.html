@@ -51,9 +51,88 @@
 			<h1 property="name" id="wb-cont">Eligibility Demo 1</h1>
 			 <section class="mrgn-bttm-xl">
             <p class="mrgn-tp-md">Introduction</p>
-           <p>Checklist</p>
+      <fieldset class="gc-chckbxrdio"  id="checklist">
+    <legend>You must meet all 3 criteria below<br>
+    <small class="text-muted">Check the boxes that apply</small></legend>
+    <div class="wb-frmvld">
+      <form>
+        <ul class="list-unstyled">
+          <li class="clearfix">
+            <div class="wb-fieldflow" data-wb-fieldflow='{"renderas": "checkbox", "noForm": true, "gcChckbxrdio":true, "isoptional": true, "base": {"live": true}, "reset":[{"action": "removeClass", "source": "#results", "class": "opt1"}, {"action": "addClass", "source": "#alert-B, #alert-C", "class": "hidden"}, {"action": "removeClass", "source": "#results:not(:is(.opt1,.opt2,.opt3)) #alert-A, #results:is(.opt1,.opt2,.opt3) #alert-B", "class": "hidden"}]}'>
+              <div class="wb-fieldflow-header">
+                <div class="gc-font-2019 pull-right col-xs-12 pl-5 mrgn-tp-md">
+                  <p><span class="wb-inv">Criteria 1 of 3: </span>You had renovation costs to create a <strong>secondary unit</strong> within the dwelling or on the property</p>
+                  <details>
+                    <summary>What a secondary unit is</summary>
+                    <p>A secondary unit:</p>
+                    <ul class="fa-ul">
+                      <li><span class="fas fa-check text-success fa-li"></span>Is a <span class="nowrap">self-contained</span> housing unit with a private entrance, kitchen, bathroom and sleeping area</li>
+                      <li><span class="fas fa-check text-success fa-li"></span>Is newly constructed or created from an existing living space that did not already meet local requirements to be considered a secondary dwelling unit</li>
+                      <li><span class="fas fa-check text-success fa-li"></span>Meets applicable local requirements, permits, codes and <span class="nowrap">by-laws</span></li>
+                    </ul>
+                  </details>
+                </div>
+                <p class="wb-fieldflow-label"><span class="wb-inv">Does this first criteria apply to you?</span></p>
+              </div>
+              <ul>
+                <li data-wb-fieldflow='[{"action": "addClass", "source": "#results", "class": "opt1"}, {"action": "addClass", "source": "#alert-A", "class": "hidden"},{"action": "removeClass", "source": "#results:is(.opt1,.opt2,.opt3) #alert-B, #results.opt1.opt2.opt3 #alert-C", "class": "hidden"},{"action": "addClass", "source": "#results.opt1.opt2.opt3 #alert-B", "class": "hidden"}]'><span class="wb-inv streched-link">Check if it applies</span></li>
+              </ul>
+            </div>
+          </li>
+          <li class="clearfix">
+            <div class="wb-fieldflow" data-wb-fieldflow='{"renderas": "checkbox", "noForm": true, "gcChckbxrdio":true, "isoptional": true, "base": {"live": true}, "reset":[{"action": "removeClass", "source": "#results", "class": "opt2"}, {"action": "addClass", "source": "#alert-B, #alert-C", "class": "hidden"}, {"action": "removeClass", "source": "#results:not(:is(.opt1,.opt2,.opt3)) #alert-A, #results:is(.opt1,.opt2,.opt3) #alert-B", "class": "hidden"}]}'>
+              <div class="wb-fieldflow-header">
+                <div class="gc-font-2019 pull-right col-xs-12 pl-5 mrgn-tp-md">
+                  <p><span class="wb-inv">Criteria 2 of 3: </span>The renovation was completed in the tax year that you are making the claim, regardless of when the renovation started</p>
+                </div>
+                <p class="wb-fieldflow-label"><span class="wb-inv">Does this second criteria apply to you?</span></p>
+              </div>
+              <ul>
+                <li data-wb-fieldflow='[{"action": "addClass", "source": "#results", "class": "opt2"},{"action": "addClass", "source": "#alert-A", "class": "hidden"},{"action": "removeClass", "source": "#results:is(.opt1,.opt2,.opt3) #alert-B, #results.opt1.opt2.opt3 #alert-C", "class": "hidden"},{"action": "addClass", "source": "#results.opt1.opt2.opt3 #alert-B", "class": "hidden"}]'><span class="wb-inv streched-link">Check if it applies</span></li>
+              </ul>
+            </div>
+          </li>
+          <li class="clearfix">
+            <div class="wb-fieldflow" data-wb-fieldflow='{"renderas": "checkbox", "noForm": true, "gcChckbxrdio":true, "isoptional": true, "base": {"live": true}, "reset":[{"action": "removeClass", "source": "#results", "class": "opt3"}, {"action": "addClass", "source": "#alert-B, #alert-C", "class": "hidden"}, {"action": "removeClass", "source": "#results:not(:is(.opt1,.opt2,.opt3)) #alert-A, #results:is(.opt1,.opt2,.opt3) #alert-B", "class": "hidden"}]}'>
+              <div class="wb-fieldflow-header">
+                <div class="gc-font-2019 pull-right col-xs-12 pl-5 mrgn-tp-md">
+                  <p><span class="wb-inv">Criteria 3 of 3: </span>One of the individuals living in the existing dwelling or the new secondary unit must be a <strong>qualifying individual</strong>. A qualifying individual is <strong>either</strong>:</p>
+                  <div class="cnjnctn-type-or cnjnctn-md">
+                    <div class="cnjnctn-col-40"><span class="nowrap">65 years</span> of age or older at the end of the renovation period tax year</div>
+                    <div class="cnjnctn-col">18 to <span class="nowrap">64 years</span> of age <strong>and</strong> eligible for the disability tax credit (DTC) at any time in the renovation period tax year (or would be if the attendant care restriction were not counted)
+                      <p>Learn more: <a href="/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit.html">Disability tax credit (DTC)</a></p>
+                    </div>
+                  </div>
+                </div>
+                <p class="wb-fieldflow-label"><span class="wb-inv">Does this third criteria apply to you?</span></p>
+              </div>
+              <ul>
+                <li data-wb-fieldflow='[{"action": "addClass", "source": "#results", "class": "opt3"},{"action": "addClass", "source": "#alert-A", "class": "hidden"},{"action": "removeClass", "source": "#results:is(.opt1,.opt2,.opt3) #alert-B, #results.opt1.opt2.opt3 #alert-C", "class": "hidden"},{"action": "addClass", "source": "#results.opt1.opt2.opt3 #alert-B", "class": "hidden"}]'><span class="wb-inv streched-link pull-right">Check if it applies</span></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </fieldset>
+  <div id="results" class="mrgn-lft-md mrgn-tp-lg">
+    <div aria-live="polite">
+      <div id="alert-C" class="alert alert-success hidden">
+        <h3 class="h4">You may claim this tax credit</h3>
+        <p>You have met the criteria to claim the MHRTC.</p>
+      </div>
+      <div id="alert-A" class="alert alert-info">
+        <h3 class="h4">You need all of the above to be eligible</h3>
+        <p>To be eligible to claim the MHRTC, you must meet <strong>all</strong> of the criteria above.</p>
+      </div>
+    </div>
+    <div id="alert-B" class="alert alert-warning hidden">
+      <h3 class="h4">You need all of the above to be eligible</h3>
+      <p>To be eligible to claim the MHRTC, you must meet all of the criteria above.</p>
+    </div>
+  </div>
                  
-
+<hr class="brdr-tp">
    <p>Once complete, please close tab or window and return to task instructions.</p>      
         </section>
 			<div id="def-preFooter">
