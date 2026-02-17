@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+		<title>Task 5 - Demo</title>
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<!-- Meta data -->
+		<meta name="description" content="">
+		  <meta name="robots" content="noindex, nofollow">
+		<!-- Meta data-->
+		<!-- Load closure template scripts -->
+		
+ <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/soyutils.js"></script>
+         <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/wet-en.js"></script>
+		<noscript>
+			<!-- Write closure fall-back static file -->
+			<!-- refTop.html -->
+		</noscript>
+		<!-- Write closure template -->
+		<script>
+			document.write(wet.builder.refTop({
+				"cdnEnv": "prod",
+				"isApplication": false
+			}));
+		</script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous"/>
+	</head>
+	<body vocab="https://schema.org/" typeof="WebPage">
+		<div id="def-top">
+			<!-- Write closure fall-back static file -->
+			<!-- top-en.html -->
+		</div>
+		<!-- Write closure template -->
+		<script>
+		var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.top({
+               "cdnEnv": "prod",
+                "lngLinks": false,
+                 "search": false,
+               "siteMenu": false,
+         "showPreContent": false,
+                "breadcrumbs": false
+			});
+		</script>
+        
+        
+		<main property="mainContentOfPage" typeof="WebPageElement" class="container">
+			<h1 property="name" id="wb-cont">Eligibility Demo 5</h1>
+			 <section class="mrgn-bttm-xl">
+            <p class="mrgn-tp-md">Introduction</p>
+ <fieldset class="gc-chckbxrdio-2"  id="checklist">
+    <legend>You must meet all 4 criteria below<br>
+    <small class="text-muted">Check the boxes that apply</small></legend>
+    <ul class="list-unstyled lst-spcd-2">
+      <li class="checkbox gc-font-2019">
+        <div tabindex="0" class="mrgn-lft-xl">
+          <p><span class="wb-inv">Criteria 1 of 4: </span>Someone else was paid to look after an eligible child so that you or the other person could do <strong>one</strong> of the following:</p>
+          <ul>
+            <li>earn income from employment</li>
+            <li>carry on a business alone or as an active partner</li>
+            <li>carry on research or similar work for which you or the other person received a grant</li>
+            <li>attend school under the conditions of an educational program
+              <details>
+                <summary>What is considered an educational program</summary>
+                <p>An educational program must be offered by a secondary school, college, university, or other designated educational&nbsp;institution.</p>
+                <p>This includes any institution certified by the Minister of Employment and Social Development Canada for courses that develop or improve occupational skills. An eligible program must last at least three<span class="nowrap">&nbsp;consecutive weeks</span>.</p>
+                <p>A <strong>full-time</strong>&nbsp;educational program requires students to spend at least&nbsp;<span class="nowrap">10&nbsp;hours</span> a&nbsp;week&nbsp;on courses or work in the&nbsp;program.</p>
+                <p>A <strong>part-time</strong>&nbsp;educational program requires students to spend at least&nbsp;<span class="nowrap">12&nbsp;hours</span>&nbsp;in a calendar month on courses in the&nbsp;program.</p>
+              </details>
+            </li>
+          </ul>
+        </div>
+        <label for="eg3"><span class="wb-inv">Do you meet criteria 1?</span></label>
+        <input type="checkbox" id="eg3" class="checkbox-ec"  onclick="if (window._resultShowTimer) {
+        clearTimeout(window._resultShowTimer);
+    };
+        const total = $('input.checkbox-ec').length;
+    const checked = $('input.checkbox-ec:checked').length;
+ if (checked === 0) {
+      target = '#result-3';
+        $('#result-1, #result-2').addClass('hidden');
+         $('#answers').attr('aria-busy', false);        
+    } else if (checked === total) {
+        target = '#result-1';
+        $('#result-2, #result-3').addClass('hidden');
+        $('#answers').attr('aria-busy', false);         
+    } else {
+        target = '#result-2';
+        $('#result-1, #result-3').addClass('hidden');
+         $('#answers').attr('aria-busy', true);
+    };  window._resultShowTimer = setTimeout(function () {
+        $(target).removeClass('hidden');
+    }, 1);">
+      </li>
+      <li class="checkbox gc-font-2019">
+        <div tabindex="0" class="mrgn-lft-xl">
+          <p><span class="wb-inv">Criteria 2 of 4: </span> The child lived with you or the other person when the expenses were incurred</p>
+        </div>
+        <label for="eg4"><span class="wb-inv">Do you meet criteria 2?</span></label>
+        <input type="checkbox" id="eg4" class="checkbox-ec"  onclick="if (window._resultShowTimer) {
+        clearTimeout(window._resultShowTimer);
+    };
+        const total = $('input.checkbox-ec').length;
+    const checked = $('input.checkbox-ec:checked').length;
+ if (checked === 0) {
+      target = '#result-3';
+        $('#result-1, #result-2').addClass('hidden');
+         $('#answers').attr('aria-busy', false);        
+    } else if (checked === total) {
+        target = '#result-1';
+        $('#result-2, #result-3').addClass('hidden');
+        $('#answers').attr('aria-busy', false);         
+    } else {
+        target = '#result-2';
+        $('#result-1, #result-3').addClass('hidden');
+         $('#answers').attr('aria-busy', true);
+    };  window._resultShowTimer = setTimeout(function () {
+        $(target).removeClass('hidden');
+    }, 1);">
+      </li>
+      <li class="checkbox gc-font-2019">
+        <div tabindex="0" class="mrgn-lft-xl">
+          <p><span class="wb-inv">Criteria 3 of 4</span> Services were provided in Canada by a Canadian resident</p>
+          <details>
+            <summary>Exceptions</summary>
+            <p>If you lived outside Canada for all or part of 2025 and the <abbr title="Canada Revenue Agency">CRA</abbr> considers you to be a <a href="https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/government-employees-outside-canada.html#factual" target="_blank" class="nowrap">factual resident<span class="far fa-window-restore mrgn-lft-sm mrgn-rght-sm"></span><span class="wb-inv"> (opens in new window)</span></a> or <a href="https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/government-employees-outside-canada.html#deemed">deemed resident</a><span class="far fa-window-restore mrgn-lft-sm mrgn-rght-sm"></span><span class="wb-inv"> (opens in new window)</span> of Canada, you can claim child care expenses that you paid to a non-resident person for services provided outside Canada.</p>
+            <p>For information on other situations where you can claim child care expenses paid for services provided outside Canada (for example, commuters to the United States), <a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information.html" target="_blank" class="nowrap">contact the Canada Revenue Agency<span class="far fa-window-restore mrgn-lft-sm mrgn-rght-sm"></span><span class="wb-inv"> (opens in new window)</span></a>.</p>
+          </details>
+          <details>
+            <summary>If you immigrated to or emigrated from Canada in 2025</summary>
+            <p>You can claim child care expenses for the period that you were in Canada, as long as you qualify.</p>
+          </details>
+        </div>
+        <label for="eg5"><span class="wb-inv">Do you meet criteria 3?</span></label>
+        <input type="checkbox" id="eg5" class="checkbox-ec"  onclick="if (window._resultShowTimer) {
+        clearTimeout(window._resultShowTimer);
+    };
+        const total = $('input.checkbox-ec').length;
+    const checked = $('input.checkbox-ec:checked').length;
+ if (checked === 0) {
+      target = '#result-3';
+        $('#result-1, #result-2').addClass('hidden');
+         $('#answers').attr('aria-busy', false);        
+    } else if (checked === total) {
+        target = '#result-1';
+        $('#result-2, #result-3').addClass('hidden');
+        $('#answers').attr('aria-busy', false);         
+    } else {
+        target = '#result-2';
+        $('#result-1, #result-3').addClass('hidden');
+         $('#answers').attr('aria-busy', true);
+    };  window._resultShowTimer = setTimeout(function () {
+        $(target).removeClass('hidden');
+    }, 1);">
+      </li>
+      <li class="checkbox gc-font-2019">
+        <div tabindex="0" class="mrgn-lft-xl">
+          <p><span class="wb-inv">Criteria 4 of 4: </span></p>
+          <ul class="cnjnctn-type-or mrgn-tp-0">
+            <li class="cnjnctn-col mrgn-tp-0">
+              <p>You are the only person supporting the eligible child while they were living with you</p>
+            </li>
+            <li class="cnjnctn-col">
+              <p>Another person lived with you at any time in&nbsp;2025 <strong>and</strong> in the first <span class="nowrap">60&nbsp;days</span> of 2026, and that person was one of the following:</p>
+              <ul>
+                <li>the eligible child’s parent</li>
+                <li>your spouse or common-law partner, if you are the father or mother of the eligible child</li>
+                <li>an individual claiming an amount for the eligible child on their tax return
+                  <details id="amounts-included">
+                    <summary>Which amounts are included</summary>
+                    <p>At least one of the following amounts are being claimed for the eligible child:</p>
+                    <ul>
+                      <li><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30400-amount-eligible-dependant.html">Amount for an eligible dependant (line&nbsp;30400)</a></li>
+                      <li><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30425-caregiver-spouse-dependant.html">Canada caregiver amount for spouse or common-law partner, or eligible dependant age 18 or older (<span class="nowrap">line&nbsp;30425</span>)</a></li>
+                      <li><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30450-caregiver-infirm-dependant.html">Canada caregiver amount for other infirm dependants age 18 or older (line&nbsp;30450)</a></li>
+                      <li><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30499-30500-canada-caregiver-infirm-children-under-18-years.html">Canada caregiver amount for infirm children under 18 years of age (line&nbsp;30500)</a></li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <label for="eg6"><span class="wb-inv">Do you meet criteria 4?</span></label>
+        <input type="checkbox" id="eg6" class="checkbox-ec"  onclick="if (window._resultShowTimer) {
+        clearTimeout(window._resultShowTimer);
+    };
+        const total = $('input.checkbox-ec').length;
+    const checked = $('input.checkbox-ec:checked').length;
+ if (checked === 0) {
+      target = '#result-3';
+        $('#result-1, #result-2').addClass('hidden');
+         $('#answers').attr('aria-busy', false);        
+    } else if (checked === total) {
+        target = '#result-1';
+        $('#result-2, #result-3').addClass('hidden');
+        $('#answers').attr('aria-busy', false);         
+    } else {
+        target = '#result-2';
+        $('#result-1, #result-3').addClass('hidden');
+         $('#answers').attr('aria-busy', true);
+    };  window._resultShowTimer = setTimeout(function () {
+        $(target).removeClass('hidden');
+    }, 1);">
+      </li>
+    </ul>
+  </fieldset>
+  <div aria-busy="true" aria-live="polite" class="mrgn-lft-xl mrgn-tp-lg" id="answers">
+    <div class="alert alert-success hidden" id="result-1">
+      <p class="text-muted small">Based on your selections above:</p>
+      <h3 class="mrgn-tp-0 ">Child care expenses may be claimed</h3>
+      <p>You or another person may claim child care expenses as a deduction for an eligible child.</p>
+    </div>
+    <div class="alert alert-info" id="result-3">
+      <h3 class="mrgn-tp-0">All of the above is needed to be eligible</h3>
+      <p>You or another person must meet all of the criteria to claim child expenses.</p>
+    </div>
+  </div>
+  <div class="mrgn-lft-xl mrgn-tp-lg">
+    <div class="alert alert-warning hidden" id="result-2">
+      <h3 class="mrgn-tp-0 ">All of the above is needed to be eligible</h3>
+      <p>You or another person must meet all of the criteria to claim child expenses.</p>
+    </div>
+  </div>
+                 
+<hr class="brdr-tp mrgn-tp-xl">
+   <p>Once complete, please close tab or window and return to task instructions.</p>      
+        </section>
+			<div id="def-preFooter">
+				<!-- Write closure fall-back static file -->
+				<!-- preFooter-en.html -->
+			</div>
+			<!-- Write closure template -->
+			<script>
+				var defPreFooter = document.getElementById("def-preFooter");
+				defPreFooter.outerHTML = wet.builder.preFooter({
+					"cdnEnv": "prod"
+				});
+			</script>
+		</main>
+		<div id="def-footer">
+			<!-- Write closure fall-back static file -->
+			<!-- footer-en.html -->
+		</div>
+		<!-- Write closure template -->
+		<script>
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.appFooter({
+				"cdnEnv": "prod",
+                                     "termsLink": [{
+	"href": ""
+}], "privacyLink": [{
+	"href": ""
+}]
+			});
+		</script>
+		<!-- Write closure template -->
+		<script>
+			document.write(wet.builder.refFooter({
+				"cdnEnv": "prod",
+
+            
+			}));
+		</script>
+	</body>
+</html>
