@@ -27,6 +27,93 @@
 			}));
 		</script>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous"/>
+		<style>
+.gc-chckbxrdio-2 label::before, .gc-chckbxrdio label::before {
+    border: 4px solid #fff;
+    -webkit-box-shadow: 0 0 0 2px #000;
+    box-shadow: 0 0 0 2px #000;
+    content: "";
+    display: inline-block;
+    height: 36px;
+    left: 0;
+    position: absolute;
+    top: 2px;
+    width: 36px;
+}
+.gc-chckbxrdio-2 input[type=checkbox] {
+    margin-left: 10px;
+    opacity: 0;
+    z-index: 2;
+}
+.gc-chckbxrdio-2 label {
+    display: inline-block;
+    line-height: 2;
+    margin-left: 36px;
+    width: auto;
+}
+.gc-chckbxrdio-2 label {
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+}
+.gc-chckbxrdio-2 .checkbox:has(input[type=checkbox]:checked) label::after {
+border-color: #333;
+border-style: solid;
+border-width: 0 5px 5px 0;
+content: "";
+display: inline-block;
+height: 26px;
+left: 12px;
+position: absolute;
+top: 4px;
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+width: 13px;
+}
+fieldset.gc-chckbxrdio-2 {
+    border-top: 0;
+    padding-top: 0;
+}
+.gc-chckbxrdio-2 legend {
+    float: none;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.gc-chckbxrdio-2 input[type=checkbox]:hover {
+    cursor: pointer
+}
+.gc-chckbxrdio-2 .checkbox:has(input[type=checkbox]:hover) label::before {
+background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e5e5), color-stop(50%, #fff));
+background-image: linear-gradient(to bottom, #e6e5e5, #fff 50%)
+}
+.gc-chckbxrdio-2 .checkbox:has(input[type=checkbox]:focus ) label::before {
+-webkit-box-shadow: 0 0 0 2px #000, 0 0 8px 4px #3b99fc;
+box-shadow: 0 0 0 2px #000, 0 0 8px 4px #3b99fc
+}
+.gc-chckbxrdio-2 label+* {
+    display: inline-block;
+    line-height: 2;
+    margin-left: 56px;
+    width: auto;
+}
+.chcklst-dsc {
+    padding-left: 56px;
+}
+*:focus-visible {
+outline: 2px solid blue; /* Changes the outline color to blue */
+outline-offset: 2px;    /* Adds space between the element and the outline */
+}
+
+/* Specific example for input fields */
+*:focus-visible, input:focus, button:focus, [tabindex]:focus {
+outline: none;
+outline: 2px solid blue; /* Changes the outline color to blue */
+outline-offset: 2px;    /* Adds space between the element and the outline */
+box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.3); /* Optional: adds a glow effect */
+}
+</style>
 	</head>
 	<body vocab="https://schema.org/" typeof="WebPage">
 		<div id="def-top">
