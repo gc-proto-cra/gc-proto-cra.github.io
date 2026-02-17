@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+		<title>Task 3 - Demo</title>
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<!-- Meta data -->
+		<meta name="description" content="">
+		  <meta name="robots" content="noindex, nofollow">
+		<!-- Meta data-->
+		<!-- Load closure template scripts -->
+		
+ <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/soyutils.js"></script>
+         <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/wet-en.js"></script>
+		<noscript>
+			<!-- Write closure fall-back static file -->
+			<!-- refTop.html -->
+		</noscript>
+		<!-- Write closure template -->
+		<script>
+			document.write(wet.builder.refTop({
+				"cdnEnv": "prod",
+				"isApplication": false
+			}));
+		</script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous"/>
+	</head>
+	<body vocab="https://schema.org/" typeof="WebPage">
+		<div id="def-top">
+			<!-- Write closure fall-back static file -->
+			<!-- top-en.html -->
+		</div>
+		<!-- Write closure template -->
+		<script>
+		var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.top({
+               "cdnEnv": "prod",
+                "lngLinks": false,
+                 "search": false,
+               "siteMenu": false,
+         "showPreContent": false,
+                "breadcrumbs": false
+			});
+		</script>
+        
+        
+		<main property="mainContentOfPage" typeof="WebPageElement" class="container">
+			<h1 property="name" id="wb-cont">Eligibility Demo 3</h1>
+			 <section class="mrgn-bttm-xl">
+            <p class="mrgn-tp-md">Introduction</p>
+ <form>
+    <fieldset class="gc-chckbxrdio gc-font-2019" id="ec-test">
+      <legend>Eligibility criteria checklist<br>
+      <small class="text-muted">Check the boxes that apply</small></legend>
+      <ul class="checkbox-lg gc-font-2019 lst-spcd-2">
+        <li class="checkbox">
+          <input type="checkbox" class="checkbox-ec" id="eg1" aria-labelledby="eg1-label eg1-desc" onclick="if (window._resultShowTimer) {
+        clearTimeout(window._resultShowTimer);
+    };
+        const total = $('input.checkbox-ec').length;
+    const checked = $('input.checkbox-ec:checked').length;
+ if (checked === 0) {
+      target = '#result-3';
+        $('#result-1, #result-2').addClass('hidden');
+         $('#answers').attr('aria-busy', false);        
+    } else if (checked === total) {
+        target = '#result-1';
+        $('#result-2, #result-3').addClass('hidden');
+        $('#answers').attr('aria-busy', false);         
+    } else {
+        target = '#result-2';
+        $('#result-1, #result-3').addClass('hidden');
+         $('#answers').attr('aria-busy', true);
+    };  window._resultShowTimer = setTimeout(function () {
+        $(target).removeClass('hidden');
+    }, 1);">
+          <label for="eg1" id="eg1-label"><span class="wb-inv">criteria 1 of 4: </span>You have limitations in 2 or more of the cumulative effect categories listed as the following: </label>
+          <div class="associated-content" id="eg1-desc">
+            <ul class="fa-ul colcount-sm-2">
+              <li><span aria-hidden="true" class="fas fa-check text-success fa-li"></span><a href="/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit/eligible-dtc/walking.html">Walking</a></li>
+              <li><span aria-hidden="true" class="fas fa-check text-success fa-li"></span> <a href="/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit/eligible-dtc/mental-functions.html">Mental functions</a></li>
+              <li><span aria-hidden="true" class="fas fa-check text-success fa-li"></span> <a href="/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit/eligible-dtc/dressing.html">Dressing</a></li>
+              <li><span aria-hidden="true" class="fas fa-check text-success fa-li"></span> <a href="/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit/eligible-dtc/feeding.html">Feeding</a></li>
+              <li><span aria-hidden="true" class="fas fa-check text-success fa-li"></span> <a href="/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit/eligible-dtc/eliminating.html">Eliminating (bowel or bladder functions)</a></li>
+              <li><span aria-hidden="true" class="fas fa-check text-success fa-li"></span> <a href="/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit/eligible-dtc/speaking.html">Speaking</a></li>
+              <li><span aria-hidden="true" class="fas fa-check text-success fa-li"></span> <a href="/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit/eligible-dtc/hearing.html">Hearing</a></li>
+              <li><span aria-hidden="true" class="fas fa-check text-success fa-li"></span> <a href="/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit/eligible-dtc/vision.html">Vision</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="checkbox">
+          <input type="checkbox" class="checkbox-ec" id="eg2" aria-labelledby="eg2-label eg2-desc" onclick="if (window._resultShowTimer) {
+        clearTimeout(window._resultShowTimer);
+    };
+        const total = $('input.checkbox-ec').length;
+    const checked = $('input.checkbox-ec:checked').length;
+ if (checked === 0) {
+      target = '#result-3';
+        $('#result-1, #result-2').addClass('hidden');
+         $('#answers').attr('aria-busy', false);        
+    } else if (checked === total) {
+        target = '#result-1';
+        $('#result-2, #result-3').addClass('hidden');
+        $('#answers').attr('aria-busy', false);         
+    } else {
+        target = '#result-2';
+        $('#result-1, #result-3').addClass('hidden');
+         $('#answers').attr('aria-busy', true);
+    };  window._resultShowTimer = setTimeout(function () {
+        $(target).removeClass('hidden');
+    }, 1);">
+          <label for="eg2" id="eg2-label"><span class="wb-inv">criteria 2 of 4: </span>Your limitations exist together all or almost all of the time</label>
+          <details class="associated-content">
+            <summary>Time requirement that they exist together</summary>
+            <div id="eg2-desc">
+              <p>The period of time they must exist together is  generally 90% or more.</p>
+            </div>
+          </details>
+        </li>
+        <li class="checkbox">
+          <input type="checkbox" class="checkbox-ec" id="eg3" 
+onclick="if (window._resultShowTimer) {
+        clearTimeout(window._resultShowTimer);
+    };
+        const total = $('input.checkbox-ec').length;
+    const checked = $('input.checkbox-ec:checked').length;
+ if (checked === 0) {
+      target = '#result-3';
+        $('#result-1, #result-2').addClass('hidden');
+         $('#answers').attr('aria-busy', false);        
+    } else if (checked === total) {
+        target = '#result-1';
+        $('#result-2, #result-3').addClass('hidden');
+        $('#answers').attr('aria-busy', false);         
+    } else {
+        target = '#result-2';
+        $('#result-1, #result-3').addClass('hidden');
+         $('#answers').attr('aria-busy', true);
+    };  window._resultShowTimer = setTimeout(function () {
+        $(target).removeClass('hidden');
+    }, 1);">
+          <label for="eg3"><span class="wb-inv">criteria 3 of 4: </span>Your limitations have lasted or are expected to last for a continuous period of at least 12&nbsp;months</label>
+        </li>
+        <li class="checkbox">
+          <input type="checkbox" class="checkbox-ec" id="eg4"  onclick="if (window._resultShowTimer) {
+        clearTimeout(window._resultShowTimer);
+    };
+        const total = $('input.checkbox-ec').length;
+    const checked = $('input.checkbox-ec:checked').length;
+ if (checked === 0) {
+      target = '#result-3';
+        $('#result-1, #result-2').addClass('hidden');
+         $('#answers').attr('aria-busy', false);        
+    } else if (checked === total) {
+        target = '#result-1';
+        $('#result-2, #result-3').addClass('hidden');
+        $('#answers').attr('aria-busy', false);         
+    } else {
+        target = '#result-2';
+        $('#result-1, #result-3').addClass('hidden');
+         $('#answers').attr('aria-busy', true);
+    };  window._resultShowTimer = setTimeout(function () {
+        $(target).removeClass('hidden');
+    }, 1);">
+          <label for="eg4" id="eg4-label"><span class="wb-inv">criteria 4 of 4: </span>If the limitations were combined, their cumulative effect (combined impact) would be:</label>
+          <div class="associated-content">
+            <details class="brdr-0" open="open">
+              <summary class="brdr-0">Combined impact situation</summary>
+              <div class="cnjnctn-type-and cnjnctn-sm">
+                <div class="cnjnctn-col">
+                  <p class="mrgn-tp-sm">Equivalent to being unable or taking 3 times longer than someone of similar age without the impairment to do an activity in 1 of the categories</p>
+                </div>
+                <div class="cnjnctn-col">
+                  <p class="mrgn-tp-sm">Present all or substantially all of the time (generally 90% or more), even with the use of appropriate therapy, medication, and devices</p>
+                </div>
+              </div>
+            </details>
+          </div>
+        </li>
+      </ul>
+    </fieldset>
+  </form>
+  <div aria-busy="true" aria-live="polite" class="mrgn-lft-xl mrgn-tp-lg" id="answers">
+    <div class="alert alert-success hidden" id="result-1">
+      <h3>You may be eligible for the DTC</h3>
+      <p>This does not guarantee eligibility. When you apply, the CRA will base their decision on the information given by your medical practitioner.</p>
+      <details>
+        <summary>Which medical practitioners can certify this</summary>
+        <table class="provisional gc-table table mrgn-tp-md">
+          <caption class="wb-inv">
+          Medical practitioners who can certify impairments
+          </caption>
+          <thead class="wb-inv">
+            <tr>
+              <th scope="col">Medical practitioner</th>
+              <th scope="col">Can certify</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="text-left"><strong>Medical doctor</strong></span></td>
+              <td><span class="text-left">All impairments</span></td>
+            </tr>
+            <tr>
+              <td><span class="text-left"><strong>Nurse practitioner</strong></span></td>
+              <td><span class="text-left">All impairments</span></td>
+            </tr>
+            <tr>
+              <td><span class="text-left"><strong>Optometrist</strong></span></td>
+              <td><span class="text-left">Vision</span></td>
+            </tr>
+            <tr>
+              <td><span class="text-left"><strong>Audiologist</strong></span></td>
+              <td><span class="text-left">Hearing</span></td>
+            </tr>
+            <tr>
+              <td><span class="text-left"><strong>Occupational therapist</strong></span></td>
+              <td><span class="text-left">Walking, feeding, dressing</span></td>
+            </tr>
+            <tr>
+              <td><span class="text-left"><strong>Physiotherapist</strong></span></td>
+              <td><span class="text-left">Walking</span></td>
+            </tr>
+            <tr>
+              <td><span class="text-left"><strong>Psychologist</strong></span></td>
+              <td><span class="text-left">Mental functions</span></td>
+            </tr>
+            <tr>
+              <td><span class="text-left"><strong>Speech-language pathologist</strong></span></td>
+              <td><span class="text-left">Speaking</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </div>
+    <div class="alert alert-info" id="result-3">
+      <h3>If you’re not sure you qualify</h3>
+      <p>Even if your answers indicate that you may not be eligible, you can still send in an application. CRA will determine your eligibility based on the information given by your medical practitioner.</p>
+    </div>
+  </div>
+  <div class="mrgn-lft-xl mrgn-tp-lg">
+    <div class="alert alert-warning hidden" id="result-2">
+      <h3>You need all of the above to be eligible</h3>
+      <p>If you’re not sure you qualify, you may still apply. Your eligibility is based on the information given by your medical practitioner.</p>
+    </div>
+  </div>
+                 
+<hr class="brdr-tp mrgn-tp-xl">
+   <p>Once complete, please close tab or window and return to task instructions.</p>      
+        </section>
+			<div id="def-preFooter">
+				<!-- Write closure fall-back static file -->
+				<!-- preFooter-en.html -->
+			</div>
+			<!-- Write closure template -->
+			<script>
+				var defPreFooter = document.getElementById("def-preFooter");
+				defPreFooter.outerHTML = wet.builder.preFooter({
+					"cdnEnv": "prod"
+				});
+			</script>
+		</main>
+		<div id="def-footer">
+			<!-- Write closure fall-back static file -->
+			<!-- footer-en.html -->
+		</div>
+		<!-- Write closure template -->
+		<script>
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.appFooter({
+				"cdnEnv": "prod",
+                                     "termsLink": [{
+	"href": ""
+}], "privacyLink": [{
+	"href": ""
+}]
+			});
+		</script>
+		<!-- Write closure template -->
+		<script>
+			document.write(wet.builder.refFooter({
+				"cdnEnv": "prod",
+
+            
+			}));
+		</script>
+	</body>
+</html>
