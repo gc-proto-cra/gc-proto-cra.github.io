@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+		<title>Identifiers for visually seperated components</title>
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<!-- Meta data -->
+		<meta name="description" content="">
+      <meta name="robots" content="noindex, nofollow">
+		<!-- Meta data-->
+		<!-- Load closure template scripts -->
+		
+ <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/soyutils.js"></script>
+         <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/wet-en.js"></script>
+		<noscript>
+			<!-- Write closure fall-back static file -->
+			<!-- refTop.html -->
+		</noscript>
+		<!-- Write closure template -->
+		<script>
+			document.write(wet.builder.refTop({
+				"cdnEnv": "prod",
+				"isApplication": false
+			}));
+		</script>
+	</head>
+	<body vocab="https://schema.org/" typeof="WebPage">
+		<div id="def-top">
+			<!-- Write closure fall-back static file -->
+			<!-- top-en.html -->
+		</div>
+		<!-- Write closure template -->
+		<script>
+		var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.top({
+               "cdnEnv": "prod",
+                "lngLinks": false,
+                 "search": false,
+               "siteMenu": false,
+         "showPreContent": false,
+                "breadcrumbs": false
+			});
+		</script>
+        
+        
+		<main property="mainContentOfPage" typeof="WebPageElement" class="container">
+			<h1 property="name" id="wb-cont">Identifiers for visually seperated components</h1>
+			 <section class="mrgn-bttm-xl">
+         <h2>Situation</h2>
+  <p><strong>Issue:</strong> There are many visual patterns in GCWeb that indicate a natural beginning and end to the content contained (aka has borders). However they are not represented equally when using a screen reader.</p>
+  <p>These include, but are not limited to:</p>
+  <ul>
+    <li>alerts</li>
+    <li>panels</li>
+    <li>wells</li>
+    <li>cards (CDS design)</li>
+    <li>and/or pattern (when not using a list)</li>
+    <li>details (expand/collapse)</li>
+  </ul>
+  <p>Other designs such as:
+  <ul>
+    <li>lists</li>
+    <li>blockquote</li>
+  </ul>
+  already read when moving in and out of the element.
+  <p><strong>Goal:</strong> Utilize a structure that can indicate three things:</p>
+  <ol>
+    <li>When you are entering the region</li>
+    <li>What is the region</li>
+    <li>When you are leaving (have left) the region</li>
+  </ol>
+  <p><strong>Proposal: </strong>Introduce both <code>role=&quot;region&quot;</code> and <code>aria-label</code> or <code>aria-labelledby</code> when sectioning off content to better indicate when content begins and ends. Other aria or roles will be researched and considered.</p>
+  <p><strong>Concerns:</strong></p>
+  <p>It is recomended in the W3 org guide that roles and arias should be used sparingly (vague statement).</p>
+  <p>We need to consider if all patterns should get this design by default, and focus on creating less "call-out" designs, or only apply pattern to when the visual nature of the confined content is really important to get across.</p>
+  <p>JAWS only reads regions when set to high verbose (a level of granularity page structure feedback) or is set as a custom property. This means that some users may miss the content. We should consider either a fallback, or (preferred suggestion) ensure that the content within still adheres to proper code and structure semantic so it stands up even without a visual indicator (e.g. if the CSS styles did not load). </p>
+  <p><strong>Testing platforms:</strong> </p>
+  <ul>
+    <li>NVDA</li>
+    <li>JAWS 2025 (set to high verbose)</li>
+    <li>VoiceOver (macOS)</li>
+  </ul>
+  <h2>Alerts</h2>
+  <p>Testing both <code>aria-label</code> and <code>aria-describedby</code> on different alerts.</p>
+  <p>Will need to determine if headers are still a requirement (e.g. <code>aria-label</code> for those with no headers, <code>aria-labelledby</code> for those with headers).</p>
+  <h3>Info alert</h3>
+  <div class="row">
+    <div class="col-md-7">
+      <p>Content above goes here.</p>
+      <div class="alert alert-info" role="region" aria-label="Information notice">
+        <h4>Informational header statement here</h4>
+        <p>Text and information goes here.</p>
+      </div>
+      <p>Content below goes here.</p>
+    </div>
+    <div class="col-md-5 brdr-lft">
+      <h4>Accessibility additions</h4>
+      <ul>
+        <li><code>role="region"</code></li>
+        <li><code>aria-label</code> (text: Information notice)</li>
+      </ul>
+      <h4>Screen reader output</h4>
+      <ul>
+        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>JAWS:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> text goes here</li>
+      </ul>
+      <h4>Comments</h4>
+    </div>
+  </div>
+  <h3>Success alert</h3>
+  <div class="row">
+    <div class="col-md-7">
+      <p>Content above goes here.</p>
+      <div class="alert alert-success" role="region" aria-labelledby="alert-hdr-success">
+        <h4 id="alert-hdr-success">Successful header statement here</h4>
+        <p>Text and information goes here.</p>
+      </div>
+      <p>Content below goes here.</p>
+    </div>
+    <div class="col-md-5 brdr-lft">
+      <h4>Accessibility additions</h4>
+      <ul>
+        <li><code>role="region"</code></li>
+        <li><code>aria-labelledby</code> (id: alert-hdr-success)</li>
+      </ul>
+      <h4>Screen reader output</h4>
+      <ul>
+        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>JAWS:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> text goes here</li>
+      </ul>
+      <h4>Comments</h4>
+    </div>
+  </div>
+  <h3>Warning alert</h3>
+  <div class="row">
+    <div class="col-md-7">
+      <p>Content above goes here.</p>
+      <div class="alert alert-warning" role="region" aria-label="Warning notice">
+        <p>Text and information goes here.</p>
+      </div>
+      <p>Content below goes here.</p>
+    </div>
+    <div class="col-md-5 brdr-lft">
+      <h4>Accessibility additions</h4>
+      <ul>
+        <li><code>role="region"</code></li>
+        <li><code>aria-label</code> (text: Warning notice)</li>
+      </ul>
+      <h4>Screen reader output</h4>
+      <ul>
+        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>JAWS:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> text goes here</li>
+      </ul>
+      <h4>Comments</h4>
+      <p>Warning alert/notice may not benefit from a standard label such as "Warning notice" or "Warning alert", as most of these alerts may be for very important or critical information. May want to ensure the label is tied to the header (i.e. always have a header).</p>
+    </div>
+  </div>
+  <h3>Danger alert</h3>
+  <div class="row">
+    <div class="col-md-7">
+      <p>Content above goes here.</p>
+      <div class="alert alert-danger" role="region" aria-labelledby="alert-hdr-danger">
+        <h4 id="alert-hdr-danger">Danger header statement here</h4>
+        <p>Text and information goes here.</p>
+      </div>
+      <p>Content below goes here.</p>
+    </div>
+    <div class="col-md-5 brdr-lft">
+      <h4>Accessibility additions</h4>
+      <ul>
+        <li><code>role="region"</code></li>
+        <li><code>aria-labelledby</code> (id: alert-hdr-danger)</li>
+      </ul>
+      <h4>Screen reader output</h4>
+      <ul>
+        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>JAWS:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> text goes here</li>
+      </ul>
+      <h4>Comments</h4>
+      <p>Danger alert/notice may not benefit from a standard label such as "Danger notice", as most "danger" alerts are just error issues with forms.  Very rarely used for "dangerous situations".</p>
+    </div>
+  </div>
+  <h2>Panels</h2>
+  <p>Panel colours are not always tied to the content within.</p>
+  <p>Extra consideration should be made if there is a desire to create a standard set of labels for each panel type (or panels in general), or attach the label to the header (most panel designs should have a header). </p>
+  <h3>Default panel with <code>aria-labelledby</code></h3>
+  <div class="row">
+    <div class="col-md-7">
+      <p>Content above goes here.</p>
+      <section class="panel panel-default" aria-labelledby="panel-hdr-default">
+        <header class="panel-heading">
+          <h4 class="panel-title" id="panel-hdr-default"> Panel default header here</h4>
+        </header>
+        <div class="panel-body">
+          <p>Panel content goes here.</p>
+        </div>
+      </section>
+      <p>Content below goes here.</p>
+    </div>
+    <div class="col-md-5 brdr-lft">
+      <h4>Accessibility additions</h4>
+      <ul>
+        <li>no <code>role="region"</code> (panel in <code>&lt;section&gt;</code>)</li>
+        <li><code>aria-labelledby</code> (id: panel-hdr-default)</li>
+      </ul>
+      <h4>Screen reader output</h4>
+      <ul>
+        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>JAWS:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> text goes here</li>
+      </ul>
+      <h4>Comments</h4>
+      <p>Discuss if the <code>role="region"</code> (or <code>&lt;section&gt;</code>) is sufficient for most cases, and no need for <code>aria-label</code> or <code>aria-labelledby</code> for general content.</p>
+    </div>
+  </div>
+  <h3>Primary panel with <code>aria-label</code></h3>
+  <p>Testing option of <code>role="note"</code> as seems to be only other acceptable role to content that announces when leaving.</p>
+  <div class="row">
+    <div class="col-md-7">
+      <p>Content above goes here.</p>
+      <div class="panel panel-primary panel-body" aria-label="Panel information" role="note">
+        <p>Panel content goes here.</p>
+      </div>
+      <p>Content below goes here.</p>
+    </div>
+    <div class="col-md-5 brdr-lft">
+      <h4>Accessibility additions</h4>
+      <ul>
+        <li><code>role="note"</code></li>
+        <li><code>aria-label</code> (text: Panel information)</li>
+      </ul>
+      <h4>Screen reader output</h4>
+      <ul>
+        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>JAWS:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> text goes here</li>
+      </ul>
+      <h4>Comments</h4>
+      <p>Discuss if the <code>role="note"</code> is sufficient for most cases, and no need for <code>aria-label</code> or <code>aria-labelledby</code> for general content.</p>
+    </div>
+  </div>
+  <h2>Wells</h2>
+  <p>Using <code>aria-labelledby</code> as same discussion points will need to be brought up for these designs and whether to allow no headers (and for which situations). </p>
+  <div class="row">
+    <div class="col-md-7">
+      <p>Content above goes here.</p>
+      <div class="well" role="region" aria-labelledby="well-hdr">
+        <h3 class="mrgn-tp-0" id="well-hdr">Well content header statement here</h3>
+        <p>Text and information goes here.</p>
+      </div>
+      <p>Content below goes here.</p>
+    </div>
+    <div class="col-md-5 brdr-lft">
+      <h4>Accessibility additions</h4>
+      <ul>
+        <li><code>role="region"</code></li>
+        <li><code>aria-labelledby</code> (id: well-hdr)</li>
+      </ul>
+      <h4>Screen reader output</h4>
+      <ul>
+        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>JAWS:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> text goes here</li>
+      </ul>
+      <h4>Comments</h4>
+      <p>Discuss if the <code>role="region"</code> is sufficient for most cases, and no need for <code>aria-label</code> or <code>aria-labelledby</code> for general content.</p>
+    </div>
+  </div>
+  <h2>Conjunction (and/or)</h2>
+  <p>This would only be required for those using block elements and not the list pattern (as lists announce when out of list).</p>
+  <h3>No headers</h3>
+  <p>This pattern would require a lead in statement/header. aria and role would be bound to a surrounding element. </p>
+  <div class="row">
+    <div class="col-md-7">
+      <p>Content above goes here.</p>
+      <section aria-labelledby="or-hdr">
+        <h4 id="or-hdr">Decision between choice one and choice two</h4>
+        <p>Choose one of the following:</p>
+        <div class="cnjnctn-type-or cnjnctn-sm">
+          <div class="cnjnctn-col">
+            <p>Choice one</p>
+          </div>
+          <div class="cnjnctn-col">
+            <p>Choice two</p>
+          </div>
+        </div>
+      </section>
+      <p>Content below goes here.</p>
+    </div>
+    <div class="col-md-5 brdr-lft">
+      <h4>Accessibility additions</h4>
+      <ul>
+        <li>no <code>role="region"</code> (in <code>&lt;section&gt;</code>)</li>
+        <li><code>aria-labelledby</code> (id: or-hdr)</li>
+      </ul>
+      <h4>Screen reader output</h4>
+      <ul>
+        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>JAWS:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> text goes here</li>
+      </ul>
+      <h4>Comments</h4>
+      <p>This would probably be a rare design, as if there is no headers (and simple amount of text), it would be more suitable to put in a list pattern.</p>
+    </div>
+  </div>
+  <h3>Headers</h3>
+  <p>This pattern should have a lead in statement. The aria and role would be bound to the design component directly.</p>
+  <div class="row">
+    <div class="col-md-7">
+      <p>Content above goes here.</p>
+      <p>You must meet these three conditions:</p>
+      <div class="cnjnctn-type-and cnjnctn-sm" role="region" aria-label="all must apply">
+        <div class="cnjnctn-col">
+          <h4 class="h6">Condition one</h4>
+          <p>Details of condition one</p>
+        </div>
+        <div class="cnjnctn-col">
+          <h4 class="h6">Condition two</h4>
+          <p>Details of condition two</p>
+        </div>
+        <div class="cnjnctn-col">
+          <h4 class="h6">Condition three</h4>
+          <p>Details of condition three</p>
+        </div>
+      </div>
+      </section>
+      <p>Content below goes here.</p>
+    </div>
+    <div class="col-md-5 brdr-lft">
+      <h4>Accessibility additions</h4>
+      <ul>
+        <li><code>role="region"</code></li>
+        <li><code>aria-label</code> (text: all must apply)</li>
+      </ul>
+      <h4>Screen reader output</h4>
+      <ul>
+        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>JAWS:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> text goes here</li>
+      </ul>
+      <h4>Comments</h4>
+    </div>
+  </div>
+  <h2>Details (ex/hide)</h2>
+  <p>Details and summary elements do have an interactive element to showcase where to interact (except voiceOver, see below), but do not indicate where that content ends, unless the person already had navigated past prior to expanding.</p>
+  <p>Screen readers indicate that the content is a "button" that is collapsed when closed, and expanded when open.  VoiceOver does not announce the details element as anything interactive when either tabbing or in read mode. This is a VoiceOver issue, but there might be some fallbacks if we decide to apply more accessibility attributes.</p>
+  <div class="row">
+    <div class="col-md-7">
+      <p>Content above goes here.</p>
+      <details role="region">
+        <summary role="button">Details summary statement here</summary>
+        <p>Text and information goes here.</p>
+      </details>
+      <p>Content below goes here.</p>
+    </div>
+    <div class="col-md-5 brdr-lft">
+      <h4>Accessibility additions</h4>
+      <ul>
+        <li><code>role="region"</code> on <code>&lt;details&gt;</code>, and <code>role="button"</code> on <code>&lt;summary&gt;</code> (for VoiceOver)</li>
+        <li>no <code>aria-label</code> or <code>aria-labelledby</code></li>
+      </ul>
+      <h4>Screen reader output</h4>
+      <ul>
+        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>JAWS:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> text goes here</li>
+      </ul>
+      <h4>Comments</h4>
+    </div>
+  </div>
+           
+        </section>
+			<div id="def-preFooter">
+				<!-- Write closure fall-back static file -->
+				<!-- preFooter-en.html -->
+			</div>
+			<!-- Write closure template -->
+			<script>
+				var defPreFooter = document.getElementById("def-preFooter");
+				defPreFooter.outerHTML = wet.builder.preFooter({
+				
+					"cdnEnv": "prod"
+				});
+			</script>
+		</main>
+		<div id="def-footer">
+			<!-- Write closure fall-back static file -->
+			<!-- footer-en.html -->
+		</div>
+		<!-- Write closure template -->
+		<script>
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.appFooter({
+				"cdnEnv": "prod",
+                                   "termsLink": [{
+	"href": ""
+}], "privacyLink": [{
+	"href": ""
+}]
+			});
+		</script>
+		<!-- Write closure template -->
+		<script>
+			document.write(wet.builder.refFooter({
+				"cdnEnv": "prod",
+
+            
+			}));
+		</script>
+	</body>
+</html>
+
