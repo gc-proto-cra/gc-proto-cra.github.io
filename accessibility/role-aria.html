@@ -51,7 +51,8 @@
 			<h1 property="name" id="wb-cont">Identifiers for visually seperated components</h1>
 			 <section class="mrgn-bttm-xl">
          <h2>Situation</h2>
-  <p><strong>Issue:</strong> There are many visual patterns in GCWeb that indicate a natural beginning and end to the content contained (aka has borders). However they are not represented equally when using a screen reader.</p>
+  <p><strong>Issue:</strong></p>
+	<p>There are many visual patterns in GCWeb that indicate a natural beginning and end to the content contained (aka has borders). However they are not represented equally when using a screen reader.</p>
   <p>These include, but are not limited to:</p>
   <ul>
     <li>alerts</li>
@@ -67,13 +68,15 @@
     <li>blockquote</li>
   </ul>
   already read when moving in and out of the element.
-  <p><strong>Goal:</strong> Utilize a structure that can indicate three things:</p>
+  <p><strong>Goal:</strong><p>
+	  <p>Utilize a structure that can indicate three things:</p>
   <ol>
     <li>When you are entering the region</li>
     <li>What is the region</li>
     <li>When you are leaving (have left) the region</li>
   </ol>
-  <p><strong>Proposal: </strong>Introduce both <code>role=&quot;region&quot;</code> and <code>aria-label</code> or <code>aria-labelledby</code> when sectioning off content to better indicate when content begins and ends. Other aria or roles will be researched and considered.</p>
+  <p><strong>Proposal:</strong></p>
+				 <p>Introduce both <code>role=&quot;region&quot;</code> and <code>aria-label</code> or <code>aria-labelledby</code> when sectioning off content to better indicate when content begins and ends. Other aria or roles will be researched and considered.</p>
   <p><strong>Concerns:</strong></p>
   <p>It is recomended in the W3 org guide that roles and arias should be used sparingly (vague statement).</p>
   <p>We need to consider if all patterns should get this design by default, and focus on creating less "call-out" designs, or only apply pattern to when the visual nature of the confined content is really important to get across.</p>
