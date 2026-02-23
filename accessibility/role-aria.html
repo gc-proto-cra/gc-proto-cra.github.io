@@ -108,7 +108,26 @@
       </ul>
       <h4>Screen reader output</h4>
       <ul>
-        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>NVDA:</strong>
+          <ul class="list-unstyled">
+            <li>When in read mode:
+              <ul>
+                <li>..Content above read..<br>
+                  &quot;Information notice region heading level 4 informational header statement here&quot;<br>
+                  ..Alert text..<br>
+                  &quot;Out of region&quot;<br>
+                ...Content below read...</li>
+              </ul>
+            </li>
+            <li>When navigated by header in alert:
+              <ul>
+                <li>&quot;Information notice region informational header statement here heading level 4&quot;<br>
+                  ...Next header..<br>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li><strong>JAWS:</strong> text goes here</li>
         <li><strong>VoiceOver:</strong> text goes here</li>
       </ul>
@@ -133,7 +152,26 @@
       </ul>
       <h4>Screen reader output</h4>
       <ul>
-        <li><strong>NVDA:</strong> text goes here</li>
+           <li><strong>NVDA:</strong>
+          <ul class="list-unstyled">
+            <li>When in read mode:
+              <ul>
+                <li>..Content above read..<br>
+                  &quot;Region heading level 4 successful header statement here&quot;<br>
+                  ..Alert text..<br>
+                  &quot;Out of region&quot;<br>
+                ...Content below read...</li>
+              </ul>
+            </li>
+            <li>When navigated by header in alert:
+              <ul>
+                <li>&quot;Region successful header statement here heading level 4&quot;<br>
+                  ...Next header..<br>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li><strong>JAWS:</strong> text goes here</li>
         <li><strong>VoiceOver:</strong> text goes here</li>
       </ul>
@@ -158,7 +196,25 @@
       </ul>
       <h4>Screen reader output</h4>
       <ul>
-        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>NVDA:</strong>
+          <ul class="list-unstyled">
+            <li>When in read mode:
+              <ul>
+                <li>..Content above read..<br>
+                  &quot;Warning notice region text and information goes here&quot;<br>
+                  &quot;Out of region&quot;<br>
+                  ...Content below read...</li>
+              </ul>
+            </li>
+            <li>When tabbed to link:
+              <ul>
+                <li>&quot;Warning notice region further information link&quot;<br>
+                  ...Next tabbed element..<br>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li><strong>JAWS:</strong> text goes here</li>
         <li><strong>VoiceOver:</strong> text goes here</li>
       </ul>
@@ -185,7 +241,33 @@
       </ul>
       <h4>Screen reader output</h4>
       <ul>
-        <li><strong>NVDA:</strong><br></li>
+        <li><strong>NVDA:</strong>
+          <ul class="list-unstyled">
+            <li>When in read mode:
+              <ul>
+                <li>..Content above read..<br>
+                  &quot;Region heading level 4 danger header statement here&quot;<br>
+..Alert text..                   <br>
+                  &quot;Out of region&quot;<br>
+                  ...Content below read...</li>
+              </ul>
+            </li>
+            <li>When navigated by header in alert:
+              <ul>
+                <li>&quot;Region danger header statement here heading level 4&quot;<br>
+                  ...Next header..<br>
+                </li>
+              </ul>
+            </li>
+            <li>When tabbed to link:
+              <ul>
+                <li>&quot;Region further information link&quot;<br>
+                  ...Next tabbed element..<br>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li><strong>JAWS:</strong> text goes here</li>
         <li><strong>VoiceOver:</strong> text goes here</li>
       </ul>
@@ -218,7 +300,26 @@
       </ul>
       <h4>Screen reader output</h4>
       <ul>
-        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>NVDA:</strong>
+          <ul class="list-unstyled">
+            <li>When in read mode:
+              <ul>
+                <li>..Content above read..<br>
+                  &quot;Region heading level 4 panel default header here&quot;<br>
+                  ..Panel text..<br>
+                  &quot;Out of region&quot;<br>
+                  ...Content below read...</li>
+              </ul>
+            </li>
+            <li>When navigated by header in panel:
+              <ul>
+                <li>&quot;Region  panel default header here heading level 4&quot;<br>
+                  ...Next header..<br>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li><strong>JAWS:</strong> text goes here</li>
         <li><strong>VoiceOver:</strong> text goes here</li>
       </ul>
@@ -227,7 +328,7 @@
     </div>
   </div>
   <h3>Primary panel with <code>aria-label</code></h3>
-  <p>Testing option of <code>role="note"</code> as seems to be only other acceptable role to content that announces when leaving.</p>
+  <p>Testing option of <code>role="note"</code> as seems to be only other acceptable role to content.</p>
   <div class="row">
     <div class="col-md-7">
       <p>Content above goes here.</p>
@@ -244,12 +345,23 @@
       </ul>
       <h4>Screen reader output</h4>
       <ul>
-        <li><strong>NVDA:</strong> text goes here</li>
+         <li><strong>NVDA:</strong>
+          <ul class="list-unstyled">
+            <li>When in read mode:
+              <ul>
+                <li>..Content above read..<br>
+                  &quot;Panel content goes here&quot;<br>
+                  ...Content below read...</li>
+              </ul>
+            </li>
+            
+          </ul>
+        </li>
         <li><strong>JAWS:</strong> text goes here</li>
         <li><strong>VoiceOver:</strong> text goes here</li>
       </ul>
       <h4>Comments</h4>
-      <p>Discuss if the <code>role="note"</code> is sufficient for most cases, and no need for <code>aria-label</code> or <code>aria-labelledby</code> for general content.</p>
+  <p>Role note does not seem like a suitable candidate for NVDA.</p>
     </div>
   </div>
   <h2>Wells</h2>
@@ -271,7 +383,26 @@
       </ul>
       <h4>Screen reader output</h4>
       <ul>
-        <li><strong>NVDA:</strong> text goes here</li>
+       <li><strong>NVDA:</strong>
+          <ul class="list-unstyled">
+            <li>When in read mode:
+              <ul>
+                <li>..Content above read..<br>
+                  &quot;Region heading level 3 well content header statement here&quot;<br>
+                  ..Well text..<br>
+                  &quot;Out of region&quot;<br>
+                  ...Content below read...</li>
+              </ul>
+            </li>
+            <li>When navigated by header in panel:
+              <ul>
+                <li>&quot;Region well content header statement here heading level 3&quot;<br>
+                  ...Next header..<br>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li><strong>JAWS:</strong> text goes here</li>
         <li><strong>VoiceOver:</strong> text goes here</li>
       </ul>
@@ -308,7 +439,26 @@
       </ul>
       <h4>Screen reader output</h4>
       <ul>
-        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>NVDA:</strong>
+          <ul class="list-unstyled">
+            <li>When in read mode:
+              <ul>
+                <li>..Content above read..<br>
+                  &quot;Region heading level 4 decision between choice one and choice two&quot;<br>
+                  ..Conjunction text.<br>
+                  &quot;Out of region&quot;<br>
+                  ...Content below read...</li>
+              </ul>
+            </li>
+            <li>When navigated by header in conjunction:
+              <ul>
+                <li>&quot;Region decision between choice one and choice two heading level 4&quot;<br>
+                  ...Next header..<br>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li><strong>JAWS:</strong> text goes here</li>
         <li><strong>VoiceOver:</strong> text goes here</li>
       </ul>
@@ -346,7 +496,30 @@
       </ul>
       <h4>Screen reader output</h4>
       <ul>
-        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>NVDA:</strong>
+          <ul class="list-unstyled">
+            <li>When in read mode:
+              <ul>
+                <li>..Content above read..<br>
+                  &quot;You must meet these three conditions&quot;
+                  <br>
+                  &quot;All must apply region heading level 4 condition one&quot;<br>
+                  ..Conjunction text.<br>
+                  &quot;Out of region&quot;<br>
+                ...Content below read...</li>
+              </ul>
+            </li>
+            <li>When navigated by header in conjunction:
+              <ul>
+                <li>&quot;All must apply region condition one heading level 4&quot;<br>
+                  &quot;Condition two heading level 4&quot;<br>
+                  &quot;Condition three heading level 4&quot;<br>
+                  ...Next header..<br>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li><strong>JAWS:</strong> text goes here</li>
         <li><strong>VoiceOver:</strong> text goes here</li>
       </ul>
@@ -375,7 +548,31 @@
       </ul>
       <h4>Screen reader output</h4>
       <ul>
-        <li><strong>NVDA:</strong> text goes here</li>
+         <li><strong>NVDA:</strong>
+          <ul class="list-unstyled">
+            <li>When in read mode:
+              <ul>
+                <li>..Content above read..<br>
+                  &quot;Button collapsed details summary statement here&quot;<br>
+                  ...Open details..<br>
+                  &quot;Button expanded&quot; <br>
+                  ..Details header and text.<br>
+                  ...Content below read...</li>
+              </ul>
+            </li>
+            <li>When navigated by header in conjunction:
+              <ul>
+                <li>..Skips alert (hidden).. </li>
+              </ul>
+            </li>
+            <li>When tabbed to summary:
+              <ul>
+                <li>"Details summary statement here button collapsed"<br>
+                  ...Next tabbed element.. </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li><strong>JAWS:</strong> text goes here</li>
         <li><strong>VoiceOver:</strong> text goes here</li>
       </ul>
@@ -403,7 +600,31 @@
       </ul>
       <h4>Screen reader output</h4>
       <ul>
-        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>NVDA:</strong>
+          <ul class="list-unstyled">
+            <li>When in read mode:
+              <ul>
+                <li>..Content above read..<br>
+                  &quot;Button collapsed details summary statement here&quot;<br>
+                  ...Open details..<br>
+                  &quot;Button expanded&quot; <br>
+                  ..Details header and text.<br>
+                  ...Content below read...</li>
+              </ul>
+            </li>
+            <li>When navigated by header in conjunction:
+              <ul>
+                <li>..Skips alert (hidden).. </li>
+              </ul>
+            </li>
+            <li>When tabbed to summary:
+              <ul>
+                <li>"Details summary statement here button collapsed"<br>
+                  ...Next tabbed element.. </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li><strong>JAWS:</strong> text goes here</li>
         <li><strong>VoiceOver:</strong> text goes here</li>
       </ul>
@@ -431,11 +652,39 @@
       </ul>
       <h4>Screen reader output</h4>
       <ul>
-        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>NVDA:</strong>
+          <ul class="list-unstyled">
+            <li>When in read mode:
+              <ul>
+                <li>..Content above read..<br>
+                  &quot;Secondary content region button collapsed details summary statement here&quot;<br>
+                  ...Open details..<br>
+                  &quot;Button expanded&quot; <br>
+                  ..Details header and text.<br>
+                  &quot;Out of region&quot;<br>
+                  ...Content below read...</li>
+              </ul>
+            </li>
+            <li>When navigated by header in conjunction:
+              <ul>
+                <li>..Skips alert (hidden).. </li>
+              </ul>
+            </li>
+            <li>When tabbed to summary:
+              <ul>
+                <li>"Secondary content region details summary statement here button collapsed"<br>
+                  ...Open details..<br>
+                  &quot;Button expanded&quot; <br>
+                  ...Next tabbed element.. </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li><strong>JAWS:</strong> text goes here</li>
         <li><strong>VoiceOver:</strong> text goes here</li>
       </ul>
       <h4>Comments</h4>
+		<p>May need further review to see if possible to add directly to element to avoid wrapping content.</p>
     </div>
   </div>
            
