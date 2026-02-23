@@ -146,6 +146,7 @@
       <p>Content above goes here.</p>
       <div class="alert alert-warning" role="region" aria-label="Warning notice">
         <p>Text and information goes here.</p>
+		   <p>Refer to: <a href="#">Further information</a>.</p>
       </div>
       <p>Content below goes here.</p>
     </div>
@@ -172,6 +173,7 @@
       <div class="alert alert-danger" role="region" aria-labelledby="alert-hdr-danger">
         <h4 id="alert-hdr-danger">Danger header statement here</h4>
         <p>Text and information goes here.</p>
+		   <p>Refer to: <a href="#">Further information</a>.</p>
       </div>
       <p>Content below goes here.</p>
     </div>
@@ -183,7 +185,7 @@
       </ul>
       <h4>Screen reader output</h4>
       <ul>
-        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>NVDA:</strong><br></li>
         <li><strong>JAWS:</strong> text goes here</li>
         <li><strong>VoiceOver:</strong> text goes here</li>
       </ul>
@@ -354,11 +356,13 @@
   <h2>Details (ex/hide)</h2>
   <p>Details and summary elements do have an interactive element to showcase where to interact (except voiceOver, see below), but do not indicate where that content ends, unless the person already had navigated past prior to expanding.</p>
   <p>Screen readers indicate that the content is a "button" that is collapsed when closed, and expanded when open.  VoiceOver does not announce the details element as anything interactive when either tabbing or in read mode. This is a VoiceOver issue, but there might be some fallbacks if we decide to apply more accessibility attributes.</p>
+   <h3>Details with <code>role="region"</code> on element</h3>
   <div class="row">
     <div class="col-md-7">
       <p>Content above goes here.</p>
       <details role="region">
         <summary role="button">Details summary statement here</summary>
+          <h4 class="mrgn-tp-0">Details heading goes here</h4>
         <p>Text and information goes here.</p>
       </details>
       <p>Content below goes here.</p>
@@ -368,6 +372,62 @@
       <ul>
         <li><code>role="region"</code> on <code>&lt;details&gt;</code>, and <code>role="button"</code> on <code>&lt;summary&gt;</code> (for VoiceOver)</li>
         <li>no <code>aria-label</code> or <code>aria-labelledby</code></li>
+      </ul>
+      <h4>Screen reader output</h4>
+      <ul>
+        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>JAWS:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> text goes here</li>
+      </ul>
+      <h4>Comments</h4>
+    </div>
+  </div>
+    <h3>Details with <code>role="region"</code> inside (below <code>&lt;summary&gt;</code>)</h3>
+  <div class="row">
+    <div class="col-md-7">
+      <p>Content above goes here.</p>
+      <details>
+        <summary role="button">Details summary statement here</summary>
+          <div role="region">
+          <h4 class="mrgn-tp-0">Details heading goes here</h4>
+        <p>Text and information goes here.</p>
+          </div>
+      </details>
+      <p>Content below goes here.</p>
+    </div>
+    <div class="col-md-5 brdr-lft">
+      <h4>Accessibility additions</h4>
+      <ul>
+        <li><code>role="region"</code> on <code>&lt;details&gt;</code>, and <code>role="button"</code> on <code>&lt;summary&gt;</code> (for VoiceOver)</li>
+        <li>no <code>aria-label</code> or <code>aria-labelledby</code></li>
+      </ul>
+      <h4>Screen reader output</h4>
+      <ul>
+        <li><strong>NVDA:</strong> text goes here</li>
+        <li><strong>JAWS:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> text goes here</li>
+      </ul>
+      <h4>Comments</h4>
+    </div>
+  </div>
+     <h3>Details with <code>role="region"</code> outside element</h3>
+  <div class="row">
+    <div class="col-md-7">
+      <p>Content above goes here.</p>
+      <div role="region" aria-label="secondary content">
+        <details>
+          <summary role="button">Details summary statement here</summary>
+          <h4 class="mrgn-tp-0">Details heading goes here</h4>
+          <p>Text and information goes here.</p>
+        </details>
+      </div>
+      <p>Content below goes here.</p>
+    </div>
+    <div class="col-md-5 brdr-lft">
+      <h4>Accessibility additions</h4>
+      <ul>
+        <li><code>role="region"</code> before <code>&lt;details&gt;</code> and <code>role="button"</code> on <code>&lt;summary&gt;</code> (for VoiceOver)</li>
+        <li><code>aria-label=&quot;Secondary content&quot;</code></li>
       </ul>
       <h4>Screen reader output</h4>
       <ul>
