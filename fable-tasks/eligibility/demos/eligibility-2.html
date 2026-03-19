@@ -28,7 +28,13 @@
 		</script>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous"/>
 <style>
- 
+ .checkbox-zebra > li:nth-child(2n+1) {
+         background-color: #f5f5f5;
+         margin-left: -50px;
+         padding-top: 10px;
+         padding-bottom: 15px;
+         padding-left: 50px;
+         }
 </style>
 		
 	</head>
@@ -77,10 +83,11 @@
 <li><a href="#h-4">Examples of situations that do and do not qualify</a></li>
 </ul>
 <h2 id="h-1">Eligibility checklist</h2>			 
-  <fieldset class="gc-chckbxrdio checkbox-zebra"  id="checklist">
+  <fieldset class="gc-chckbxrdio"  id="checklist">
     <legend>You must meet all 3 criteria below<br>
     <small class="text-muted">Check the boxes that apply</small></legend>
-    <div class="checkbox mrgn-bttm-lg">
+    <ul class="checkbox-zebra">
+	  <li class="checkbox"><div class="">
       <input type="checkbox" class="checkbox-ec" id="eg4" onclick="if (window._resultShowTimer) {
         clearTimeout(window._resultShowTimer);
     };
@@ -105,8 +112,8 @@
       <div class="gc-font-2019 mrgn-tp-md mrgn-lft-xl">
         <div role="document"><p><strong>Only</strong> one renovation can be claimed for a qualifying individual during their lifetime</p></div>
       </div>
-    </div>
-    <div class="checkbox mrgn-bttm-lg">
+    </div></li>
+    <li class="checkbox"><div class="">
       <input type="checkbox" class="checkbox-ec" id="eg5" onclick="if (window._resultShowTimer) {
         clearTimeout(window._resultShowTimer);
     };
@@ -150,8 +157,8 @@
         </details>
        
       </div>
-    </div>
-    <div class="checkbox mrgn-bttm-lg">
+    </div></li>
+    <li class="checkbox"><div class="">
       <input type="checkbox" class="checkbox-ec" id="eg6" onclick="if (window._resultShowTimer) {
         clearTimeout(window._resultShowTimer);
     };
@@ -185,7 +192,8 @@
           <p>Usually, the amount of land that can be considered part of the eligible dwelling is limited to half a hectare (<span class="nowrap">1.24 acres</span>). However, if it can be shown that more land is needed to use and enjoy the home, then more than half a hectare can be considered as part of the eligible dwelling.</p>
         </details>
       </div>
-    </div>
+    </div></li>
+	</ul>
   </fieldset>
   <div id="answers" aria-busy="true" aria-live="polite" class="mrgn-lft-md mrgn-tp-lg">
     <div id="result-1" class="alert alert-success hidden">
