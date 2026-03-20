@@ -27,6 +27,7 @@
 			}));
 		</script>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/méli-mélo/2025-12-mille-iles.css" />
 		<style>
 .gc-chckbxrdio-2 label::before, .gc-chckbxrdio label::before {
     border: 4px solid #fff;
@@ -101,18 +102,19 @@ box-shadow: 0 0 0 2px #000, 0 0 8px 4px #3b99fc
 .chcklst-dsc {
     padding-left: 56px;
 }
-*:focus-visible {
-outline: 2px solid blue; /* Changes the outline color to blue */
-outline-offset: 2px;    /* Adds space between the element and the outline */
-}
 
 /* Specific example for input fields */
-*:focus-visible, input:focus, button:focus, [tabindex]:focus {
-outline: none;
-outline: 2px solid blue; /* Changes the outline color to blue */
-outline-offset: 2px;    /* Adds space between the element and the outline */
-box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.3); /* Optional: adds a glow effect */
+.checkbox [tabindex]:focus {
+   outline: 1px solid rgb(220.2692307692,221.9230769231,225.2307692308);
+            background-color: #eaebed;
+            border-radius: 4px;
 }
+.gc-subway a:not([href]).active:focus {
+            outline: 1px solid rgb(220.2692307692,221.9230769231,225.2307692308);
+            background-color: #eaebed;
+            border-radius: 4px;
+        }
+	
 </style>
 	</head>
 	<body vocab="https://schema.org/" typeof="WebPage">
@@ -135,11 +137,33 @@ box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.3); /* Optional: adds a glow effect */
         
         
 		<main property="mainContentOfPage" typeof="WebPageElement" class="container">
-			<h1 property="name" id="wb-cont">Eligibility Demo 4</h1>
-			 <section class="mrgn-bttm-xl">
-            <p class="mrgn-tp-md">Introduction</p>
+		 <nav class="provisional gc-subway" aria-label="Subway navigation menu">
+        <h1>GST/HST credit</h1>
+        <ul>
+            <li><a href="/en/revenue-agency/services/child-family-benefits/gst-hst-credit/who-eligible.html" class="active">Who is eligible</a></li>
+            <li><a href="/en/revenue-agency/services/child-family-benefits/gst-hst-credit/how-much.html">How much you can get</a></li>
+            <li><a href="/en/revenue-agency/services/child-family-benefits/gst-hst-credit/get-credit.html">How to get the credit</a></li>
+            <li><a href="/en/revenue-agency/services/child-family-benefits/gst-hst-credit/payment-dates.html">Payment dates</a></li>
+            <li><a href="/en/revenue-agency/services/child-family-benefits/gst-hst-credit/payments-stop-change.html">Reasons for stopped or changed payments</a></li>
+        </ul>
+    </nav>
+
+    <h1 property="name" id="wb-cont" dir="ltr">Who is eligible</h1>
+    <p>You may be eligible to receive the GST/HST credit and any related provincial and territorial credits, even if you have no income in the year.</p>
+    <p>If you are currently receiving the Canada child benefit (CCB) for a child, they are automatically considered when the Canada Revenue Agency (CRA) calculates your GST/HST credit amount.</p>
+    <h2 class="h3 mrgn-tp-md">On this page</h2>
+    <nav class="provisional" aria-label="Table of content">
+        <ul>
+            <li><a href="#toc1">Eligibility criteria</a></li>
+            <li><a href="#toc2">Income thresholds entitled to receive the credit</a></li>
+            <li><a href="#toc3">If you have shared custody</a></li>
+        </ul>
+    </nav>
+
+
+    <h2 id="toc1">Eligibility criteria</h2>
 <fieldset class="gc-chckbxrdio-2"  id="checklist">
-    <legend>You must meet the following  2 criteria below<br>
+    <legend>You must meet the following 2criteria below<br>
     <small class="text-muted">Check the boxes that apply</small></legend>
     <ul class="checkbox-zebra gc-chckbxrdio-2 lst-spcd-2 list-unstyled mrgn-lft-lg">
       <li class="checkbox">
@@ -246,9 +270,139 @@ box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.3); /* Optional: adds a glow effect */
     </div>
   </div>
                  
-<hr class="brdr-tp mrgn-tp-xl">
-   <p>Once complete, please close tab or window and return to task instructions.</p>      
-        </section>
+ <h2 id="toc2">Income thresholds entitled to receive the credit</h2>
+    <p>You may be entitled to receive the GST/HST credit if your <a class="wb-lbx lbx-modal" href="#afni">adjusted family net income<span class="far fa-question-circle mrgn-lft-sm"></span></a> is <strong>less than</strong> the maximum income level thresholds listed below.</p>
+
+    <p>Check maximum income thresholds for:</p>
+
+    <details>
+        <summary>Single individuals without children and single parent families</summary>
+
+        <p>Your adjusted family net income must be <strong>less than</strong> the maximum income thresholds to be entitled to receive the GST/HST credit.</p>
+
+        <div class="table-responsive section">
+
+            <table class="table table-bordered">
+                <caption>Maximum income level thresholds for single individuals without children and single parent families</caption>
+                <tbody>
+                    <tr>
+                        <th scope="col">Base Years</th>
+                        <th scope="col">With no children</th>
+                        <th scope="col">With one child</th>
+                        <th scope="col">With 2 children</th>
+                        <th scope="col">With 3 children</th>
+                        <th scope="col">With 4 children</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">2024</th>
+                        <td>$56,181</td>
+                        <td>$63,161</td>
+                        <td>$66,841</td>
+                        <td>$70,521</td>
+                        <td>$74,201</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2023</th>
+                        <td>$54,704</td>
+                        <td>$61,504</td>
+                        <td>$65,084</td>
+                        <td>$68,664</td>
+                        <td>$72,244</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2022</th>
+                        <td>$52,255</td>
+                        <td>$58,755</td>
+                        <td>$62,175</td>
+                        <td>$65,595</td>
+                        <td>$69,015</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2021</th>
+                        <td>$49,166</td>
+                        <td>$55,286</td>
+                        <td>$58,506</td>
+                        <td>$61,726</td>
+                        <td>$64,946</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            </details>
+
+            <details>
+        <summary>Married or common-law individuals with or without children</summary>
+
+        <p>Your adjusted family net income must be <strong>less than</strong> the maximum income thresholds to be entitled to receive the GST/HST credit.</p>
+            
+            <div class="table-responsive section">
+
+                <table class="table table-bordered">
+                    <caption>Maximum income thresholds for married or common law individuals with or without children</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="col">Base Years</th>
+                            <th scope="col">With no children</th>
+                            <th scope="col">With one child</th>
+                            <th scope="col">With 2 children</th>
+                            <th scope="col">With 3 children</th>
+                            <th scope="col">With 4 children</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">2024</th>
+                            <td>$59,481</td>
+                            <td>$63,161</td>
+                            <td>$66,841</td>
+                            <td>$70,521</td>
+                            <td>$74,201</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2023</th>
+                            <td>$57,924</td>
+                            <td>$61,504</td>
+                            <td>$65,084</td>
+                            <td>$68,664</td>
+                            <td>$72,244</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2022</th>
+                            <td>$55,335</td>
+                            <td>$58,755</td>
+                            <td>$62,175</td>
+                            <td>$65,595</td>
+                            <td>$69,015</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2021</th>
+                            <td>$52,066</td>
+                            <td>$55,286</td>
+                            <td>$58,506</td>
+                            <td>$61,726</td>
+                            <td>$64,946</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </details>
+
+    <h2 id="toc3">If you have shared custody</h2>
+    <p>Parents in a shared custody situation may be eligible for half of the GST/HST credit for that child. This also applies to any related provincial and territorial credits.</p>
+
+    <p>If you are receiving the CCB for a child, that child is automatically included in your GST/HST credit calculation. If you become primarily responsible for the care and upbringing of a child, your GST/HST credit and related provincial or territorial amounts will increase based on your updated CCB information.</p>
+
+    <p>If a child is legally, physically, or financially under the responsibility of a child welfare agency, you are not generally eligible for the GST/HST credit for that child.</p>
+
+    <p><a href="/en/revenue-agency/services/child-family-benefits/canada-child-benefit/who-apply.html#determinecustody">Determine if your situation qualifies as shared custody for the CCB</a></p>
+
+
+
+
+    <nav class="mrgn-bttm-lg">
+        <h3 class="wb-inv">Document navigation</h3>
+        <ul class="pager">
+            <li class="next"><a href="/en/revenue-agency/services/child-family-benefits/gst-hst-credit/how-much.html" rel="next"><span class="wb-inv">Next: </span>How much you can get</a></li>
+        </ul>
+    </nav>
 			<div id="def-preFooter">
 				<!-- Write closure fall-back static file -->
 				<!-- preFooter-en.html -->
@@ -285,5 +439,6 @@ box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.3); /* Optional: adds a glow effect */
             
 			}));
 		</script>
+		<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/méli-mélo/2025-12-mille-iles.js"></script>
 	</body>
 </html>
