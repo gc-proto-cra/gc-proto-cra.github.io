@@ -27,6 +27,7 @@
 			}));
 		</script>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/méli-mélo/2025-12-mille-iles.css" />
 <style>
 ul.checkbox-zebra {padding-left: 10px;}
 	.checkbox-zebra > li {margin-bottom: 20px;}
@@ -117,7 +118,7 @@ ul.checkbox-zebra {padding-left: 10px;}
       
     </div></li>
     <li class="checkbox"><div class="">
-      <input type="checkbox" class="checkbox-ec" id="eg5" onclick="if (window._resultShowTimer) {
+      <input type="checkbox" class="checkbox-ec" id="eg5" aria-describedby="eg5-desc" onclick="if (window._resultShowTimer) {
         clearTimeout(window._resultShowTimer);
     };
         const total = $('input.checkbox-ec').length;
@@ -138,7 +139,7 @@ ul.checkbox-zebra {padding-left: 10px;}
         $(target).removeClass('hidden');
     }, 1);">
       <label for="eg5">You are primarily responsible for the care and upbringing of the child</label>
-      <details class="mrgn-lft-xl mrgn-rght-md mrgn-tp-sm gc-font-2019">
+      <details class="mrgn-lft-xl mrgn-rght-md mrgn-tp-sm gc-font-2019" id="eg-5-desc">
             <summary>Who is considered to be primarily responsible for the child</summary>
             <p>The person who is primarily responsible for the care and upbringing of the child and who is responsible for things such as:</p>
             <ul>
@@ -149,7 +150,7 @@ ul.checkbox-zebra {padding-left: 10px;}
             </details>
     </div></li>
     <li class="checkbox"><div class="">
-      <input type="checkbox" class="checkbox-ec" id="eg6" onclick="if (window._resultShowTimer) {
+      <input type="checkbox" class="checkbox-ec" id="eg6" aria-describedby="eg6-desc" onclick="if (window._resultShowTimer) {
         clearTimeout(window._resultShowTimer);
     };
         const total = $('input.checkbox-ec').length;
@@ -170,7 +171,7 @@ ul.checkbox-zebra {padding-left: 10px;}
         $(target).removeClass('hidden');
     }, 1);">
       <label for="eg6">You are both of the following:</label>
-      <div class="gc-font-2019 mrgn-tp-md mrgn-lft-xl" role="document">
+      <div class="gc-font-2019 mrgn-tp-md mrgn-lft-xl" role="document" id="eg6-desc">
         <ul class="cnjnctn-type-and mrgn-tp-0 mrgn-rght-md gc-font-2019">
               <li class="cnjnctn-col mrgn-tp-0">
                 <p class="mrgn-tp-0">You are a resident of Canada for tax purposes</p> 
@@ -217,7 +218,7 @@ ul.checkbox-zebra {padding-left: 10px;}
       </div>
     </div></li>
          <li class="checkbox"><div class="">
-      <input type="checkbox" class="checkbox-ec" id="eg7" onclick="if (window._resultShowTimer) {
+      <input type="checkbox" class="checkbox-ec" id="eg7" aria-describedby="eg7-desc" onclick="if (window._resultShowTimer) {
         clearTimeout(window._resultShowTimer);
     };
         const total = $('input.checkbox-ec').length;
@@ -238,7 +239,7 @@ ul.checkbox-zebra {padding-left: 10px;}
         $(target).removeClass('hidden');
     }, 1);">
       <label for="eg7">You are not applying for a foster child who is already receiving the Children's Special Allowance (CSA)</label>
-     <details class="mrgn-lft-xl mrgn-rght-md mrgn-tp-sm gc-font-2019">
+     <details class="mrgn-lft-xl mrgn-rght-md mrgn-tp-sm gc-font-2019" id="eg7-desc">
             <summary>Rule for receiving the CCB and the Children's Special Allowance</summary>
             <p>You cannot get the Canada child benefit (CCB) for a foster child for any month in which children's special allowances are payable.</p>
             <p>You may get the CCB if you live with and care for a child under a kinship or close relationship program from the Government of Canada, a provincial or territorial government, or an Indigenous governing body, as long as CSA are not payable for that child.</p>
@@ -247,7 +248,7 @@ ul.checkbox-zebra {padding-left: 10px;}
     </div></li>
 	</ul>
   </fieldset>
-  <div id="answers" aria-busy="true" aria-live="polite" class="mrgn-lft-md mrgn-tp-lg">
+  <div id="answers" class="mrgn-lft-md mrgn-tp-lg">
     <div id="result-1" class="alert alert-success hidden">
    <p class="text-muted">Based on your selections above:</p>
             <h3 class="mrgn-tp-sm h4">You may be eligible for the benefit</h3>
@@ -362,5 +363,6 @@ ul.checkbox-zebra {padding-left: 10px;}
             
 			}));
 		</script>
+		<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/méli-mélo/2025-12-mille-iles.js"></script>
 	</body>
 </html>
