@@ -220,7 +220,7 @@
       <small class="text-muted">Check the boxes that apply</small></legend>
       <ul class="checkbox-lg gc-font-2019 lst-spcd-2">
         <li class="checkbox">
-          <input type="checkbox" class="checkbox-ec" id="eg1" aria-labelledby="eg1-label eg1-desc" onclick="if (window._resultShowTimer) {
+          <input type="checkbox" class="checkbox-ec" id="eg1" aria-labelledby="eg1-desc" onclick="if (window._resultShowTimer) {
         clearTimeout(window._resultShowTimer);
     };
         const total = $('input.checkbox-ec').length;
@@ -240,8 +240,9 @@
     };  window._resultShowTimer = setTimeout(function () {
         $(target).removeClass('hidden');
     }, 1);">
-          <label for="eg1" id="eg1-label"><span class="wb-inv">criteria 1 of 4: </span>You have limitations in 2 or more of the cumulative effect categories listed as the following: </label>
-          <div class="associated-content" id="eg1-desc">
+          <label for="eg1" id="eg1-label"><span class="wb-inv">criteria 1 of 4: </span>You have limitations in 2 or more of the cumulative effect categories</label>
+    
+			  <details open="open" class="associated-content"><summary>Cumulative effect categories</summary>
             <ul class="fa-ul colcount-sm-2">
               <li><span aria-hidden="true" class="fas fa-check text-success fa-li"></span><a href="/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit/eligible-dtc/walking.html" target="_blank">Walking<span class="wb-inv"> link opens in a new tab or window</span></a></li>
               <li><span aria-hidden="true" class="fas fa-check text-success fa-li"></span> <a href="/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit/eligible-dtc/mental-functions.html" target="_blank">Mental functions<span class="wb-inv"> link opens in a new tab or window</span></a></li>
@@ -252,10 +253,11 @@
               <li><span aria-hidden="true" class="fas fa-check text-success fa-li"></span> <a href="/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit/eligible-dtc/hearing.html" target="_blank">Hearing<span class="wb-inv"> link opens in a new tab or window</span></a></li>
               <li><span aria-hidden="true" class="fas fa-check text-success fa-li"></span> <a href="/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit/eligible-dtc/vision.html" target="_blank">Vision<span class="wb-inv"> link opens in a new tab or window</span></a></li>
             </ul>
-          </div>
+			  </details>
+       
         </li>
         <li class="checkbox">
-          <input type="checkbox" class="checkbox-ec" id="eg2" aria-labelledby="eg2-label eg2-desc" onclick="if (window._resultShowTimer) {
+          <input type="checkbox" class="checkbox-ec" id="eg2" onclick="if (window._resultShowTimer) {
         clearTimeout(window._resultShowTimer);
     };
         const total = $('input.checkbox-ec').length;
@@ -276,7 +278,7 @@
         $(target).removeClass('hidden');
     }, 1);">
           <label for="eg2" id="eg2-label"><span class="wb-inv">criteria 2 of 4: </span>Your limitations exist together all or almost all of the time</label>
-          <details class="associated-content">
+          <details class="associated-content" open="open">
             <summary>Time requirement that they exist together</summary>
             <div id="eg2-desc">
               <p>The period of time they must exist together is  generally 90% or more.</p>
