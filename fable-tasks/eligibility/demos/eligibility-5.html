@@ -27,6 +27,7 @@
 			}));
 		</script>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/méli-mélo/2025-12-mille-iles.css" />
 		<style>
 .gc-chckbxrdio-2 label::before, .gc-chckbxrdio label::before {
     border: 4px solid #fff;
@@ -107,12 +108,16 @@ outline-offset: 2px;    /* Adds space between the element and the outline */
 }
 
 /* Specific example for input fields */
-*:focus-visible, input:focus, button:focus, [tabindex]:focus {
-outline: none;
-outline: 2px solid blue; /* Changes the outline color to blue */
-outline-offset: 2px;    /* Adds space between the element and the outline */
-box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.3); /* Optional: adds a glow effect */
+.checkbox [tabindex]:focus {
+   outline: 1px solid rgb(220.2692307692,221.9230769231,225.2307692308);
+            background-color: #eaebed;
+            border-radius: 4px;
 }
+.gc-subway a:not([href]).active:focus {
+            outline: 1px solid rgb(220.2692307692,221.9230769231,225.2307692308);
+            background-color: #eaebed;
+            border-radius: 4px;
+        }
 </style>
 	</head>
 	<body vocab="https://schema.org/" typeof="WebPage">
@@ -135,9 +140,28 @@ box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.3); /* Optional: adds a glow effect */
         
         
 		<main property="mainContentOfPage" typeof="WebPageElement" class="container">
-			<h1 property="name" id="wb-cont">Eligibility Demo 5</h1>
-			 <section class="mrgn-bttm-xl">
-            <p class="mrgn-tp-md">Introduction</p>
+		 <nav class="gc-subway provisional">
+	<h1>Line 21400 – Child care expenses</h1>
+	<ul>
+		<li>
+			<a class="active" tabindex="0" aria-current="page">Who is eligible</a>
+		</li>
+		<li>
+			<a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-21400-child-care-expenses/expenses-claim.html">Expenses you can claim</a>
+		</li>
+		<li>
+			<a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-21400-child-care-expenses/who-claim-deduction.html">Determine who can claim the deduction</a>
+		</li>
+		<li>
+			<a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-21400-child-care-expenses/how-claim.html">How to claim</a>
+		</li>
+	</ul>
+</nav>
+<h1 property="name" id="wb-cont" class="gc-thickline">Who is eligible</h1>
+
+<p>You or another person may be eligible to claim child care expenses you incurred to look after a child in your care.</p>    
+
+        <h2>Eligibility checklist</h2>
  <fieldset class="gc-chckbxrdio-2"  id="checklist">
     <legend>You must meet all 4 criteria below<br>
     <small class="text-muted">Check the boxes that apply</small></legend>
@@ -213,8 +237,8 @@ box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.3); /* Optional: adds a glow effect */
           <p><span class="wb-inv">Criteria 3 of 4</span> Services were provided in Canada by a Canadian resident</p>
           <details>
             <summary>Exceptions</summary>
-            <p>If you lived outside Canada for all or part of 2025 and the <abbr title="Canada Revenue Agency">CRA</abbr> considers you to be a <a href="https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/government-employees-outside-canada.html#factual" target="_blank" class="nowrap">factual resident<span class="far fa-window-restore mrgn-lft-sm mrgn-rght-sm"></span><span class="wb-inv"> (opens in new window)</span></a> or <a href="https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/government-employees-outside-canada.html#deemed">deemed resident</a><span class="far fa-window-restore mrgn-lft-sm mrgn-rght-sm"></span><span class="wb-inv"> (opens in new window)</span> of Canada, you can claim child care expenses that you paid to a non-resident person for services provided outside Canada.</p>
-            <p>For information on other situations where you can claim child care expenses paid for services provided outside Canada (for example, commuters to the United States), <a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information.html" target="_blank" class="nowrap">contact the Canada Revenue Agency<span class="far fa-window-restore mrgn-lft-sm mrgn-rght-sm"></span><span class="wb-inv"> (opens in new window)</span></a>.</p>
+            <p>If you lived outside Canada for all or part of 2025 and the <abbr title="Canada Revenue Agency">CRA</abbr> considers you to be a <a href="/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/government-employees-outside-canada.html#factual" target="_blank" class="nowrap">factual resident<span class="far fa-window-restore mrgn-lft-sm mrgn-rght-sm"></span><span class="wb-inv"> (opens in new window)</span></a> or <a href="/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/government-employees-outside-canada.html#deemed">deemed resident</a><span class="far fa-window-restore mrgn-lft-sm mrgn-rght-sm"></span><span class="wb-inv"> (opens in new window)</span> of Canada, you can claim child care expenses that you paid to a non-resident person for services provided outside Canada.</p>
+            <p>For information on other situations where you can claim child care expenses paid for services provided outside Canada (for example, commuters to the United States), <a href="/en/revenue-agency/corporate/contact-information.html" target="_blank" class="nowrap">contact the Canada Revenue Agency<span class="far fa-window-restore mrgn-lft-sm mrgn-rght-sm"></span><span class="wb-inv"> (opens in new window)</span></a>.</p>
           </details>
           <details>
             <summary>If you immigrated to or emigrated from Canada in 2025</summary>
@@ -260,10 +284,10 @@ box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.3); /* Optional: adds a glow effect */
                     <summary>Which amounts are included</summary>
                     <p>At least one of the following amounts are being claimed for the eligible child:</p>
                     <ul>
-                      <li><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30400-amount-eligible-dependant.html" target="_blank">Amount for an eligible dependant (line&nbsp;30400)<span class="far fa-window-restore mrgn-lft-sm mrgn-rght-sm"></span><span class="wb-inv"> (opens in new window)</span></a></li>
-                      <li><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30425-caregiver-spouse-dependant.html" target="_blank">Canada caregiver amount for spouse or common-law partner, or eligible dependant age 18 or older (<span class="nowrap">line&nbsp;30425</span>)<span class="far fa-window-restore mrgn-lft-sm mrgn-rght-sm"></span><span class="wb-inv"> (opens in new window)</span></a></li>
-                      <li><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30450-caregiver-infirm-dependant.html" target="_blank">Canada caregiver amount for other infirm dependants age 18 or older (line&nbsp;30450)<span class="far fa-window-restore mrgn-lft-sm mrgn-rght-sm"></span><span class="wb-inv"> (opens in new window)</span></a></li>
-                      <li><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30499-30500-canada-caregiver-infirm-children-under-18-years.html" target="_blank">Canada caregiver amount for infirm children under 18 years of age (line&nbsp;30500)<span class="far fa-window-restore mrgn-lft-sm mrgn-rght-sm"></span><span class="wb-inv"> (opens in new window)</span></a></li>
+                      <li><a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30400-amount-eligible-dependant.html" target="_blank">Amount for an eligible dependant (line&nbsp;30400)<span class="far fa-window-restore mrgn-lft-sm mrgn-rght-sm"></span><span class="wb-inv"> (opens in new window)</span></a></li>
+                      <li><a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30425-caregiver-spouse-dependant.html" target="_blank">Canada caregiver amount for spouse or common-law partner, or eligible dependant age 18 or older (<span class="nowrap">line&nbsp;30425</span>)<span class="far fa-window-restore mrgn-lft-sm mrgn-rght-sm"></span><span class="wb-inv"> (opens in new window)</span></a></li>
+                      <li><a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30450-caregiver-infirm-dependant.html" target="_blank">Canada caregiver amount for other infirm dependants age 18 or older (line&nbsp;30450)<span class="far fa-window-restore mrgn-lft-sm mrgn-rght-sm"></span><span class="wb-inv"> (opens in new window)</span></a></li>
+                      <li><a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30499-30500-canada-caregiver-infirm-children-under-18-years.html" target="_blank">Canada caregiver amount for infirm children under 18 years of age (line&nbsp;30500)<span class="far fa-window-restore mrgn-lft-sm mrgn-rght-sm"></span><span class="wb-inv"> (opens in new window)</span></a></li>
                     </ul>
                   </details>
                 </li>
@@ -313,9 +337,12 @@ box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.3); /* Optional: adds a glow effect */
     </div>
   </div>
                  
-<hr class="brdr-tp mrgn-tp-xl">
-   <p>Once complete, please close tab or window and return to task instructions.</p>      
-        </section>
+<nav class="gc-subway-pagination">
+			<h2 class="wb-inv">Document navigation</h2>
+			<ul class="pager">
+				<li class="next"><a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-21400-child-care-expenses/expenses-claim.html#wb-cont" rel="next"><span class="wb-inv">Next: </span>Expenses you can claim</a></li>
+			</ul>
+		</nav>
 			<div id="def-preFooter">
 				<!-- Write closure fall-back static file -->
 				<!-- preFooter-en.html -->
@@ -352,5 +379,6 @@ box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.3); /* Optional: adds a glow effect */
             
 			}));
 		</script>
+		<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/méli-mélo/2025-12-mille-iles.js"></script>
 	</body>
 </html>
