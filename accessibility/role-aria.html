@@ -394,12 +394,12 @@
           <ul class="list-unstyled">
             <li>When in read mode:
               <ul>
-                <li>...</li>
+                <li>No change from first alert version</li>
               </ul>
             </li>
             <li>When navigated by header in alert:
               <ul>
-                <li>... </li>
+             <li>No change from first alert version</li>
               </ul>
             </li>
           </ul>
@@ -408,17 +408,17 @@
           <ul class="list-unstyled">
             <li>When in read mode:
               <ul>
-                <li>...</li>
+               <li>No change from first alert version</li>
               </ul>
             </li>
             <li>When navigated by header in alert:
               <ul>
-                <li>... </li>
+               <li>No change from first alert version</li>
               </ul>
             </li>
           </ul>
         </li>
-        <li><strong>VoiceOver:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> No change than typical VoiceOver navigation</li>
       </ul>
     </div>
   </div>
@@ -449,12 +449,12 @@
           <ul class="list-unstyled">
             <li>When in read mode:
               <ul>
-                <li>...</li>
+                 <li>No change from first alert version</li>
               </ul>
             </li>
             <li>When navigated by header in alert:
               <ul>
-                <li>... </li>
+                <li>No change from first alert version</li>
               </ul>
             </li>
           </ul>
@@ -463,20 +463,50 @@
           <ul class="list-unstyled">
             <li>When in read mode:
               <ul>
-                <li>...</li>
+                <li>No change from first alert version</li>
               </ul>
             </li>
             <li>When navigated by header in alert:
               <ul>
-                <li>... </li>
+                <li>No change from first alert version</li>
               </ul>
             </li>
           </ul>
         </li>
-        <li><strong>VoiceOver:</strong> text goes here</li>
+          <li><strong>VoiceOver:</strong> No change than typical VoiceOver navigation</li>
       </ul>
     </div>
   </div>
+				 <h3>Alert with invisible text at start and end of section</h3>
+  <div class="row">
+    <div class="col-md-7">
+      <p>Content above goes here.</p>
+      <div class="alert alert-info">
+		 <span class="wb-inv">Start of alert</span> 
+        <h4>Informational header statement here</h4>
+        <p>Text and information goes here.</p>
+		  <span class="wb-inv">End of alert</span>
+      </div>
+      <p>Content below goes here.</p>
+    </div>
+    <div class="col-md-5 brdr-lft">
+      <h4>Accessibility additions</h4>
+      <ul>
+        <li><code>role="region"</code></li>
+        <li><code>aria-label</code> (text: Information notice)</li>
+      </ul>
+      <h4>Screen reader output</h4>
+      <ul>
+        <li><strong>NVDA:</strong> 
+        </li>
+          <li><strong>JAWS:</strong>
+         
+        </li>
+        <li><strong>VoiceOver:</strong> </li>
+      </ul>
+
+    </div>
+  </div>				 
   <h2>Panels</h2>
   <p>Panel colours are not always tied to the content within.</p>
   <p>Extra consideration should be made if there is a desire to create a standard set of labels for each panel type (or panels in general), or attach the label to the header (most panel designs should have a header). </p>
