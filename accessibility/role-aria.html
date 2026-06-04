@@ -367,6 +367,116 @@
       <p>Danger alert/notice may not benefit from a standard label such as "Danger notice", as most "danger" alerts are mainly error issues with forms.  Very rarely used for "dangerous situations" (exceptions might be risks that may be illegal or cause harm to someone).</p>
     </div>
   </div>
+				 <h3>Testing VoiceOver with dynamic injection (data-inview)</h3>
+  <div class="row">
+    <div class="col-md-7">
+      <section class="wb-inview bar-demo" data-inview="fade-effect">
+        <p>Content above goes here.</p>
+      </section>
+   
+      <section id="fade-effect" class="fade bar-demo">
+        <div class="alert alert-info" role="region" aria-label="Information notice">
+          <h4>Informational header statement here</h4>
+          <p>Text and information goes here.</p>
+        </div>
+      </section>
+      <p>Content below goes here.</p>
+    </div>
+    <div class="col-md-5 brdr-lft">
+      <h4>Accessibility additions</h4>
+      <ul>
+        <li><code>role="region"</code></li>
+        <li><code>aria-label</code> (text: Information notice)</li>
+      </ul>
+      <h4>Screen reader output</h4>
+      <ul>
+        <li><strong>NVDA:</strong>
+          <ul class="list-unstyled">
+            <li>When in read mode:
+              <ul>
+                <li>...</li>
+              </ul>
+            </li>
+            <li>When navigated by header in alert:
+              <ul>
+                <li>... </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><strong>JAWS:</strong>
+          <ul class="list-unstyled">
+            <li>When in read mode:
+              <ul>
+                <li>...</li>
+              </ul>
+            </li>
+            <li>When navigated by header in alert:
+              <ul>
+                <li>... </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><strong>VoiceOver:</strong> text goes here</li>
+      </ul>
+    </div>
+  </div>
+  <h3>Testing VoiceOver with dynamic injection (data-inview) and live</h3>
+  <div class="row">
+    <div class="col-md-7">
+      <section class="wb-inview bar-demo" data-inview="fade-effect1">
+        <p>Content above goes here.</p>
+      </section>
+      <section id="fade-effect1" class="fade bar-demo" aria-live="polite">
+        <div class="alert alert-info" role="region" aria-label="Information notice">
+          <h4>Informational header statement here</h4>
+          <p>Text and information goes here.</p>
+        </div>
+      </section>
+      <p>Content below goes here.</p>
+    </div>
+    <div class="col-md-5 brdr-lft">
+      <h4>Accessibility additions</h4>
+      <ul>
+        <li><code>role="region"</code></li>
+        <li><code>aria-label</code> (text: Information notice)</li>
+        <li><code>aria-live</code> (value: polite)</li>
+      </ul>
+      <h4>Screen reader output</h4>
+      <ul>
+        <li><strong>NVDA:</strong>
+          <ul class="list-unstyled">
+            <li>When in read mode:
+              <ul>
+                <li>...</li>
+              </ul>
+            </li>
+            <li>When navigated by header in alert:
+              <ul>
+                <li>... </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><strong>JAWS:</strong>
+          <ul class="list-unstyled">
+            <li>When in read mode:
+              <ul>
+                <li>...</li>
+              </ul>
+            </li>
+            <li>When navigated by header in alert:
+              <ul>
+                <li>... </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><strong>VoiceOver:</strong> text goes here</li>
+      </ul>
+    </div>
+  </div>
   <h2>Panels</h2>
   <p>Panel colours are not always tied to the content within.</p>
   <p>Extra consideration should be made if there is a desire to create a standard set of labels for each panel type (or panels in general), or attach the label to the header (most panel designs should have a header). </p>
