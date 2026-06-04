@@ -150,7 +150,7 @@
             </li>
           </ul>
         </li>
-        <li><strong>VoiceOver:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> see <a href="#voice-over">VoiceOver note</a></li>
       </ul>
       <h4>Comments</h4>
 		<p>JAWS does not read region when navigating by header</p>
@@ -216,7 +216,7 @@
             </li>
           </ul>
         </li>
-        <li><strong>VoiceOver:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> see <a href="#voice-over">VoiceOver note</a></li>
       </ul>
       <h4>Comments</h4>
 		<p>JAWS does not read region when navigating by header</p>
@@ -279,7 +279,7 @@
             </li>
           </ul>
         </li>
-        <li><strong>VoiceOver:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> see <a href="#voice-over">VoiceOver note</a></li>
       </ul>
       <h4>Comments</h4>
 		 <p>JAWS does not read region when navigating by header</p>
@@ -360,7 +360,7 @@
             </li>
           </ul>
         </li>
-        <li><strong>VoiceOver:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> see <a href="#voice-over">VoiceOver note</a></li>
       </ul>
       <h4>Comments</h4>
 		  <p>JAWS does not read region when navigating by header</p>
@@ -433,7 +433,7 @@
             </li>
           </ul>
         </li>
-        <li><strong>VoiceOver:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> see <a href="#voice-over">VoiceOver note</a></li>
       </ul>
       <h4>Comments
 	  <p>JAWS does not recognize <code>&lt;section&gt;</code> or <code>role=&quot;region&quot;</code> as a region when navigating by headers.</p></h4>
@@ -483,7 +483,7 @@
             </li>
           </ul>
         </li>
-        <li><strong>VoiceOver:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> see <a href="#voice-over">VoiceOver note</a></li>
       </ul>
       <h4>Comments</h4>
 		<p>NVDA doe not read <code>role="note"</code>.
@@ -550,7 +550,7 @@
             </li>
           </ul>
         </li>
-        <li><strong>VoiceOver:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> see <a href="#voice-over">VoiceOver note</a></li>
       </ul>
       <h4>Comments</h4>
 		 <p>JAWS does not read region when navigating by header</p>
@@ -626,7 +626,7 @@
             </li>
           </ul>
         </li>
-        <li><strong>VoiceOver:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> see <a href="#voice-over">VoiceOver note</a></li>
       </ul>
       <h4>Comments</h4>
 		<p>JAWS does not read region when navigating by header</p>
@@ -710,14 +710,14 @@
             </li>
           </ul>
         </li>
-        <li><strong>VoiceOver:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong> see <a href="#voice-over">VoiceOver note</a></li>
       </ul>
       <h4>Comments</h4>
 		   <p>JAWS does not read region when navigating by header</p>
     </div>
   </div>
   <h2>Details (ex/hide)</h2>
-  <p>Details and summary elements do have an interactive element to showcase where to interact (except voiceOver, see below), but do not indicate where that content ends, unless the person already had navigated past prior to expanding.</p>
+  <p>Details and summary elements do have an interactive element to showcase where to interact (except VoiceOver, see below), but do not indicate where that content ends, unless the person already had navigated past prior to expanding.</p>
   <p>Screen readers indicate that the content is a "button" that is collapsed when closed, and expanded when open.  VoiceOver does not announce the details element as anything interactive when either tabbing or in read mode. This is a VoiceOver issue, but there might be some fallbacks if we decide to apply more accessibility attributes.</p>
    <h3>Details with <code>role="region"</code> on element</h3>
   <div class="row">
@@ -788,7 +788,7 @@
             </li>
           </ul>
         </li>
-        <li><strong>VoiceOver:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong>Testing shows that role="button" is no longer needed for VoiceOver <br> see <a href="#voice-over">VoiceOver note</a></li>
       </ul>
       <h4>Comments</h4>
     </div>
@@ -864,7 +864,7 @@
             </li>
           </ul>
         </li>
-        <li><strong>VoiceOver:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong>Testing shows that role="button" is no longer needed for VoiceOver <br> see <a href="#voice-over">VoiceOver note</a></li>
       </ul>
       <h4>Comments</h4>
     </div>
@@ -947,14 +947,24 @@
             </li>
           </ul>
         </li>
-        <li><strong>VoiceOver:</strong> text goes here</li>
+        <li><strong>VoiceOver:</strong>Testing shows that role="button" is no longer needed for VoiceOver <br>see <a href="#voice-over">VoiceOver note</a><br></li>
       </ul>
       <h4>Comments</h4>
 		<p>May need further review to see if possible to add directly to element to avoid wrapping content.</p>
     </div>
   </div>
-           
-        </section>
+<h2 id="voice-over">VoiceOver note</h2>
+<p>VoiceOver for Mac does not pick up any aria roles, nor aria-label or labelledby for any of the examples.  Further reading seems to indicate that VoiceOver only recognizes these in dynamic content (e.g. content that appears after page load).</p>
+<p>Default reads start of section as "Heading level X ..<em>text of header here</em>.. you are currently on heading level X".</p>
+				 <p>Options to mitidate this could be:</p>
+				 <ul><li>Make contained content reload after page load (e.g. data inview)</li>
+				 <li>Add invisible text to beginning and end of contained content (should not be manual, should be dynamic adding)</li>
+					 <li>Ignore and proceed with solutions that work with NVDA/JAWS (aka this is a VoiceOver issue, not an accessibility issue</li>
+				 </ul>
+<p>Regardless of solution, accessibility helpers should not be an excuse to ignore proper semantic structure (content should always be contained with a header, and when content ends, start a new header.</p>
+>				 
+				 
+
 			<div id="def-preFooter">
 				<!-- Write closure fall-back static file -->
 				<!-- preFooter-en.html -->
