@@ -350,8 +350,8 @@ onclick="if (window._resultShowTimer) {
     </fieldset>
   </form>
   <div aria-busy="true" aria-live="polite" class="mrgn-lft-xl mrgn-tp-lg" id="answers">
-    <div class="alert alert-success hidden" id="result-1">
-      <h3>You may be eligible for the DTC</h3>
+    <section class="alert alert-success hidden" id="result-1" role="region" aria-labelledby="alert-hdr-1">
+      <h3 id="alert-hdr-1">You may be eligible for the DTC</h3>
       <p>This does not guarantee eligibility. When you apply, the CRA will base their decision on the information given by your medical practitioner.</p>
       <details>
         <summary>Which medical practitioners can certify this</summary>
@@ -401,17 +401,17 @@ onclick="if (window._resultShowTimer) {
           </tbody>
         </table>
       </details>
-    </div>
-    <div class="alert alert-info" id="result-3">
-      <h3>If you’re not sure you qualify</h3>
+    </section>
+    <section class="alert alert-info" id="result-3"  role="region" aria-labelledby="alert-hdr-3">
+      <h3 id="alert-hdr-3">If you’re not sure you qualify</h3>
       <p>Even if your answers indicate that you may not be eligible, you can still send in an application. CRA will determine your eligibility based on the information given by your medical practitioner.</p>
-    </div>
+    </section>
   </div>
   <div class="mrgn-lft-xl mrgn-tp-lg">
-    <div class="alert alert-warning hidden" id="result-2">
-      <h3>You need all of the above to be eligible</h3>
+    <section class="alert alert-warning hidden" id="result-2" role="region" aria-labelledby="alert-hdr-2">
+      <h3 id="alert-hdr-2">You need all of the above to be eligible</h3>
       <p>If you’re not sure you qualify, you may still apply. Your eligibility is based on the information given by your medical practitioner.</p>
-    </div>
+    </section>
   </div>
                  
  <nav class="mrgn-bttm-lg mrgn-tp-lg">
