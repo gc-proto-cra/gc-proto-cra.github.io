@@ -371,15 +371,14 @@
                         <li>When in read mode:
                             <ul>
                                 <li>..Content above read..<br>
-                                    &quot;Region heading level 4 danger header statement here&quot;<br>
+                                    &quot;Heading level 4 danger header statement here&quot;<br>
                                     ..Alert text.. <br>
-                                    &quot;Out of region&quot;<br>
                                     ...Content below read...</li>
                             </ul>
                         </li>
                         <li>When navigated by header in alert:
                             <ul>
-                                <li>&quot;Region danger header statement here heading level 4&quot;<br>
+                                <li>&quot;Danger header statement here heading level 4&quot;<br>
                                     ...Next header..<br>
                                 </li>
                             </ul>
@@ -398,11 +397,10 @@
                         <li>When in read mode:
                             <ul>
                                 <li>..Content above read..<br>
-                                    &quot;Danger header statement here region&quot;<br>
+                                    &quot;Danger header statement here&quot;<br>
                                     &quot; &quot;<br>
                                     &quot;Heading level 4 danger header statement here&quot;<br>
                                     ..Alert text..<br>
-                                    &quot;Danger header statement here region end&quot;<br>
                                     ...Content below read...</li>
                             </ul>
                         </li>
@@ -414,7 +412,7 @@
                             </ul>
                         <li>When tabbed to link:
                             <ul>
-                                <li>&quot;Danger header statement here region further information link to activate press enter&quot;<br>
+                                <li>&quot;Danger header statement here further information link to activate press enter&quot;<br>
                                     ...Next tabbed element..<br>
                                 </li>
                             </ul>
@@ -426,10 +424,10 @@
                         <li>When in quick nav:
                             <ul>
                                 <li>..Content above read..<br>
-                                    &quot;Danger header statement here, region&quot;<br>
+                                    &quot;Danger header statement here&quot;<br>
+									&quot;Group&quot;<br>
                                     &quot;Heading level 4 danger header statement here&quot;<br>
                                     ..Alert text..<br>
-                                    &quot;End of, danger header statement here, region&quot;<br>
                                     ...Content below read...</li>
                             </ul>
                         </li>
@@ -450,8 +448,7 @@
                 </li>
             </ul>
             <h4>Comments</h4>
-            <p>JAWS, VoiceOver do not read region when navigating by header</p>
-			  <p>VoiceOver on iOS (Chrome), states region (region, landmark) when navigating to first header, states "end..header title..region" at last line</p>
+            <p>NVDA, JAWS, VoiceOver do not read region when using <code>aria-describedby</code> (VoiceOver in Chrome says generic &quot;Group&quot;, recommend not to use</p>
             <p>Danger alert/notice may not benefit from a standard label such as "Danger notice", as most "danger" alerts are mainly error issues with forms.  Very rarely used for "dangerous situations" (exceptions might be risks that may be illegal or cause harm to someone).</p>
         </div>
     </div>
