@@ -321,18 +321,18 @@ outline-offset: 2px;    /* Adds space between the element and the outline */
     </ul>
   </fieldset>
   <div aria-busy="true" aria-live="polite" class="mrgn-lft-xl mrgn-tp-lg" id="answers">
-    <div class="alert alert-success hidden" id="result-1">
+    <div class="alert alert-success hidden" id="result-1" role="region" aria-label="Successful eligibility">
       <p class="text-muted small">Based on your selections above:</p>
       <h3 class="mrgn-tp-0 ">Child care expenses may be claimed</h3>
       <p>You or another person may claim child care expenses as a deduction for an eligible child.</p>
     </div>
-    <div class="alert alert-info" id="result-3">
+    <div class="alert alert-info" id="result-3"  role="region" aria-label="Eligibility not complete">
       <h3 class="mrgn-tp-0">All of the above is needed to be eligible</h3>
       <p>You or another person must meet all of the criteria to claim child expenses.</p>
     </div>
   </div>
-  <div class="mrgn-lft-xl mrgn-tp-lg">
-    <div class="alert alert-warning hidden" id="result-2">
+  <div class="mrgn-lft-xl mrgn-tp-lg" >
+    <div class="alert alert-warning hidden" id="result-2" role="region" aria-label="Unsuccessful eligibility">
       <h3 class="mrgn-tp-0 ">All of the above is needed to be eligible</h3>
       <p>You or another person must meet all of the criteria to claim child expenses.</p>
     </div>
