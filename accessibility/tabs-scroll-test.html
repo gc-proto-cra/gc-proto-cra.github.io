@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>New tabs build</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="">
+<meta name="robots" content="noindex, nofollow">
+<!-- Meta data--> 
+<!-- Load closure template scripts --> 
+
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/soyutils.js"></script> 
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/wet-en.js"></script>
+<noscript>
+<!-- Write closure fall-back static file --> 
+<!-- refTop.html -->
+</noscript>
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refTop({
+				"cdnEnv": "prod",
+				"isApplication": false
+			}));
+		</script>
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/méli-mélo/2025-12-mille-iles.css" />
+  <style>
+.gc-tabs {
+    box-shadow: 0 0.125rem 0.5rem 0.125rem #00000010;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+.gc-tabs details {
+    margin-bottom: 0;
+    border-radius: 0px;
+}
+.gc-tabs:not(.collapse-sm, .collapse-xs) details {
+    border-width: 0px;
+}
+.gc-tabs details summary {
+    border-radius: 0px;
+    display: none!important;
+    border-bottom: 0px;
+}
+.gc-tabs .tab-container {
+    display: flex;
+    align-items: stretch;
+    /* border-bottom: 2px solid #335075; /* GC-style blue border separating tabs from panel */
+    position: relative;
+    padding: 0px 12px;
+}
+.gc-tabs .gc-tabs-list {
+    min-width: 100%;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 12px 0;
+    margin-bottom: 0px;
+}
+.gc-tabs .gc-tabs-list li {
+    list-style: none;
+    display: flex;
+    align-items: stretch;
+    flex-shrink: 0;    /* Tabs never shrink; overflow triggers scroll */
+    margin: 0;
+    padding: 0;
+}
+.gc-tabs .gc-tabs-list [role="tab"], .gc-tabs .gc-tabs-list [role="tab"]:focus, .gc-tabs .gc-tabs-list [role="tab"]:hover {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    top: 2px;
+    /* margin: 0;
+  margin-top: 4px;*/
+    padding: 0px 10px;
+    /* border: 1px solid hsl(219deg 1% 72%);
+  border-bottom: 2px solid hsl(219deg 1% 72%);*/
+  /*border-radius: 5px 5px 0 0;
+  background-color: hsl(220deg 20% 94%);*/
+    outline: none;
+    font-weight: bold;
+    /*  max-width: 22%;
+  overflow: hidden;*/
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    background-color: transparent;
+    border: 0px;
+    /*   border-bottom: 5px solid transparent; */
+    margin-bottom: 3px;
+}
+.gc-tabs [role="tab"]:focus {
+    scroll-margin-inline: 40px 20px;
+}
+[role="presentation"]:not(:last-child) {
+    border-right: 2px solid #00000010;
+}
+[role="tab"][aria-selected="true"] {
+/* padding: 2px 2px 4px;
+  margin-top: 0;
+border-width: 2px;
+  border-top-width: 6px;
+ border-top-color: rgb(36 116 214);*/
+
+  
+}
+[role="tab"][aria-selected="true"] .focus {
+    border-bottom: 3px solid #333;
+}
+/*[role="tab"][aria-selected="false"] {
+  border-bottom: 1px solid hsl(219deg 1% 72%);
+}*/
+
+
+
+ .gc-tabs-list::-webkit-scrollbar {
+height: 20px;
+}
+.gc-tabs-list::-webkit-scrollbar-track {
+ /* background: #00000010;*/
+    margin-left: 22px;
+margin-right: 22px;
+outline: 0.125rem solid black;
+}
+
+/* Handle */
+.gc-tabs-list::-webkit-scrollbar-thumb {
+background: #333;
+color: pink;
+outline: 2px solid #fff;
+outline-offset: -2px;
+/* box-shadow: inset 0 0 0 2px #fff;*/
+  
+   
+    
+
+   
+  
+}
+
+/*::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  background-color: #ccc;
+  border: solid transparent;
+  border-width: 8px 8px 8px 0;
+  border-right-color: #555;
+}*/
+
+/* Right arrow (scroll forward) 
+::-webkit-scrollbar-button:single-button:horizontal:increment {
+  background-color: #ccc;
+  border: solid transparent;
+  border-width: 8px 0 8px 8px;
+  border-left-color: #555;
+}*/
+
+/* Hover effect 
+::-webkit-scrollbar-button:single-button:horizontal:increment:hover,
+::-webkit-scrollbar-button:single-button:horizontal:decrement:hover {
+  background-color: #aaa;
+}  */
+     
+     
+/* Handle on hover */
+.gc-tabs-list::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+[role="tab"] span.focus {
+    display: inline-block;
+    margin: 2px;
+    padding: 4px 6px;
+    text-align: center;
+}
+[role="presentation"]:hover, [role="presentation"]:focus, [role="presentation"]:active {
+    outline: 1px solid #1354ec;
+    background-color: #d6e4f5;
+}
+details[open] [role="tabpanel"] {
+    /*  padding: 15px;
+ border: 2px solid hsl(219deg 1% 72%);
+  border-radius: 0 5px 5px;*/
+    background: hsl(220deg 43% 99%);
+    /* min-height: 10em;*/
+    width: 100%;
+    /* overflow: auto;*/
+  /*  border: 1px solid transparent;*/
+    margin-bottom: 0px;
+    padding: 18px;
+    border-radius: 0px;
+}
+.is-hidden {
+    display: none;
+}
+/*[role="tabpanel"] p {
+  margin: 0;
+}*/
+.tablist-container {
+    position: relative;
+    z-index: 0;
+}
+/*.btn-container-left, .btn-container-right {
+    position: absolute;
+    z-index: 3;
+    height: 75%;
+  /*  height: 100%;
+    padding-bottom: 4px;
+    padding-top: 4px;*//*
+    transform: translate(0%, -50%);
+    top: 50%;
+}*/
+.btn-container-left, .btn-container-right {
+    position: absolute;
+    z-index: 3;
+    /* height: 75%; */
+    transform: translate(0%, -50%);
+    /* top: 50%; */
+    bottom: -25px;
+}
+/*.btn-container-left {
+    left: 0;
+    padding-right: 16px;
+    padding-left: 6px;
+}
+.btn-container-right {
+    right: 0;
+    padding-left: 16px;
+    padding-right: 6px;
+}*/
+.btn-container-left {
+    left: 0;
+    padding-left: 4px;
+}
+.btn-container-right {
+    right: 0;
+    padding-right: 4px;
+}
+/*button.btn-scroll {
+    color: #26374a;
+    background-color: #fff;
+    position: relative;
+    z-index: 4;
+    border-width: 0.125rem;
+    border-radius: 4px;
+    height: 100%;
+    padding: 0 6px;
+}*/
+button.btn-scroll {
+    color: #26374a;
+    background-color: #fff;
+    /* position: relative; */
+    z-index: 4;
+    /* border-width: 0.125rem; */
+    /* border-radius: 4px; */
+    /* height: 100%; */
+    /* padding: 0 6px; */
+    padding: 0px;
+    line-height: 0;
+}
+main .glyphicon {
+    top: -1px;
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    top: -10px;
+}
+button.btn-scroll:hover {
+    background-color: #d6e4f5;
+    border-color: #1354ec;
+}
+button.btn-scroll:focus {
+    background-color: #1354ec;
+    border-color: #1354ec;
+    box-shadow: 0 0 0 0.125rem #fff;
+    color: #fff;
+    outline: 0.25rem solid #1354ec;
+    outline-offset: 0.125rem;
+}
+/*  button.btn-scroll.scroll-left {left:0; margin-left: 5px;} 
+        button.btn-scroll.scroll-right {right:0; margin-right: 5px;} */
+
+
+/* =============================================================================
+   6. TAB PANELS (.tgl-panel)
+   ============================================================================= */
+
+/* The browser natively hides non-summary content when <details> lacks [open].
+   We reinforce that here for CSS specificity and cross-browser safety. */
+.gc-tabs details:not([open]) > .tgl-panel {
+    display: none;
+}
+.gc-tabs details[open] > .tgl-panel {
+    display: block;
+}
+.gc-tabs .tgl-panel {
+    padding: 1.25rem;
+    /* border: 1px solid #335075;*/
+    border-top: none;
+    background-color: #ffffff;
+}
+/* Focus ring on panel (receives focus when tab is activated via keyboard) */
+.gc-tabs .tgl-panel:focus {
+    outline: 3px solid #0052cc;
+    outline-offset: -3px;
+}
+.gc-tabs .tgl-panel:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* =============================================================================
+   7. COLLAPSE-SM â€” accordion below 992px viewport
+   ============================================================================= */
+   
+     
+     
+@media (max-width: 991px) {
+.gc-tabs.collapse-sm .tab-container {
+    display: none;           /* Hide the tab bar */
+}
+/* Restore the summary as a clickable accordion header */
+.gc-tabs.collapse-sm summary {
+    display: block!important;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.gc-tabs.collapse-sm summary:hover {
+    background-color: #dde4ed;
+}
+/* Chevron indicator */
+  
+
+  
+
+
+.gc-tabs.collapse-sm details[open] > summary:focus {
+    background-color: transparent;
+    border: none;
+    box-shadow: inset 0 0 0 0.125rem #1354ec;
+    color: #1f497a;
+    outline: 4px solid rgb(19, 84, 236);
+    outline-offset: 2px;/* text-decoration: underline currentColor 0.125rem;*/
+}
+.gc-tabs.collapse-sm details > summary::before {
+    content: "+";
+    position: relative;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.gc-tabs.collapse-sm details[open] > summary span.toggleRoot {
+    border-bottom: 3px solid #333;
+    padding-bottom: 5px;
+}
+.gc-tabs.collapse-sm details[open] > summary::before {
+    content: "−";
+    position: relative;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* Panel in accordion mode */
+
+
+  /* Focus ring on summary */
+.gc-tabs.collapse-sm summary:focus {
+    outline: 3px solid #0052cc;
+    outline-offset: 1px;
+}
+.gc-tabs.collapse-sm summary:focus:not(:focus-visible) {
+    outline: none;
+}
+}
+
+/* =============================================================================
+   8. COLLAPSE-XS â€” accordion below 768px viewport
+   ============================================================================= */
+
+@media (max-width: 767px) {
+.gc-tabs.collapse-xs .tab-container {
+    display: none;
+}
+.gc-tabs.collapse-xs summary {
+    display: block!important;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.gc-tabs.collapse-xs summary:hover {
+    background-color: #dde4ed;
+}
+.gc-tabs.collapse-xs details[open] > summary span.toggleRoot {
+    border-bottom: 3px solid #333;
+    padding-bottom: 5px;
+}
+.gc-tabs.collapse-xs details > summary::before {
+    content: "+";
+    position: relative;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.gc-tabs.collapse-xs details[open] > summary:focus {
+    background-color: transparent;
+    border: none;
+    box-shadow: inset 0 0 0 0.125rem #1354ec;
+    color: #1f497a;
+    outline: 4px solid rgb(19, 84, 236);
+    outline-offset: 2px;
+}
+.gc-tabs.collapse-xs details[open] > summary::before {
+    content: "−";
+    position: relative;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.gc-tabs.collapse-xs summary:focus {
+    outline: 3px solid #0052cc;
+    outline-offset: 1px;
+}
+.gc-tabs.collapse-xs summary:focus:not(:focus-visible) {
+    outline: none;
+}
+/*To align buttons to scroll bar in mobile*/
+.btn-container-left, .btn-container-right {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+}
+</style>
+</head>
+<body vocab="https://schema.org/" typeof="WebPage">
+<div id="def-top"> 
+    <!-- Write closure fall-back static file --> 
+    <!-- top-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+		var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.top({
+               "cdnEnv": "prod",
+                "lngLinks": false,
+                 "search": false,
+               "siteMenu": false,
+         "showPreContent": false,
+                "breadcrumbs": false
+			});
+		</script>
+<main property="mainContentOfPage" typeof="WebPageElement" class="container">
+    <h1 property="name" id="wb-cont">New tabs build</h1>
+    <h2>Demo 1: Basic Tabs</h2>
+    <p class="demo-note">Default tab mode. No collapse at any viewport width.</p>
+    <div class="gc-tabs">
+        <details id="tab1-d1">
+            <summary>Section One</summary>
+            <h3>Section One Content</h3>
+            <p>This is the content for the first tab panel. It is visible by default because no <code>open</code> attribute is coded.</p>
+            <p>This is the content for the first tab panel. It is visible by default because no <code>open</code> attribute is coded.</p>
+            <p>This is the content for the first tab panel. It is visible by default because no <code>open</code> attribute is coded.</p>
+        </details>
+        <details id="tab1-d2">
+            <summary>Section Two</summary>
+            <p>Content for the second panel. Use the tab button above or press <kbd>→</kbd> to navigate here.</p>
+        </details>
+        <details id="tab1-d3">
+            <summary>Section <strong>Three</strong></summary>
+            <p>The summary can contain <strong>HTML</strong> — it copies into the tab button as-is.</p>
+        </details>
+    </div>
+    
+    <!-- =====================================================
+     DEMO 2 — Pre-selected tab via "open" attribute
+     ===================================================== -->
+    <h2>Demo 2: Pre-selected Tab</h2>
+    <p class="demo-note">Second details has the <code>open</code> attribute — it starts active.</p>
+    <div class="gc-tabs gc-tabs-eqht">
+        <details id="tab2-d1">
+            <summary>Alpha</summary>
+            <p>Alpha panel content.</p>
+        </details>
+        <details id="tab2-d2" open>
+            <summary>Beta (pre-selected)</summary>
+            <p>Beta is pre-selected because it has the <code>open</code> attribute.</p>
+            <p>Beta is pre-selected because it has the <code>open</code> attribute.</p>
+        </details>
+        <details id="tab2-d3">
+            <summary>Gamma</summary>
+            <p>Gamma panel content.</p>
+            <p>Gamma panel content.</p>
+            <p>Gamma panel content.</p>
+            <p>Gamma panel content.</p>
+        </details>
+    </div>
+    
+    <!-- =====================================================
+     DEMO 3 — Many tabs (scroll overflow demo)
+     ===================================================== -->
+    <h2>Demo 3: Many Tabs (Scroll Overflow)</h2>
+    <p class="demo-note">Resize to a narrow viewport or view on mobile to trigger scroll buttons.</p>
+    <div class="gc-tabs session-ignore">
+        <details id="tab3-d1">
+            <summary>January</summary>
+            <p>January content.</p>
+        </details>
+        <details id="tab3-d2">
+            <summary>February</summary>
+            <p>February content.</p>
+        </details>
+        <details id="tab3-d3">
+            <summary>March</summary>
+            <p>March content.</p>
+        </details>
+        <details id="tab3-d4">
+            <summary>April</summary>
+            <p>April content.</p>
+        </details>
+        <details id="tab3-d5">
+            <summary>May</summary>
+            <p>May content.</p>
+        </details>
+        <details id="tab3-d6">
+            <summary>June</summary>
+            <p>June content.</p>
+        </details>
+        <details id="tab3-d7">
+            <summary>July</summary>
+            <p>July content.</p>
+        </details>
+        <details id="tab3-d8">
+            <summary>August</summary>
+            <p>August content.</p>
+        </details>
+        <details id="tab3-d9">
+            <summary>September</summary>
+            <p>September content.</p>
+        </details>
+        <details id="tab3-d10">
+            <summary>October</summary>
+            <p>October content.</p>
+        </details>
+        <details id="tab3-d11">
+            <summary>November</summary>
+            <p>November content.</p>
+        </details>
+        <details id="tab3-d12">
+            <summary>December</summary>
+            <p>December content.</p>
+        </details>
+    </div>
+    
+    <!-- =====================================================
+     DEMO 4 — collapse-sm (accordion under 992px)
+     ===================================================== -->
+    <h2>Demo 4: collapse-sm</h2>
+    <p class="demo-note">Accordion at &lt;992px, tabs at ≥992px.</p>
+    <div class="gc-tabs collapse-sm gc-tabs-eqht">
+        <details id="tab4-d1">
+            <summary>Accessibility</summary>
+            <p>All interactive elements meet WCAG 2.1 AA contrast and keyboard requirements.</p>
+        </details>
+        <details id="tab4-d2">
+            <summary>Performance</summary>
+            <p>Vanilla JS, zero dependencies beyond Font Awesome for icons.</p>
+            <p>Vanilla JS, zero dependencies beyond Font Awesome for icons.</p>
+            <p>Vanilla JS, zero dependencies beyond Font Awesome for icons.</p>
+            <p>Vanilla JS, zero dependencies beyond Font Awesome for icons.</p>
+        </details>
+        <details id="tab4-d3">
+            <summary>Compatibility</summary>
+            <p>Works inside WET-BOEW v4 plugin containers on Canada.ca pages.</p>
+        </details>
+    </div>
+    
+    <!-- =====================================================
+     DEMO 5 — collapse-xs (accordion under 768px)
+     ===================================================== -->
+    <h2>Demo 5: collapse-xs</h2>
+    <p class="demo-note">Accordion at &lt;768px, tabs at ≥768px.</p>
+    <div class="gc-tabs collapse-xs">
+        <details id="tab5-d1">
+            <summary>What is gc-tabs?</summary>
+            <p>A progressive enhancement that converts semantic <code>&lt;details&gt;</code> / <code>&lt;summary&gt;</code> markup into an ARIA-compliant tab or accordion widget.</p>
+        </details>
+        <details id="tab5-d2" open>
+            <summary>How do I use it?</summary>
+            <p id="inner-heading">Include the CSS and JS, then wrap your <code>&lt;details&gt;</code> elements in a <code>&lt;div class="gc-tabs"&gt;</code>.</p>
+        </details>
+        <details id="tab5-d3">
+            <summary>Hash linking</summary>
+            <p> Try <a href="#inner-heading">this anchor link</a> — it opens the correct panel
+                and scrolls to the heading inside it. Works with browser URL hashes too. </p>
+        </details>
+    </div>
+    
+    <!-- =====================================================
+     DEMO 6 — Two independent groups on same page
+     ===================================================== -->
+    <h2>Demo 6: Multiple Independent Groups</h2>
+    <p class="demo-note">Both groups use completely separate IDs and state.</p>
+    <div class="gc-tabs">
+        <details id="grpA-d1">
+            <summary>Group A — Tab 1</summary>
+            <p>Group A, panel 1.</p>
+        </details>
+        <details id="grpA-d2">
+            <summary>Group A — Tab 2</summary>
+            <p>Group A, panel 2.</p>
+        </details>
+    </div>
+    <br>
+    <div class="gc-tabs">
+        <details id="grpB-d1">
+            <summary>Group B — Tab 1</summary>
+            <p>Group B, panel 1.</p>
+        </details>
+        <details id="grpB-d2" open>
+            <summary>Group B — Tab 2 (pre-open)</summary>
+            <p>Group B, panel 2 is pre-selected.</p>
+        </details>
+        <details id="grpB-d3">
+            <summary>Group B — Tab 3</summary>
+            <p>Group B, panel 3.</p>
+        </details>
+    </div>
+    <p>Additional content goes here</p>
+    <div id="def-preFooter"> 
+        <!-- Write closure fall-back static file --> 
+        <!-- preFooter-en.html --> 
+    </div>
+    <!-- Write closure template --> 
+    <script>
+				var defPreFooter = document.getElementById("def-preFooter");
+				defPreFooter.outerHTML = wet.builder.preFooter({
+				
+					"cdnEnv": "prod"
+				});
+			</script> 
+</main>
+<div id="def-footer"> 
+    <!-- Write closure fall-back static file --> 
+    <!-- footer-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.appFooter({
+				"cdnEnv": "prod",
+                                   "termsLink": [{
+	"href": ""
+}], "privacyLink": [{
+	"href": ""
+}]
+			});
+		</script> 
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refFooter({
+				"cdnEnv": "prod",
+
+            
+			}));
+		</script> 
+<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/méli-mélo/2025-12-mille-iles.js"></script>
+  <script src="gc-tabs.js"></script>
+</body>
+</html>
