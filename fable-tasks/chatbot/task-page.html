@@ -106,10 +106,23 @@
 
             if (versionValue !== null) {
                 elements.forEach(function (el) {
-                    let currentUrl = new URL(el.getAttribute("href"), window.location.origin);
+                    let currentUrl, 
+                        rawHref = el.getAttribute("href");
 
-                    currentUrl.searchParams.set("ver", versionValue);
-                    el.setAttribute("href", currentUrl.toString());
+                    if (rawHref !== null) {
+                        currentUrl = new URL(rawHref, window.location.origin);
+                        currentUrl.searchParams.set("ver", versionValue);
+                        // Rebuilds the URL shape exactly as it was originally written
+                        if (rawHref.startsWith("/") === true) {
+                            el.setAttribute("href", currentUrl.pathname + currentUrl.search + currentUrl.hash);
+                        } else if (rawHref.startsWith("http") === true) {
+                            el.setAttribute("href", currentUrl.toString());
+                        } else {
+                            // Handles relative files like "page.html" or anchors like "#top"
+                            var relativePath = currentUrl.pathname.substring(currentUrl.pathname.lastIndexOf("/") + 1);
+                            el.setAttribute("href", relativePath + currentUrl.search + currentUrl.hash);
+                        }
+                    }
                 });
             }
         </script>
