@@ -98,6 +98,20 @@
                 "cdnEnv": "prod",
             }));
         </script>
-        <script src="scripts/task-version.js"></script>
+        <script src="scripts/task-ver-show-hide-elm.js"></script>
+        <script>
+            const urlParams = new URLSearchParams(window.location.search), 
+                versionValue = urlParams.get("ver"), 
+                elements = document.querySelectorAll("[data-ver]");
+
+            if (versionValue !== null) {
+                elements.forEach(function (el) {
+                    let currentUrl = new URL(el.getAttribute("href"), window.location.origin);
+
+                    currentUrl.searchParams.set("ver", versionValue);
+                    el.setAttribute("href", currentUrl.toString());
+                });
+            }
+        </script>
     </body>
 </html>
