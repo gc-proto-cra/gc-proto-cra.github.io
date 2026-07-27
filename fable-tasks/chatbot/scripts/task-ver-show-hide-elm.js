@@ -1,6 +1,6 @@
 // 1. Get the 'ver' parameter from the URL query string
-const urlParams = new URLSearchParams(window.location.search), 
-    currentVer = parseInt(urlParams.get("ver"), 10), 
+const showHideURLParams = new URLSearchParams(window.location.search), 
+    currentVer = parseInt(showHideURLParams.get("ver"), 10), 
 
     // 2. Select all elements with the 'data-ver' attribute
     verElements = document.querySelectorAll("[data-ver]");

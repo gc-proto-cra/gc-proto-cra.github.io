@@ -51,16 +51,16 @@
                 <p class="mrgn-tp-md">Please select the task that the moderator tells you to.</p>
                 <div class="row">
                     <ol class="list-inline" aria-label="List of 10 tasks">
-                        <li><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-01.html" aria-label="task 1 of 10" data-ver="[1,2,3]">Task <span data-task-num="1">1</span></a></li>
-                        <li><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-02.html" aria-label="task 2 of 10" data-ver="[1,2,3]">Task <span data-task-num="2">2</span></a></li>
-                        <li><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-03.html" aria-label="task 3 of 10" data-ver="[1,2,3]">Task <span data-task-num="3">3</span></a></li>
-                        <li><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-04.html" aria-label="task 4 of 10" data-ver="[2]">Task <span data-task-num="4">4</span></a></li>
-                        <li><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-05.html" aria-label="task 5 of 10" data-ver="[1,2,3]">Task <span data-task-num="5">5</span></a></li>
-                        <li><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-06.html" aria-label="task 6 of 10" data-ver="[1,2,3]">Task <span data-task-num="6">6</span></a></li>
-                        <li><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-07.html" aria-label="task 7 of 10" data-ver="[2]">Task <span data-task-num="7">7</span></a></li>
-                        <li><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-08.html" aria-label="task 8 of 10" data-ver="[2]">Task <span data-task-num="8">8</span></a></li>
-                        <li><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-09.html" aria-label="task 9 of 10" data-ver="[2]">Task <span data-task-num="9">9</span></a></li>
-                        <li><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-10.html" aria-label="task 10 of 10" data-ver="[1,2,3]">Task <span data-task-num="10">10</span></a></li>
+                        <li data-ver="[1,2,3]"><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-01.html" aria-label="task 1 of 10" data-ver="[1,2,3]">Task <span data-task-num="1">1</span></a></li>
+                        <li data-ver="[1,2,3]"><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-02.html" aria-label="task 2 of 10" data-ver="[1,2,3]">Task <span data-task-num="2">2</span></a></li>
+                        <li data-ver="[1,2,3]"><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-03.html" aria-label="task 3 of 10" data-ver="[1,2,3]">Task <span data-task-num="3">3</span></a></li>
+                        <li data-ver="[2]"><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-04.html" aria-label="task 4 of 10" data-ver="[2]">Task <span data-task-num="4">4</span></a></li>
+                        <li data-ver="[1,2,3]"><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-05.html" aria-label="task 5 of 10" data-ver="[1,2,3]">Task <span data-task-num="5">5</span></a></li>
+                        <li data-ver="[1,2,3]"><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-06.html" aria-label="task 6 of 10" data-ver="[1,2,3]">Task <span data-task-num="6">6</span></a></li>
+                        <li data-ver="[2]"><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-07.html" aria-label="task 7 of 10" data-ver="[2]">Task <span data-task-num="7">7</span></a></li>
+                        <li data-ver="[2]"><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-08.html" aria-label="task 8 of 10" data-ver="[2]">Task <span data-task-num="8">8</span></a></li>
+                        <li data-ver="[2]"><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-09.html" aria-label="task 9 of 10" data-ver="[2]">Task <span data-task-num="9">9</span></a></li>
+                        <li data-ver="[1,2,3]"><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-10.html" aria-label="task 10 of 10" data-ver="[1,2,3]">Task <span data-task-num="10">10</span></a></li>
                     </ol>
                 </div>
             </section>
@@ -100,8 +100,8 @@
         </script>
         <script src="scripts/task-ver-show-hide-elm.js"></script>
         <script>
-            const urlParams = new URLSearchParams(window.location.search), 
-                versionValue = urlParams.get("ver"), 
+            const updatelinksURLParams = new URLSearchParams(window.location.search), 
+                versionValue = updatelinksURLParams.get("ver"), 
                 elements = document.querySelectorAll("[data-ver]");
 
             if (versionValue !== null) {
