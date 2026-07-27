@@ -102,7 +102,7 @@
         <script>
             const updatelinksURLParams = new URLSearchParams(window.location.search), 
                 versionValue = updatelinksURLParams.get("ver"), 
-                elements = document.querySelectorAll("[data-ver]");
+                elements = document.querySelectorAll("a[data-ver]");
 
             if (versionValue !== null) {
                 elements.forEach(function (el) {
