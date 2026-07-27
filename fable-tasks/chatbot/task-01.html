@@ -45,14 +45,14 @@
         </script>
 
         <main property="mainContentOfPage" typeof="WebPageElement" class="container">
-            <h1 property="name" id="wb-cont">Task 1: Find the CRA Chatbot</h1>
+            <h1 property="name" id="wb-cont">Task <span data-task-num="1">1</span>: Find the CRA Chatbot</h1>
 
             <section class="mrgn-bttm-xl">
                 <p class="mrgn-tp-md">You are looking for the CRA GenAI chatbot. Please find it without using the search bar.</p>
                 <div class="btn-container">
                     <ul class="list-inline">
                         <li><a href="https://www.canada.ca/en/revenue-agency.html" target="_blank" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md">Start task<span class="wb-inv"> this button will open a page in a new tab</span><span class="far fa-window-restore mrgn-lft-sm"></span></a></li>
-                        <li><a href="task-page.html" role="button" data-exit="false" class="btn btn-default btn-lg mrgn-tp-md">Continue to task page</a></li>
+                        <li><a id="task-page" href="task-page.html" role="button" data-exit="false" class="btn btn-default btn-lg mrgn-tp-md">Continue to task page</a></li>
                     </ul>
                 </div>
             </section>
@@ -90,5 +90,6 @@
                 "cdnEnv": "prod",
             }));
         </script>
+        <script src="scripts/task-version.js"></script>
     </body>
 </html>

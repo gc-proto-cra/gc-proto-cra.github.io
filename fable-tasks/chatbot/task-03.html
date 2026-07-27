@@ -45,7 +45,7 @@
         </script>
 
         <main property="mainContentOfPage" typeof="WebPageElement" class="container">
-            <h1 property="name" id="wb-cont">Task 3: Direct Deposit</h1>
+            <h1 property="name" id="wb-cont">Task <span  data-task-num="3">3</span>: Direct Deposit</h1>
 
             <br>
             <section>
@@ -55,7 +55,10 @@
                     <form action="#" id="task-3" class="mrgn-bttm-lg">
                         <fieldset>
                             <legend><strong>Step 1:</strong></legend>
-                            <div><p>Find the speech to text option and ask the chatbot the question out loud.</p></div>
+                            <div>
+                                <p data-ver="[3]">Use the chatbot to find out.</p>
+                                <p data-ver="[1,2,4]" class="wb-inv">Find the speech to text option and ask the chatbot the question out loud.</p>
+                            </div>
                         </fieldset>
                         <fieldset>
                             <legend><strong>Step 2:</strong></legend>
@@ -70,7 +73,7 @@
                     <p class="text-info mrgn-bttm-lg mrgn-tp-md">Please return to the tab with the chatbot to complete this task.</p>
                     <div class="btn-container">
                         <ul class="list-inline">
-                            <li><a href="task-page.html" role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md">Continue to task page</a></li>
+                            <li><a id="task-page" href="task-page.html" role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md">Continue to task page</a></li>
                         </ul>
                     </div>
                 </div>
@@ -108,6 +111,29 @@
             document.write(wet.builder.refFooter({
                 "cdnEnv": "prod",
             }));
+        </script>
+        <script src="scripts/task-version.js"></script>
+        <script>
+            // 1. Get the 'ver' parameter from the URL query string
+            const urlParams = new URLSearchParams(window.location.search), 
+                currentVer = parseInt(urlParams.get("ver"), 10), 
+
+                // 2. Select all elements with the 'data-ver' attribute
+                verElements = document.querySelectorAll("[data-ver]");
+
+            if (!isNaN(currentVer)) {
+                verElements.forEach(element => {
+                    const allowedVersions = JSON.parse(element.getAttribute("data-ver"));
+
+                    if (allowedVersions.includes(currentVer) === true) {
+                        // Show this element by removing the hide class
+                        element.classList.remove("wb-inv");
+                    } else {
+                        // Hide the other elements by adding the hide class
+                        element.classList.add("wb-inv");
+                    }
+                });
+            }
         </script>
     </body>
 </html>

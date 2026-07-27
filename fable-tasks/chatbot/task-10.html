@@ -45,14 +45,14 @@
         </script>
 
         <main property="mainContentOfPage" typeof="WebPageElement" class="container">
-            <h1 property="name" id="wb-cont">Task 10: End the conversation</h1>
+            <h1 property="name" id="wb-cont">Task <span data-task-num="10">10</span>: End the conversation</h1>
 
             <section class="mrgn-bttm-xl">
                 <p class="mrgn-tp-md mrgn-bttm-lg">You want to end the conversation. How would you do so?</p>
                 <p class="text-info mrgn-bttm-md">Please return to the tab with the chatbot to complete this task.</p>
                 <div class="btn-container">
                     <ul class="list-inline">
-                        <li><a href="task-page.html" role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md">Continue to task page</a></li>
+                        <li><a id="task-page" href="task-page.html" role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md">Continue to task page</a></li>
                     </ul>
                 </div>
             </section>
@@ -90,5 +90,6 @@
                 "cdnEnv": "prod",
             }));
         </script>
+        <script src="scripts/task-version.js"></script>
     </body>
 </html>
