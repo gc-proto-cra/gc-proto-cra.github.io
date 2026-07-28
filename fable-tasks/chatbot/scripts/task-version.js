@@ -1,7 +1,8 @@
-let targetUrl, linkElement;
+let targetUrl, linkElement, nameElm, 
 const currentQueryString = window.location.search, 
     urlParams = new URLSearchParams(currentQueryString), 
-    taskVersion = urlParams.get("ver");
+    taskVersion = urlParams.get("ver"), 
+    taskNum = urlParams.get("tasknum");
 
 if (taskVersion !== null) {
     linkElement = document.getElementById("task-page");
@@ -9,5 +10,13 @@ if (taskVersion !== null) {
         targetUrl = new URL(linkElement.href);
         targetUrl.searchParams.set("ver", taskVersion);
         linkElement.href = targetUrl.toString();
+    }
+}
+
+if (taskNum !== null) {
+    nameElm = document.getElementById("task-num");
+    if (nameElm !== null) {
+        nameElm.innerHTML = taskNum;
+        document.title.innerHTML = document.getElementById("wb-cont").innerText;
     }
 }

@@ -50,7 +50,7 @@
             <section class="mrgn-bttm-xl">
                 <p class="mrgn-tp-md">Please select the task that the moderator tells you to.</p>
                 <div class="row">
-                    <ol class="list-inline" aria-label="List of 10 tasks">
+                    <ol class="list-inline mrgn-lft-sm" aria-label="List of 10 tasks">
                         <li data-ver="[1,2,3]"><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-01.html" aria-label="task 1 of 10" data-ver="[1,2,3]">Task <span data-task-num="1">1</span></a></li>
                         <li data-ver="[1,2,3]"><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-02.html" aria-label="task 2 of 10" data-ver="[1,2,3]">Task <span data-task-num="2">2</span></a></li>
                         <li data-ver="[1,2,3]"><a role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md" href="task-03.html" aria-label="task 3 of 10" data-ver="[1,2,3]">Task <span data-task-num="3">3</span></a></li>
@@ -107,11 +107,13 @@
             if (versionValue !== null) {
                 elements.forEach(function (el) {
                     let currentUrl, 
-                        rawHref = el.getAttribute("href");
+                        rawHref = el.getAttribute("href"), 
+                        taskNum = el.getAttribute("data-role");
 
                     if (rawHref !== null) {
                         currentUrl = new URL(rawHref, window.location.origin);
                         currentUrl.searchParams.set("ver", versionValue);
+                        currentUrl.searchParams.set("tasknum", taskNum);
                         // Rebuilds the URL shape exactly as it was originally written
                         if (rawHref.startsWith("/") === true) {
                             el.setAttribute("href", currentUrl.pathname + currentUrl.search + currentUrl.hash);
