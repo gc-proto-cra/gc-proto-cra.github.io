@@ -1,5 +1,5 @@
-let targetUrl, linkElement, nameElm, 
-const currentQueryString = window.location.search, 
+let targetUrl, linkElement, nameElm;
+const currentQueryString = globalThis.location.search, 
     urlParams = new URLSearchParams(currentQueryString), 
     taskVersion = urlParams.get("ver"), 
     taskNum = urlParams.get("tasknum");

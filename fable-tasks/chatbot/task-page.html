@@ -100,7 +100,7 @@
         </script>
         <script src="scripts/task-ver-show-hide-elm.js"></script>
         <script>
-            const updatelinksURLParams = new URLSearchParams(window.location.search), 
+            const updatelinksURLParams = new URLSearchParams(globalThis.location.search), 
                 versionValue = updatelinksURLParams.get("ver"), 
                 elements = document.querySelectorAll("a[data-ver]");
 
@@ -111,7 +111,7 @@
                         taskNum = el.getAttribute("data-role");
 
                     if (rawHref !== null) {
-                        currentUrl = new URL(rawHref, window.location.origin);
+                        currentUrl = new URL(rawHref, globalThis.location.origin);
                         currentUrl.searchParams.set("ver", versionValue);
                         currentUrl.searchParams.set("tasknum", taskNum);
                         // Rebuilds the URL shape exactly as it was originally written

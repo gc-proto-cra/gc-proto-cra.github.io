@@ -1,5 +1,5 @@
 // 1. Get the 'ver' parameter from the URL query string
-const showHideURLParams = new URLSearchParams(window.location.search), 
+const showHideURLParams = new URLSearchParams(globalThis.location.search), 
     currentVer = parseInt(showHideURLParams.get("ver"), 10), 
 
     // 2. Select all elements with the 'data-ver' attribute
