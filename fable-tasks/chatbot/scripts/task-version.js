@@ -14,7 +14,7 @@ if (taskVersion !== null) {
 }
 
 if (taskNum !== null) {
-    nameElm = document.getElementById("task-num");
+    nameElm = document.getElementById("tasknum");
     if (nameElm !== null) {
         nameElm.innerHTML = taskNum;
         document.title.innerHTML = document.getElementById("wb-cont").innerText;
