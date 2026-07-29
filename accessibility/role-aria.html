@@ -49,6 +49,64 @@
 <main property="mainContentOfPage" typeof="WebPageElement" class="container">
     <h1 property="name" id="wb-cont">Identifiers for visually separated components</h1>
     <section class="mrgn-bttm-xl">
+<h2>Proposed solution</h2>
+    <p>Use of:</p>
+    <ul>
+        <li><code>role="region"</code></li>
+        <li><code>aria-label</code> with custom statements</li>
+    </ul>
+    <p><strong>Note:</strong> label text is only provided as recommendations, different situations may call for unique labelling.</p>
+    <h3>Alerts</h3>
+    <p>Use <code>role="region"</code> along with the following labels:</p>
+    <ul>
+        <li>Info: <code>aria-label="Information alert about [short topic text]"</code></li>
+        <li>Success: <code>aria-label="Successful alert about [short topic text]"</code></li>
+        <li>Warning: <code>aria-label="Warning alert about [short topic text]"</code></li>
+        <li>Danger: <code>aria-label="Danger alert about [short topic text]"</code></li>
+    </ul>
+    <h3>Panels</h3>
+    <p>Use <code>role="region"</code> along with the following labels:</p>
+    <ul>
+        <li>Default, info, primary: <code>aria-label="Information section about [short topic text]"</code></li>
+        <li>Success: <code>aria-label="Successful section about [short topic text]"</code></li>
+        <li>Warning: <code>aria-label="Warning section about [short topic text]"</code></li>
+        <li>Danger: <code>aria-label="Danger section about [short topic text]"</code></li>
+    </ul>
+    <h3>Wells</h3>
+    <p>Use <code>role="region"</code> along with <code>aria-label="Callout for [short topic text]"</code></p>
+    <h3>Conjunction (non-list)</h3>
+    <p>Use <code>role="region"</code> along with the following labels:</p>
+    <ul>
+        <li>Or pattern: use one <code>aria-label="[see below]"</code>
+            <ul>
+                <li><code>Choose one of the following</code></li>
+                <li><code>One of the following applies</code></li>
+            </ul>
+        </li>
+        <li>And pattern: <code>aria-label="[see below]"</code>
+            <ul>
+                <li><code>All of the following situations apply</code></li>
+                <li><code>You must meet these [number of options] conditions</code></li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Expand hide</h3>
+    <p>Use <code>role="region"</code> with a <code>div</code> element wrapped around the <code>details</code> element, or if stacked (i.e. mutually exclusive), the entire stack.</p>
+    <p>Use <code>aria-label="[see below]"</code> with the following:</p>
+    <ul>
+        <li>Single ex/hide: <code>Additional information about [short topic text]</code></li>
+        <li>Mutually exclusive, either:
+            <ul>
+                <li><code>Multiple options about [short topic text</code></li>
+                <li><code>One of the following about [short topic text] applies</code></li>
+            </ul>
+        </li>
+    </ul>
+
+	</section>
+	
+	
+	<section class="mrgn-bttm-xl">
         <h2>Situation</h2>
         <p><strong>Issue:</strong></p>
         <p>There are many visual patterns in GCWeb that indicate a natural beginning and end to the content contained (aka has borders). However they are not represented equally when using a screen reader.</p>
