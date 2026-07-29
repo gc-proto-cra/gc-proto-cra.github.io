@@ -11,7 +11,7 @@ if (!isNaN(currentVer)) {
     verElements.forEach(element => {
         const allowedVersions = JSON.parse(element.getAttribute("data-ver"));
 
-        if (allowedVersions.includes(currentVer) === true || currentVer >= choiceMin || currentVer <= choiceMax) {
+        if (allowedVersions.includes(currentVer) === true || currentVer < choiceMin || currentVer > choiceMax) {
             // Show this element by removing the hide class
             element.classList.remove("wb-inv");
         } else {
