@@ -5,7 +5,7 @@ const choiceMin = 1,
     currentVer = parseInt(showHideURLParams.get("ver"), 10), 
 
     // 2. Select all elements with the 'data-ver' attribute
-    verElements = document.querySelectorAll("[data-ver]");
+    verElements = document.querySelectorAll("li[data-ver], p[data-ver]");
 
 if (!isNaN(currentVer)) {
     verElements.forEach(element => {
@@ -13,10 +13,10 @@ if (!isNaN(currentVer)) {
 
         if (allowedVersions.includes(currentVer) === true || currentVer < choiceMin || currentVer > choiceMax) {
             // Show this element by removing the hide class
-            element.classList.remove("wb-inv");
+            element.classList.remove("hidden");
         } else {
             // Hide the other elements by adding the hide class
-            element.classList.add("wb-inv");
+            element.classList.add("hidden");
         }
     });
 }
