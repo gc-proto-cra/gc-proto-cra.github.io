@@ -108,7 +108,7 @@
                 elements.forEach(function (el) {
                     let currentUrl, 
                         rawHref = el.getAttribute("href"), 
-                        taskNum = el.getAttribute("data-role");
+                        taskNum = el.getAttribute("data-task-num");
 
                     if (rawHref !== null) {
                         currentUrl = new URL(rawHref, globalThis.location.origin);
