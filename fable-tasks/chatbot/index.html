@@ -50,19 +50,44 @@
             <section>
                 <p class="mrgn-tp-md">During the test, the moderator will present you with a number of different tasks, one at a time. Once you have read and understood the task, click the "start task" button. This will open a website in a new tab. Use the chatbot in the website to try to complete the task. When you are done, come back to the tab where the task is.</p>
                 <p>Please remember to tell us what you're thinking and how you are navigating as you go through the scenarios.</p>
+                <div class="wb-frmvld">
+                    <form id="accessibility-type" method="get" action="task-page.html">
+                        <fieldset class="gc-chckbxrdio mrgn-tp-lg">
+                            <legend>Select the main assistive technology used for this test:</legend>
+                            <ul class="list-unstyled lst-spcd-2">
+                                <li class="radio">
+                                    <input type="radio" name="ver" id="screen-reader" required="required" value="1">
+                                    <label for="screen-reader">Screen reader</label>
+                                </li>
+                                <li class="radio">
+                                    <input type="radio" name="ver" id="screen-magnifier" required="required" value="2">
+                                    <label for="screen-magnifier">Screen magnifier</label>
+                                </li>
+                                <li class="radio">
+                                    <input type="radio" name="ver" id="speech-recognition" required="required" value="4">
+                                    <label for="speech-recognition">Speech recognition</label>
+                                </li>
+                                <li class="radio">
+                                    <input type="radio" name="ver" id="alternative" required="required" value="3">
+                                    <label for="alternative">Alternative navigation</label>
+                                </li>
+                            </ul>
+                        </fieldset>
                 <!--
                 <div class="btn-container">
                     <ul class="list-inline">
-                        <li><a id="task-page-1" href="task-page.html?ver=1" role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md">Screen reader - Start test</a></li>
+                        <li><a id="task-page-1" href="task-page.html?ver=1" role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md">Screen reader/Speech recognition - Start test</a></li>
                         <li><a id="task-page-2" href="task-page.html?ver=2" role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md">Screen magnifier - Start test</a></li>
                         <li><a id="task-page-3" href="task-page.html?ver=3" role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md">Alternative navigation - Start test</a></li>
                         <li><a id="task-page-4" href="task-page.html?ver=4" role="button" data-exit="false" class="btn btn-primary btn-lg mrgn-tp-md">Speech recognition - Start test</a></li>
-                    </ul>
-                </div>
+                        </ul>
+                    </div>
                 -->
-                <a href="task-page.html" role="button" class="btn btn-call-to-action btn-lg mrgn-tp-md">Start test</a>
+                        <button type="submit" class="btn btn-call-to-action btn-lg mrgn-tp-md">Start test</button>
                 <!--
                 -->
+                    </form>
+                </div>
             </section>
 
             <div id="def-preFooter">
