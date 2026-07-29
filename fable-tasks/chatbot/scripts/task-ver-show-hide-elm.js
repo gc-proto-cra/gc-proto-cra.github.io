@@ -14,9 +14,11 @@ if (!isNaN(currentVer)) {
         if (allowedVersions.includes(currentVer) === true || currentVer < choiceMin || currentVer > choiceMax) {
             // Show this element by removing the hide class
             element.classList.remove("hidden");
+            element.setAttribute("aria-hidden", "false")
         } else {
             // Hide the other elements by adding the hide class
             element.classList.add("hidden");
+            element.setAttribute("aria-hidden", "true")
         }
     });
 }
