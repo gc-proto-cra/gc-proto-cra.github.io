@@ -53,22 +53,22 @@
                 <div class="wb-frmvld">
                     <form id="accessibility-type" method="get" action="task-page.html">
                         <fieldset class="gc-chckbxrdio mrgn-tp-lg">
-                            <legend>Select the main assistive technology used for this test:</legend>
+                            <legend class="required">Select the <span class="field-name">main assistive technology</span> used for this test <strong class="required">(required)</strong></legend>
                             <ul class="list-unstyled lst-spcd-2">
                                 <li class="radio">
-                                    <input type="radio" name="ver" id="screen-reader" required="required" value="1">
-                                    <label for="screen-reader">Screen reader</label>
+                                    <input type="radio" name="ver" id="screen-reader-desktop" required="required" value="1">
+                                    <label for="screen-reader-desktop">Screen reader (desktop)</label>
                                 </li>
                                 <li class="radio">
-                                    <input type="radio" name="ver" id="screen-magnifier" required="required" value="2">
+                                    <input type="radio" name="ver" id="screen-reader-mobile" value="4">
+                                    <label for="speech-recognition">Screen reader (mobile)</label>
+                                </li>
+                                <li class="radio">
+                                    <input type="radio" name="ver" id="screen-magnifier" value="2">
                                     <label for="screen-magnifier">Screen magnifier</label>
                                 </li>
                                 <li class="radio">
-                                    <input type="radio" name="ver" id="speech-recognition" required="required" value="4">
-                                    <label for="speech-recognition">Speech recognition</label>
-                                </li>
-                                <li class="radio">
-                                    <input type="radio" name="ver" id="alternative" required="required" value="3">
+                                    <input type="radio" name="ver" id="alternative" value="3">
                                     <label for="alternative">Alternative navigation</label>
                                 </li>
                             </ul>
