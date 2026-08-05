@@ -47,8 +47,10 @@
         <main property="mainContentOfPage" typeof="WebPageElement" class="container">
             <h1 property="name" id="wb-cont">Task <span id="tasknum" data-task-num="2">2</span>: TFSA</h1>
 
+            <p>You set up your direct deposit information a few days before filing your taxes. You want to know if your tax refund will be put directly into your account or if you’ll get a check in the mail.</p>
+
             <br>
-            <section>
+            <!--section>
                 <div class="wb-steps quiz">
                     <form action="#" id="task-2" class="mrgn-bttm-lg">
                         <fieldset>
@@ -68,7 +70,28 @@
                         </ul>
                     </div>
                 </div>
-            </section>
+            </section-->
+
+            <div class="wb-tabs">
+                <div class="tabpanels">
+                    <details id="details-panel1">
+                        <summary>Step 1</summary>
+                        <p>You made a few contributions to your Tax-Free Savings Account (TFSA) this year. How do you look up your contribution room?</p>
+                        <p class="text-info mrgn-bttm-lg mrgn-tp-md">Please return to the tab with the chatbot to complete this task.</p>
+                    </details>
+                    <details id="details-panel2" open="open">
+                        <summary>Step 2</summary>
+                        <p>You signed into your CRA account to check out your contribution room, but you don't agree with the totals. You want to know where you can go for the most accurate information.</p>
+                        <p class="text-info mrgn-bttm-lg mrgn-tp-md">Please return to the tab with the chatbot to complete this task.</p>
+                    </details>
+                </div>
+            </div>    
+
+            <div class="btn-container">
+                <ul class="list-inline">
+                    <li><a id="task-page" href="task-page.html" role="button" data-exit="false" class="btn btn-default btn-lg mrgn-tp-md">Continue to task page</a></li>
+                </ul>
+            </div>
 
             <div id="def-preFooter">
                 <!-- Write closure fall-back static file -->
