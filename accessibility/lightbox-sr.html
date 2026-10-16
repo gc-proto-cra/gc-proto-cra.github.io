@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Lightbox accessibility improvement for NVDA</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="">
+<meta name="robots" content="noindex, nofollow">
+<!-- Meta data--> 
+<!-- Load closure template scripts --> 
+
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/soyutils.js"></script> 
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/wet-en.js"></script>
+<noscript>
+<!-- Write closure fall-back static file --> 
+<!-- refTop.html -->
+</noscript>
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refTop({
+				"cdnEnv": "prod",
+				"isApplication": false
+			}));
+		</script>
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/méli-mélo/2025-12-mille-iles.css" />
+</head>
+<body vocab="https://schema.org/" typeof="WebPage">
+<div id="def-top"> 
+    <!-- Write closure fall-back static file --> 
+    <!-- top-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+		var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.top({
+               "cdnEnv": "prod",
+                "lngLinks": false,
+                 "search": false,
+               "siteMenu": false,
+         "showPreContent": false,
+                "breadcrumbs": false
+			});
+		</script>
+<main property="mainContentOfPage" typeof="WebPageElement" class="container">
+    <h1 property="name" id="wb-cont">Lightbox accessibility improvement for NVDA</h1>
+    <section class="mrgn-bttm-xl">
+<h2>Current issue</h2>
+      <p>Testing the current lightbox pattern with users who rely on NVDA, has shown that instances occur that the user is unable to navigate through a lightbox (stuck the lightbox wrapper).</p>
+
+ <h2>Principal Publisher solution</h2>
+      <p>A focus key command using the <kbd>space</kbd> key was allowing NVDA users to focus within the dialog (lightbox).</p>
+      <h3>Outstanding concern</h3>
+<p>Are NVDA users aware that they need to apply this action in order to read the dialog? NVDA does not announce the action needed to take in order to focus on the dialog.</p>      
+<h2>Proposed solutions</h2>
+<h3>Option 1</h3>
+      <p>Use an announced <code>aria-label</code> in order to inform the screen reader user that a keyboard space press may be needed to focus inside the dialog.</p>
+    <p>The downside is that, although it doesn't affect JAWS or VoiceOver users, it's unnecessary for them to do this extra step.</p>
+<h3>Option two</h3>
+<p>Replace the spacebar focus command with a function that applies focus automatically to the header of the dialog after it opens.  Will require a 100ms delay so the function run asynchronously.</p>
+    <p>This works with both dialogs open from content within the page, and those that are ajax'd in.</p>  
+     <p>The downside is because JAWS and VoiceOver do not require the extra focus, the announcement of the header is repeated.</p> 
+<h4>Examples</h4>
+   <p><a class="wb-lbx lbx-ajax" title="Example of lightbox content" href="https://wet-boew.github.io/v4.0-ci/demos/lightbox/ajax/ajax1-en.html" role="button">AJAX - Example 1</a></p>
+    
+    
+    <p><a class="wb-lbx lbx-1" title="Example of inline content" href="#inline_content" role="button" aria-controls="inline_content">Inline content - Example 2</a></p>
+      <section id="inline_content" class="mfp-hide modal-dialog modal-content overlay-def" tabindex="0">
+			<header class="modal-header">
+				<h2 class="modal-title">Title for lightbox one</h2>
+			</header>
+			<div class="modal-body">
+                <p>Content for lightbox 1</p>
+			</div>
+		</section>
+    <div id="def-preFooter"> 
+        <!-- Write closure fall-back static file --> 
+        <!-- preFooter-en.html --> 
+    </div>
+    <!-- Write closure template --> 
+    <script>
+				var defPreFooter = document.getElementById("def-preFooter");
+				defPreFooter.outerHTML = wet.builder.preFooter({
+				
+					"cdnEnv": "prod"
+				});
+			</script> 
+</main>
+<div id="def-footer"> 
+    <!-- Write closure fall-back static file --> 
+    <!-- footer-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.appFooter({
+				"cdnEnv": "prod",
+                                   "termsLink": [{
+	"href": ""
+}], "privacyLink": [{
+	"href": ""
+}]
+			});
+		</script> 
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refFooter({
+				"cdnEnv": "prod",
+
+            
+			}));
+		</script> 
+<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/méli-mélo/2025-12-mille-iles.js"></script>
+</body>
+  <script>
+function () {
+
+
+    	$( ".wb-lbx" ).on( "mfpParseAjax mfpOpen", function () {
+
+            
+            
+        	setTimeout(function () {
+var focusHeader = '.modal-title';
+		
+
+		if ($(focusHeader).length) {
+
+			$(focusHeader).attr("tabindex", "-1");
+ $(focusHeader).addClass("modal-focus");
+			$(focusHeader).focus();
+		}
+
+	}, 100);
+
+  
+	} );
+  
+    
+
+
+	// Detect lightbox close
+	$( ".wb-lbx" ).on( "mfpClose", function () {
+
+		lightboxOpen = false;
+
+		$( ".modal-title" )
+			.removeClass( "modal-focus" );
+     
+	} );
+
+}
+    
+  </script>
+</html>
