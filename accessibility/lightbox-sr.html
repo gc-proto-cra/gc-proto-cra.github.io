@@ -115,33 +115,8 @@
 			}));
 		</script> 
 <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/méli-mélo/2025-12-mille-iles.js"></script>
-	<script>
-$(document).on("mfpOpen", function () {
-    var tries = 0;
-    (function focusTitle() {
-        var $title = $(".mfp-content .modal-title").first();
-        if ($title.length && $title.is(":visible")) {
-            $title.attr("tabindex", "-1").addClass("modal-focus");
-            // Blur/refocus nudges Safari to re-sync the VO cursor
-            $title[0].blur();
-            $title[0].focus();
-        } else if (tries++ < 10) {
-            setTimeout(focusTitle, 50);
-        }
-    })();
-});
-$(".wb-lbx").on("mfpClose", function () {
 
-    lightboxOpen = false;
-
-    $(".modal-title")
-        .removeClass("modal-focus");
-
-});
-		
-	</script>
-
-  <!--script>
+  <script>
 function () {
 
 
@@ -160,7 +135,7 @@ var focusHeader = '.modal-title';
 			$(focusHeader).focus();
 		}
 
-	}, 100);
+	}, 400);
 
   
 	} );
@@ -179,6 +154,6 @@ var focusHeader = '.modal-title';
 	} );
 
     
-</script//-->
+</script>
 </body>
 </html>
