@@ -135,11 +135,24 @@ var focusHeader = '.modal-title';
 			$(focusHeader).focus();
 		}
 
-	}, 4000);
+	}, 400);
 
   
 	} );
-  
+  var isSafari = /^((?!chrome|android|crios|fxios|edg).)*safari/i.test(navigator.userAgent);
+
+if (isSafari) {
+    $(".wb-lbx").on("mfpParseAjax mfpOpen", function () {
+        // Runs after your original 100ms focus, so Safari/VO has time to expose the content
+        setTimeout(function () {
+            var $title = $(".modal-title").first();
+            if ($title.length) {
+                $title[0].blur();
+                $title[0].focus();
+            }
+        }, 4000);
+    });
+}
     
 
 
