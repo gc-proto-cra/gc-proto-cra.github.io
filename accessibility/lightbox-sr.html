@@ -130,6 +130,14 @@ $(document).on("mfpOpen", function () {
         }
     })();
 });
+$(".wb-lbx").on("mfpClose", function () {
+
+    lightboxOpen = false;
+
+    $(".modal-title")
+        .removeClass("modal-focus");
+
+});
 		
 	</script>
 
@@ -170,7 +178,6 @@ var focusHeader = '.modal-title';
      
 	} );
 
-}
     
 </script//-->
 </body>
