@@ -148,6 +148,7 @@ if (isSafari) {
             var $title = $(".modal-title").first();
             if ($title.length) {
                 $title[0].blur();
+				$title[0].attr("tabindex", "-1");
                 $title[0].focus();
             }
         }, 4000);
